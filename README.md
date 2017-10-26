@@ -1,6 +1,6 @@
 # circuit-vr
 IMGD5000 Class Project
-** Please read this entire readme before using **
+**Please read this entire readme before using**
 ## Organization
 The repository is organized into two main folders:
 1. **public** - This consits of any files that can be modified publically. Assets, documentation, etc.
