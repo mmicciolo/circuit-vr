@@ -7,12 +7,16 @@ using UnityEngine;
 
 namespace Assets.Source
 {
-    [InitializeOnLoad]
     class Startup
     {
-        static Startup()
+        [RuntimeInitializeOnLoadMethod]
+        static void Startup2()
         {
-            Debug.Log("Up and running");
+            //This is where the game begins
+            Debug.Log("Starting Game!");
+
+            //Create an instance of the circuit vr game
+            new GameObject().AddComponent<CircuitVRGame>();
         }
     }
 }
