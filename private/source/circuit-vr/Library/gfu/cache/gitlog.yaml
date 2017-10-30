@@ -1,0 +1,134 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -530159753, guid: ce871873e272f424dadcd1374ecef0e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  log:
+  - CommitID: 7bd59d8abee541ee9782dd8092dcab55a7e84944
+    MergeA: 
+    MergeB: 
+    AuthorName: mmicciolo
+    AuthorEmail: mmicciolo@wpi.edu
+    CommitEmail: mmicciolo@wpi.edu
+    CommitName: mmicciolo
+    Summary: readme
+    Description: readme
+    TimeString: 10/26/2017 6:26:30 PM -04:00
+    CommitTimeString: 10/26/2017 6:26:30 PM -04:00
+    Changes:
+    - Path: README.md
+      FullPath: C:\Users\Matt\Documents\GitHub\circuit-vr\README.md
+      ProjectPath: ..\..\..\README.md
+      OriginalPath: 
+      Status: 3
+      Staged: 0
+  - CommitID: 3c0c6b011251a2c73bb4121f7da289c0ff5285da
+    MergeA: 
+    MergeB: 
+    AuthorName: mmicciolo
+    AuthorEmail: mmicciolo@wpi.edu
+    CommitEmail: mmicciolo@wpi.edu
+    CommitName: mmicciolo
+    Summary: readme
+    Description: readme
+    TimeString: 10/26/2017 6:25:36 PM -04:00
+    CommitTimeString: 10/26/2017 6:25:36 PM -04:00
+    Changes:
+    - Path: README.md
+      FullPath: C:\Users\Matt\Documents\GitHub\circuit-vr\README.md
+      ProjectPath: ..\..\..\README.md
+      OriginalPath: 
+      Status: 3
+      Staged: 0
+  - CommitID: c40640aa040a935925f8c09e73708704cff826a0
+    MergeA: 
+    MergeB: 
+    AuthorName: mmicciolo
+    AuthorEmail: mmicciolo@wpi.edu
+    CommitEmail: mmicciolo@wpi.edu
+    CommitName: mmicciolo
+    Summary: readme
+    Description: readme
+    TimeString: 10/26/2017 6:23:07 PM -04:00
+    CommitTimeString: 10/26/2017 6:23:07 PM -04:00
+    Changes:
+    - Path: README.md
+      FullPath: C:\Users\Matt\Documents\GitHub\circuit-vr\README.md
+      ProjectPath: ..\..\..\README.md
+      OriginalPath: 
+      Status: 3
+      Staged: 0
+  - CommitID: 1e6e58868cb53751257fadac073e66ec32b4e971
+    MergeA: 
+    MergeB: 
+    AuthorName: mmicciolo
+    AuthorEmail: mmicciolo@wpi.edu
+    CommitEmail: mmicciolo@wpi.edu
+    CommitName: mmicciolo
+    Summary: Began Setting Up
+    Description: Began Setting Up
+    TimeString: 10/26/2017 6:22:22 PM -04:00
+    CommitTimeString: 10/26/2017 6:22:22 PM -04:00
+    Changes:
+    - Path: README.md
+      FullPath: C:\Users\Matt\Documents\GitHub\circuit-vr\README.md
+      ProjectPath: ..\..\..\README.md
+      OriginalPath: 
+      Status: 3
+      Staged: 0
+    - Path: private\Unity Project.txt
+      FullPath: C:\Users\Matt\Documents\GitHub\circuit-vr\private\Unity Project.txt
+      ProjectPath: ..\..\Unity Project.txt
+      OriginalPath: 
+      Status: 4
+      Staged: 0
+    - Path: public\Assets\Art\2D\2D.txt
+      FullPath: C:\Users\Matt\Documents\GitHub\circuit-vr\public\Assets\Art\2D\2D.txt
+      ProjectPath: ..\..\..\public\Assets\Art\2D\2D.txt
+      OriginalPath: 
+      Status: 4
+      Staged: 0
+    - Path: public\Assets\Art\3D\3D.txt
+      FullPath: C:\Users\Matt\Documents\GitHub\circuit-vr\public\Assets\Art\3D\3D.txt
+      ProjectPath: ..\..\..\public\Assets\Art\3D\3D.txt
+      OriginalPath: 
+      Status: 4
+      Staged: 0
+    - Path: public\Assets\Sounds\Sounds.txt
+      FullPath: C:\Users\Matt\Documents\GitHub\circuit-vr\public\Assets\Sounds\Sounds.txt
+      ProjectPath: ..\..\..\public\Assets\Sounds\Sounds.txt
+      OriginalPath: 
+      Status: 4
+      Staged: 0
+    - Path: public\Documentation\Documentation.txt
+      FullPath: C:\Users\Matt\Documents\GitHub\circuit-vr\public\Documentation\Documentation.txt
+      ProjectPath: ..\..\..\public\Documentation\Documentation.txt
+      OriginalPath: 
+      Status: 4
+      Staged: 0
+  - CommitID: aac994a7980da831d6eaa3bec0c27fb54bd25355
+    MergeA: 
+    MergeB: 
+    AuthorName: mmicciolo
+    AuthorEmail: mmicciolo@wpi.edu
+    CommitEmail: noreply@github.com
+    CommitName: GitHub
+    Summary: Initial commit
+    Description: Initial commit
+    TimeString: 10/26/2017 6:17:35 PM -04:00
+    CommitTimeString: 10/26/2017 6:17:35 PM -04:00
+    Changes:
+    - Path: README.md
+      FullPath: C:\Users\Matt\Documents\GitHub\circuit-vr\README.md
+      ProjectPath: ..\..\..\README.md
+      OriginalPath: 
+      Status: 4
+      Staged: 0
