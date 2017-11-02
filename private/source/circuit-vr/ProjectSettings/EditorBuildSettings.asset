@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: 9d17eb09166f1f743a1dfd5cc6f2a0f8
+  - enabled: 1
+    path: Assets/Scenes/SpaceShip/SpaceShip Scaled.unity
+    guid: 3a0c11845d826d34da9a77a88c5fd742
