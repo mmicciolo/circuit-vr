@@ -20,14 +20,26 @@ public class AutoDoor : MonoBehaviour {
     {
         Debug.Log("entered");
         //animation.Play("DoorOpen");
+        
         gameObject.GetComponent<Animator>().Play("DoorOpen");
+        //yield WaitForAnimation("DoorClose");
     }
 
     private void OnTriggerExit(Collider other)
     {
         Debug.Log("exited");
         //animator.Play("DoorClose");
+        
         gameObject.GetComponent<Animator>().Play("DoorClose");
+        //yield WaitForAnimation("DoorOpen");
+    }
+
+    private IEnumerator WaitForAnimation(Animation animation)
+    {
+        do
+        {
+            yield return null;
+        } while (animation.isPlaying);
     }
 
 }
