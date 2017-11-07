@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assets.Source.Interactable_Objects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -117,8 +118,14 @@ namespace Assets.Source.Player
 
             if (Input.GetKeyDown(KeyCode.E) && (currentInteractable != null))
             {
-                Debug.Log("Interacting");
-                LevelController.getInstance().ShowInteractableCanvas(currentInteractable);
+                if(currentInteractable.GetComponent<InteractablePuzzle>() != null)
+                {
+                    Debug.Log("Interacting with Puzzle");
+                } else
+                {
+                    Debug.Log("Interacting");
+                    LevelController.getInstance().ShowInteractableCanvas(currentInteractable);
+                }
             }
         }
 
