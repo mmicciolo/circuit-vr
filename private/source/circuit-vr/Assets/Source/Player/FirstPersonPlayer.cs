@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityStandardAssets.Characters.FirstPerson;
 using UnityStandardAssets.CrossPlatformInput;
 using UnityStandardAssets.Utility;
@@ -46,6 +47,9 @@ namespace Assets.Source.Player
         private bool m_Jumping;
         private AudioSource m_AudioSource;
 
+        private GameObject currentInteractable;
+        public Text subtitle;
+
         // Use this for initialization
         private void Start()
         {
@@ -59,6 +63,9 @@ namespace Assets.Source.Player
             m_Jumping = false;
             m_AudioSource = GetComponent<AudioSource>();
             m_MouseLook.Init(transform, m_Camera.transform);
+
+            subtitle.gameObject.SetActive(false);
+            currentInteractable = null;
         }
 
 
@@ -85,8 +92,46 @@ namespace Assets.Source.Player
             }
 
             m_PreviouslyGrounded = m_CharacterController.isGrounded;
+
+            //Check the object player is looking at
+            Ray ray = new Ray(m_Camera.transform.position, m_Camera.transform.forward);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit, 100))
+            {
+                subtitle.gameObject.SetActive(true);
+                float distance = Vector3.Distance(transform.position, hit.point);
+                bool itb = hit.collider.gameObject.GetComponents<Interactable>().Length > 0;
+                subtitle.GetComponent<Text>().text = hit.collider.gameObject.name + "\n distance: " + distance;
+                if ((distance <= 3f) && (itb))
+                {
+                    currentInteractable = hit.collider.gameObject;
+                    subtitle.GetComponent<Text>().text += "\n Press E";
+                }
+                else currentInteractable = null;
+            }
+            else
+            {
+                currentInteractable = null;
+                subtitle.gameObject.SetActive(false);
+            }
+
+            if (Input.GetKeyDown(KeyCode.E) && (currentInteractable != null))
+            {
+                Debug.Log("Interacting");
+                LevelController.getInstance().ShowInteractableCanvas(currentInteractable);
+            }
         }
 
+        public GameObject GetCurrentInteractable()
+        {
+            return currentInteractable;
+        }
+
+        private void OnGUI()
+        {
+            GUI.TextField(new Rect(Screen.width / 2, Screen.height / 2, 10, 10), "O");
+
+        }
 
         private void PlayLandingSound()
         {

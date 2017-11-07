@@ -8,31 +8,19 @@ public class AutoDoor : MonoBehaviour {
 
     bool needsOpen;
     bool isOpen;
-    bool canPlayAnimation;
 
 	// Use this for initialization
 	void Start () {
         animator = gameObject.GetComponent<Animator>();
         isOpen = false;
         needsOpen = false;
-        canPlayAnimation = true;
     }
 
 	// Update is called once per frame
 	void Update () {
-        if ((isOpen == true) && (canPlayAnimation == true))
+        if (needsOpen != isOpen)
         {
-            canPlayAnimation = false;
-            animator.Play("DoorOpen");
-            Debug.Log("door opening");
-            StartCoroutine(WaitForDoorAnimation());
-        }
-        if ((isOpen == false) && (canPlayAnimation == true))
-        {
-            canPlayAnimation = false;
-            animator.Play("DoorClose");
-            Debug.Log("door closing");
-            StartCoroutine(WaitForDoorAnimation());
+            StartCoroutine(needsOpen? OpenDoor() : CloseDoor());
         }
     }
 
@@ -40,25 +28,35 @@ public class AutoDoor : MonoBehaviour {
     {
         Debug.Log("entered");
 
-        isOpen = true;
-
+        needsOpen = true;
     }
 
     private void OnTriggerExit(Collider other)
     {
         Debug.Log("exited");
 
-        isOpen = false;
+        needsOpen = false;
     }
 
-    IEnumerator WaitForDoorAnimation()
+    IEnumerator OpenDoor()
     {
-        while (animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f)
-        {
-            yield return null;
-        }
-        Debug.Log("Coroutine created");
-        canPlayAnimation = true;
+            while (animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f)
+            {
+                yield return null;
+            }
+            Debug.Log("Coroutine open");
+            animator.Play("DoorOpen");
+            isOpen = true;
+    }
 
+    IEnumerator CloseDoor()
+    {
+            while (animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f)
+            {
+                yield return null;
+            }
+            Debug.Log("Coroutine close");
+            animator.Play("DoorClose");
+            isOpen = false;
     }
 }
