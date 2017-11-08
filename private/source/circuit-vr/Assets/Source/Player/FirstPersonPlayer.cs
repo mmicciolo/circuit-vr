@@ -73,59 +73,67 @@ namespace Assets.Source.Player
         // Update is called once per frame
         private void Update()
         {
-            RotateView();
-            // the jump state needs to read here to make sure it is not missed
-            if (!m_Jump)
+            if (!LevelController.getInstance().isPaused)
             {
-                m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
-            }
-
-            if (!m_PreviouslyGrounded && m_CharacterController.isGrounded)
-            {
-                StartCoroutine(m_JumpBob.DoBobCycle());
-                PlayLandingSound();
-                m_MoveDir.y = 0f;
-                m_Jumping = false;
-            }
-            if (!m_CharacterController.isGrounded && !m_Jumping && m_PreviouslyGrounded)
-            {
-                m_MoveDir.y = 0f;
-            }
-
-            m_PreviouslyGrounded = m_CharacterController.isGrounded;
-
-            //Check the object player is looking at
-            Ray ray = new Ray(m_Camera.transform.position, m_Camera.transform.forward);
-            RaycastHit hit;
-            if (Physics.Raycast(ray, out hit, 100))
-            {
-                subtitle.gameObject.SetActive(true);
-                float distance = Vector3.Distance(transform.position, hit.point);
-                bool itb = hit.collider.gameObject.GetComponents<Interactable>().Length > 0;
-                subtitle.GetComponent<Text>().text = hit.collider.gameObject.name + "\n distance: " + distance;
-                if ((distance <= 3f) && (itb))
+                RotateView();
+                // the jump state needs to read here to make sure it is not missed
+                if (!m_Jump)
                 {
-                    currentInteractable = hit.collider.gameObject;
-                    subtitle.GetComponent<Text>().text += "\n Press E";
+                    m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
                 }
-                else currentInteractable = null;
+
+                if (!m_PreviouslyGrounded && m_CharacterController.isGrounded)
+                {
+                    StartCoroutine(m_JumpBob.DoBobCycle());
+                    PlayLandingSound();
+                    m_MoveDir.y = 0f;
+                    m_Jumping = false;
+                }
+                if (!m_CharacterController.isGrounded && !m_Jumping && m_PreviouslyGrounded)
+                {
+                    m_MoveDir.y = 0f;
+                }
+
+                m_PreviouslyGrounded = m_CharacterController.isGrounded;
+
+                //Check the object player is looking at
+                Ray ray = new Ray(m_Camera.transform.position, m_Camera.transform.forward);
+                RaycastHit hit;
+                if (Physics.Raycast(ray, out hit, 100))
+                {
+                    subtitle.gameObject.SetActive(true);
+                    float distance = Vector3.Distance(transform.position, hit.point);
+                    bool itb = hit.collider.gameObject.GetComponents<Interactable>().Length > 0;
+                    subtitle.GetComponent<Text>().text = hit.collider.gameObject.name + "\n distance: " + distance;
+                    if ((distance <= 3f) && (itb))
+                    {
+                        currentInteractable = hit.collider.gameObject;
+                        subtitle.GetComponent<Text>().text += "\n Press E";
+                    }
+                    else currentInteractable = null;
+                }
+                else
+                {
+                    currentInteractable = null;
+                    subtitle.gameObject.SetActive(false);
+                }
+
+                if (Input.GetKeyDown(KeyCode.E) && (currentInteractable != null))
+                {
+                    if (currentInteractable.GetComponent<InteractablePuzzle>() != null)
+                    {
+                        Debug.Log("Interacting with Puzzle");
+                    }
+                    else
+                    {
+                        Debug.Log("Interacting");
+                        LevelController.getInstance().ShowInteractableCanvas(currentInteractable);
+                    }
+                }
             }
             else
             {
-                currentInteractable = null;
                 subtitle.gameObject.SetActive(false);
-            }
-
-            if (Input.GetKeyDown(KeyCode.E) && (currentInteractable != null))
-            {
-                if(currentInteractable.GetComponent<InteractablePuzzle>() != null)
-                {
-                    Debug.Log("Interacting with Puzzle");
-                } else
-                {
-                    Debug.Log("Interacting");
-                    LevelController.getInstance().ShowInteractableCanvas(currentInteractable);
-                }
             }
         }
 
@@ -150,43 +158,47 @@ namespace Assets.Source.Player
 
         private void FixedUpdate()
         {
-            float speed;
-            GetInput(out speed);
-            // always move along the camera forward as it is the direction that it being aimed at
-            Vector3 desiredMove = transform.forward * m_Input.y + transform.right * m_Input.x;
-
-            // get a normal for the surface that is being touched to move along it
-            RaycastHit hitInfo;
-            Physics.SphereCast(transform.position, m_CharacterController.radius, Vector3.down, out hitInfo,
-                               m_CharacterController.height / 2f, Physics.AllLayers, QueryTriggerInteraction.Ignore);
-            desiredMove = Vector3.ProjectOnPlane(desiredMove, hitInfo.normal).normalized;
-
-            m_MoveDir.x = desiredMove.x * speed;
-            m_MoveDir.z = desiredMove.z * speed;
-
-
-            if (m_CharacterController.isGrounded)
+            if (!LevelController.getInstance().isPaused)
             {
-                m_MoveDir.y = -m_StickToGroundForce;
+                float speed;
+                GetInput(out speed);
+                // always move along the camera forward as it is the direction that it being aimed at
+                Vector3 desiredMove = transform.forward * m_Input.y + transform.right * m_Input.x;
 
-                if (m_Jump)
+                // get a normal for the surface that is being touched to move along it
+                RaycastHit hitInfo;
+                Physics.SphereCast(transform.position, m_CharacterController.radius, Vector3.down, out hitInfo,
+                                   m_CharacterController.height / 2f, Physics.AllLayers, QueryTriggerInteraction.Ignore);
+                desiredMove = Vector3.ProjectOnPlane(desiredMove, hitInfo.normal).normalized;
+
+                m_MoveDir.x = desiredMove.x * speed;
+                m_MoveDir.z = desiredMove.z * speed;
+
+
+                if (m_CharacterController.isGrounded)
                 {
-                    m_MoveDir.y = m_JumpSpeed;
-                    PlayJumpSound();
-                    m_Jump = false;
-                    m_Jumping = true;
+                    m_MoveDir.y = -m_StickToGroundForce;
+
+                    if (m_Jump)
+                    {
+                        m_MoveDir.y = m_JumpSpeed;
+                        PlayJumpSound();
+                        m_Jump = false;
+                        m_Jumping = true;
+                    }
                 }
-            }
-            else
-            {
-                m_MoveDir += Physics.gravity * m_GravityMultiplier * Time.fixedDeltaTime;
-            }
-            m_CollisionFlags = m_CharacterController.Move(m_MoveDir * Time.fixedDeltaTime);
+                else
+                {
+                    m_MoveDir += Physics.gravity * m_GravityMultiplier * Time.fixedDeltaTime;
+                }
+                m_CollisionFlags = m_CharacterController.Move(m_MoveDir * Time.fixedDeltaTime);
 
-            ProgressStepCycle(speed);
-            UpdateCameraPosition(speed);
+                ProgressStepCycle(speed);
+                UpdateCameraPosition(speed);
 
-            m_MouseLook.UpdateCursorLock();
+                m_MouseLook.UpdateCursorLock();
+            }
+            else Debug.Log(" fixed update paused");
         }
 
 
