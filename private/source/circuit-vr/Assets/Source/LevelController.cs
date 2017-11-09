@@ -6,6 +6,9 @@ public class LevelController : MonoBehaviour
 {
     private static LevelController levelControllerInstance = null;
 
+    public bool isPaused;
+    public Camera interactablePopUpCamera;
+
     InteractableCanvas interactableCanvas;
     Assets.Source.Player.FirstPersonPlayer firstPersonPlayer;
 
@@ -14,16 +17,16 @@ public class LevelController : MonoBehaviour
         //If the instance is already created then return it, if not create new instance and return
         if (levelControllerInstance == null)
         {
-            levelControllerInstance = new LevelController();
-            levelControllerInstance.firstPersonPlayer = GameObject.FindObjectOfType<Assets.Source.Player.FirstPersonPlayer>();
-            levelControllerInstance.interactableCanvas = GameObject.FindObjectOfType<InteractableCanvas>();
-            levelControllerInstance.interactableCanvas.gameObject.SetActive(false);
+            levelControllerInstance = this;
+            firstPersonPlayer = GameObject.FindObjectOfType<Assets.Source.Player.FirstPersonPlayer>();
+            interactableCanvas = GameObject.FindObjectOfType<InteractableCanvas>();
         }
     }
 
     // Use this for initialization
     void Start () {
-
+        levelControllerInstance.isPaused = false;
+        interactablePopUpCamera.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -31,19 +34,24 @@ public class LevelController : MonoBehaviour
 
     }
 
+    private void Pause()
+    {
+        isPaused = !isPaused;
+    }
+
     public void ShowInteractableCanvas(GameObject interactableObject)
     {
+        Pause();
         Time.timeScale = 0;
-        interactableCanvas.gameObject.SetActive(true);
-        //firstPersonPlayer.gameObject.;
+        interactablePopUpCamera.gameObject.SetActive(true);
         interactableCanvas.SetInteractable(interactableObject);
     }
 
     public void TurnOffInteractableCanvas()
     {
+        Pause();
         Time.timeScale = 1;
-        interactableCanvas.gameObject.SetActive(false);
-        //firstPersonPlayer.gameObject.SetActive(true);
+        interactablePopUpCamera.gameObject.SetActive(false);
     }
 
     private LevelController()
