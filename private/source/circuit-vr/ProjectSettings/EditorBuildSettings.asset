@@ -11,3 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SpaceShip/SpaceShip Scaled.unity
     guid: 3a0c11845d826d34da9a77a88c5fd742
+  - enabled: 1
+    path: Assets/Scenes/testpuzzle.unity
+    guid: a577d86b18794d44e925b4730d99dac6

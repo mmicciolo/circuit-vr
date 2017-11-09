@@ -121,6 +121,7 @@ namespace Assets.Source.Player
                 if(currentInteractable.GetComponent<InteractablePuzzle>() != null)
                 {
                     Debug.Log("Interacting with Puzzle");
+                    currentInteractable.GetComponent<InteractablePuzzle>().open();
                 } else
                 {
                     Debug.Log("Interacting");
