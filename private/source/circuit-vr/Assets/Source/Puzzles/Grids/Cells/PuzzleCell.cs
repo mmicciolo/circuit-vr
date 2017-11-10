@@ -1,0 +1,62 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using UnityEngine;
+
+namespace Assets.Source.Puzzles.Grids.Cells
+{
+    class PuzzleCell : MonoBehaviour
+    {
+
+        private List<GameObject> lines = new List<GameObject>();
+
+        private void Start()
+        {
+            
+        }
+
+        public void DrawCell(float height, float width)
+        {
+            //Draw everything for the first time
+            if(lines.Count == 0)
+            {
+                //Draw the top line
+                DrawLine(gameObject.transform.position, gameObject.transform.position + new Vector3(width, 0, 0), "top");
+
+                //Draw the bottom line
+                DrawLine(gameObject.transform.position - new Vector3(0, height, 0), gameObject.transform.position + new Vector3(width, -height, 0), "bottom");
+
+                //Draw the left line
+                DrawLine(gameObject.transform.position, gameObject.transform.position + new Vector3(0, -height, 0), "left");
+
+                //Draw the right line
+                DrawLine(gameObject.transform.position + new Vector3(width, 0, 0), gameObject.transform.position + new Vector3(width, -height, 0), "right");
+            }
+            else
+            {
+                //Update position
+                for(int i = 0; i < lines.Count(); i++)
+                {
+                    if(lines[i].name.Equals("top"))
+                    {
+                        
+                    }
+                }
+            }
+        }
+
+        private void DrawLine(Vector3 start, Vector3 end, String name)
+        {
+            GameObject line = new GameObject(name);
+            line.AddComponent<LineRenderer>();
+            LineRenderer lr = line.GetComponent<LineRenderer>();
+            lr.startWidth = 0.1f;
+            lr.endWidth = 0.1f;
+            lr.SetPosition(0, start);
+            lr.SetPosition(1, end);
+            line.transform.parent = gameObject.transform;
+            lines.Add(line);
+        }
+    }
+}
