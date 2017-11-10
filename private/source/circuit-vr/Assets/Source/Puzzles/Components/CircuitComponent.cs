@@ -27,9 +27,23 @@ namespace Assets.Source.Puzzles.Components
             //Get the grid
             PuzzleGrid grid = GameObject.Find("Puzzle Grid").GetComponent<PuzzleGrid>();
 
+            float distance = 1000f;
+            PuzzleCell closestCell = null;
             foreach(PuzzleCell cell in grid.gridCells)
             {
+                float cellDistance = Vector2.Distance(new Vector2(transform.position.x - 1.25f, transform.position.y + 1.25f), new Vector2(cell.transform.position.x, cell.transform.position.y));
+                if (cellDistance < distance)
+                {
+                    closestCell = cell;
+                    distance = cellDistance;
+                }
+            }
 
+            if(closestCell != null && distance <= 5f)
+            {
+                Vector3 pos = closestCell.transform.position;
+                pos.x += 1.25f; pos.y -= 1.25f;
+                transform.position = pos;
             }
         }
     }

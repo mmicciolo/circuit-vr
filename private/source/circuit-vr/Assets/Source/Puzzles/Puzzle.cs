@@ -50,12 +50,15 @@ namespace Assets.Source.Puzzles
             //If they let go of the mouse button
             if (Input.GetMouseButtonUp(0))
             {
-                //See if the object is on the grid
-                draggingObject.GetComponent<CircuitComponent>().Snap();
+                if(dragging == true)
+                {
+                    //See if the object is on the grid
+                    draggingObject.GetComponent<CircuitComponent>().Snap();
 
-                //They are no longer dragging
-                dragging = false;
-                draggingObject = null;
+                    //They are no longer dragging
+                    dragging = false;
+                    draggingObject = null;
+                }
             }
 
             //If they are dragging
