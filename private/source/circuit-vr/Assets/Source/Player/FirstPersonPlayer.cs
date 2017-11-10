@@ -135,7 +135,6 @@ namespace Assets.Source.Player
             {
                 subtitle.gameObject.SetActive(false);
             }
-<<<<<<< HEAD
 
             if (Input.GetKeyDown(KeyCode.E) && (currentInteractable != null))
             {
@@ -149,8 +148,6 @@ namespace Assets.Source.Player
                     LevelController.getInstance().ShowInteractableCanvas(currentInteractable);
                 }
             }
-=======
->>>>>>> vu
         }
 
         public GameObject GetCurrentInteractable()
