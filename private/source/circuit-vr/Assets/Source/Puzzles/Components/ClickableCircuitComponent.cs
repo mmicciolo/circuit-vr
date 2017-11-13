@@ -8,26 +8,36 @@ using UnityEngine;
 
 namespace Assets.Source.Puzzles.Components
 {
-    class CircuitComponent : MonoBehaviour
+    class ClickableCircuitComponent : MonoBehaviour
     {
-        public int x;
-        public int y;
-        public bool activated = false;
 
         private void Start()
         {
 
-            PuzzleGrid grid = GameObject.Find("Puzzle Grid").GetComponent<PuzzleGrid>();
-            transform.position = grid.transform.position + new Vector3(x * 1.5f + 0.75f, y * 1.5f - 0.75f, 0);
-            //transform.localScale = new Vector2(2f, 2f);
-
-            PuzzleOne puzzleOne = GameObject.Find("PuzzleOne").GetComponent<PuzzleOne>();
-            puzzleOne.components[x, y] = gameObject;
         }
 
         private void Update()
         {
 
+        }
+
+        private void OnMouseDown()
+        {
+            //Get the current screen point
+            Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, transform.position.z);
+
+            //Based off of the above point calculate a transform
+            Vector3 curPosition = GameObject.Find("Main Camera").GetComponent<Camera>().ScreenToWorldPoint(curScreenPoint);
+
+            //Set the transform to the dragging object
+            //Lock the Z position
+            transform.position = new Vector3(curPosition.x, curPosition.y, transform.position.z);
+        }
+
+        private void OnMouseUp()
+        {
+            //See if the object is on the grid
+            Snap();
         }
 
         public void Snap()
@@ -37,7 +47,7 @@ namespace Assets.Source.Puzzles.Components
 
             float distance = 1000f;
             PuzzleCell closestCell = null;
-            foreach(PuzzleCell cell in grid.gridCells)
+            foreach (PuzzleCell cell in grid.gridCells)
             {
                 float cellDistance = Vector2.Distance(new Vector2(transform.position.x - 1.25f, transform.position.y + 1.25f), new Vector2(cell.transform.position.x, cell.transform.position.y));
                 if (cellDistance < distance)
@@ -47,7 +57,7 @@ namespace Assets.Source.Puzzles.Components
                 }
             }
 
-            if(closestCell != null && distance <= 5f)
+            if (closestCell != null && distance <= 5f)
             {
                 Vector3 pos = closestCell.transform.position;
                 pos.x += 1.25f; pos.y -= 1.25f;
