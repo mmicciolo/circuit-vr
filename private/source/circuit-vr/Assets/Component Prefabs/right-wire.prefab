@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 4110232557266426}
   - component: {fileID: 95730835161046984}
   m_Layer: 0
-  m_Name: right_wire
+  m_Name: right_wire_model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
