@@ -33,17 +33,39 @@ namespace Assets.Source.Puzzles
                 //If we hit something
                 if (Physics.Raycast(ray, out hit))
                 {
-                    //Check to make sure its a component
-                    GameObject hitObject = GameObject.Find(hit.transform.name);
-                    if(hitObject.GetComponent<CircuitComponent>() != null)
+                    //Check to see if the transform object has the component
+                    if(hit.transform.gameObject.GetComponent<CircuitComponent>() != null)
                     {
+                        //Hit the parent
+                        Debug.Log("Hit Parent");
+
                         //Start dragging
                         dragging = true;
 
-                        draggingObject = hitObject;
-
-                        Debug.Log("Hit");
+                        draggingObject = hit.transform.gameObject;
                     }
+                    else if(hit.transform.parent.gameObject.GetComponent<CircuitComponent>() != null)
+                    {
+                        //Hit the child
+                        Debug.Log("Hit Child");
+
+                        //Start dragging
+                        dragging = true;
+
+                        draggingObject = hit.transform.parent.gameObject;
+                    }
+
+                    ////Check to make sure its a component
+                    //GameObject hitObject = GameObject.Find(hit.transform.name);
+                    //if(hitObject.GetComponent<CircuitComponent>() != null)
+                    //{
+                    //    //Start dragging
+                    //    dragging = true;
+
+                    //    draggingObject = hitObject;
+
+                    //    Debug.Log("Hit");
+                    //}
                 }
             }
 
