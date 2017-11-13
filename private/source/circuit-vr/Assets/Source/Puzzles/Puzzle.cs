@@ -54,18 +54,6 @@ namespace Assets.Source.Puzzles
 
                         draggingObject = hit.transform.parent.gameObject;
                     }
-
-                    ////Check to make sure its a component
-                    //GameObject hitObject = GameObject.Find(hit.transform.name);
-                    //if(hitObject.GetComponent<CircuitComponent>() != null)
-                    //{
-                    //    //Start dragging
-                    //    dragging = true;
-
-                    //    draggingObject = hitObject;
-
-                    //    Debug.Log("Hit");
-                    //}
                 }
             }
 
