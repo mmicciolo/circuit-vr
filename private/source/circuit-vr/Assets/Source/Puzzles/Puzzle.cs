@@ -12,10 +12,11 @@ namespace Assets.Source.Puzzles
     {
         private bool dragging = false;
         GameObject draggingObject = null;
+        new Camera camera = null;
 
         private void Start()
         {
-            
+            camera = GameObject.Find("Main Camera").GetComponent<Camera>();
         }
 
         private void Update()
@@ -23,9 +24,6 @@ namespace Assets.Source.Puzzles
             //Wait for the user to press down the left mouse button
             if (Input.GetMouseButtonDown(0))
             {
-                //Get the main camera in the scene
-                Camera camera = GameObject.Find("Main Camera").GetComponent<Camera>();
-
                 //Perform a raycast using the mouse position
                 RaycastHit hit;
                 Ray ray = camera.ScreenPointToRay(Input.mousePosition);
@@ -78,7 +76,7 @@ namespace Assets.Source.Puzzles
                 Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, draggingObject.transform.position.z);
 
                 //Based off of the above point calculate a transform
-                Vector3 curPosition = GameObject.Find("Main Camera").GetComponent<Camera>().ScreenToWorldPoint(curScreenPoint);
+                Vector3 curPosition = camera.ScreenToWorldPoint(curScreenPoint);
 
                 //Set the transform to the dragging object
                 //Lock the Z position
