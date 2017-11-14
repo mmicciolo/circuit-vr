@@ -1,4 +1,5 @@
-﻿using Assets.Source.Puzzles.Grids.Cells;
+﻿using Assets.Source.Puzzles.Components;
+using Assets.Source.Puzzles.Grids.Cells;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,9 @@ namespace Assets.Source.Puzzles.Grids
     {
         private List<PuzzleCell> puzzleCells = new List<PuzzleCell>();
         private List<GameObject> cellObjects = new List<GameObject>();
+
+        public Vector2 gridSize;
+        public Vector2 cellSize;
 
         private void Start()
         {
@@ -27,7 +31,11 @@ namespace Assets.Source.Puzzles.Grids
                 puzzleCells = new List<PuzzleCell>();
                 cellObjects = new List<GameObject>();
                 gameObject.transform.hasChanged = false;
-                DrawGrid(10, 10, 2.5f, 2.5f);
+                DrawGrid((int)gridSize.y, (int)gridSize.x, cellSize.y, cellSize.x);
+                foreach(CircuitComponent cc in GetComponentsInChildren<CircuitComponent>())
+                {
+                    cc.InitComponent();
+                }
             }
         }
 
@@ -50,11 +58,11 @@ namespace Assets.Source.Puzzles.Grids
             }
         }
 
-        public PuzzleCell getCell(int x, int y)
+        public PuzzleCell getCell(Vector2 position)
         {
             foreach(PuzzleCell cell in puzzleCells)
             {
-                if(new Vector2(y, x).Equals(cell.GridPosition))
+                if(position.Equals(cell.GridPosition))
                 {
                     return cell;
                 }
@@ -65,6 +73,11 @@ namespace Assets.Source.Puzzles.Grids
         public List<PuzzleCell> gridCells
         {
             get { return puzzleCells; }
+        }
+
+        public static PuzzleGrid GetPuzzleGrid()
+        {
+            return GameObject.Find("Puzzle Grid").GetComponent<PuzzleGrid>();
         }
     }
 }

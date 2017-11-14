@@ -12,10 +12,12 @@ namespace Assets.Source.Puzzles.Components
     {
         private int sizeX = 0;
         private int sizeY = 0;
+        public Vector2 componentPosition;
+        public bool moveable = true;
 
         private void Start()
         {
-            
+
         }
 
         private void Update()
@@ -26,7 +28,7 @@ namespace Assets.Source.Puzzles.Components
         public void Snap()
         {
             //Get the grid
-            PuzzleGrid grid = GameObject.Find("Puzzle Grid").GetComponent<PuzzleGrid>();
+            PuzzleGrid grid = PuzzleGrid.GetPuzzleGrid();
 
             //Loop through all of the cells in the grid
             float distance = 1000f;
@@ -54,9 +56,25 @@ namespace Assets.Source.Puzzles.Components
             }
         }
 
-        private void setObjectToCells(PuzzleCell cell)
+        public void InitComponent()
         {
+            gameObject.transform.localScale = new Vector3(PuzzleGrid.GetPuzzleGrid().cellSize.x, PuzzleGrid.GetPuzzleGrid().cellSize.y, PuzzleGrid.GetPuzzleGrid().cellSize.x);
+            setComponentToCell();
+        }
 
+        public void setComponentToCell()
+        {
+            PuzzleGrid grid = PuzzleGrid.GetPuzzleGrid();
+            PuzzleCell cell = grid.getCell(componentPosition);
+            Vector3 pos = cell.transform.position;
+            pos.x += (transform.localScale.x / 2); pos.y -= (transform.localScale.x / 2);
+            transform.position = pos;
+        }
+
+        public bool isMoveable
+        {
+            get { return moveable; }
+            set { moveable = value; }
         }
     }
 }

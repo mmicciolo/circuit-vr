@@ -1,5 +1,6 @@
 ﻿using Assets.Source.Interactable_Objects;
 using Assets.Source.Puzzles.Components;
+using Assets.Source.Puzzles.Grids;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,12 +11,15 @@ namespace Assets.Source.Puzzles
 {
     class Puzzle : InteractablePuzzle
     {
+        private PuzzleGrid puzzleGrid;
+
         private bool dragging = false;
         GameObject draggingObject = null;
         new Camera camera = null;
 
         private void Start()
         {
+            puzzleGrid = PuzzleGrid.GetPuzzleGrid();
             camera = GameObject.Find("Main Camera").GetComponent<Camera>();
         }
 
@@ -31,8 +35,10 @@ namespace Assets.Source.Puzzles
                 //If we hit something
                 if (Physics.Raycast(ray, out hit))
                 {
+                    CircuitComponent childComponent = hit.transform.gameObject.GetComponent<CircuitComponent>();
+                    CircuitComponent parentComponent = hit.transform.parent.gameObject.GetComponent<CircuitComponent>();
                     //Check to see if the transform object has the component
-                    if(hit.transform.gameObject.GetComponent<CircuitComponent>() != null)
+                    if (childComponent != null && childComponent.isMoveable)
                     {
                         //Hit the parent
                         Debug.Log("Hit Parent");
@@ -42,7 +48,7 @@ namespace Assets.Source.Puzzles
 
                         draggingObject = hit.transform.gameObject;
                     }
-                    else if(hit.transform.parent.gameObject.GetComponent<CircuitComponent>() != null)
+                    else if(parentComponent != null && parentComponent.isMoveable)
                     {
                         //Hit the child
                         Debug.Log("Hit Child");
@@ -82,6 +88,11 @@ namespace Assets.Source.Puzzles
                 //Lock the Z position
                 draggingObject.transform.position = new Vector3(curPosition.x, curPosition.y, draggingObject.transform.position.z);
             }
+        }
+
+        public static Puzzle GetPuzzle()
+        {
+            return GameObject.Find("Puzzle").GetComponent<Puzzle>();
         }
     }
 }
