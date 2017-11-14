@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace Assets.Source.Puzzles.Components
 {
-    class SwitchCircuitComponent : MonoBehaviour
+    class SwitchCircuitComponent : CircuitComponent
     {
         private Animator animator;
         private String lastAnimation = "switch_idle";
