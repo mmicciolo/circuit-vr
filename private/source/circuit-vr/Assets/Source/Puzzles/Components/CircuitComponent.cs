@@ -13,6 +13,7 @@ namespace Assets.Source.Puzzles.Components
         private int sizeX = 0;
         private int sizeY = 0;
         public Vector2 componentPosition;
+        public int componentRotation;
         public bool moveable = true;
 
         private void Start()
@@ -69,6 +70,7 @@ namespace Assets.Source.Puzzles.Components
             Vector3 pos = cell.transform.position;
             pos.x += (transform.localScale.x / 2); pos.y -= (transform.localScale.x / 2);
             transform.position = pos;
+            transform.eulerAngles = new Vector3(0, 0, componentRotation);
         }
 
         public bool isMoveable
