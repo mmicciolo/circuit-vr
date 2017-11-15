@@ -151,13 +151,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 22
       objectReference: {fileID: 0}
-    - target: {fileID: 1927691758480292, guid: f8360346af62aca4c90ef66fd0c90297, type: 2}
-      propertyPath: m_Name
-      value: switch
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114255230573569486, guid: f8360346af62aca4c90ef66fd0c90297, type: 2}
-    - {fileID: 114941309346681478, guid: f8360346af62aca4c90ef66fd0c90297, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f8360346af62aca4c90ef66fd0c90297, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &45309997
@@ -275,7 +269,7 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114255230573569486, guid: f8360346af62aca4c90ef66fd0c90297, type: 2}
-    - {fileID: 114941309346681478, guid: f8360346af62aca4c90ef66fd0c90297, type: 2}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: f8360346af62aca4c90ef66fd0c90297, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &235223687 stripped
@@ -1328,33 +1322,17 @@ Prefab:
     - {fileID: 114551810844551298, guid: 364cc355672b1f84690d6a40f17def9f, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 364cc355672b1f84690d6a40f17def9f, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1180272226 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1927691758480292, guid: f8360346af62aca4c90ef66fd0c90297,
-    type: 2}
-  m_PrefabInternal: {fileID: 20819644}
 --- !u!4 &1180272227 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4672973030137908, guid: f8360346af62aca4c90ef66fd0c90297,
     type: 2}
   m_PrefabInternal: {fileID: 20819644}
---- !u!114 &1180272228
+--- !u!114 &1180272228 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1180272226}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
+  m_PrefabParentObject: {fileID: 114017046538563358, guid: f8360346af62aca4c90ef66fd0c90297,
+    type: 2}
+  m_PrefabInternal: {fileID: 20819644}
   m_Script: {fileID: 11500000, guid: 92a02d333b0f6e247bc97bf216290296, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  componentPosition: {x: 9, y: 1}
-  componentRotation: 270
-  group: 4
-  moveable: 0
-  activated: 0
-  lastAnimation: switch_idle
 --- !u!1 &1204549017 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1029310598719056, guid: 23e5c3cfa52aa4d40ae433d4c6cebb4e,
