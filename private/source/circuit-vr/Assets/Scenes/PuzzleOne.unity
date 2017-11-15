@@ -1773,8 +1773,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0830fdf171c33d54a93ba7f618ffe868, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  componentPosition: {x: 14, y: 1}
-  componentRotation: 180
+  componentPosition: {x: 12, y: 3}
+  componentRotation: 0
   group: 5
   moveable: 0
   activated: 0
