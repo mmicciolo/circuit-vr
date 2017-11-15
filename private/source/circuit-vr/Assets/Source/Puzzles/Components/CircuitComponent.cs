@@ -10,36 +10,39 @@ namespace Assets.Source.Puzzles.Components
 {
     class CircuitComponent : MonoBehaviour
     {
-        public int x;
-        public int y;
+        private int sizeX = 0;
+        private int sizeY = 0;
+
+        public Vector2 componentPosition;
+        public int componentRotation;
+        public int group;
+        public bool moveable = true;
+
         public bool activated = false;
 
         private void Start()
         {
 
-            PuzzleGrid grid = GameObject.Find("Puzzle Grid").GetComponent<PuzzleGrid>();
-            transform.position = grid.transform.position + new Vector3(x * 1.5f + 0.75f, y * 1.5f - 0.75f, 0);
-            //transform.localScale = new Vector2(2f, 2f);
-
-            PuzzleOne puzzleOne = GameObject.Find("PuzzleOne").GetComponent<PuzzleOne>();
-            puzzleOne.components[x, y] = gameObject;
         }
 
         private void Update()
         {
-
         }
 
         public void Snap()
         {
             //Get the grid
-            PuzzleGrid grid = GameObject.Find("Puzzle Grid").GetComponent<PuzzleGrid>();
+            PuzzleGrid grid = PuzzleGrid.GetPuzzleGrid();
 
+            //Loop through all of the cells in the grid
             float distance = 1000f;
             PuzzleCell closestCell = null;
             foreach(PuzzleCell cell in grid.gridCells)
             {
-                float cellDistance = Vector2.Distance(new Vector2(transform.position.x - 1.25f, transform.position.y + 1.25f), new Vector2(cell.transform.position.x, cell.transform.position.y));
+                //Get the distance to the cell
+                float cellDistance = Vector2.Distance(new Vector2(transform.position.x - (transform.localScale.x / 2), transform.position.y + (transform.localScale.x / 2)), new Vector2(cell.transform.position.x, cell.transform.position.y));
+
+                //If the distance is closer, set it as the new cloest cell and distance
                 if (cellDistance < distance)
                 {
                     closestCell = cell;
@@ -47,12 +50,43 @@ namespace Assets.Source.Puzzles.Components
                 }
             }
 
+            //If we find a cell and the distance is within 5 units, snap to it
             if(closestCell != null && distance <= 5f)
             {
+                //Snap to the cell
                 Vector3 pos = closestCell.transform.position;
-                pos.x += 1.25f; pos.y -= 1.25f;
+                pos.x += (transform.localScale.x / 2); pos.y -= (transform.localScale.x / 2);
                 transform.position = pos;
             }
+        }
+
+        public void InitComponent()
+        {
+            gameObject.transform.localScale = new Vector3(PuzzleGrid.GetPuzzleGrid().cellSize.x, PuzzleGrid.GetPuzzleGrid().cellSize.y, PuzzleGrid.GetPuzzleGrid().cellSize.x);
+            setComponentToCell();
+
+            Puzzle currentPuzzle = GameObject.FindObjectOfType<Puzzle>();
+            if (currentPuzzle.components[group] == null)
+            {
+                currentPuzzle.components[group] = new List<GameObject>();
+            }
+            currentPuzzle.components[group].Add(gameObject);
+        }
+
+        public void setComponentToCell()
+        {
+            PuzzleGrid grid = PuzzleGrid.GetPuzzleGrid();
+            PuzzleCell cell = grid.getCell(componentPosition);
+            Vector3 pos = cell.transform.position;
+            pos.x += (transform.localScale.x / 2); pos.y -= (transform.localScale.x / 2);
+            transform.position = pos;
+            transform.eulerAngles = new Vector3(0, 0, componentRotation);
+        }
+
+        public bool isMoveable
+        {
+            get { return moveable; }
+            set { moveable = value; }
         }
     }
 }
