@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 33643071368718738}
   - component: {fileID: 65689556775044044}
   - component: {fileID: 23794453260236812}
-  - component: {fileID: 114255230573569486}
+  - component: {fileID: 114941309346681478}
   m_Layer: 0
   m_Name: switch
   m_TagString: Untagged
@@ -215,7 +215,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 929b0358911f6264d8091563ec025814, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -249,7 +249,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 929b0358911f6264d8091563ec025814, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -283,7 +283,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 929b0358911f6264d8091563ec025814, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -351,7 +351,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: ec0beed36735516439e76f262dbbe17c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -435,7 +435,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114255230573569486
+--- !u!114 &114941309346681478
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -446,6 +446,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92a02d333b0f6e247bc97bf216290296, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  componentPosition: {x: 9, y: 1}
+  componentRotation: 270
+  group: 4
+  moveable: 0
+  activated: 0
+  lastAnimation: switch_idle
 --- !u!135 &135164178020613362
 SphereCollider:
   m_ObjectHideFlags: 1
