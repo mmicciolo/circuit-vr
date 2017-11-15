@@ -9,7 +9,7 @@ namespace Assets.Source.Puzzles.Components
     class SwitchCircuitComponent : CircuitComponent
     {
         private Animator animator;
-        private String lastAnimation = "switch_idle";
+        public String lastAnimation = "switch_idle";
 
         public void Start()
         {

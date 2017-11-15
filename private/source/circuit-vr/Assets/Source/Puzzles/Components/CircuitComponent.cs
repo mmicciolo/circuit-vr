@@ -12,9 +12,13 @@ namespace Assets.Source.Puzzles.Components
     {
         private int sizeX = 0;
         private int sizeY = 0;
+
         public Vector2 componentPosition;
         public int componentRotation;
+        public int group;
         public bool moveable = true;
+
+        public bool activated = false;
 
         private void Start()
         {
@@ -23,7 +27,6 @@ namespace Assets.Source.Puzzles.Components
 
         private void Update()
         {
-            
         }
 
         public void Snap()
@@ -61,6 +64,13 @@ namespace Assets.Source.Puzzles.Components
         {
             gameObject.transform.localScale = new Vector3(PuzzleGrid.GetPuzzleGrid().cellSize.x, PuzzleGrid.GetPuzzleGrid().cellSize.y, PuzzleGrid.GetPuzzleGrid().cellSize.x);
             setComponentToCell();
+
+            Puzzle currentPuzzle = GameObject.FindObjectOfType<Puzzle>();
+            if (currentPuzzle.components[group] == null)
+            {
+                currentPuzzle.components[group] = new List<GameObject>();
+            }
+            currentPuzzle.components[group].Add(gameObject);
         }
 
         public void setComponentToCell()

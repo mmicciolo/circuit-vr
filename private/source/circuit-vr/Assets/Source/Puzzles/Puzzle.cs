@@ -17,6 +17,10 @@ namespace Assets.Source.Puzzles
         GameObject draggingObject = null;
         new Camera camera = null;
 
+        public CircuitComponent outputPosition;
+
+        public List<GameObject>[] components = new List<GameObject>[10];
+
         private void Start()
         {
             puzzleGrid = PuzzleGrid.GetPuzzleGrid();
@@ -25,6 +29,7 @@ namespace Assets.Source.Puzzles
 
         private void Update()
         {
+
             //Wait for the user to press down the left mouse button
             if (Input.GetMouseButtonDown(0))
             {
@@ -94,5 +99,22 @@ namespace Assets.Source.Puzzles
         {
             return GameObject.Find("Puzzle").GetComponent<Puzzle>();
         }
+
+        public void ActivateCells(int toActivate)
+        {
+            foreach (GameObject each in components[toActivate])
+            {
+                each.GetComponent<CircuitComponent>().activated = true;
+            }
+        }
+
+        public void DeactivateCells(int toDeactivate)
+        {
+            foreach (GameObject each in components[toDeactivate])
+            {
+                each.GetComponent<CircuitComponent>().activated = false;
+            }
+        }
+
     }
 }
