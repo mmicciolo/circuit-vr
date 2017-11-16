@@ -19,14 +19,47 @@ namespace Assets.Source.Puzzles.Components
         public bool moveable = true;
 
         public bool activated = false;
+        public bool activeMaterialActive = false;
+
+        Material originalMaterial = null;
 
         private void Start()
         {
-
+            originalMaterial = GetComponentModel().GetComponent<Renderer>().material;
         }
 
         private void Update()
         {
+            if(activated && !activeMaterialActive)
+            {
+                GameObject cmodel = GetComponentModel();
+                if (cmodel != null)
+                {
+                    cmodel.GetComponent< Renderer>().material = Resources.Load("active", typeof(Material)) as Material;
+                }
+                activeMaterialActive = true;
+            }
+            else if(!activated && activeMaterialActive)
+            {
+                GameObject cmodel = GetComponentModel();
+                if (cmodel != null)
+                {
+                    cmodel.GetComponent<Renderer>().material = originalMaterial;
+                }
+                activeMaterialActive = false;
+            }
+        }
+
+        private GameObject GetComponentModel()
+        {
+            foreach(Transform child in transform)
+            {
+                if(child.gameObject.name.Equals("straight_wire_model") || child.gameObject.name.Equals("right_wire_model"))
+                {
+                    return child.gameObject;
+                }
+            }
+            return null;
         }
 
         public void Snap()
