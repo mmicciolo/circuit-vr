@@ -102,17 +102,23 @@ namespace Assets.Source.Puzzles
 
         public void ActivateCells(int toActivate)
         {
-            foreach (GameObject each in components[toActivate])
+            if (components[toActivate] != null)
             {
-                each.GetComponent<CircuitComponent>().activated = true;
+                foreach (GameObject each in components[toActivate])
+                {
+                    each.GetComponent<CircuitComponent>().activated = true;
+                }
             }
         }
 
         public void DeactivateCells(int toDeactivate)
         {
-            foreach (GameObject each in components[toDeactivate])
+            if (components[toDeactivate] != null)
             {
-                each.GetComponent<CircuitComponent>().activated = false;
+                foreach (GameObject each in components[toDeactivate])
+                {
+                    each.GetComponent<CircuitComponent>().activated = false;
+                }
             }
         }
 
