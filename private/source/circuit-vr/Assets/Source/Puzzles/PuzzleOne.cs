@@ -27,17 +27,21 @@ namespace Assets.Source.Puzzles
             {
                 case "switch_up":
                     ActivateCells(2);
+                    ActivateCells(1);
                     switch(switches[1].lastAnimation)
                     {
                         case "switch_up":
+                            ActivateCells(4);
                             ActivateCells(5);
                             DeactivateCells(3);
                             break;
                         case "switch_down":
+                            ActivateCells(4);
                             ActivateCells(3);
                             DeactivateCells(5);
                             break;
                         default:
+                            DeactivateCells(4);
                             DeactivateCells(3);
                             DeactivateCells(5);
                             break;
@@ -45,13 +49,16 @@ namespace Assets.Source.Puzzles
                     break;
                 case "switch_down":
                     ActivateCells(3);
+                    ActivateCells(1);
                     switch (switches[1].lastAnimation)
                     {
                         case "switch_down":
+                            ActivateCells(4);
                             ActivateCells(2);
                             DeactivateCells(5);
                             break;
                         default:
+                            DeactivateCells(4);
                             DeactivateCells(2);
                             DeactivateCells(5);
                             break;
