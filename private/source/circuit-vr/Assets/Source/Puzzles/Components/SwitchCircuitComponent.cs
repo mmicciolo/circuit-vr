@@ -14,6 +14,7 @@ namespace Assets.Source.Puzzles.Components
         public void Start()
         {
             animator = gameObject.GetComponentsInChildren<Animator>()[0];
+            GetOriginalMaterial();
         }
 
         public void OnMouseDown()

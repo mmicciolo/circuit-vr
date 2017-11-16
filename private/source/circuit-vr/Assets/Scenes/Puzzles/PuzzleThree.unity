@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -348,6 +348,7 @@ MonoBehaviour:
   group: 0
   moveable: 1
   activated: 0
+  activeMaterialActive: 0
 --- !u!4 &139447128 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4039300888636436, guid: 364cc355672b1f84690d6a40f17def9f,
@@ -459,7 +460,8 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114062855216592656, guid: e6d9f6cbafcf3f14da775d7e95defdae, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e6d9f6cbafcf3f14da775d7e95defdae, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &276809532 stripped
@@ -583,6 +585,7 @@ MonoBehaviour:
   group: 0
   moveable: 1
   activated: 0
+  activeMaterialActive: 0
 --- !u!1001 &338801441
 Prefab:
   m_ObjectHideFlags: 0
@@ -667,6 +670,7 @@ MonoBehaviour:
   group: 0
   moveable: 1
   activated: 0
+  activeMaterialActive: 0
 --- !u!1 &463530770 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1457526302333840, guid: 7f7af3acf8987b34e9074a65a97fafb3,
@@ -693,6 +697,7 @@ MonoBehaviour:
   group: 0
   moveable: 1
   activated: 0
+  activeMaterialActive: 0
 --- !u!4 &466055466 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4301496327143218, guid: 23e5c3cfa52aa4d40ae433d4c6cebb4e,
@@ -902,6 +907,7 @@ MonoBehaviour:
   group: 0
   moveable: 0
   activated: 1
+  activeMaterialActive: 0
 --- !u!1001 &670891621
 Prefab:
   m_ObjectHideFlags: 0
@@ -994,7 +1000,8 @@ Prefab:
       propertyPath: m_RootOrder
       value: 12
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114062855216592656, guid: e6d9f6cbafcf3f14da775d7e95defdae, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e6d9f6cbafcf3f14da775d7e95defdae, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &750327556
@@ -1421,7 +1428,8 @@ Prefab:
       propertyPath: m_RootOrder
       value: 27
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114062855216592656, guid: e6d9f6cbafcf3f14da775d7e95defdae, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e6d9f6cbafcf3f14da775d7e95defdae, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1131673843 stripped
@@ -1512,6 +1520,7 @@ MonoBehaviour:
   group: 0
   moveable: 1
   activated: 0
+  activeMaterialActive: 0
 --- !u!1001 &1154903233
 Prefab:
   m_ObjectHideFlags: 0
@@ -1658,6 +1667,7 @@ MonoBehaviour:
   group: 0
   moveable: 0
   activated: 1
+  activeMaterialActive: 0
 --- !u!4 &1408401722 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4301496327143218, guid: 23e5c3cfa52aa4d40ae433d4c6cebb4e,
@@ -1689,6 +1699,7 @@ MonoBehaviour:
   group: 0
   moveable: 1
   activated: 0
+  activeMaterialActive: 0
 --- !u!4 &1584953605 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4301496327143218, guid: 23e5c3cfa52aa4d40ae433d4c6cebb4e,
@@ -1720,6 +1731,7 @@ MonoBehaviour:
   group: 0
   moveable: 1
   activated: 0
+  activeMaterialActive: 0
 --- !u!1001 &1601418326
 Prefab:
   m_ObjectHideFlags: 0

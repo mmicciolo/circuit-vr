@@ -25,7 +25,7 @@ namespace Assets.Source.Puzzles.Components
 
         private void Start()
         {
-            originalMaterial = GetComponentModel().GetComponent<Renderer>().material;
+            GetOriginalMaterial();
         }
 
         private void Update()
@@ -50,13 +50,32 @@ namespace Assets.Source.Puzzles.Components
             }
         }
 
+        protected void GetOriginalMaterial()
+        {
+            GameObject componentModel = GetComponentModel();
+            if (componentModel != null)
+            {
+                originalMaterial = componentModel.GetComponent<Renderer>().material;
+            }
+        }
+
         private GameObject GetComponentModel()
         {
             foreach(Transform child in transform)
             {
-                if(child.gameObject.name.Equals("straight_wire_model") || child.gameObject.name.Equals("right_wire_model"))
+                if(child.gameObject.name.Equals("straight_wire_model") || child.gameObject.name.Equals("right_wire_model") || child.gameObject.name.Equals("3_way_tee_wire"))
                 {
                     return child.gameObject;
+                }
+                if(child.gameObject.name.Equals("switch_pole"))
+                {
+                    foreach (Transform switchChild in child.gameObject.transform)
+                    {
+                        if(switchChild.gameObject.name.Equals("switch_wire"))
+                        {
+                            return switchChild.gameObject;
+                        }
+                    }
                 }
             }
             return null;

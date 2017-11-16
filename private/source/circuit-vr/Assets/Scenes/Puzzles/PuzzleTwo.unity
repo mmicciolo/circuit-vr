@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -223,7 +223,8 @@ Prefab:
       propertyPath: m_Name
       value: 3-way-tee (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114062855216592656, guid: e6d9f6cbafcf3f14da775d7e95defdae, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e6d9f6cbafcf3f14da775d7e95defdae, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &95168861 stripped
@@ -314,6 +315,7 @@ MonoBehaviour:
   group: 5
   moveable: 0
   activated: 0
+  activeMaterialActive: 0
 --- !u!1001 &331813509
 Prefab:
   m_ObjectHideFlags: 0
@@ -601,6 +603,7 @@ MonoBehaviour:
   group: 7
   moveable: 0
   activated: 0
+  activeMaterialActive: 0
 --- !u!1001 &791209466
 Prefab:
   m_ObjectHideFlags: 0
@@ -673,6 +676,7 @@ MonoBehaviour:
   group: 2
   moveable: 0
   activated: 0
+  activeMaterialActive: 0
 --- !u!1001 &889844634
 Prefab:
   m_ObjectHideFlags: 0
@@ -828,32 +832,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4301496327143218, guid: 23e5c3cfa52aa4d40ae433d4c6cebb4e,
     type: 2}
   m_PrefabInternal: {fileID: 149269557}
---- !u!1 &1320836419 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1110886182030518, guid: e6d9f6cbafcf3f14da775d7e95defdae,
-    type: 2}
-  m_PrefabInternal: {fileID: 1702518072}
 --- !u!4 &1320836420 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4616607831472282, guid: e6d9f6cbafcf3f14da775d7e95defdae,
     type: 2}
   m_PrefabInternal: {fileID: 1702518072}
---- !u!114 &1320836421
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1320836419}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0830fdf171c33d54a93ba7f618ffe868, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  componentPosition: {x: 3, y: 3}
-  componentRotation: 270
-  group: 1
-  moveable: 0
-  activated: 1
 --- !u!1 &1374307253
 GameObject:
   m_ObjectHideFlags: 0
@@ -940,6 +923,7 @@ MonoBehaviour:
   group: 0
   moveable: 0
   activated: 1
+  activeMaterialActive: 0
 --- !u!4 &1436600422 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4301496327143218, guid: 23e5c3cfa52aa4d40ae433d4c6cebb4e,
@@ -1017,6 +1001,7 @@ MonoBehaviour:
   group: 6
   moveable: 0
   activated: 0
+  activeMaterialActive: 0
 --- !u!1 &1688851764 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1110886182030518, guid: e6d9f6cbafcf3f14da775d7e95defdae,
@@ -1043,6 +1028,7 @@ MonoBehaviour:
   group: 7
   moveable: 0
   activated: 0
+  activeMaterialActive: 0
 --- !u!1001 &1702518072
 Prefab:
   m_ObjectHideFlags: 0
