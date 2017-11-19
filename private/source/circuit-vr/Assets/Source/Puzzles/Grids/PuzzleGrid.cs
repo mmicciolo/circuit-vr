@@ -34,7 +34,10 @@ namespace Assets.Source.Puzzles.Grids
                 DrawGrid((int)gridSize.y, (int)gridSize.x, cellSize.y, cellSize.x);
                 foreach(CircuitComponent cc in GetComponentsInChildren<CircuitComponent>())
                 {
-                    cc.InitComponent();
+                    if(!cc.toolboxItem)
+                    {
+                        cc.InitComponent();
+                    }
                 }
             }
         }

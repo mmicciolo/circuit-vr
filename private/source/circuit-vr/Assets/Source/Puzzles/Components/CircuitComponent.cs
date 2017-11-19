@@ -17,6 +17,7 @@ namespace Assets.Source.Puzzles.Components
         public int componentRotation;
         public int group;
         public bool moveable = true;
+        public bool toolboxItem = false;
 
         public bool activated = false;
         public bool activeMaterialActive = false;
@@ -141,6 +142,22 @@ namespace Assets.Source.Puzzles.Components
         {
             get { return moveable; }
             set { moveable = value; }
+        }
+
+        public int getLength()
+        {
+            foreach(Transform child in transform)
+            {
+                if(child.name.Contains("wire") || child.name.Contains("switch"))
+                {
+                    return 1;
+                }
+                else
+                {
+                    return 3;
+                }
+            }
+            return 0;
         }
     }
 }
