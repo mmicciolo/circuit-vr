@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Assets.Source.Puzzles
 {
@@ -20,11 +21,15 @@ namespace Assets.Source.Puzzles
         public CircuitComponent outputPosition;
 
         public List<GameObject>[] components = new List<GameObject>[10];
+        //public GameObject[,] componentsArray = new CircuitComponent[17, 10];
+        public Text infoText;
 
         private void Start()
         {
             puzzleGrid = PuzzleGrid.GetPuzzleGrid();
             camera = GameObject.Find("Main Camera").GetComponent<Camera>();
+
+            infoText.transform.position = new Vector3(13f, -5f, 9f);
         }
 
         private void Update()
@@ -98,6 +103,10 @@ namespace Assets.Source.Puzzles
         public static Puzzle GetPuzzle()
         {
             return GameObject.Find("Puzzle").GetComponent<Puzzle>();
+        }
+
+        public virtual void ResetChoices()
+        {
         }
 
         public void ActivateCells(int toActivate)

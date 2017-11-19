@@ -115,7 +115,7 @@ namespace Assets.Source.Puzzles.Components
         public void InitComponent()
         {
             gameObject.transform.localScale = new Vector3(PuzzleGrid.GetPuzzleGrid().cellSize.x, PuzzleGrid.GetPuzzleGrid().cellSize.y, PuzzleGrid.GetPuzzleGrid().cellSize.x);
-            setComponentToCell();
+            setComponentToCell(componentPosition);
 
             Puzzle currentPuzzle = GameObject.FindObjectOfType<Puzzle>();
             if (currentPuzzle.components[group] == null)
@@ -125,14 +125,16 @@ namespace Assets.Source.Puzzles.Components
             currentPuzzle.components[group].Add(gameObject);
         }
 
-        public void setComponentToCell()
+        public void setComponentToCell(Vector2 cellPos)
         {
             PuzzleGrid grid = PuzzleGrid.GetPuzzleGrid();
-            PuzzleCell cell = grid.getCell(componentPosition);
+            PuzzleCell cell = grid.getCell(cellPos);
             Vector3 pos = cell.transform.position;
             pos.x += (transform.localScale.x / 2); pos.y -= (transform.localScale.x / 2);
             transform.position = pos;
             transform.eulerAngles = new Vector3(0, 0, componentRotation);
+
+            componentPosition = cellPos;
         }
 
         public bool isMoveable
