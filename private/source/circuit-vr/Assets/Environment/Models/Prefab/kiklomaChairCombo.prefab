@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33114971845510236}
   - component: {fileID: 23754265006594854}
   - component: {fileID: 95890020049245890}
+  - component: {fileID: 64104339238782894}
   m_Layer: 0
   m_Name: kiklomaChairCombo
   m_TagString: Untagged
@@ -82,6 +83,20 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1764760093214012}
+  m_Mesh: {fileID: 4300000, guid: fc750b38cfd2b59458bfd0f6d2f3d34e, type: 3}
+--- !u!64 &64104339238782894
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1764760093214012}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: fc750b38cfd2b59458bfd0f6d2f3d34e, type: 3}
 --- !u!95 &95890020049245890
 Animator:

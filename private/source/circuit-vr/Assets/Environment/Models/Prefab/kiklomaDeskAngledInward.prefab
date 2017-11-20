@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33600878565377474}
   - component: {fileID: 23957744295860900}
   - component: {fileID: 95182382742918712}
+  - component: {fileID: 64988583008569078}
   m_Layer: 0
   m_Name: kiklomaDeskAngledInward
   m_TagString: Untagged
@@ -82,6 +83,20 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1767710700911638}
+  m_Mesh: {fileID: 4300000, guid: c95d3adfe66594d4586a936a280a5cbc, type: 3}
+--- !u!64 &64988583008569078
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1767710700911638}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: c95d3adfe66594d4586a936a280a5cbc, type: 3}
 --- !u!95 &95182382742918712
 Animator:

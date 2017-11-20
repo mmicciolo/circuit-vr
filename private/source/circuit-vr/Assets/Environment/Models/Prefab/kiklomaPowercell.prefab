@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33448042465503184}
   - component: {fileID: 23700179538493994}
   - component: {fileID: 95035808811598518}
+  - component: {fileID: 64390796882854554}
   m_Layer: 0
   m_Name: kiklomaPowercell
   m_TagString: Untagged
@@ -82,6 +83,20 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1854741791745222}
+  m_Mesh: {fileID: 4300000, guid: bc5a7c896f8785e46ad14678effa8b52, type: 3}
+--- !u!64 &64390796882854554
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1854741791745222}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: bc5a7c896f8785e46ad14678effa8b52, type: 3}
 --- !u!95 &95035808811598518
 Animator:

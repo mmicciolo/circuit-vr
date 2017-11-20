@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33793962665495548}
   - component: {fileID: 23586342927982042}
   - component: {fileID: 95199649216315296}
+  - component: {fileID: 64925850755001104}
   m_Layer: 0
   m_Name: kikloma_deskLowPoly
   m_TagString: Untagged
@@ -82,6 +83,20 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1200982076221372}
+  m_Mesh: {fileID: 4300000, guid: 0b36d1f798fd2144bb0dab0147bb088e, type: 3}
+--- !u!64 &64925850755001104
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1200982076221372}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 0b36d1f798fd2144bb0dab0147bb088e, type: 3}
 --- !u!95 &95199649216315296
 Animator:

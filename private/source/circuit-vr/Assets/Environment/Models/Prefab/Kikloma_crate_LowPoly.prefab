@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33556956246328274}
   - component: {fileID: 23378778108012058}
   - component: {fileID: 95272010862393760}
+  - component: {fileID: 64207332319298782}
   m_Layer: 0
   m_Name: Kikloma_crate_LowPoly
   m_TagString: Untagged
@@ -82,6 +83,20 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1386859345097160}
+  m_Mesh: {fileID: 4300000, guid: 2e96867eda3a90248b35558d5377c544, type: 3}
+--- !u!64 &64207332319298782
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1386859345097160}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 2e96867eda3a90248b35558d5377c544, type: 3}
 --- !u!95 &95272010862393760
 Animator:
