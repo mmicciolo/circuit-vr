@@ -9,7 +9,7 @@ namespace Assets.Source.Puzzles
 {
     class PuzzleK1 : Puzzle
     {
-        public ClickableCircuitComponent[] choices;
+        public DraggableCircuitComponent[] choices;
 
         private void Start()
         {

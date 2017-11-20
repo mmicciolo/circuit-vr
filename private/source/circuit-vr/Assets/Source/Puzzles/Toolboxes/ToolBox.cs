@@ -20,7 +20,7 @@ namespace Assets.Source.Puzzles.Toolboxes
             float toolBoxItemYPos = (PuzzleGrid.GetPuzzleGrid().gridSize.y * PuzzleGrid.GetPuzzleGrid().cellSize.y) + 2.0f;
 
             //Get the circuit components
-            ClickableCircuitComponent[] components = GetComponentsInChildren<ClickableCircuitComponent>();
+            DraggableCircuitComponent[] components = GetComponentsInChildren<DraggableCircuitComponent>();
 
             for(int i = 0; i < components.Length; i++)
             {

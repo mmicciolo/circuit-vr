@@ -24,7 +24,7 @@ namespace Assets.Source.Puzzles.Components
         {
         }
 
-        private void OnMouseDown()
+        private void OnMouseUpAsButton()
         {
             if (!moved)
             {

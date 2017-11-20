@@ -21,7 +21,6 @@ namespace Assets.Source.Puzzles
         public CircuitComponent outputPosition;
 
         public List<GameObject>[] components = new List<GameObject>[10];
-        //public GameObject[,] componentsArray = new CircuitComponent[17, 10];
         public Text infoText;
 
         private void Start()
@@ -32,72 +31,77 @@ namespace Assets.Source.Puzzles
             infoText.transform.position = new Vector3(13f, -5f, 9f);
         }
 
+        public Camera GetCamera()
+        {
+            return camera;
+        }
+
         private void Update()
         {
 
-            //Wait for the user to press down the left mouse button
-            if (Input.GetMouseButtonDown(0))
-            {
-                //Perform a raycast using the mouse position
-                RaycastHit hit;
-                Ray ray = camera.ScreenPointToRay(Input.mousePosition);
+            ////Wait for the user to press down the left mouse button
+            //if (Input.GetMouseButtonDown(0))
+            //{
+            //    //Perform a raycast using the mouse position
+            //    RaycastHit hit;
+            //    Ray ray = camera.ScreenPointToRay(Input.mousePosition);
 
-                //If we hit something
-                if (Physics.Raycast(ray, out hit))
-                {
-                    CircuitComponent childComponent = hit.transform.gameObject.GetComponent<CircuitComponent>();
-                    CircuitComponent parentComponent = hit.transform.parent.gameObject.GetComponent<CircuitComponent>();
-                    //Check to see if the transform object has the component
-                    if (childComponent != null && childComponent.isMoveable)
-                    {
-                        //Hit the parent
-                        Debug.Log("Hit Parent");
+            //    //If we hit something
+            //    if (Physics.Raycast(ray, out hit))
+            //    {
+            //        CircuitComponent childComponent = hit.transform.gameObject.GetComponent<CircuitComponent>();
+            //        CircuitComponent parentComponent = hit.transform.parent.gameObject.GetComponent<CircuitComponent>();
+            //        //Check to see if the transform object has the component
+            //        if (childComponent != null && childComponent.isMoveable)
+            //        {
+            //            //Hit the parent
+            //            Debug.Log("Hit Parent");
 
-                        //Start dragging
-                        dragging = true;
+            //            //Start dragging
+            //            dragging = true;
 
-                        draggingObject = hit.transform.gameObject;
-                    }
-                    else if(parentComponent != null && parentComponent.isMoveable)
-                    {
-                        //Hit the child
-                        Debug.Log("Hit Child");
+            //            draggingObject = hit.transform.gameObject;
+            //        }
+            //        else if(parentComponent != null && parentComponent.isMoveable)
+            //        {
+            //            //Hit the child
+            //            Debug.Log("Hit Child");
 
-                        //Start dragging
-                        dragging = true;
+            //            //Start dragging
+            //            dragging = true;
 
-                        draggingObject = hit.transform.parent.gameObject;
-                    }
-                }
-            }
+            //            draggingObject = hit.transform.parent.gameObject;
+            //        }
+            //    }
+            //}
 
-            //If they let go of the mouse button
-            if (Input.GetMouseButtonUp(0))
-            {
-                if(dragging == true)
-                {
-                    //See if the object is on the grid
-                    draggingObject.GetComponent<CircuitComponent>().Snap();
+            ////If they let go of the mouse button
+            //if (Input.GetMouseButtonUp(0))
+            //{
+            //    if(dragging == true)
+            //    {
+            //        //See if the object is on the grid
+            //        draggingObject.GetComponent<CircuitComponent>().Snap();
 
-                    //They are no longer dragging
-                    dragging = false;
-                    draggingObject = null;
-                }
-            }
+            //        //They are no longer dragging
+            //        dragging = false;
+            //        draggingObject = null;
+            //    }
+            //}
 
-            //If they are dragging
-            if (dragging)
-            {
-                //Get the current screen point
-                Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, draggingObject.transform.position.z);
+            ////If they are dragging
+            //if (dragging)
+            //{
+            //    //Get the current screen point
+            //    Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, draggingObject.transform.position.z);
 
-                //Based off of the above point calculate a transform
-                Vector3 curPosition = camera.ScreenToWorldPoint(curScreenPoint);
+            //    //Based off of the above point calculate a transform
+            //    Vector3 curPosition = camera.ScreenToWorldPoint(curScreenPoint);
 
-                //Set the transform to the dragging object
-                //Lock the Z position
-                draggingObject.transform.position = new Vector3(curPosition.x, curPosition.y, draggingObject.transform.position.z);
-            }
+            //    //Set the transform to the dragging object
+            //    //Lock the Z position
+            //    draggingObject.transform.position = new Vector3(curPosition.x, curPosition.y, draggingObject.transform.position.z);
+            //}
         }
 
         public static Puzzle GetPuzzle()
