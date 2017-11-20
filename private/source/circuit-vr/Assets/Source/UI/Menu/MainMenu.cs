@@ -5,11 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
 
-    public GameObject SettingsCanvas;
+    //public GameObject SettingsCanvas;
 
 	// Use this for initialization
 	void Start () {
-        SettingsCanvas.SetActive(false);
+        //SettingsCanvas.SetActive(false);
 	}
 	
     public void StartGame()
@@ -19,7 +19,8 @@ public class MainMenu : MonoBehaviour {
 
     public void SettingsButtonClicked()
     {
-        SettingsCanvas.SetActive(!SettingsCanvas.active);
+        //SettingsCanvas.SetActive(!SettingsCanvas.active);
+        SceneManager.LoadScene("Settings");
     }
 
 	// Update is called once per frame
