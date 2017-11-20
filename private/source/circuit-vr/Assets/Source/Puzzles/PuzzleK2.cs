@@ -4,11 +4,14 @@ using System.Linq;
 using System.Text;
 using Assets.Source.Puzzles.Components;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Assets.Source.Puzzles
 {
     class PuzzleK2 : Puzzle
     {
+        
+
         public DraggableCircuitComponent[] choices;
 
         private void Start()
@@ -21,6 +24,7 @@ namespace Assets.Source.Puzzles
             if ((choices[2].componentPosition.x == outputPosition.componentPosition.x) && (choices[2].componentPosition.y == outputPosition.componentPosition.y))
             {
                 Debug.Log("Puzzle solved");
+                SceneManager.UnloadScene("PuzzleK2");
             }
         }
 

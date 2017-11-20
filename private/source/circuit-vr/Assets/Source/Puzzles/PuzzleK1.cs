@@ -4,11 +4,14 @@ using System.Linq;
 using System.Text;
 using Assets.Source.Puzzles.Components;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Assets.Source.Puzzles
 {
     class PuzzleK1 : Puzzle
     {
+
+
         public DraggableCircuitComponent[] choices;
 
         private void Start()

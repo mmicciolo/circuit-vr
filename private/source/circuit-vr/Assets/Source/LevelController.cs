@@ -12,6 +12,8 @@ public class LevelController : MonoBehaviour
     InteractableCanvas interactableCanvas;
     Assets.Source.Player.FirstPersonPlayer firstPersonPlayer;
 
+    public Vector3 playerPosition = new Vector3(6f,1f,4f);
+
     private void Awake()
     {
         //If the instance is already created then return it, if not create new instance and return
@@ -20,6 +22,7 @@ public class LevelController : MonoBehaviour
             levelControllerInstance = this;
             firstPersonPlayer = GameObject.FindObjectOfType<Assets.Source.Player.FirstPersonPlayer>();
             interactableCanvas = GameObject.FindObjectOfType<InteractableCanvas>();
+            DontDestroyOnLoad(levelControllerInstance);
         }
     }
 

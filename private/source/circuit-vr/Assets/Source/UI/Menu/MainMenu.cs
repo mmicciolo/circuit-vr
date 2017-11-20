@@ -14,7 +14,7 @@ public class MainMenu : MonoBehaviour {
 	
     public void StartGame()
     {
-        SceneManager.LoadScene("SpaceShip Scaled");
+        SceneManager.LoadScene("Spaceship Scaled");
     }
 
     public void SettingsButtonClicked()
