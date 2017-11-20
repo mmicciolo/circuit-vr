@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -227,7 +227,9 @@ MonoBehaviour:
   componentRotation: 270
   group: 3
   moveable: 0
+  toolboxItem: 0
   activated: 0
+  activeMaterialActive: 0
 --- !u!1001 &72436509
 Prefab:
   m_ObjectHideFlags: 0
@@ -298,7 +300,9 @@ MonoBehaviour:
   componentRotation: 180
   group: 3
   moveable: 0
+  toolboxItem: 0
   activated: 0
+  activeMaterialActive: 0
 --- !u!1 &265443526 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1029310598719056, guid: 23e5c3cfa52aa4d40ae433d4c6cebb4e,
@@ -324,7 +328,9 @@ MonoBehaviour:
   componentRotation: 270
   group: 2
   moveable: 0
+  toolboxItem: 0
   activated: 0
+  activeMaterialActive: 0
 --- !u!1001 &277161126
 Prefab:
   m_ObjectHideFlags: 0
@@ -398,7 +404,9 @@ MonoBehaviour:
   componentRotation: 180
   group: 2
   moveable: 0
+  toolboxItem: 0
   activated: 0
+  activeMaterialActive: 0
 --- !u!1 &360796241
 GameObject:
   m_ObjectHideFlags: 0
@@ -497,7 +505,9 @@ MonoBehaviour:
   componentRotation: 0
   group: 1
   moveable: 0
+  toolboxItem: 0
   activated: 0
+  activeMaterialActive: 0
   lastAnimation: switch_idle
 --- !u!1001 &402129554
 Prefab:
@@ -566,7 +576,9 @@ MonoBehaviour:
   componentRotation: 0
   group: 3
   moveable: 0
+  toolboxItem: 0
   activated: 0
+  activeMaterialActive: 0
 --- !u!1001 &489978067
 Prefab:
   m_ObjectHideFlags: 0
@@ -640,7 +652,9 @@ MonoBehaviour:
   componentRotation: 270
   group: 5
   moveable: 0
+  toolboxItem: 0
   activated: 0
+  activeMaterialActive: 0
 --- !u!1 &527106163 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1468472693746912, guid: 364cc355672b1f84690d6a40f17def9f,
@@ -666,7 +680,9 @@ MonoBehaviour:
   componentRotation: 0
   group: 3
   moveable: 0
+  toolboxItem: 0
   activated: 0
+  activeMaterialActive: 0
 --- !u!1001 &554015787
 Prefab:
   m_ObjectHideFlags: 0
@@ -740,7 +756,9 @@ MonoBehaviour:
   componentRotation: 90
   group: 2
   moveable: 0
+  toolboxItem: 0
   activated: 0
+  activeMaterialActive: 0
 --- !u!1001 &655994326
 Prefab:
   m_ObjectHideFlags: 0
@@ -904,7 +922,9 @@ MonoBehaviour:
   componentRotation: 0
   group: 5
   moveable: 0
+  toolboxItem: 0
   activated: 0
+  activeMaterialActive: 0
 --- !u!1001 &763571317
 Prefab:
   m_ObjectHideFlags: 0
@@ -1074,7 +1094,9 @@ MonoBehaviour:
   componentRotation: 0
   group: 2
   moveable: 0
+  toolboxItem: 0
   activated: 0
+  activeMaterialActive: 0
 --- !u!1001 &962457952
 Prefab:
   m_ObjectHideFlags: 0
@@ -1148,7 +1170,9 @@ MonoBehaviour:
   componentRotation: 90
   group: 2
   moveable: 0
+  toolboxItem: 0
   activated: 0
+  activeMaterialActive: 0
 --- !u!1 &1053457986 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1029310598719056, guid: 23e5c3cfa52aa4d40ae433d4c6cebb4e,
@@ -1174,7 +1198,9 @@ MonoBehaviour:
   componentRotation: 180
   group: 3
   moveable: 0
+  toolboxItem: 0
   activated: 0
+  activeMaterialActive: 0
 --- !u!1 &1074052208 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1468472693746912, guid: 364cc355672b1f84690d6a40f17def9f,
@@ -1200,7 +1226,9 @@ MonoBehaviour:
   componentRotation: 90
   group: 2
   moveable: 0
+  toolboxItem: 0
   activated: 0
+  activeMaterialActive: 0
 --- !u!1 &1099394309 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1029310598719056, guid: 23e5c3cfa52aa4d40ae433d4c6cebb4e,
@@ -1226,7 +1254,9 @@ MonoBehaviour:
   componentRotation: 0
   group: 2
   moveable: 0
+  toolboxItem: 0
   activated: 0
+  activeMaterialActive: 0
 --- !u!1001 &1106401601
 Prefab:
   m_ObjectHideFlags: 0
@@ -1359,7 +1389,9 @@ MonoBehaviour:
   componentRotation: 0
   group: 2
   moveable: 0
+  toolboxItem: 0
   activated: 0
+  activeMaterialActive: 0
 --- !u!1001 &1339488183
 Prefab:
   m_ObjectHideFlags: 0
@@ -1529,7 +1561,9 @@ MonoBehaviour:
   componentRotation: 90
   group: 3
   moveable: 0
+  toolboxItem: 0
   activated: 0
+  activeMaterialActive: 0
 --- !u!1 &1421673234
 GameObject:
   m_ObjectHideFlags: 0
@@ -1559,6 +1593,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outputPosition: {fileID: 1590595773}
+  infoText: {fileID: 0}
   switches:
   - {fileID: 361008750}
   - {fileID: 1180272228}
@@ -1650,7 +1685,9 @@ MonoBehaviour:
   componentRotation: 90
   group: 5
   moveable: 0
+  toolboxItem: 0
   activated: 0
+  activeMaterialActive: 0
 --- !u!1 &1581391694
 GameObject:
   m_ObjectHideFlags: 0
@@ -1756,7 +1793,9 @@ MonoBehaviour:
   componentRotation: 0
   group: 5
   moveable: 0
+  toolboxItem: 0
   activated: 0
+  activeMaterialActive: 0
 --- !u!1 &1624263318 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1468472693746912, guid: 364cc355672b1f84690d6a40f17def9f,
@@ -1782,7 +1821,9 @@ MonoBehaviour:
   componentRotation: 90
   group: 2
   moveable: 0
+  toolboxItem: 0
   activated: 0
+  activeMaterialActive: 0
 --- !u!1 &1689223412 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1468472693746912, guid: 364cc355672b1f84690d6a40f17def9f,
@@ -1808,7 +1849,9 @@ MonoBehaviour:
   componentRotation: 0
   group: 2
   moveable: 0
+  toolboxItem: 0
   activated: 0
+  activeMaterialActive: 0
 --- !u!1001 &1719876571
 Prefab:
   m_ObjectHideFlags: 0
@@ -1857,6 +1900,115 @@ Prefab:
     - {fileID: 114551810844551298, guid: 364cc355672b1f84690d6a40f17def9f, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 364cc355672b1f84690d6a40f17def9f, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1759597930
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1759597932}
+  - component: {fileID: 1759597931}
+  m_Layer: 0
+  m_Name: Audio Source
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1759597931
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1759597930}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: cf0bdc03cabebc44e905d124d1ee76e7, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!4 &1759597932
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1759597930}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 28.084196, y: 4.9229407, z: 27.04845}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1827192566
 Prefab:
   m_ObjectHideFlags: 0
@@ -1974,7 +2126,9 @@ MonoBehaviour:
   componentRotation: 180
   group: 2
   moveable: 0
+  toolboxItem: 0
   activated: 0
+  activeMaterialActive: 0
 --- !u!4 &1897311667 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4039300888636436, guid: 364cc355672b1f84690d6a40f17def9f,
@@ -2208,7 +2362,9 @@ MonoBehaviour:
   componentRotation: 0
   group: 0
   moveable: 0
+  toolboxItem: 0
   activated: 1
+  activeMaterialActive: 0
 --- !u!1 &2010243975 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1029310598719056, guid: 23e5c3cfa52aa4d40ae433d4c6cebb4e,
@@ -2234,7 +2390,9 @@ MonoBehaviour:
   componentRotation: 90
   group: 2
   moveable: 0
+  toolboxItem: 0
   activated: 0
+  activeMaterialActive: 0
 --- !u!1 &2024883345 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1468472693746912, guid: 364cc355672b1f84690d6a40f17def9f,
@@ -2260,7 +2418,9 @@ MonoBehaviour:
   componentRotation: 0
   group: 3
   moveable: 0
+  toolboxItem: 0
   activated: 0
+  activeMaterialActive: 0
 --- !u!1001 &2027004525
 Prefab:
   m_ObjectHideFlags: 0
@@ -2334,7 +2494,9 @@ MonoBehaviour:
   componentRotation: 90
   group: 3
   moveable: 0
+  toolboxItem: 0
   activated: 0
+  activeMaterialActive: 0
 --- !u!1001 &2106708167
 Prefab:
   m_ObjectHideFlags: 0
