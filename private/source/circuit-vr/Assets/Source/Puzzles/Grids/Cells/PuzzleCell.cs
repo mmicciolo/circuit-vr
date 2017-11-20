@@ -10,6 +10,7 @@ namespace Assets.Source.Puzzles.Grids.Cells
     {
 
         private List<GameObject> lines = new List<GameObject>();
+        private Vector2 gridPosition;
 
         private void Start()
         {
@@ -57,6 +58,12 @@ namespace Assets.Source.Puzzles.Grids.Cells
             lr.SetPosition(1, end);
             line.transform.parent = gameObject.transform;
             lines.Add(line);
+        }
+
+        public Vector2 GridPosition
+        {
+            get { return gridPosition; } 
+            set { gridPosition = value; }
         }
     }
 }

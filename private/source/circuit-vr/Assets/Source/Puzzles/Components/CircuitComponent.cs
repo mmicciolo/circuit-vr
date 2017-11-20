@@ -10,28 +10,92 @@ namespace Assets.Source.Puzzles.Components
 {
     class CircuitComponent : MonoBehaviour
     {
-        private bool dragging = false;
+        private int sizeX = 0;
+        private int sizeY = 0;
+
+        public Vector2 componentPosition;
+        public int componentRotation;
+        public int group;
+        public bool moveable = true;
+        public bool toolboxItem = false;
+
+        public bool activated = false;
+        public bool activeMaterialActive = false;
+
+        Material originalMaterial = null;
 
         private void Start()
         {
-            
+            GetOriginalMaterial();
         }
 
         private void Update()
         {
-            
+            if(activated && !activeMaterialActive)
+            {
+                GameObject cmodel = GetComponentModel();
+                if (cmodel != null)
+                {
+                    cmodel.GetComponent< Renderer>().material = Resources.Load("active", typeof(Material)) as Material;
+                }
+                activeMaterialActive = true;
+            }
+            else if(!activated && activeMaterialActive)
+            {
+                GameObject cmodel = GetComponentModel();
+                if (cmodel != null)
+                {
+                    cmodel.GetComponent<Renderer>().material = originalMaterial;
+                }
+                activeMaterialActive = false;
+            }
+        }
+
+        protected void GetOriginalMaterial()
+        {
+            GameObject componentModel = GetComponentModel();
+            if (componentModel != null)
+            {
+                originalMaterial = componentModel.GetComponent<Renderer>().material;
+            }
+        }
+
+        private GameObject GetComponentModel()
+        {
+            foreach(Transform child in transform)
+            {
+                if(child.gameObject.name.Equals("straight_wire_model") || child.gameObject.name.Equals("right_wire_model") || child.gameObject.name.Equals("3_way_tee_wire"))
+                {
+                    return child.gameObject;
+                }
+                if(child.gameObject.name.Equals("switch_pole"))
+                {
+                    foreach (Transform switchChild in child.gameObject.transform)
+                    {
+                        if(switchChild.gameObject.name.Equals("switch_wire"))
+                        {
+                            return switchChild.gameObject;
+                        }
+                    }
+                }
+            }
+            return null;
         }
 
         public void Snap()
         {
             //Get the grid
-            PuzzleGrid grid = GameObject.Find("Puzzle Grid").GetComponent<PuzzleGrid>();
+            PuzzleGrid grid = PuzzleGrid.GetPuzzleGrid();
 
+            //Loop through all of the cells in the grid
             float distance = 1000f;
             PuzzleCell closestCell = null;
             foreach(PuzzleCell cell in grid.gridCells)
             {
-                float cellDistance = Vector2.Distance(new Vector2(transform.position.x - 1.25f, transform.position.y + 1.25f), new Vector2(cell.transform.position.x, cell.transform.position.y));
+                //Get the distance to the cell
+                float cellDistance = Vector2.Distance(new Vector2(transform.position.x - (transform.localScale.x / 2), transform.position.y + (transform.localScale.x / 2)), new Vector2(cell.transform.position.x, cell.transform.position.y));
+
+                //If the distance is closer, set it as the new cloest cell and distance
                 if (cellDistance < distance)
                 {
                     closestCell = cell;
@@ -39,12 +103,61 @@ namespace Assets.Source.Puzzles.Components
                 }
             }
 
+            //If we find a cell and the distance is within 5 units, snap to it
             if(closestCell != null && distance <= 5f)
             {
+                //Snap to the cell
                 Vector3 pos = closestCell.transform.position;
-                pos.x += 1.25f; pos.y -= 1.25f;
+                pos.x += (transform.localScale.x / 2); pos.y -= (transform.localScale.x / 2);
                 transform.position = pos;
             }
+        }
+
+        public void InitComponent()
+        {
+            gameObject.transform.localScale = new Vector3(PuzzleGrid.GetPuzzleGrid().cellSize.x, PuzzleGrid.GetPuzzleGrid().cellSize.y, PuzzleGrid.GetPuzzleGrid().cellSize.x);
+            setComponentToCell(componentPosition);
+
+            Puzzle currentPuzzle = GameObject.FindObjectOfType<Puzzle>();
+            if (currentPuzzle.components[group] == null)
+            {
+                currentPuzzle.components[group] = new List<GameObject>();
+            }
+            currentPuzzle.components[group].Add(gameObject);
+        }
+
+        public void setComponentToCell(Vector2 cellPos)
+        {
+            PuzzleGrid grid = PuzzleGrid.GetPuzzleGrid();
+            PuzzleCell cell = grid.getCell(cellPos);
+            Vector3 pos = cell.transform.position;
+            pos.x += (transform.localScale.x / 2); pos.y -= (transform.localScale.x / 2);
+            transform.position = pos;
+            transform.eulerAngles = new Vector3(0, 0, componentRotation);
+
+            componentPosition = cellPos;
+        }
+
+        public bool isMoveable
+        {
+            get { return moveable; }
+            set { moveable = value; }
+        }
+
+        public int getLength()
+        {
+            foreach(Transform child in transform)
+            {
+                if(child.name.Contains("wire") || child.name.Contains("switch"))
+                {
+                    return 1;
+                }
+                else
+                {
+                    return 3;
+                }
+            }
+            return 0;
         }
     }
 }
