@@ -9,10 +9,20 @@ namespace Assets.Source.Interactable_Objects
 {
     class InteractablePuzzle : MonoBehaviour
     {
-        public void open()
+        public string puzzleName;
+
+        public virtual void open()
         {
-            SceneManager.LoadScene("Scenes/testpuzzle", LoadSceneMode.Single);
-            SceneManager.SetActiveScene(SceneManager.GetSceneByName("testpuzzle"));
+            Assets.Source.Player.FirstPersonPlayer firstPersonPlayer = GameObject.FindObjectOfType<Assets.Source.Player.FirstPersonPlayer>();
+
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+
+            LevelController.getInstance().playerPosition = firstPersonPlayer.transform.position;
+
+                            SceneManager.LoadScene(puzzleName, LoadSceneMode.Single);
+
         }
+
     }
 }

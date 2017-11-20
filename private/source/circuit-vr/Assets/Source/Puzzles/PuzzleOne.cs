@@ -4,11 +4,13 @@ using System.Linq;
 using System.Text;
 using Assets.Source.Puzzles.Components;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Assets.Source.Puzzles
 {
     class PuzzleOne : Puzzle
     {
+
         public SwitchCircuitComponent[] switches;
 
         private void Start()
@@ -21,6 +23,10 @@ namespace Assets.Source.Puzzles
             if (outputPosition.activated)
             {
                 Debug.Log("Puzzle solved");
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+   
+                SceneManager.LoadScene("Spaceship Scaled");
             }
 
             switch (switches[0].lastAnimation)
