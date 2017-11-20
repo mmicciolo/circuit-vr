@@ -30,7 +30,7 @@ namespace Assets.Source.Puzzles
             for (int i = 0; i < choices.Length; i++)
             {
                 choices[i].moved = false;
-                choices[i].setComponentToCell(choices[i].initialPos);
+                choices[i].transform.position = choices[i].initialTransformPos;
             }
         }
     }

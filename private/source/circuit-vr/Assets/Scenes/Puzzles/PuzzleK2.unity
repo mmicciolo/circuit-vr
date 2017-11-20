@@ -275,6 +275,7 @@ MonoBehaviour:
   componentRotation: 0
   group: 5
   moveable: 0
+  toolboxItem: 0
   activated: 0
   activeMaterialActive: 0
 --- !u!1 &286174603
@@ -515,7 +516,7 @@ MonoBehaviour:
   infoText: {fileID: 286174605}
   choices:
   - {fileID: 913706386}
-  - {fileID: 1245701259}
+  - {fileID: 0}
   - {fileID: 1845160533}
 --- !u!4 &409141526
 Transform:
@@ -661,10 +662,12 @@ MonoBehaviour:
   componentRotation: 0
   group: 0
   moveable: 0
+  toolboxItem: 0
   activated: 0
   activeMaterialActive: 0
   moved: 0
   initialPos: {x: 0, y: 0}
+  initialTransformPos: {x: 0, y: 0, z: 0}
 --- !u!114 &913706387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -895,19 +898,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4189442960305370, guid: 3025ecb552d95374c8c7bfac3c952f09, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 8.454
+      value: 8.454001
       objectReference: {fileID: 0}
     - target: {fileID: 4189442960305370, guid: 3025ecb552d95374c8c7bfac3c952f09, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4189442960305370, guid: 3025ecb552d95374c8c7bfac3c952f09, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4189442960305370, guid: 3025ecb552d95374c8c7bfac3c952f09, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4189442960305370, guid: 3025ecb552d95374c8c7bfac3c952f09, type: 2}
       propertyPath: m_LocalRotation.w
@@ -920,6 +923,18 @@ Prefab:
     - target: {fileID: 1497207514141218, guid: 3025ecb552d95374c8c7bfac3c952f09, type: 2}
       propertyPath: m_Name
       value: resistor (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4189442960305370, guid: 3025ecb552d95374c8c7bfac3c952f09, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4189442960305370, guid: 3025ecb552d95374c8c7bfac3c952f09, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4189442960305370, guid: 3025ecb552d95374c8c7bfac3c952f09, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3025ecb552d95374c8c7bfac3c952f09, type: 2}
@@ -948,11 +963,13 @@ MonoBehaviour:
   componentPosition: {x: 10, y: 2}
   componentRotation: 0
   group: 0
-  moveable: 1
+  moveable: 0
+  toolboxItem: 0
   activated: 0
   activeMaterialActive: 0
   moved: 0
   initialPos: {x: 0, y: 0}
+  initialTransformPos: {x: 0, y: 0, z: 0}
 --- !u!114 &1245701260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1381,7 +1398,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4189442960305370, guid: 3025ecb552d95374c8c7bfac3c952f09, type: 2}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1497207514141218, guid: 3025ecb552d95374c8c7bfac3c952f09, type: 2}
       propertyPath: m_Name
@@ -1415,10 +1432,12 @@ MonoBehaviour:
   componentRotation: 0
   group: 0
   moveable: 1
+  toolboxItem: 0
   activated: 0
   activeMaterialActive: 0
   moved: 0
   initialPos: {x: 0, y: 0}
+  initialTransformPos: {x: 0, y: 0, z: 0}
 --- !u!114 &1845160534
 MonoBehaviour:
   m_ObjectHideFlags: 0

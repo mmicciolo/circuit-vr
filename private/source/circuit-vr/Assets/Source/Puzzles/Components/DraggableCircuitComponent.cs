@@ -54,6 +54,7 @@ namespace Assets.Source.Puzzles.Components
             {
                 moved = true;
 
+                currentPuzzle.ResetChoices();
                 Vector2 newPos = currentPuzzle.outputPosition.componentPosition;
                 setComponentToCell(newPos);
             }
