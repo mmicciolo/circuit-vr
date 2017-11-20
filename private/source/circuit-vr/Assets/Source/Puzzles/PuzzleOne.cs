@@ -26,7 +26,7 @@ namespace Assets.Source.Puzzles
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
    
-                SceneManager.LoadScene("Spaceship Scaled");
+                SceneManager.LoadScene("Kikloma_01");
             }
 
             switch (switches[0].lastAnimation)

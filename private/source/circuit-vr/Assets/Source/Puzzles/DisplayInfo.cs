@@ -24,7 +24,7 @@ namespace Assets.Source.Puzzles
             if (displaying)
             {
                 myText.text = notation;
-                myText.color = Color.black; //Color.Lerp(myText.color, Color.black, fadeTime * Time.deltaTime);
+                myText.color = Color.white; //Color.Lerp(myText.color, Color.white, fadeTime * Time.deltaTime);
             }
             else
             {

@@ -24,6 +24,10 @@ namespace Assets.Source.Puzzles
             if ((choices[0].componentPosition.x == outputPosition.componentPosition.x) && (choices[0].componentPosition.y == outputPosition.componentPosition.y))
             {
                 Debug.Log("Puzzle solved");
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+   
+                SceneManager.LoadScene("Kikloma_01");
             }
         }
 
