@@ -12,6 +12,7 @@ namespace Assets.Source.Puzzles.Components
     {
         public bool moved = false;
         public Vector2 initialPos;
+        public Vector3 initialTransformPos;
         Puzzle currentPuzzle;
 
         private void Start()
@@ -38,21 +39,42 @@ namespace Assets.Source.Puzzles.Components
 
         private void OnMouseUp()
         {
+            //Snap();
+
+            //float toAnswer = Vector2.Distance(gameObject.transform.position, PuzzleGrid.GetPuzzleGrid().getCell(currentPuzzle.outputPosition.componentPosition).transform.position);
+            //float toIni = Vector2.Distance(gameObject.transform.position, PuzzleGrid.GetPuzzleGrid().getCell(initialPos).transform.position);
             float toAnswer = Vector2.Distance(gameObject.transform.position, PuzzleGrid.GetPuzzleGrid().getCell(currentPuzzle.outputPosition.componentPosition).transform.position);
-            float toIni = Vector2.Distance(gameObject.transform.position, PuzzleGrid.GetPuzzleGrid().getCell(initialPos).transform.position);
-            if (toIni < toAnswer)
+            float toIni = Vector2.Distance(gameObject.transform.position, initialTransformPos);
+            if (toAnswer > 2.5f)
             {
                 moved = false;
-                setComponentToCell(initialPos);
+                setComponentToCell(new Vector2(0f, 0f));
+                transform.localPosition = initialTransformPos;
             }
             else
             {
-                //currentPuzzle.ResetChoices();
                 moved = true;
 
+                currentPuzzle.ResetChoices();
                 Vector2 newPos = currentPuzzle.outputPosition.componentPosition;
                 setComponentToCell(newPos);
             }
+
+            //float toAnswer = Vector2.Distance(gameObject.transform.position, PuzzleGrid.GetPuzzleGrid().getCell(currentPuzzle.outputPosition.componentPosition).transform.position);
+            //float toIni = Vector2.Distance(gameObject.transform.position, PuzzleGrid.GetPuzzleGrid().getCell(initialPos).transform.position);
+            //if (toIni < toAnswer)
+            //{
+            //    moved = false;
+            //    setComponentToCell(initialPos);
+            //}
+            //else
+            //{
+            //    //currentPuzzle.ResetChoices();
+            //    moved = true;
+
+            //    Vector2 newPos = currentPuzzle.outputPosition.componentPosition;
+            //    setComponentToCell(newPos);
+            //}
         }
 
 
