@@ -37,6 +37,9 @@ namespace Assets.Source.Puzzles.Toolboxes
                     //Set the position
                     components[i].transform.localPosition = new Vector3((i * (2.0f + (components[i - 1].getLength() * PuzzleGrid.GetPuzzleGrid().cellSize.x))) + (PuzzleGrid.GetPuzzleGrid().cellSize.x / 2), toolBoxItemYPos - (PuzzleGrid.GetPuzzleGrid().cellSize.y / 2), 0);
                 }
+
+                //Set the components initial position
+                components[i].initialTransformPos = components[i].transform.localPosition;
             }
         }
     }

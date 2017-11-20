@@ -548,9 +548,9 @@ MonoBehaviour:
   outputPosition: {fileID: 1803196138}
   infoText: {fileID: 1357416126}
   choices:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1016846881}
+  - {fileID: 1741908987}
+  - {fileID: 166758122}
 --- !u!4 &490122457
 Transform:
   m_ObjectHideFlags: 0
@@ -1202,7 +1202,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1142806122}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.090027, y: 1, z: 81.36}
+  m_LocalPosition: {x: 13.09, y: 1, z: 81.36}
   m_LocalScale: {x: 0.07054674, y: 0.07054674, z: 0.07054674}
   m_Children:
   - {fileID: 1357416128}
