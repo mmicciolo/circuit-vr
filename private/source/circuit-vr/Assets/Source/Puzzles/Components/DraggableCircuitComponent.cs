@@ -48,6 +48,7 @@ namespace Assets.Source.Puzzles.Components
             if (toAnswer > 2.5f)
             {
                 moved = false;
+                setComponentToCell(new Vector2(0f, 0f));
                 transform.localPosition = initialTransformPos;
             }
             else

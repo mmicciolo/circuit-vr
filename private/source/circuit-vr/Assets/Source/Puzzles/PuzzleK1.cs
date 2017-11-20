@@ -27,9 +27,11 @@ namespace Assets.Source.Puzzles
         override
         public void ResetChoices()
         {
+            Vector2 cell = new Vector2(0f, 0f);
             for (int i = 0; i < choices.Length; i++)
             {
                 choices[i].moved = false;
+                choices[i].setComponentToCell(cell);
                 choices[i].transform.position = choices[i].initialTransformPos;
             }
         }
