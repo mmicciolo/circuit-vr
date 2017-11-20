@@ -10,7 +10,7 @@ using UnityEngine.UI;
 
 namespace Assets.Source.Puzzles
 {
-    class Puzzle : InteractablePuzzle
+    class Puzzle : MonoBehaviour
     {
         private PuzzleGrid puzzleGrid;
 
