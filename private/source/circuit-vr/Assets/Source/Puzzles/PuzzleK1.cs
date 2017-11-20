@@ -32,7 +32,7 @@ namespace Assets.Source.Puzzles
             {
                 choices[i].moved = false;
                 choices[i].setComponentToCell(cell);
-                choices[i].transform.position = choices[i].initialTransformPos;
+                choices[i].transform.localPosition = choices[i].initialTransformPos;
             }
         }
     }
