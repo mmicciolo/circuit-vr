@@ -13,12 +13,11 @@ namespace Assets.Source.Interactable_Objects
 
         public virtual void open()
         {
-            Assets.Source.Player.FirstPersonPlayer firstPersonPlayer = GameObject.FindObjectOfType<Assets.Source.Player.FirstPersonPlayer>();
 
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
 
-            LevelController.getInstance().playerPosition = firstPersonPlayer.transform.position;
+            LevelController.getInstance().RememberPosition();
 
                             SceneManager.LoadScene(puzzleName, LoadSceneMode.Single);
 

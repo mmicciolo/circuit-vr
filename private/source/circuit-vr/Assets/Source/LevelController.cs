@@ -32,6 +32,11 @@ public class LevelController : MonoBehaviour
         interactablePopUpCamera.gameObject.SetActive(false);
     }
 
+    public void RememberPosition()
+    {
+        playerPosition = firstPersonPlayer.transform.position;
+    }
+
     // Update is called once per frame
     void Update () {
 

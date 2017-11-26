@@ -8,10 +8,8 @@ using UnityEngine.SceneManagement;
 
 namespace Assets.Source.Puzzles
 {
-    class PuzzleK1 : Puzzle
+    class PuzzleCircuit15 : Puzzle
     {
-
-
         public DraggableCircuitComponent[] choices;
 
         private void Start()
@@ -26,7 +24,7 @@ namespace Assets.Source.Puzzles
                 Debug.Log("Puzzle solved");
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
-   
+
                 SceneManager.LoadScene("Kikloma_01");
             }
         }
