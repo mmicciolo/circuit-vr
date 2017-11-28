@@ -49,7 +49,8 @@ namespace Assets.Source.Puzzles.Components
             {
                 moved = false;
                 setComponentToCell(new Vector2(0f, 0f));
-                transform.localPosition = initialTransformPos;
+                //transform.localPosition = initialTransformPos;
+                transform.position = initialTransformPos;
             }
             else
             {
