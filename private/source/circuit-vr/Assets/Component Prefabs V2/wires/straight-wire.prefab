@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4618913127661878}
   - component: {fileID: 65743073035490572}
-  - component: {fileID: 114386386205759214}
+  - component: {fileID: 114100744843446524}
   m_Layer: 0
   m_Name: straight-wire
   m_TagString: Untagged
@@ -96,7 +96,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1418481132241574}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 5.43, y: -11.49, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4455449792721488}
@@ -215,7 +215,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114386386205759214
+--- !u!114 &114100744843446524
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -223,16 +223,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1418481132241574}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee0f7a9aa2467ec4c9e6b58de3640564, type: 3}
+  m_Script: {fileID: 11500000, guid: 0830fdf171c33d54a93ba7f618ffe868, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  componentPosition: {x: 0, y: 0}
+  componentPosition: {x: 11, y: 4}
   componentRotation: 0
-  group: 0
-  moveable: 1
+  group: 3
+  moveable: 0
   toolboxItem: 0
   activated: 0
   activeMaterialActive: 0
-  moved: 0
-  initialPos: {x: 0, y: 0}
-  initialTransformPos: {x: 0, y: 0, z: 0}

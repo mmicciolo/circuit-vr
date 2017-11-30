@@ -37,6 +37,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4400826596930122}
   - component: {fileID: 65929529416425492}
+  - component: {fileID: 114027107268796154}
   m_Layer: 0
   m_Name: 3-way-tee
   m_TagString: Untagged
@@ -214,3 +215,21 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114027107268796154
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1106474385230668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0830fdf171c33d54a93ba7f618ffe868, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  componentPosition: {x: 0, y: 0}
+  componentRotation: 0
+  group: 0
+  moveable: 0
+  toolboxItem: 0
+  activated: 0
+  activeMaterialActive: 0

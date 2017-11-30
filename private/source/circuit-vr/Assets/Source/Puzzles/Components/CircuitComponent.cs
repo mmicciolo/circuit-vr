@@ -129,7 +129,12 @@ namespace Assets.Source.Puzzles.Components
         public void setComponentToCell(Vector2 cellPos)
         {
             PuzzleGrid grid = PuzzleGrid.GetPuzzleGrid();
+            
             PuzzleCell cell = grid.getCell(cellPos);
+            if (cell == null)
+            {
+                Debug.Log(cellPos.x + " " + cellPos.y);
+            }
             Vector3 pos = cell.transform.position;
             pos.x += (transform.localScale.x / 2); pos.y -= (transform.localScale.x / 2);
             transform.position = pos;
