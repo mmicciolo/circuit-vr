@@ -10,7 +10,7 @@ using UnityEngine.UI;
 
 namespace Assets.Source.Puzzles
 {
-    class Puzzle : MonoBehaviour
+    class Puzzle : InteractablePuzzle
     {
         private PuzzleGrid puzzleGrid;
 
@@ -38,7 +38,6 @@ namespace Assets.Source.Puzzles
 
         private void Update()
         {
-
             ////Wait for the user to press down the left mouse button
             //if (Input.GetMouseButtonDown(0))
             //{
