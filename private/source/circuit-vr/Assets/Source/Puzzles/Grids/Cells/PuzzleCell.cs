@@ -17,22 +17,22 @@ namespace Assets.Source.Puzzles.Grids.Cells
             
         }
 
-        public void DrawCell(float height, float width)
+        public void DrawCell(float height, float width, Material material)
         {
             //Draw everything for the first time
             if(lines.Count == 0)
             {
                 //Draw the top line
-                DrawLine(gameObject.transform.position, gameObject.transform.position + new Vector3(width, 0, 0), "top");
+                DrawLine(gameObject.transform.position, gameObject.transform.position + new Vector3(width, 0, 0), "top", material);
 
                 //Draw the bottom line
-                DrawLine(gameObject.transform.position - new Vector3(0, height, 0), gameObject.transform.position + new Vector3(width, -height, 0), "bottom");
+                DrawLine(gameObject.transform.position - new Vector3(0, height, 0), gameObject.transform.position + new Vector3(width, -height, 0), "bottom", material);
 
                 //Draw the left line
-                DrawLine(gameObject.transform.position, gameObject.transform.position + new Vector3(0, -height, 0), "left");
+                DrawLine(gameObject.transform.position, gameObject.transform.position + new Vector3(0, -height, 0), "left", material);
 
                 //Draw the right line
-                DrawLine(gameObject.transform.position + new Vector3(width, 0, 0), gameObject.transform.position + new Vector3(width, -height, 0), "right");
+                DrawLine(gameObject.transform.position + new Vector3(width, 0, 0), gameObject.transform.position + new Vector3(width, -height, 0), "right", material);
             }
             else
             {
@@ -47,7 +47,7 @@ namespace Assets.Source.Puzzles.Grids.Cells
             }
         }
 
-        private void DrawLine(Vector3 start, Vector3 end, String name)
+        private void DrawLine(Vector3 start, Vector3 end, String name, Material material)
         {
             GameObject line = new GameObject(name);
             line.AddComponent<LineRenderer>();
@@ -56,6 +56,7 @@ namespace Assets.Source.Puzzles.Grids.Cells
             lr.endWidth = 0.1f;
             lr.SetPosition(0, start);
             lr.SetPosition(1, end);
+            lr.material = material;
             line.transform.parent = gameObject.transform;
             lines.Add(line);
         }
