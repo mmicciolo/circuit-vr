@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelController : MonoBehaviour
 {
@@ -13,6 +14,9 @@ public class LevelController : MonoBehaviour
     Assets.Source.Player.FirstPersonPlayer firstPersonPlayer;
 
     public Vector3 playerPosition = new Vector3(6f,1f,4f);
+
+    private static string openScene;
+    private static List<GameObject> disabledObject = new List<GameObject>();
 
     private void Awake()
     {
@@ -69,5 +73,67 @@ public class LevelController : MonoBehaviour
     public static LevelController getInstance()
     {
         return levelControllerInstance;
+    }
+
+    public void openPuzzle(string sceneName)
+    {
+        //Store the currently open scene
+        openScene = SceneManager.GetActiveScene().name;
+
+        //Add a callback for when the loading completes
+        SceneManager.sceneLoaded += OnPuzzleLoaded;
+
+        //Load the scene
+        SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
+    }
+
+    private void OnPuzzleLoaded(Scene scene, LoadSceneMode mode)
+    {
+        //Remove the callback
+        SceneManager.sceneLoaded -= OnPuzzleLoaded;
+
+        //Disable the main scene objects
+        foreach (GameObject obj in SceneManager.GetSceneByName(openScene).GetRootGameObjects())
+        {
+            if (!obj.active) { disabledObject.Add(obj); } else { obj.SetActive(false); }
+        }
+
+        //Enable the cursor
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
+        //Set the scene as active
+        SceneManager.SetActiveScene(scene);
+    }
+
+    public void closePuzzle(string name)
+    {
+        //Add a callback for when the unloading completes
+        SceneManager.sceneUnloaded += OnPuzzleUnloaded;
+
+        //Load the scene
+        SceneManager.UnloadScene(name);
+    }
+
+    private void OnPuzzleUnloaded(Scene scene)
+    {
+        //Remove the callback
+        SceneManager.sceneUnloaded -= OnPuzzleUnloaded;
+
+        //Enable the main scene objects
+        foreach (GameObject obj in SceneManager.GetSceneByName(openScene).GetRootGameObjects())
+        {
+            if (!disabledObject.Contains(obj)) { obj.SetActive(true); }
+        }
+
+        //Clear the list
+        disabledObject.Clear();
+
+        //Disable the cursor
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
+        //Set the scene as active
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName(openScene));
     }
 }

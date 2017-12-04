@@ -8,7 +8,7 @@ namespace Assets.Source.Puzzles.Components
 {
     class SwitchCircuitComponent : CircuitComponent
     {
-        private Animator animator;
+        public Animator animator;
         private AudioSource audio;
         public String lastAnimation = "switch_idle";
 

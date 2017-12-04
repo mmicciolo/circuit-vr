@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridSize: {x: 5, y: 5}
-  cellSize: {x: 2.5, y: 2.5}
+  cellSize: {x: 5, y: 5}
 --- !u!4 &383453053 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4852033543921672, guid: 314728379f2faa743b790ac8b16d62e5,

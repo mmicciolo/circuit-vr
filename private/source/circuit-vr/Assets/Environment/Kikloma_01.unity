@@ -5559,7 +5559,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 671201586}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 499.33, y: 326.614, z: -0.22}
+  m_LocalPosition: {x: 535.83, y: 310.114, z: -0.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 579701555}
@@ -5837,7 +5837,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9276b6d5f06a544b36776d8f047c05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzleName: PuzzleK1
+  sceneName: 
 --- !u!114 &701665414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7282,7 +7282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9276b6d5f06a544b36776d8f047c05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzleName: PuzzleOne
+  sceneName: 
 --- !u!114 &872194027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15389,7 +15389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f9276b6d5f06a544b36776d8f047c05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzleName: PuzzleK2
+  sceneName: PuzzleCircuit15
 --- !u!114 &1956726800
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -11,6 +11,7 @@ namespace Assets.Source.Puzzles
     class PuzzleCircuit15 : Puzzle
     {
         public DraggableCircuitComponent[] choices;
+        private bool close = false;
 
         private void Start()
         {
@@ -19,13 +20,9 @@ namespace Assets.Source.Puzzles
 
         private void Update()
         {
-            if ((choices[0].componentPosition.x == outputPosition.componentPosition.x) && (choices[0].componentPosition.y == outputPosition.componentPosition.y))
+            if ((choices[0].componentPosition.x == outputPosition.componentPosition.x) && (choices[0].componentPosition.y == outputPosition.componentPosition.y) && !close)
             {
-                Debug.Log("Puzzle solved");
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = false;
-
-                SceneManager.LoadScene("Kikloma_01");
+                LevelController.getInstance().closePuzzle("PuzzleCircuit15");
             }
         }
 
