@@ -23,10 +23,8 @@ namespace Assets.Source.Puzzles
             if (outputPosition.activated)
             {
                 Debug.Log("Puzzle solved");
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = false;
-   
-                SceneManager.LoadScene("Kikloma_01");
+                LevelController.getInstance().closePuzzle("PuzzleOne");
+
             }
 
             switch (switches[0].lastAnimation)

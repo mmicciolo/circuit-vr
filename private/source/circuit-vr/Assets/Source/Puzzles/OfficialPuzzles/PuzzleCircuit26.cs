@@ -30,19 +30,23 @@ namespace Assets.Source.Puzzles
             }
 
             capacitor.gameObject.GetComponent<DisplayInfo>().notation = "Capacitor overload in " + time;
-
-            if (time == 0)
-            {
-                capacitor.gameObject.GetComponent<DisplayInfo>().notation = "Capacitor exploded";
-                //LevelController.getInstance().closePuzzle("PuzzleCircuit26");
-            } else
-            {
-                step += 1;
-                        if (circuitSwitch.lastAnimation == "switch_up")
+            if (circuitSwitch.lastAnimation == "switch_up")
             {
                 Debug.Log("Puzzle solved");
-                //LevelController.getInstance().closePuzzle("PuzzleCircuit26");
+                LevelController.getInstance().closePuzzle("PuzzleCircuit26");
             }
+            else
+            {
+                if (time == 0)
+                {
+                    Debug.Log("Capacitor broken");
+                    capacitor.gameObject.GetComponent<DisplayInfo>().notation = "Capacitor broken";
+                    LevelController.getInstance().closePuzzle("PuzzleCircuit26");
+                }
+                else
+                {
+                    step += 1;
+                }
             }
 
 

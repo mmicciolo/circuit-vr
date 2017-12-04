@@ -21,11 +21,8 @@ namespace Assets.Source.Puzzles
         {
             if (outputPosition.activated)
             {
-                Debug.Log("Puzzle solved");
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = false;
+                LevelController.getInstance().closePuzzle("PuzzleCircuit34");
 
-                SceneManager.LoadScene("Kikloma_01");
             }
 
             if (switches[0].lastAnimation == "switch_down")

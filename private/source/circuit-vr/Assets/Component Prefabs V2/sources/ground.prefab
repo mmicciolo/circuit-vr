@@ -112,7 +112,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4431275523051334}
   - component: {fileID: 65674477317558358}
-  - component: {fileID: 114818966992253182}
+  - component: {fileID: 114185124596911404}
+  - component: {fileID: 114659833016445586}
   m_Layer: 0
   m_Name: ground
   m_TagString: Untagged
@@ -205,7 +206,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1430983984581758}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 13.520103, y: -12.82963, z: -0.15562534}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4741359773000376}
@@ -246,7 +247,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1808093658931906}
   m_LocalRotation: {x: 0.00000013240823, y: 0.7071068, z: 0.7071068, w: -0.00000013240823}
-  m_LocalPosition: {x: 0.16, y: 0, z: -0.5}
+  m_LocalPosition: {x: -0.12, y: 0, z: -0.5}
   m_LocalScale: {x: 2.0162082, y: 2.0162084, z: 2.0162084}
   m_Children:
   - {fileID: 4787185937068558}
@@ -476,7 +477,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114818966992253182
+--- !u!114 &114185124596911404
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -484,16 +485,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 1430983984581758}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee0f7a9aa2467ec4c9e6b58de3640564, type: 3}
+  m_Script: {fileID: 11500000, guid: 0830fdf171c33d54a93ba7f618ffe868, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  componentPosition: {x: 0, y: 0}
-  componentRotation: 0
-  group: 0
-  moveable: 1
+  componentPosition: {x: 4, y: 0}
+  componentRotation: 270
+  group: 1
+  moveable: 0
   toolboxItem: 0
   activated: 0
   activeMaterialActive: 0
-  moved: 0
-  initialPos: {x: 0, y: 0}
-  initialTransformPos: {x: 0, y: 0, z: 0}
+--- !u!114 &114659833016445586
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1430983984581758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7371e1bdae0fd304994c8e6c86c5c13c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notation: Ground (0V)

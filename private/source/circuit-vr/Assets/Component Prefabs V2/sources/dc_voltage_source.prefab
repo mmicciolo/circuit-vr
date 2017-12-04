@@ -389,7 +389,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4685668351856304}
   - component: {fileID: 65263566425914288}
-  - component: {fileID: 114239671740232362}
+  - component: {fileID: 114370364407402030}
+  - component: {fileID: 114577234451308032}
   m_Layer: 0
   m_Name: dc_voltage_source
   m_TagString: Untagged
@@ -786,7 +787,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1706760384997736}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 4.56, y: -12.57, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4195272384748484}
@@ -1178,7 +1179,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114239671740232362
+--- !u!114 &114370364407402030
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -1186,16 +1187,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 1706760384997736}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee0f7a9aa2467ec4c9e6b58de3640564, type: 3}
+  m_Script: {fileID: 11500000, guid: 0830fdf171c33d54a93ba7f618ffe868, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   componentPosition: {x: 0, y: 0}
   componentRotation: 0
   group: 0
-  moveable: 1
+  moveable: 0
   toolboxItem: 0
   activated: 0
   activeMaterialActive: 0
-  moved: 0
-  initialPos: {x: 0, y: 0}
-  initialTransformPos: {x: 0, y: 0, z: 0}
+--- !u!114 &114577234451308032
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1706760384997736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7371e1bdae0fd304994c8e6c86c5c13c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notation: Direct Current Source

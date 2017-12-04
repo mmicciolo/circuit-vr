@@ -8,9 +8,10 @@ using UnityEngine.SceneManagement;
 
 namespace Assets.Source.Puzzles
 {
-    class PuzzleCircuit23 : Puzzle
+    class PuzzleCircuit17 : Puzzle
     {
         public DraggableCircuitComponent[] choices;
+        private bool close = false;
 
         private void Start()
         {
@@ -19,9 +20,9 @@ namespace Assets.Source.Puzzles
 
         private void Update()
         {
-            if ((choices[0].componentPosition.x == outputPosition.componentPosition.x) && (choices[0].componentPosition.y == outputPosition.componentPosition.y))
+            if ((choices[1].componentPosition.x == outputPosition.componentPosition.x) && (choices[1].componentPosition.y == outputPosition.componentPosition.y) && !close)
             {
-                LevelController.getInstance().closePuzzle("PuzzleCircuit23");
+                LevelController.getInstance().closePuzzle("PuzzleCircuit17");
             }
         }
 
