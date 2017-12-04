@@ -35,7 +35,7 @@ public class DialogueManager : MonoBehaviour {
 
     //dialogue and music play
     public static DialogueManager Instance { get; private set; }
-    bool isPlayingMusic = false;
+    //bool isPlayingMusic = false;
     AudioClip MusicClip;
     AudioClip DialogueClip;
     private const float SAMPLE_RATE = 44100f;
@@ -58,9 +58,9 @@ public class DialogueManager : MonoBehaviour {
         return digitsOnly.Replace(textToClean, "");
     }
 
-    public void StartDialogue (AudioClip audioClip,AudioClip music)
+    public void StartDialogue (AudioClip audioClip)
     {
-        MusicClip = music;
+        //MusicClip = music;
         DialogueClip = audioClip;
 
         subLines = new List<string>();
@@ -68,25 +68,26 @@ public class DialogueManager : MonoBehaviour {
         subTiming = new List<float>();
         subText = new List<string>();
 
+        /*
         triggerLines = new List<string>();
         triggerTimingStr = new List<string>();
         triggerTiming = new List<float>();
         triggers = new List<string>();
         triggerObjectNames = new List<string>();
         triggerMethodNames = new List<string>();
-
+        */
         nextSub = 0;
-        nextTrigger = 0;
+        //nextTrigger = 0;
 
         
 
         //load text file
-        TextAsset subfile = Resources.Load("Subtitles/subs") as TextAsset;
+        TextAsset subfile = Resources.Load("Subtitles/"+DialogueClip.name) as TextAsset;
         fileLines = subfile.text.Split('\n');
 
         
         //Debug.Log(fileLines[0]);
-        //parsingtime!
+        //parsing time!
         foreach(string line in fileLines)
         {
             if (line.Contains("<trigger/>"))
@@ -134,7 +135,7 @@ public class DialogueManager : MonoBehaviour {
     public void OnGUI()
     {
         //ensure that dialogue is on
-        if(DialogueClip!=null && !isPlayingMusic)
+        if(DialogueClip!=null)
         {
             //check for negative nextSub
             if (nextSub > 0 && !(subText[nextSub - 1].Contains("<break/>")))
@@ -169,14 +170,7 @@ public class DialogueManager : MonoBehaviour {
     public void Update()
     {
 
-        if (!GetComponent<AudioSource>().isPlaying && !isPlayingMusic)
-        {
-            Debug.Log("AI stopped talking");
-            GetComponent<AudioSource>().loop = true;
-            GetComponent<AudioSource>().clip = MusicClip;
-            DramaticPause(2);
-            GetComponent<AudioSource>().Play();
-        }
+       
     }
 
     public IEnumerator DramaticPause(int pauseTime) //pause for 2 secs between AI talking and music start

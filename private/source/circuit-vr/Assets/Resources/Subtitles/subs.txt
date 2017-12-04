@@ -1,4 +1,0 @@
-0.000|Good morning. It is currently 0800 hours on the Intra Solar Alliance vessel Resistance. 
-5.000|Current ship destination: Europa, orbit of Jupiter. Estimated time for arrival: 5 earth hours. 
-13.000|Warning: This ship is carrying hazardous cargo. You are not authorized to access the cargo bay. 
-20.000|Please proceed to the engine systems for ship systems maintenance. 
