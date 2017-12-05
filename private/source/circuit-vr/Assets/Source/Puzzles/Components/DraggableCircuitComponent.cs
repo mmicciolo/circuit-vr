@@ -16,7 +16,7 @@ namespace Assets.Source.Puzzles.Components
         Puzzle currentPuzzle;
         FMODUnity.StudioEventEmitter snapEmitter;
         FMODUnity.StudioEventEmitter wrongEmitter;
-        Vector2 currentPosition;
+        Vector2 mouseDownPosition;
 
         private void Start()
         {
@@ -35,7 +35,8 @@ namespace Assets.Source.Puzzles.Components
 
         private void OnMouseDown()
         {
-            currentPosition = gameObject.transform.position;    
+            mouseDownPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Debug.Log("mouse down");
         }
 
         private void OnMouseDrag()
@@ -43,11 +44,11 @@ namespace Assets.Source.Puzzles.Components
             Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, gameObject.transform.position.z);
 
             //Based off of the above point calculate a transform
-            Vector3 curPosition = Camera.main.ScreenToWorldPoint(curScreenPoint);
+            Vector3 curPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
             //Set the transform to the dragging object
             //Lock the Z position
-            float toCursor = Vector2.Distance(gameObject.transform.position, curPosition);
+            float toCursor = Vector2.Distance(mouseDownPosition, curPosition);
             if (toCursor > 1f)
             {
                 gameObject.transform.position = new Vector3(curPosition.x, curPosition.y, gameObject.transform.position.z);

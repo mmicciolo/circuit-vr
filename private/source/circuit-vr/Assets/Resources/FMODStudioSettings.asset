@@ -15,7 +15,7 @@ MonoBehaviour:
   HasPlatforms: 0
   sourceProjectPath: 
   SourceProjectPathUnformatted: 
-  SourceBankPathUnformatted: C:\Users\Matt\Desktop\fmod\Build\Desktop
+  SourceBankPathUnformatted: Assets\FMOD\Build\Desktop
   AutomaticEventLoading: 1
   AutomaticSampleLoading: 0
   ImportType: 0
