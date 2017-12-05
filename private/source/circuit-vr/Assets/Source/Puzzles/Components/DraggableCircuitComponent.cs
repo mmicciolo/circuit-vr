@@ -16,6 +16,7 @@ namespace Assets.Source.Puzzles.Components
         Puzzle currentPuzzle;
         FMODUnity.StudioEventEmitter snapEmitter;
         FMODUnity.StudioEventEmitter wrongEmitter;
+        Vector2 currentPosition;
 
         private void Start()
         {
@@ -32,6 +33,11 @@ namespace Assets.Source.Puzzles.Components
             wrongEmitter.Event = "event:/SFX/Menu Electricity Sounds";
         }
 
+        private void OnMouseDown()
+        {
+            currentPosition = gameObject.transform.position;    
+        }
+
         private void OnMouseDrag()
         {
             Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, gameObject.transform.position.z);
@@ -41,7 +47,11 @@ namespace Assets.Source.Puzzles.Components
 
             //Set the transform to the dragging object
             //Lock the Z position
-            gameObject.transform.position = new Vector3(curPosition.x, curPosition.y, gameObject.transform.position.z);
+            float toCursor = Vector2.Distance(gameObject.transform.position, curPosition);
+            if (toCursor > 1f)
+            {
+                gameObject.transform.position = new Vector3(curPosition.x, curPosition.y, gameObject.transform.position.z);
+            }
         }
 
         private void Update()
