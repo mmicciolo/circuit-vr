@@ -53,12 +53,23 @@ namespace Assets.Source.Puzzles.Components
 
         protected void GetOriginalMaterial()
         {
-            originalMaterial = gameObject.GetComponent<Renderer>().material;
+            GameObject componentModel = GetComponentModel();
+            if (componentModel != null)
+            {
+                originalMaterial = componentModel.GetComponent<Renderer>().material;
+            }
         }
 
         private GameObject GetComponentModel()
         {
-            return gameObject;
+            foreach(Transform child in transform)
+            {
+                if(child.gameObject.name.Equals("bb"))
+                {
+                    return child.gameObject;
+                }
+            }
+            return null;
         }
 
         //protected void GetOriginalMaterial()
