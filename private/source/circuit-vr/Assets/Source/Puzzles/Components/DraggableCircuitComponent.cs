@@ -14,11 +14,22 @@ namespace Assets.Source.Puzzles.Components
         public Vector2 initialPos;
         public Vector3 initialTransformPos;
         Puzzle currentPuzzle;
+        FMODUnity.StudioEventEmitter snapEmitter;
+        FMODUnity.StudioEventEmitter wrongEmitter;
 
         private void Start()
         {
             initialPos = componentPosition;
             currentPuzzle = GameObject.FindObjectOfType<Puzzle>();
+            gameObject.AddComponent<FMODUnity.StudioEventEmitter>();
+            gameObject.AddComponent<FMODUnity.StudioEventEmitter>();
+
+            GetComponents<CircuitComponent>()[0].enabled = false;
+
+            snapEmitter = GetComponents<FMODUnity.StudioEventEmitter>()[0];
+            wrongEmitter = GetComponents<FMODUnity.StudioEventEmitter>()[1];
+            snapEmitter.Event = "event:/SFX/Switch";
+            wrongEmitter.Event = "event:/SFX/Menu Electricity Sounds";
         }
 
         private void OnMouseDrag()
@@ -48,17 +59,23 @@ namespace Assets.Source.Puzzles.Components
             if (toAnswer > 2.5f)
             {
                 moved = false;
+                GetComponents<CircuitComponent>()[0].enabled = false;
                 setComponentToCell(new Vector2(0f, 0f));
                 //transform.localPosition = initialTransformPos;
                 transform.localPosition = initialTransformPos;
+                wrongEmitter.Play();
+                Debug.Log("played event:/SFX/Menu Electricity Sounds sound");
             }
             else
             {
                 moved = true;
-
+                GetComponents<CircuitComponent>()[0].enabled = true;
                 currentPuzzle.ResetChoices();
                 Vector2 newPos = currentPuzzle.outputPosition.componentPosition;
                 setComponentToCell(newPos);
+                snapEmitter.Play();
+                Debug.Log("played event:/SFX/");
+
             }
 
             //float toAnswer = Vector2.Distance(gameObject.transform.position, PuzzleGrid.GetPuzzleGrid().getCell(currentPuzzle.outputPosition.componentPosition).transform.position);

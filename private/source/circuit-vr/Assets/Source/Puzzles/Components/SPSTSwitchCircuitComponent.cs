@@ -21,16 +21,19 @@ namespace Assets.Source.Puzzles.Components
 
         public void OnMouseDown()
         {
-            audio.Play();
-            if (lastAnimation.Equals("switch_idle") || lastAnimation.Equals("spst_up"))
+            if (enabled)
             {
-                animator.Play("spst_down");
-                lastAnimation = "spst_down";
-            }
-            else if (lastAnimation.Equals("spst_down"))
-            {
-                animator.Play("spst_up");
-                lastAnimation = "spst_up";
+                audio.Play();
+                if (lastAnimation.Equals("switch_idle") || lastAnimation.Equals("spst_up"))
+                {
+                    animator.Play("spst_down");
+                    lastAnimation = "spst_down";
+                }
+                else if (lastAnimation.Equals("spst_down"))
+                {
+                    animator.Play("spst_up");
+                    lastAnimation = "spst_up";
+                }
             }
         }
     }

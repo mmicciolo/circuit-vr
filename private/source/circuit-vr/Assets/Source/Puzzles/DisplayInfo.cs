@@ -35,7 +35,7 @@ namespace Assets.Source.Puzzles
         private void OnMouseOver()
         {
             //myText.transform.position = gameObject.transform.position;
-            Debug.Log("detecting");
+            //Debug.Log("detecting");
             //Debug.Log(myText.transform.position.x + ", " + myText.transform.position.y + ", " + myText.transform.position.z);
             displaying = true;
         }

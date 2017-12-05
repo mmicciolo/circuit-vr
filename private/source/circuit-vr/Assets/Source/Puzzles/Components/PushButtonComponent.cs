@@ -18,12 +18,18 @@ namespace Assets.Source.Puzzles.Components
 
         public void OnMouseDown()
         {
-            animator.Play("button_down");
+            if (enabled)
+            {
+                animator.Play("button_down");
+            }
         }
 
         public void OnMouseUp()
         {
-            animator.Play("button_up");
+            if (enabled)
+            {
+                animator.Play("button_up");
+            }
         }
     }
 }
