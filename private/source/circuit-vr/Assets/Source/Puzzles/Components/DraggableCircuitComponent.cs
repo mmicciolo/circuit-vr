@@ -113,6 +113,9 @@ namespace Assets.Source.Puzzles.Components
 
             PushButtonComponent button1 = gameObject.GetComponent<PushButtonComponent>();
             if (button1 != null) button1.enabled = false;
+
+            PushButtonComponentClosed button2 = gameObject.GetComponent<PushButtonComponentClosed>();
+            if (button2 != null) button2.enabled = false;
         }
 
         void EnableSwitchComponents()
@@ -122,6 +125,9 @@ namespace Assets.Source.Puzzles.Components
 
             PushButtonComponent button1 = gameObject.GetComponent<PushButtonComponent>();
             if (button1 != null) button1.enabled = true;
+
+            PushButtonComponentClosed button2 = gameObject.GetComponent<PushButtonComponentClosed>();
+            if (button2 != null) button2.enabled = true;
         }
     }
 }

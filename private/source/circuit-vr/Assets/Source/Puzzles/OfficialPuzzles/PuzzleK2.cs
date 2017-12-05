@@ -24,8 +24,9 @@ namespace Assets.Source.Puzzles
             if ((choices[2].componentPosition.x == outputPosition.componentPosition.x) && (choices[2].componentPosition.y == outputPosition.componentPosition.y))
             {
                 Debug.Log("Puzzle solved");
+                ActivateCells(0);
+                ActivateCells(3);
                 LevelController.getInstance().closePuzzle("PuzzleK2");
-
             }
         }
 
