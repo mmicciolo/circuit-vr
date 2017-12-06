@@ -29,18 +29,23 @@ namespace Assets.Source.Puzzles.Components
             GetOriginalMaterial();
         }
 
-        private void Update()
+        protected void Update()
         {
-            if(activated && !activeMaterialActive)
+            SetCorrectMaterial();
+        }
+
+        protected void SetCorrectMaterial()
+        {
+            if (activated && !activeMaterialActive)
             {
                 GameObject cmodel = GetComponentModel();
                 if (cmodel != null)
                 {
-                    cmodel.GetComponent< Renderer>().material = Resources.Load("glow_material", typeof(Material)) as Material;
+                    cmodel.GetComponent<Renderer>().material = Resources.Load("glow_material", typeof(Material)) as Material;
                 }
                 activeMaterialActive = true;
             }
-            else if(!activated && activeMaterialActive)
+            else if (!activated && activeMaterialActive)
             {
                 GameObject cmodel = GetComponentModel();
                 if (cmodel != null)
@@ -51,7 +56,7 @@ namespace Assets.Source.Puzzles.Components
             }
         }
 
-        protected void GetOriginalMaterial()
+        public void GetOriginalMaterial()
         {
             GameObject componentModel = GetComponentModel();
             if (componentModel != null)
@@ -184,6 +189,28 @@ namespace Assets.Source.Puzzles.Components
                 }
             }
             return 0;
+        }
+
+        public Vector2 GetInfoPosition()
+        {
+            Vector2 result = gameObject.transform.position;
+            /* if ((componentRotation % 180) == 0)
+             {
+                 result = new Vector2(result.x )
+             } */
+            Vector2 boxColliderSize = gameObject.GetComponent<BoxCollider>().size;
+            Vector2 transformScale = gameObject.transform.localScale;
+
+            switch(componentRotation)
+            {
+                case 90:
+                    result = new Vector2( result.x , result.y + (float)((boxColliderSize.x - 0.5) * transformScale.x) + 0.7f);
+                    break;
+                default:
+                    result = new Vector2(result.x, result.y + (float)(0.5 * transformScale.x) + 0.7f);
+                    break;
+            }
+            return result;
         }
     }
 }

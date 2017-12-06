@@ -19,21 +19,9 @@ namespace Assets.Source.Puzzles
 
         private void Update()
         {
-            if ((choices[0].componentPosition.x == outputPosition.componentPosition.x) && (choices[0].componentPosition.y == outputPosition.componentPosition.y))
+            if ((choices[0].attachedComponent.componentPosition.x == outputPosition.componentPosition.x) && (choices[0].attachedComponent.componentPosition.y == outputPosition.componentPosition.y))
             {
                 LevelController.getInstance().closePuzzle("PuzzleCircuit29");
-            }
-        }
-
-        override
-        public void ResetChoices()
-        {
-            Vector2 cell = new Vector2(0f, 0f);
-            for (int i = 0; i < choices.Length; i++)
-            {
-                choices[i].moved = false;
-                choices[i].setComponentToCell(cell);
-                choices[i].transform.localPosition = choices[i].initialTransformPos;
             }
         }
     }
