@@ -23,33 +23,30 @@ namespace Assets.Source.Puzzles
 
         private void Update()
         {
-            if (displaying)
-            {
-                Vector2 atCell = gameObject.transform.position;
-                Vector2 scale = GameObject.Find("Puzzle Grid").GetComponent<PuzzleGrid>().cellSize;
-                Vector2 textPosition = new Vector2(atCell.x - scale.x, atCell.y + scale.y);
-                myText.transform.position = gameObject.GetComponent<CircuitComponent>().GetInfoPosition();
-                myText.text = notation;
-                myText.color = Color.white; 
-            }
-            else
-            {
-                myText.color = Color.Lerp(myText.color, Color.clear, fadeTime * Time.deltaTime);
-            }
+			if (displaying) {
+				myText.color = Color.white; 
+			} else {
+				myText.color = Color.Lerp (myText.color, Color.clear, fadeTime * Time.deltaTime);
+			}
         }
 
         private void OnMouseEnter()
         {
- 
-            //myText.color = Color.Lerp(Color.black, Color.yellow, fadeTime * Time.deltaTime);
-        }
+			//myText.color = Color.Lerp(myText.color, Color.white, fadeTime * Time.deltaTime);
+		}
 
         private void OnMouseOver()
         {
             //myText.transform.position = gameObject.transform.position;
             //Debug.Log("detecting");
             //Debug.Log(myText.transform.position.x + ", " + myText.transform.position.y + ", " + myText.transform.position.z);
-            displaying = true;
+			Vector2 atCell = gameObject.transform.position;
+			Vector2 scale = GameObject.Find("Puzzle Grid").GetComponent<PuzzleGrid>().cellSize;
+			Vector2 textPosition = new Vector2(atCell.x - scale.x, atCell.y + scale.y);
+			myText.transform.position = gameObject.GetComponent<CircuitComponent>().GetInfoPosition();
+			myText.text = notation;
+
+			displaying = true;
 
         }
 
