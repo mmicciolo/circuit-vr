@@ -36,7 +36,7 @@ namespace Assets.Source.Puzzles.Components
                 GameObject cmodel = GetComponentModel();
                 if (cmodel != null)
                 {
-                    cmodel.GetComponent< Renderer>().material = Resources.Load("New Material 1", typeof(Material)) as Material;
+                    cmodel.GetComponent< Renderer>().material = Resources.Load("glow_material", typeof(Material)) as Material;
                 }
                 activeMaterialActive = true;
             }

@@ -130,8 +130,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4386460884646834}
   - component: {fileID: 65732470222324472}
-  - component: {fileID: 114445027519174698}
   - component: {fileID: 114726256829808878}
+  - component: {fileID: 114288277040994366}
   m_Layer: 0
   m_Name: led
   m_TagString: Untagged
@@ -512,7 +512,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: d9cb4f8118df1384da77d98591209401, type: 2}
+  - {fileID: 2100000, guid: b663567d678a143498e71e78a38cb1c4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -657,7 +657,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114445027519174698
+--- !u!114 &114288277040994366
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -665,13 +665,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1610281151503000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0830fdf171c33d54a93ba7f618ffe868, type: 3}
+  m_Script: {fileID: 11500000, guid: b0bbff3483f538b418ff8dca2678d859, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   componentPosition: {x: 0, y: 0}
   componentRotation: 0
   group: 0
-  moveable: 0
+  moveable: 1
   toolboxItem: 0
   activated: 0
   activeMaterialActive: 0
