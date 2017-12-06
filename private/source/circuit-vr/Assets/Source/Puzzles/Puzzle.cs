@@ -7,6 +7,7 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Diagnostics;
+using FMODUnity;
 
 namespace Assets.Source.Puzzles
 {
@@ -31,6 +32,8 @@ namespace Assets.Source.Puzzles
         protected bool completed = false;
         protected string puzzleName;
 
+        private StudioEventEmitter puzzleSound;
+
         public DraggableCircuitComponent[] choices;
 
         private void Start()
@@ -50,6 +53,9 @@ namespace Assets.Source.Puzzles
 
             stepsSinceCompletion = 0;
 
+            puzzleSound = gameObject.AddComponent<StudioEventEmitter>();
+            puzzleSound.Event = "event:/SFX/Puzzle Start";
+            puzzleSound.Play();
         }
 
     public Camera GetCamera()

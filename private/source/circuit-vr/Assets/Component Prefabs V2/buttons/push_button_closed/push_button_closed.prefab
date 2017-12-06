@@ -157,7 +157,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4999020075767402}
   - component: {fileID: 65746082315560310}
-  - component: {fileID: 114036058123183032}
+  - component: {fileID: 114545979593390588}
+  - component: {fileID: 114127754527310284}
+  - component: {fileID: 114736207198240050}
   m_Layer: 0
   m_Name: push_button_closed
   m_TagString: Untagged
@@ -824,7 +826,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114036058123183032
+--- !u!114 &114127754527310284
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -832,7 +834,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 1833783689399170}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6f4508608631c94fbfe693bec490eeb, type: 3}
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/SFX/Button Release
+  PlayEvent: 0
+  StopEvent: 0
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!114 &114545979593390588
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1833783689399170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9044d9910eb6f7547b4aaca13853e93e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   componentPosition: {x: 0, y: 0}
@@ -842,6 +866,28 @@ MonoBehaviour:
   toolboxItem: 0
   activated: 0
   activeMaterialActive: 0
+--- !u!114 &114736207198240050
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1833783689399170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/SFX/Button Press
+  PlayEvent: 0
+  StopEvent: 0
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!135 &135017840163434894
 SphereCollider:
   m_ObjectHideFlags: 1

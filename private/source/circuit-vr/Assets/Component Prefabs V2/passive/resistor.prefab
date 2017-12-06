@@ -202,8 +202,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4852033543921672}
   - component: {fileID: 65907235018163986}
-  - component: {fileID: 114073151541288386}
   - component: {fileID: 114220175880812606}
+  - component: {fileID: 114393667255263580}
   m_Layer: 0
   m_Name: resistor
   m_TagString: Untagged
@@ -1347,24 +1347,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114073151541288386
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1209041875800238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0830fdf171c33d54a93ba7f618ffe868, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  componentPosition: {x: 12, y: 4}
-  componentRotation: 0
-  group: 3
-  moveable: 0
-  toolboxItem: 0
-  activated: 0
-  activeMaterialActive: 0
 --- !u!114 &114220175880812606
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1377,3 +1359,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   notation: Resistor (150 Ohms)
+--- !u!114 &114393667255263580
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1209041875800238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93620df03f34f1646b56a357c97d214e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  componentPosition: {x: 0, y: 0}
+  componentRotation: 0
+  group: 0
+  moveable: 1
+  toolboxItem: 0
+  activated: 0
+  activeMaterialActive: 0
+  resistorColor: 0
