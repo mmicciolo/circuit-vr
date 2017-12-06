@@ -35,6 +35,11 @@
 {c2c57e32-8f9c-4c5b-8958-8b825a5c4fe0} event:/SFX/Rotating Door
 {409e9f66-069c-4f25-a0f0-c14b5ef680b2} event:/SFX/Slide Door
 {c3e59e4d-fa1f-4fb9-a110-a0fd585e01af} event:/SFX/Switch
+{c1a529e8-5b61-4448-8cc6-58ad0c8548f3} event:/SFX/Button Press
+{0893ca38-7033-4ed1-b42d-caffeba30390} event:/SFX/Button Release
+{28ae413f-39e5-4eab-a1f0-5f3273f22ab5} event:/SFX/Puzzle Start
+{9932ba08-065f-4012-a500-03d4259eaed0} event:/SFX/Capacitor Fail
+{ee254fdf-38e0-4570-8ebb-917afafe763e} event:/SFX/Place Component
 {8e16b9f7-5b38-401f-89f3-c0bbfcb6222b} bus:/
 {abcc9ec8-568a-4625-ad1d-3602222adfdd} bus:/AI Dialogue
 {8b9bcbfc-381e-4ee6-8905-43a4cef1ed66} bus:/Ambience
