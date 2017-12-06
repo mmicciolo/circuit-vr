@@ -323,6 +323,7 @@ GameObject:
   - component: {fileID: 216883869}
   - component: {fileID: 216883871}
   - component: {fileID: 216883870}
+  - component: {fileID: 216883873}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -392,6 +393,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &216883873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 216883868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f87e4989c5e703e428df4339d59e2c72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showMainBehavior: 1
+  showInnerGlowBehavior: 0
+  blurShader: {fileID: 4800000, guid: 1855d9636fad3914bacc4a543165c974, type: 3}
+  compositeShader: {fileID: 4800000, guid: e384de4389ba527479054baf0ddb1d3e, type: 3}
+  selectiveRenderShader: {fileID: 4800000, guid: c04b7cae8accdfb4e9c2648823ff39d7,
+    type: 3}
+  glowLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  glowType: 0
+  glowTint: {r: 1, g: 1, b: 1, a: 0}
+  blurSpreadInner: 0.6
+  blurIterations: 5
+  glowIntensityInner: 0.4
+  samples: 2
 --- !u!1001 &337933525
 Prefab:
   m_ObjectHideFlags: 0
@@ -693,16 +720,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0f7a9aa2467ec4c9e6b58de3640564, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  componentPosition: {x: 0, y: 0}
-  componentRotation: 0
-  group: 2
-  moveable: 0
-  toolboxItem: 0
-  activated: 0
-  activeMaterialActive: 0
   moved: 0
   initialPos: {x: 0, y: 0}
   initialTransformPos: {x: 0, y: 0, z: 0}
+  attachedComponent: {fileID: 0}
+  dragEnabled: 0
 --- !u!1 &643304906
 GameObject:
   m_ObjectHideFlags: 0
@@ -989,6 +1011,26 @@ Prefab:
         type: 2}
       propertyPath: componentRotation
       value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288277040994366, guid: 040ed20c3f023e34c8aa13939c2abeb4,
+        type: 2}
+      propertyPath: componentPosition.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288277040994366, guid: 040ed20c3f023e34c8aa13939c2abeb4,
+        type: 2}
+      propertyPath: componentPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288277040994366, guid: 040ed20c3f023e34c8aa13939c2abeb4,
+        type: 2}
+      propertyPath: componentRotation
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288277040994366, guid: 040ed20c3f023e34c8aa13939c2abeb4,
+        type: 2}
+      propertyPath: moveable
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114726256829808878, guid: 040ed20c3f023e34c8aa13939c2abeb4, type: 2}
@@ -1483,6 +1525,12 @@ Transform:
   m_PrefabParentObject: {fileID: 4381186468386704, guid: 558f745958c53da4391a650ad3b2f55f,
     type: 2}
   m_PrefabInternal: {fileID: 853637643}
+--- !u!114 &1639270121 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114463838465441800, guid: 558f745958c53da4391a650ad3b2f55f,
+    type: 2}
+  m_PrefabInternal: {fileID: 853637643}
+  m_Script: {fileID: 11500000, guid: 8aced6ce567f316408e4aba8bd59a57d, type: 3}
 --- !u!114 &1639270123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1494,16 +1542,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0f7a9aa2467ec4c9e6b58de3640564, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  componentPosition: {x: 0, y: 0}
-  componentRotation: 0
-  group: 3
-  moveable: 0
-  toolboxItem: 0
-  activated: 0
-  activeMaterialActive: 0
   moved: 0
   initialPos: {x: 0, y: 0}
   initialTransformPos: {x: 0, y: 0, z: 0}
+  attachedComponent: {fileID: 0}
+  dragEnabled: 0
 --- !u!114 &1639270124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2152,16 +2195,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0f7a9aa2467ec4c9e6b58de3640564, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  componentPosition: {x: 0, y: 0}
-  componentRotation: 0
-  group: 1
-  moveable: 1
-  toolboxItem: 0
-  activated: 0
-  activeMaterialActive: 0
   moved: 0
   initialPos: {x: 0, y: 0}
   initialTransformPos: {x: 0, y: 0, z: 0}
+  attachedComponent: {fileID: 0}
+  dragEnabled: 0
 --- !u!114 &2036483577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2248,6 +2286,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   notation: LED
+--- !u!114 &2080842076 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114288277040994366, guid: 040ed20c3f023e34c8aa13939c2abeb4,
+    type: 2}
+  m_PrefabInternal: {fileID: 794274446}
+  m_Script: {fileID: 11500000, guid: b0bbff3483f538b418ff8dca2678d859, type: 3}
 --- !u!1 &2092514807
 GameObject:
   m_ObjectHideFlags: 0
@@ -2299,6 +2343,8 @@ MonoBehaviour:
   - {fileID: 2036483576}
   - {fileID: 556263477}
   - {fileID: 1639270123}
+  circuitSwitch: {fileID: 1639270121}
+  LED: {fileID: 2080842076}
 --- !u!4 &2138931996 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4618913127661878, guid: 83835b06bc2a60746abdff70f5f9a15b,

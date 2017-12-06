@@ -21,22 +21,12 @@ namespace Assets.Source.Puzzles
 
         private void Update()
         {
-            if ((choices[2].componentPosition.x == outputPosition.componentPosition.x) && (choices[2].componentPosition.y == outputPosition.componentPosition.y))
+            if ((choices[2].attachedComponent.componentPosition.x == outputPosition.componentPosition.x) && (choices[2].attachedComponent.componentPosition.y == outputPosition.componentPosition.y))
             {
                 Debug.Log("Puzzle solved");
                 ActivateCells(0);
                 ActivateCells(3);
                 LevelController.getInstance().closePuzzle("PuzzleK2");
-            }
-        }
-
-        override
-        public void ResetChoices()
-        {
-            for (int i = 0; i < choices.Length; i++)
-            {
-                choices[i].moved = false;
-                choices[i].transform.localPosition = choices[i].initialTransformPos;
             }
         }
     }
