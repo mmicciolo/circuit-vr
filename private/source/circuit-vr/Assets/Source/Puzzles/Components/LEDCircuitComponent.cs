@@ -6,8 +6,8 @@ namespace Assets.Source.Puzzles.Components
 {
     class LEDCircuitComponent : CircuitComponent
     {
-
         private Material glowMaterial = null;
+
         // Use this for initialization
         void Start()
         {
