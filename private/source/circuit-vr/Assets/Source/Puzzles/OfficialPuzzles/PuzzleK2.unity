@@ -187,7 +187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   componentPosition: {x: 0, y: 0}
   componentRotation: 0
-  group: 0
+  group: 3
   moveable: 0
   toolboxItem: 0
   activated: 0
@@ -261,7 +261,7 @@ Prefab:
     - target: {fileID: 114161836404671830, guid: e978c34b4e08374419ed0285b04aad11,
         type: 2}
       propertyPath: group
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1936433878471286, guid: e978c34b4e08374419ed0285b04aad11, type: 2}
       propertyPath: m_IsActive
@@ -832,7 +832,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   componentPosition: {x: 0, y: 0}
   componentRotation: 0
-  group: 0
+  group: 2
   moveable: 1
   toolboxItem: 0
   activated: 0
@@ -901,6 +901,11 @@ Prefab:
     - target: {fileID: 1418481132241574, guid: 83835b06bc2a60746abdff70f5f9a15b, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114100744843446524, guid: 83835b06bc2a60746abdff70f5f9a15b,
+        type: 2}
+      propertyPath: group
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 83835b06bc2a60746abdff70f5f9a15b, type: 2}
@@ -1238,7 +1243,7 @@ RectTransform:
   m_GameObject: {fileID: 1269717440}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 13.09, y: 1, z: 81.36}
-  m_LocalScale: {x: 0.06779661, y: 0.06779661, z: 0.06779661}
+  m_LocalScale: {x: 0.06825939, y: 0.06825939, z: 0.06825939}
   m_Children:
   - {fileID: 286174604}
   m_Father: {fileID: 409141526}
@@ -1386,7 +1391,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   componentPosition: {x: 0, y: 0}
   componentRotation: 0
-  group: 0
+  group: 1
   moveable: 1
   toolboxItem: 0
   activated: 0
@@ -1448,6 +1453,11 @@ Prefab:
       propertyPath: componentRotation
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 114185124596911404, guid: c67f47f3b7e9067489a44c5ff2ce5e4a,
+        type: 2}
+      propertyPath: group
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c67f47f3b7e9067489a44c5ff2ce5e4a, type: 2}
   m_IsPrefabParent: 0
@@ -1508,7 +1518,7 @@ Prefab:
     - target: {fileID: 114161836404671830, guid: e978c34b4e08374419ed0285b04aad11,
         type: 2}
       propertyPath: group
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1936433878471286, guid: e978c34b4e08374419ed0285b04aad11, type: 2}
       propertyPath: m_IsActive
@@ -1645,7 +1655,7 @@ Prefab:
     - target: {fileID: 114161836404671830, guid: e978c34b4e08374419ed0285b04aad11,
         type: 2}
       propertyPath: group
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1936433878471286, guid: e978c34b4e08374419ed0285b04aad11, type: 2}
       propertyPath: m_IsActive

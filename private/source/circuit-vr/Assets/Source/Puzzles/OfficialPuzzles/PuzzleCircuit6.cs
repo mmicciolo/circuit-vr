@@ -23,6 +23,8 @@ namespace Assets.Source.Puzzles
         {
             if ((choices[1].componentPosition.x == outputPosition.componentPosition.x) && (choices[1].componentPosition.y == outputPosition.componentPosition.y))
             {
+                ActivateCells(0);
+                ActivateCells(2);
                 LevelController.getInstance().closePuzzle("PuzzleCircuit6");
             }
         }
