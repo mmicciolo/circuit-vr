@@ -14,7 +14,7 @@ public class MainMenu : MonoBehaviour {
 	
     public void StartGame()
     {
-        SceneManager.LoadScene("Kikloma_01");
+        SceneManager.LoadScene("Mitch_sDreamEnvironment");
     }
 
     public void SettingsButtonClicked()

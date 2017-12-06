@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Circuit VR/Scenes/Settings.unity
     guid: 025e1a0dedc740742905b5ad63ee2759
   - enabled: 1
-    path: Assets/Environment/Kikloma_01.unity
+    path: Assets/Environment/Kikloma_01/Kikloma_01.unity
     guid: 3618f87ff87af4f428e370c3a7dd2265
   - enabled: 1
     path: Assets/Source/Puzzles/OfficialPuzzles/PuzzleCircuit6.unity
@@ -21,8 +21,11 @@ EditorBuildSettings:
     path: Assets/Source/Puzzles/OfficialPuzzles/PuzzleK2.unity
     guid: 93e965a72dc68934186104e53a9a3878
   - enabled: 1
-    path: Assets/Scenes/Puzzles/PuzzleOne.unity
+    path: Assets/Source/Puzzles/OfficialPuzzles/PuzzleOne.unity
     guid: a81ec027cfa22e0459a21c1c03e924e3
   - enabled: 1
     path: Assets/Source/Puzzles/OfficialPuzzles/PuzzleCircuit15.unity
     guid: f6bee94b6d4563047b97f3b71e05a1fc
+  - enabled: 1
+    path: Assets/Environment/Kikloma_02/Assets/Mitch_sDreamEnvironment.unity
+    guid: a05823626c226434bbfd2b8e2bc35858
