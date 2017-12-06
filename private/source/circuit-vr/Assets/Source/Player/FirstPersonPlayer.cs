@@ -55,7 +55,7 @@ namespace Assets.Source.Player
         // Use this for initialization
         private void Start()
         {
-            gameObject.transform.position = LevelController.getInstance().playerPosition;
+            //gameObject.transform.position = LevelController.getInstance().playerPosition;
 
             m_CharacterController = GetComponent<CharacterController>();
             m_Camera = Camera.main;

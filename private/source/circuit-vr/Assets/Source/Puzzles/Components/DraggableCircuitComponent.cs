@@ -38,7 +38,7 @@ namespace Assets.Source.Puzzles.Components
             gameObject.AddComponent<FMODUnity.StudioEventEmitter>();
             snapToGridEmitter = GetComponents<FMODUnity.StudioEventEmitter>()[0];
             snapToToolboxEmitter = GetComponents<FMODUnity.StudioEventEmitter>()[1];
-            snapToGridEmitter.Event = "event:/SFX/Switch";
+            snapToGridEmitter.Event = "event:/SFX/Place Component";
             snapToToolboxEmitter.Event = "event:/SFX/Menu Electricity Sounds";
 
             dragEnabled = true;
