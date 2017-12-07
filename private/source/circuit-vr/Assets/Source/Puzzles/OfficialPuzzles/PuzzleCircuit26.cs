@@ -21,7 +21,7 @@ namespace Assets.Source.Puzzles
             step = 0;
 			stopwatch = new Stopwatch();
 			stopwatch.Start();
-			InitPuzzle();
+			InitPuzzle(6);
 			puzzleName = "PuzzleCircuit26";
 			endDuration = 5;
 			circuitSwitch.lastAnimation = "switch_down";
@@ -60,7 +60,7 @@ namespace Assets.Source.Puzzles
             if (circuitSwitch.lastAnimation != "switch_down")
             {
                 UnityEngine.Debug.Log("Puzzle solved");
-				completed = true;
+				MarkCompleted ();
 			}
             else
             {

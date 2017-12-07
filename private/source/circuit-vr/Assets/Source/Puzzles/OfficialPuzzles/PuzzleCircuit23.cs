@@ -15,14 +15,13 @@ namespace Assets.Source.Puzzles
 
         private void Start()
         {
-            InitPuzzle();
+            InitPuzzle(5);
             puzzleName = "PuzzleCircuit23";
             endDuration = 5;
         }
 
         private void Update()
         {
-            CheckCompletion();
             //Puzzle completion condition
             if ((choices[0].attachedComponent.componentPosition.x == outputPosition.componentPosition.x) && (choices[0].attachedComponent.componentPosition.y == outputPosition.componentPosition.y) && (stepsSinceCompletion == 0))
             {
@@ -30,9 +29,11 @@ namespace Assets.Source.Puzzles
                 ActivateCells(1);
                 ActivateCells(4);
                 ActivateCells(5);
-                completed = true;
+				MarkCompleted ();
                 DisableDragging();
             }
+
+			CheckCompletion();
         }
 
         protected override void AnimateEnd()

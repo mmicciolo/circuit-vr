@@ -36,12 +36,14 @@ namespace Assets.Source.Puzzles
 
         public DraggableCircuitComponent[] choices;
 
+		protected int puzzleNumber = 0;
+
         private void Start()
         {
-            InitPuzzle();
+			InitPuzzle(puzzleNumber);
         }
 
-        protected void InitPuzzle()
+		protected void InitPuzzle(int number)
         {
             puzzleGrid = PuzzleGrid.GetPuzzleGrid();
 
@@ -52,6 +54,8 @@ namespace Assets.Source.Puzzles
             activatedGroups = new List<int>();
 
             stepsSinceCompletion = 0;
+
+			puzzleNumber = number;
 
             puzzleSound = gameObject.AddComponent<StudioEventEmitter>();
             puzzleSound.Event = "event:/SFX/Puzzle Start";
@@ -67,6 +71,11 @@ namespace Assets.Source.Puzzles
         {
             CheckCompletion();
         }
+
+		protected void MarkCompleted() {
+			completed = true;
+			LevelController.getInstance ().SetCompleted (puzzleNumber);
+		}
 
         protected void CheckCompletion()
         {

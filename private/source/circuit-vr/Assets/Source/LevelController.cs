@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Assets.Source.Puzzles;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -18,6 +19,10 @@ public class LevelController : MonoBehaviour
     private static string openScene;
     private static List<GameObject> disabledObject = new List<GameObject>();
 
+    public PuzzleController puzzleController = new PuzzleController();
+
+	bool[] PuzzlesComplete;
+
     private void Awake()
     {
         //If the instance is already created then return it, if not create new instance and return
@@ -26,15 +31,28 @@ public class LevelController : MonoBehaviour
             levelControllerInstance = this;
             firstPersonPlayer = GameObject.FindObjectOfType<Assets.Source.Player.FirstPersonPlayer>();
             interactableCanvas = GameObject.FindObjectOfType<InteractableCanvas>();
+			PuzzlesComplete = new bool[12];
+			for(int i = 0; i < PuzzlesComplete.Length; i++)
+			{
+				PuzzlesComplete[i] = false;
+			}
             DontDestroyOnLoad(levelControllerInstance);
         }
     }
+
+	public void SetCompleted(int puzzleNumber) {
+		PuzzlesComplete [puzzleNumber] = true;
+	}
 
     // Use this for initialization
     void Start () {
         levelControllerInstance.isPaused = false;
         interactablePopUpCamera.gameObject.SetActive(false);
     }
+
+	public bool CheckDoorCanOpen(int puzzleNum){
+		return PuzzlesComplete [puzzleNum];
+	}
 
     public void RememberPosition()
     {

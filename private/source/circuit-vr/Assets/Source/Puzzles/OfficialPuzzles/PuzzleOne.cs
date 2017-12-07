@@ -15,16 +15,15 @@ namespace Assets.Source.Puzzles
 
         private void Start()
         {
-            //ActivateCells(0);
-        }
+			InitPuzzle (0);
+		}
 
         private void Update()
         {
             if (outputPosition.activated)
             {
                 Debug.Log("Puzzle solved");
-                LevelController.getInstance().closePuzzle("PuzzleOne");
-
+				MarkCompleted ();
             }
 
             switch (switches[0].lastAnimation)

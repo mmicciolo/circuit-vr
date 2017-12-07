@@ -16,7 +16,7 @@ namespace Assets.Source.Puzzles
 
         private void Start()
         {
-			InitPuzzle();
+			InitPuzzle(7);
 			puzzleName = "PuzzleCircuit29";
 			endDuration = 20;
         }
@@ -26,7 +26,7 @@ namespace Assets.Source.Puzzles
             if ((choices[0].attachedComponent.componentPosition.x == outputPosition.componentPosition.x) && (choices[0].attachedComponent.componentPosition.y == outputPosition.componentPosition.y))
             {
 				ActivateCells(0);
-				completed = true;
+				MarkCompleted ();
 				DisableDragging();
             }
 			CheckCompletion ();

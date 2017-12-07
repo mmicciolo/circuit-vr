@@ -16,7 +16,7 @@ namespace Assets.Source.Puzzles
 
         private void Start()
         {
-            InitPuzzle();
+            InitPuzzle(4);
             puzzleName = "PuzzleCircuit17";
             endDuration = 5;
         }
@@ -25,7 +25,7 @@ namespace Assets.Source.Puzzles
         {
             if ((choices[1].attachedComponent.componentPosition.x == outputPosition.componentPosition.x) && (choices[1].attachedComponent.componentPosition.y == outputPosition.componentPosition.y) && !close)
             {
-                completed = true;
+				MarkCompleted ();
                 DisableDragging();
                 switch (switch1.lastAnimation)
                 {

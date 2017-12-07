@@ -13,7 +13,7 @@ namespace Assets.Source.Puzzles
         
         private void Start()
         {
-			InitPuzzle();
+			InitPuzzle(1);
 			puzzleName = "PuzzleK2";
 			endDuration = 5;
         }
@@ -23,8 +23,8 @@ namespace Assets.Source.Puzzles
             if ((choices[2].attachedComponent.componentPosition.x == outputPosition.componentPosition.x) && (choices[2].attachedComponent.componentPosition.y == outputPosition.componentPosition.y))
             {
                 ActivateCells(0);
-				completed = true;
-            }
+				MarkCompleted ();
+			}
 
 			CheckCompletion ();
         }

@@ -14,7 +14,7 @@ namespace Assets.Source.Puzzles
 
         private void Start()
         {
-			InitPuzzle();
+			InitPuzzle(10);
 			puzzleName = "PuzzleCircuit33";
 			endDuration = 5;
         }
@@ -23,7 +23,7 @@ namespace Assets.Source.Puzzles
         {
             if (outputPosition.activated)
             {
-				completed = true;
+				MarkCompleted ();
 				foreach (LEDCircuitComponent led in GetComponentsInChildren<LEDCircuitComponent>()) {
 					led.lighted = true;
 				}
