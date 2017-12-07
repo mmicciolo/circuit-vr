@@ -40171,6 +40171,36 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114030800653145070, guid: 064c0df9733c6ff43af95353f786748c,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114030800653145070, guid: 064c0df9733c6ff43af95353f786748c,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114030800653145070, guid: 064c0df9733c6ff43af95353f786748c,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114030800653145070, guid: 064c0df9733c6ff43af95353f786748c,
+        type: 2}
+      propertyPath: m_FontData.m_BestFit
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114030800653145070, guid: 064c0df9733c6ff43af95353f786748c,
+        type: 2}
+      propertyPath: m_FontData.m_FontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 114030800653145070, guid: 064c0df9733c6ff43af95353f786748c,
+        type: 2}
+      propertyPath: m_FontData.m_MinSize
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 064c0df9733c6ff43af95353f786748c, type: 2}
   m_IsPrefabParent: 0
