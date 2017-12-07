@@ -64,6 +64,7 @@ public class DialogueManager : MonoBehaviour {
 
     public bool IsPlaying()
     {
+
         FMOD.Studio.PLAYBACK_STATE state;
         soundEmitter.EventInstance.getPlaybackState(out state);
         if(state == FMOD.Studio.PLAYBACK_STATE.PLAYING)
