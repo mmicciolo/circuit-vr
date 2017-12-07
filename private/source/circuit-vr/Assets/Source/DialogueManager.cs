@@ -62,6 +62,15 @@ public class DialogueManager : MonoBehaviour {
         return digitsOnly.Replace(textToClean, "");
     }
 
+    public void StartDialogue(string dialogName, bool pausePlayer)
+    {
+        if(pausePlayer)
+        {
+            LevelController.getInstance().Pause();
+        }
+        StartDialogue(dialogName);
+    }
+
     public void StartDialogue (string dialogName)//AudioClip audioClip)
     {
         //MusicClip = music;

@@ -8,7 +8,7 @@
 {e0d91d31-7a8e-4ee4-937e-cecd8d48bce3} event:/AI Dialogue/No Help Needed
 {9ffd0f3e-ef96-4ba0-8635-14aa8517dee8} event:/AI Dialogue/Ohms Law
 {5727c9e7-eb96-48ca-aaa5-1b3e3f47a479} event:/AI Dialogue/Omni Explanation Intro
-{4e6949ce-1dec-449e-bbe0-63e71f5f089b} event:/AI Dialogue/Series Parallel Cue
+{4e6949ce-1dec-449e-bbe0-63e71f5f089b} event:/AI Dialogue/Series Parallel
 {f16ceaa5-da71-4ab0-9909-5a160eea46fe} event:/AI Dialogue/System Reengaged
 {135bde36-f0f7-4165-951e-96c69e98def9} event:/AI Dialogue/System Restart Failed
 {285d4add-92e2-4e80-97bc-84126d267bb8} event:/AI Dialogue/Well Done

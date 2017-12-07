@@ -50,6 +50,10 @@ public class LevelController : MonoBehaviour
     void Start () {
         levelControllerInstance.isPaused = false;
         interactablePopUpCamera.gameObject.SetActive(false);
+
+        //Start playing the first dialog
+        //DialogueManager.Instance.StartDialogue("Intro", true);
+
     }
 
 	public bool CheckDoorCanOpen(int puzzleNum){
@@ -66,7 +70,7 @@ public class LevelController : MonoBehaviour
 
     }
 
-    private void Pause()
+    public void Pause()
     {
         isPaused = !isPaused;
     }
