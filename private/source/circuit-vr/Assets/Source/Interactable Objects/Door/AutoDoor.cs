@@ -47,7 +47,7 @@ public class AutoDoor : MonoBehaviour {
             }
             Debug.Log("Coroutine open");
             animator.Play("DoorOpen");
-        GetComponents<FMODUnity.StudioEventEmitter>()[0].Play();
+        //GetComponents<FMODUnity.StudioEventEmitter>()[0].Play();
             isOpen = true;
     }
 
@@ -59,7 +59,7 @@ public class AutoDoor : MonoBehaviour {
             }
             Debug.Log("Coroutine close");
             animator.Play("DoorClose");
-        GetComponents<FMODUnity.StudioEventEmitter>()[1].Play();
+        //GetComponents<FMODUnity.StudioEventEmitter>()[1].Play();
 
         isOpen = false;
     }
