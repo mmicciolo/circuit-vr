@@ -3,19 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using UnityEngine;
+using FMODUnity;
 
 namespace Assets.Source.Puzzles.Components
 {
     class SPSTSwitchCircuitComponent : CircuitComponent
     {
         private Animator animator;
-        private AudioSource audio;
+        private StudioEventEmitter press;
         public String lastAnimation = "switch_idle";
 
         public void Start()
         {
             animator = gameObject.GetComponentsInChildren<Animator>()[0];
-            audio = gameObject.GetComponentsInChildren<AudioSource>()[0];
+            press = GetComponents<StudioEventEmitter>()[0];
             GetOriginalMaterial();
         }
 
@@ -23,7 +24,7 @@ namespace Assets.Source.Puzzles.Components
         {
             if (enabled)
             {
-                audio.Play();
+                press.Play();
                 if (lastAnimation.Equals("switch_idle") || lastAnimation.Equals("spst_up"))
                 {
                     animator.Play("spst_down");
