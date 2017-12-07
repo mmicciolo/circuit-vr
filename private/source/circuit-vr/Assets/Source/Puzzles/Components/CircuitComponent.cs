@@ -29,18 +29,23 @@ namespace Assets.Source.Puzzles.Components
             GetOriginalMaterial();
         }
 
-        private void Update()
+        protected void Update()
         {
-            if(activated && !activeMaterialActive)
+            SetCorrectMaterial();
+        }
+
+        protected void SetCorrectMaterial()
+        {
+            if (activated && !activeMaterialActive)
             {
                 GameObject cmodel = GetComponentModel();
                 if (cmodel != null)
                 {
-                    cmodel.GetComponent< Renderer>().material = Resources.Load("active", typeof(Material)) as Material;
+                    cmodel.GetComponent<Renderer>().material = Resources.Load("glow_material", typeof(Material)) as Material;
                 }
                 activeMaterialActive = true;
             }
-            else if(!activated && activeMaterialActive)
+            else if (!activated && activeMaterialActive)
             {
                 GameObject cmodel = GetComponentModel();
                 if (cmodel != null)
@@ -51,7 +56,7 @@ namespace Assets.Source.Puzzles.Components
             }
         }
 
-        protected void GetOriginalMaterial()
+        public void GetOriginalMaterial()
         {
             GameObject componentModel = GetComponentModel();
             if (componentModel != null)
@@ -64,23 +69,44 @@ namespace Assets.Source.Puzzles.Components
         {
             foreach(Transform child in transform)
             {
-                if(child.gameObject.name.Equals("straight_wire_model") || child.gameObject.name.Equals("right_wire_model") || child.gameObject.name.Equals("3_way_tee_wire"))
+                if(child.gameObject.name.Equals("bb"))
                 {
                     return child.gameObject;
-                }
-                if(child.gameObject.name.Equals("switch_pole"))
-                {
-                    foreach (Transform switchChild in child.gameObject.transform)
-                    {
-                        if(switchChild.gameObject.name.Equals("switch_wire"))
-                        {
-                            return switchChild.gameObject;
-                        }
-                    }
                 }
             }
             return null;
         }
+
+        //protected void GetOriginalMaterial()
+        //{
+        //    GameObject componentModel = GetComponentModel();
+        //    if (componentModel != null)
+        //    {
+        //        originalMaterial = componentModel.GetComponent<Renderer>().material;
+        //    }
+        //}
+
+        //private GameObject GetComponentModel()
+        //{
+        //    foreach(Transform child in transform)
+        //    {
+        //        if(child.gameObject.name.Equals("straight_wire_model") || child.gameObject.name.Equals("right_wire_model") || child.gameObject.name.Equals("3_way_tee_wire"))
+        //        {
+        //            return child.gameObject;
+        //        }
+        //        if(child.gameObject.name.Equals("switch_pole"))
+        //        {
+        //            foreach (Transform switchChild in child.gameObject.transform)
+        //            {
+        //                if(switchChild.gameObject.name.Equals("switch_wire"))
+        //                {
+        //                    return switchChild.gameObject;
+        //                }
+        //            }
+        //        }
+        //    }
+        //    return null;
+        //}
 
         public void Snap()
         {
@@ -163,6 +189,28 @@ namespace Assets.Source.Puzzles.Components
                 }
             }
             return 0;
+        }
+
+        public Vector2 GetInfoPosition()
+        {
+            Vector2 result = gameObject.transform.position;
+            /* if ((componentRotation % 180) == 0)
+             {
+                 result = new Vector2(result.x )
+             } */
+            Vector2 boxColliderSize = gameObject.GetComponent<BoxCollider>().size;
+            Vector2 transformScale = gameObject.transform.localScale;
+
+            switch(componentRotation)
+            {
+                case 90:
+                    result = new Vector2( result.x , result.y + (float)((boxColliderSize.x - 0.5) * transformScale.x) + 0.7f);
+                    break;
+                default:
+                    result = new Vector2(result.x, result.y + (float)(0.5 * transformScale.x) + 0.7f);
+                    break;
+            }
+            return result;
         }
     }
 }

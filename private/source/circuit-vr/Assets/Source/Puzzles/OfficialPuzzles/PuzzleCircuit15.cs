@@ -10,31 +10,38 @@ namespace Assets.Source.Puzzles
 {
     class PuzzleCircuit15 : Puzzle
     {
-        public DraggableCircuitComponent[] choices;
+        public SPSTSwitchCircuitComponent circuitSwitch;
+        public LEDCircuitComponent LED;
 
         private void Start()
         {
-            //ActivateCells(0);
+            InitPuzzle(3);
+            puzzleName = "PuzzleCircuit15";
+            endDuration = 5;
         }
 
         private void Update()
         {
-            if ((choices[2].componentPosition.x == outputPosition.componentPosition.x) && (choices[2].componentPosition.y == outputPosition.componentPosition.y))
+            if ((choices[2].attachedComponent.componentPosition.x == outputPosition.componentPosition.x) && (choices[2].attachedComponent.componentPosition.y == outputPosition.componentPosition.y) && (circuitSwitch.lastAnimation == "spst_down"))
             {
-                LevelController.getInstance().closePuzzle("PuzzleCircuit15");
+                ActivateCells(0);
+                ActivateCells(3);
+				MarkCompleted ();
+                LED.lighted = true;
+                DisableDragging();
             }
-        }
 
-        override
-        public void ResetChoices()
-        {
-            Vector2 cell = new Vector2(0f, 0f);
-            for (int i = 0; i < choices.Length; i++)
-            {
-                choices[i].moved = false;
-                choices[i].setComponentToCell(cell);
-                choices[i].transform.localPosition = choices[i].initialTransformPos;
-            }
+			switch (circuitSwitch.lastAnimation) {
+			case "spst_down":
+				ActivateCells (0);
+				ActivateCells (3);
+				break;
+			default:
+				DeactivateCells (0);
+				DeactivateCells (3);
+				break;
+			}
+            CheckCompletion();
         }
     }
 }

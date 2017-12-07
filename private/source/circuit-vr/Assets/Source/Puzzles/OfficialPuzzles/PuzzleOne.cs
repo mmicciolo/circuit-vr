@@ -15,36 +15,42 @@ namespace Assets.Source.Puzzles
 
         private void Start()
         {
-            //ActivateCells(0);
-        }
+			InitPuzzle (0);
+		}
 
         private void Update()
         {
             if (outputPosition.activated)
             {
                 Debug.Log("Puzzle solved");
-                LevelController.getInstance().closePuzzle("PuzzleOne");
-
+				MarkCompleted ();
             }
 
             switch (switches[0].lastAnimation)
             {
                 case "switch_up":
-                    ActivateCells(2);
-                    ActivateCells(1);
                     switch(switches[1].lastAnimation)
                     {
                         case "switch_up":
+                            ActivateCells(0);
+                            ActivateCells(2);
+                            ActivateCells(1);
                             ActivateCells(4);
                             ActivateCells(5);
                             DeactivateCells(3);
                             break;
                         case "switch_down":
+                            ActivateCells(0);
+                            ActivateCells(2);
+                            ActivateCells(1);
                             ActivateCells(4);
                             ActivateCells(3);
                             DeactivateCells(5);
                             break;
                         default:
+                            DeactivateCells(0);
+                            DeactivateCells(2);
+                            DeactivateCells(1);
                             DeactivateCells(4);
                             DeactivateCells(3);
                             DeactivateCells(5);
@@ -52,16 +58,20 @@ namespace Assets.Source.Puzzles
                     }
                     break;
                 case "switch_down":
-                    ActivateCells(3);
-                    ActivateCells(1);
                     switch (switches[1].lastAnimation)
                     {
                         case "switch_down":
+                            ActivateCells(0);
+                            ActivateCells(3);
+                            ActivateCells(1);
                             ActivateCells(4);
                             ActivateCells(2);
                             DeactivateCells(5);
                             break;
                         default:
+                            DeactivateCells(0);
+                            DeactivateCells(3);
+                            DeactivateCells(1);
                             DeactivateCells(4);
                             DeactivateCells(2);
                             DeactivateCells(5);
@@ -69,6 +79,7 @@ namespace Assets.Source.Puzzles
                     }
                     break;
                 default:
+                    DeactivateCells(0);
                     DeactivateCells(1);
                     DeactivateCells(2);
                     DeactivateCells(3);
