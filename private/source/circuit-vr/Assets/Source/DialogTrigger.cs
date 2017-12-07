@@ -11,13 +11,30 @@ namespace Assets.Source
         public string dialogName;
         public bool pausePlayer = false;
         public bool playOnce = true;
+        public bool checkBefore = false;
+        public int puzzleBefore;
 
         private void OnTriggerEnter(Collider other)
         {
-            if(playOnce)
+            if(checkBefore)
             {
-                playOnce = false;
-                DialogueManager.Instance.StartDialogue(dialogName, pausePlayer);
+                if(LevelController.getInstance().CheckDoorCanOpen(puzzleBefore))
+                {
+
+                    if (playOnce)
+                    {
+                        playOnce = false;
+                        DialogueManager.Instance.StartDialogue(dialogName, pausePlayer);
+                    }
+                }
+            }
+            else
+            {
+                if (playOnce)
+                {
+                    playOnce = false;
+                    DialogueManager.Instance.StartDialogue(dialogName, pausePlayer);
+                }
             }
         }
     }

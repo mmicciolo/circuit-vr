@@ -59,7 +59,7 @@ MonoBehaviour:
   - {fileID: 114164635501076846}
   MasterBankRef: {fileID: 114859598603792760}
   StringsBankRef: {fileID: 114333182050169612}
-  stringsBankWriteTime: 636482503008495826
+  stringsBankWriteTime: 636482508957996872
   cacheVersion: 2
 --- !u!114 &114003818431547030
 MonoBehaviour:
@@ -673,7 +673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\FMOD\Build\Desktop\CircuitVR Master Bank.strings.bank
-  lastModified: 636482503008495826
+  lastModified: 636482508957996872
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -1853,7 +1853,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\Matt\Desktop\circuit-vr\private\source\circuit-vr\Assets\FMOD\Build\Desktop\CircuitVR
     Master Bank.bank
-  lastModified: 636482503008440644
+  lastModified: 636482508960921844
   LoadResult: 0
   FileSizes:
   - Name: 

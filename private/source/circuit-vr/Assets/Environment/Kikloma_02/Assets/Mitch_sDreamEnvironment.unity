@@ -15613,6 +15613,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1157487853}
+  - {fileID: 1085201894}
+  - {fileID: 936923448}
+  - {fileID: 1160702008}
+  - {fileID: 1807540476}
+  - {fileID: 1927918946}
+  - {fileID: 1884755361}
   m_Father: {fileID: 0}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -19596,6 +19602,64 @@ Transform:
   m_Father: {fileID: 1533227247}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &936923447
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 936923448}
+  - component: {fileID: 936923450}
+  - component: {fileID: 936923449}
+  m_Layer: 0
+  m_Name: Cue 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &936923448
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 936923447}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.38, y: 0, z: -3.56}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 718813738}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &936923449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 936923447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d1590e5be696fe4e8b0e10fa9530a8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogName: Cue 2
+  pausePlayer: 0
+  playOnce: 1
+  checkBefore: 0
+  puzzleBefore: 0
+--- !u!65 &936923450
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 936923447}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 4.5307865}
+  m_Center: {x: 0, y: 0, z: 0.087632656}
 --- !u!1 &937702045
 GameObject:
   m_ObjectHideFlags: 0
@@ -22979,6 +23043,64 @@ Transform:
   m_Father: {fileID: 600219529}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1085201893
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1085201894}
+  - component: {fileID: 1085201896}
+  - component: {fileID: 1085201895}
+  m_Layer: 0
+  m_Name: Cue 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1085201894
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1085201893}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -15.575, y: 0.433, z: -15.57}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 718813738}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1085201895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1085201893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d1590e5be696fe4e8b0e10fa9530a8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogName: Cue 1
+  pausePlayer: 0
+  playOnce: 1
+  checkBefore: 0
+  puzzleBefore: 0
+--- !u!65 &1085201896
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1085201893}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 6.3525887}
+  m_Center: {x: 0, y: 0, z: -0.23575974}
 --- !u!1001 &1086515561
 Prefab:
   m_ObjectHideFlags: 0
@@ -24714,7 +24836,7 @@ GameObject:
   - component: {fileID: 1157487855}
   - component: {fileID: 1157487854}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Omni Explanation Intro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24747,6 +24869,8 @@ MonoBehaviour:
   dialogName: Omni Explanation Intro
   pausePlayer: 0
   playOnce: 1
+  checkBefore: 0
+  puzzleBefore: 0
 --- !u!65 &1157487855
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24813,6 +24937,64 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 302d3f9bfbdadb74081a09b3625d7af7, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &1160702007
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1160702008}
+  - component: {fileID: 1160702010}
+  - component: {fileID: 1160702009}
+  m_Layer: 0
+  m_Name: Cue 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1160702008
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1160702007}
+  m_LocalRotation: {x: 0, y: 0.38268343, z: 0, w: 0.92387956}
+  m_LocalPosition: {x: -3.02, y: 0, z: 13.26}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 718813738}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
+--- !u!114 &1160702009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1160702007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d1590e5be696fe4e8b0e10fa9530a8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogName: Cue 3
+  pausePlayer: 0
+  playOnce: 1
+  checkBefore: 1
+  puzzleBefore: 5
+--- !u!65 &1160702010
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1160702007}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 9.466356}
+  m_Center: {x: 0.000009824886, y: 0, z: 2.5554154}
 --- !u!1 &1162961300
 GameObject:
   m_ObjectHideFlags: 0
@@ -36757,6 +36939,64 @@ Transform:
   m_Father: {fileID: 1744754182}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1807540475
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1807540476}
+  - component: {fileID: 1807540478}
+  - component: {fileID: 1807540477}
+  m_Layer: 0
+  m_Name: Cue 4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1807540476
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1807540475}
+  m_LocalRotation: {x: -0, y: 0.38268343, z: -0, w: 0.92387956}
+  m_LocalPosition: {x: -11.53, y: 0, z: 11.99}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 718813738}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
+--- !u!114 &1807540477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1807540475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d1590e5be696fe4e8b0e10fa9530a8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogName: Cue 4
+  pausePlayer: 0
+  playOnce: 1
+  checkBefore: 1
+  puzzleBefore: 8
+--- !u!65 &1807540478
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1807540475}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 9.466356}
+  m_Center: {x: 0.000009824886, y: 0, z: 2.5554154}
 --- !u!1001 &1807825249
 Prefab:
   m_ObjectHideFlags: 0
@@ -39022,6 +39262,64 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 302d3f9bfbdadb74081a09b3625d7af7, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &1884755360
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1884755361}
+  - component: {fileID: 1884755363}
+  - component: {fileID: 1884755362}
+  m_Layer: 0
+  m_Name: Cue 6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1884755361
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1884755360}
+  m_LocalRotation: {x: -0, y: 0.38268343, z: -0, w: 0.92387956}
+  m_LocalPosition: {x: -1.18, y: 0, z: -13.16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 718813738}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
+--- !u!114 &1884755362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1884755360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d1590e5be696fe4e8b0e10fa9530a8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogName: Cue 6
+  pausePlayer: 0
+  playOnce: 1
+  checkBefore: 1
+  puzzleBefore: 10
+--- !u!65 &1884755363
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1884755360}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 9.466356}
+  m_Center: {x: 0.000009824886, y: 0, z: 2.5554154}
 --- !u!1 &1886480315 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 302d3f9bfbdadb74081a09b3625d7af7, type: 3}
@@ -40113,7 +40411,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4187744440069088, guid: 064c0df9733c6ff43af95353f786748c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 9.66
+      value: 9.55
       objectReference: {fileID: 0}
     - target: {fileID: 4187744440069088, guid: 064c0df9733c6ff43af95353f786748c, type: 2}
       propertyPath: m_LocalPosition.y
@@ -40121,7 +40419,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4187744440069088, guid: 064c0df9733c6ff43af95353f786748c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.92
+      value: 3.52
       objectReference: {fileID: 0}
     - target: {fileID: 4187744440069088, guid: 064c0df9733c6ff43af95353f786748c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -40150,17 +40448,17 @@ Prefab:
     - target: {fileID: 224027599203229256, guid: 064c0df9733c6ff43af95353f786748c,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 463.84
+      value: 468.45
       objectReference: {fileID: 0}
     - target: {fileID: 224027599203229256, guid: 064c0df9733c6ff43af95353f786748c,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 281.614
+      value: 323.614
       objectReference: {fileID: 0}
     - target: {fileID: 224027599203229256, guid: 064c0df9733c6ff43af95353f786748c,
         type: 2}
       propertyPath: m_LocalPosition.z
-      value: -0.92
+      value: -3.52
       objectReference: {fileID: 0}
     - target: {fileID: 20860348420051358, guid: 064c0df9733c6ff43af95353f786748c,
         type: 2}
@@ -40214,6 +40512,64 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.0000005, y: 0.0501, z: 4}
   m_Center: {x: 0, y: 0.024949998, z: 0}
+--- !u!1 &1927918945
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1927918946}
+  - component: {fileID: 1927918948}
+  - component: {fileID: 1927918947}
+  m_Layer: 0
+  m_Name: Cue 5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1927918946
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1927918945}
+  m_LocalRotation: {x: -0, y: 0.38268343, z: -0, w: 0.92387956}
+  m_LocalPosition: {x: -2.4, y: 0, z: 12.64}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 718813738}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
+--- !u!114 &1927918947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1927918945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d1590e5be696fe4e8b0e10fa9530a8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogName: Cue 5
+  pausePlayer: 0
+  playOnce: 1
+  checkBefore: 1
+  puzzleBefore: 8
+--- !u!65 &1927918948
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1927918945}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 9.466356}
+  m_Center: {x: 0.000009824886, y: 0, z: 2.5554154}
 --- !u!1 &1929671027 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 302d3f9bfbdadb74081a09b3625d7af7, type: 3}

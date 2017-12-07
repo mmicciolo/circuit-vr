@@ -52,7 +52,7 @@ public class LevelController : MonoBehaviour
         interactablePopUpCamera.gameObject.SetActive(false);
 
         //Start playing the first dialog
-        //DialogueManager.Instance.StartDialogue("Intro", true);
+        DialogueManager.Instance.StartDialogue("Intro", true);
 
     }
 
