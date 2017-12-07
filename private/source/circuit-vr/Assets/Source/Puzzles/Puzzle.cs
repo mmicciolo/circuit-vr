@@ -153,12 +153,16 @@ namespace Assets.Source.Puzzles
 
         protected virtual void ClosePuzzle()
         {
-			int cue = rand.Next (0, 2);
+			int cue = rand.Next (0, 3);
 			if ((!DialogueManager.Instance.IsPlaying ())) {
 				if (cue == 0) {
 					DialogueManager.Instance.StartDialogue ("Good Job");
-				} else {
+				} 
+				if (cue == 1) {
 					DialogueManager.Instance.StartDialogue ("Well Done");
+				}
+				if (cue == 2) {
+					DialogueManager.Instance.StartDialogue ("System Reengaged");
 				}
 			}
             LevelController.getInstance().closePuzzle(puzzleName);
