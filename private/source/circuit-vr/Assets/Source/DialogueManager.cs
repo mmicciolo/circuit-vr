@@ -224,6 +224,7 @@ public class DialogueManager : MonoBehaviour {
     public IEnumerator EndPause()
     {
         yield return new WaitForSeconds(2.0f);
+        LevelController.getInstance().isPaused = false;
         displaySub = "";
         Destroy(soundEmitter);
     }
