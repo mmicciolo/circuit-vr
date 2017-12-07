@@ -40,17 +40,17 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: lambert18
-    second: {fileID: 2100000, guid: edf906969be47e04c84b1314556ee9c0, type: 2}
+    second: {fileID: 2100000, guid: 831eb85da75c30d45bfedb60ac534899, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: lambert5
-    second: {fileID: 2100000, guid: e72826dc51f37bc46b7d60c9cdd18fc1, type: 2}
+    second: {fileID: 2100000, guid: d2537132c1aa23d49a77d6804892690f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: lambert6
-    second: {fileID: 2100000, guid: 9d36386093b70a94ab18eb1ac83763ea, type: 2}
+    second: {fileID: 2100000, guid: c7bb65d602532dc43b440a35a1c15677, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -88,7 +88,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0

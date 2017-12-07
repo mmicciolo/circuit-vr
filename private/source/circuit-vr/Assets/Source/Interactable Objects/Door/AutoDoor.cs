@@ -8,7 +8,7 @@ public class AutoDoor : MonoBehaviour {
 
     bool needsOpen;
     bool isOpen;
-	bool canOpen;
+	bool canOpen = true;
     public int puzzleNumber;
 
 	// Use this for initialization
@@ -20,7 +20,7 @@ public class AutoDoor : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		canOpen = LevelController.getInstance ().CheckDoorCanOpen (puzzleNumber);
+		//canOpen = LevelController.getInstance ().CheckDoorCanOpen (puzzleNumber);
 
         if (needsOpen != isOpen)
         {

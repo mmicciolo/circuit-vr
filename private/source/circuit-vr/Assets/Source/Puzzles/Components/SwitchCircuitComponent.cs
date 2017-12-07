@@ -3,25 +3,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using UnityEngine;
+using FMODUnity;
 
 namespace Assets.Source.Puzzles.Components
 {
     class SwitchCircuitComponent : CircuitComponent
     {
         public Animator animator;
-        private AudioSource audio;
+        private StudioEventEmitter press;
         public String lastAnimation = "switch_idle";
 
         public void Start()
         {
             animator = gameObject.GetComponentsInChildren<Animator>()[0];
-            audio = gameObject.GetComponentsInChildren<AudioSource>()[0];
+            press = GetComponents<StudioEventEmitter>()[0];
             GetOriginalMaterial();
         }
 
         public void OnMouseDown()
         {
-            audio.Play();
+            press.Play();
             if(lastAnimation.Equals("switch_idle") || lastAnimation.Equals("switch_down_up"))
             {
                 animator.Play("switch_up");
