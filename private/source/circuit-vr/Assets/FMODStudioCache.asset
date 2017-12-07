@@ -46,7 +46,6 @@ MonoBehaviour:
   - {fileID: 114758823666170408}
   - {fileID: 114930859795226148}
   - {fileID: 114723186420426248}
-  - {fileID: 114956772880859038}
   - {fileID: 114543292678167770}
   - {fileID: 114050940435700816}
   - {fileID: 114532631130376436}
@@ -57,9 +56,10 @@ MonoBehaviour:
   - {fileID: 114423435066908768}
   - {fileID: 114576357659752360}
   - {fileID: 114186979288976916}
+  - {fileID: 114164635501076846}
   MasterBankRef: {fileID: 114859598603792760}
   StringsBankRef: {fileID: 114333182050169612}
-  stringsBankWriteTime: 636482158878632224
+  stringsBankWriteTime: 636482503008495826
   cacheVersion: 2
 --- !u!114 &114003818431547030
 MonoBehaviour:
@@ -338,6 +338,28 @@ MonoBehaviour:
   - Name: 
     Value: 14497664
   Exists: 1
+--- !u!114 &114164635501076846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/AI Dialogue/Series Parallel
+  guid: ce49694eec1d9e44bbe063e71f5f089b
+  Banks:
+  - {fileID: 114859598603792760}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 20000
 --- !u!114 &114176772501973828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -651,11 +673,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\FMOD\Build\Desktop\CircuitVR Master Bank.strings.bank
-  lastModified: 636482158878632224
+  lastModified: 636482503008495826
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 2846
+    Value: 2842
   Exists: 1
 --- !u!114 &114333404013499636
 MonoBehaviour:
@@ -1831,7 +1853,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\Matt\Desktop\circuit-vr\private\source\circuit-vr\Assets\FMOD\Build\Desktop\CircuitVR
     Master Bank.bank
-  lastModified: 636482158878612157
+  lastModified: 636482503008440644
   LoadResult: 0
   FileSizes:
   - Name: 
