@@ -108,13 +108,14 @@ namespace Assets.Source.Player
                     subtitle.gameObject.SetActive(true);
                     float distance = Vector3.Distance(transform.position, hit.point);
                     bool itb = hit.collider.gameObject.GetComponents<Interactable>().Length > 0;
-                    subtitle.GetComponent<Text>().text = hit.collider.gameObject.name + "\n distance: " + distance;
-                    if ((distance <= 3f) && (itb))
-                    {
-                        currentInteractable = hit.collider.gameObject;
-                        subtitle.GetComponent<Text>().text += "\n Press E";
-                    }
-                    else currentInteractable = null;
+                    //subtitle.GetComponent<Text>().text = hit.collider.gameObject.name + "\n distance: " + distance;
+					if ((distance <= 3f) && (itb)) {
+						currentInteractable = hit.collider.gameObject;
+						subtitle.GetComponent<Text> ().text = "Press E";
+					} else {
+						currentInteractable = null;
+						subtitle.gameObject.SetActive (false);
+					}
                 }
                 else
                 {

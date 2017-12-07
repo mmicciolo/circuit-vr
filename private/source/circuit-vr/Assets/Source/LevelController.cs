@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using FMODUnity;
 
 public class LevelController : MonoBehaviour
 {
@@ -26,6 +27,8 @@ public class LevelController : MonoBehaviour
 	public string[] puzzleOrder = new string[] {"One", "Circuit6", "K2", "Circuit30", "Circuit31", "Circuit15", "Circuit29", "Circuit33", "Circuit23", "Circuit17", "Circuit34", "Circuit26" };
 	List<int> puzzlesCompleted;
 
+	private StudioEventEmitter buzzSound;
+
     private void Awake()
     {
         //If the instance is already created then return it, if not create new instance and return
@@ -36,6 +39,8 @@ public class LevelController : MonoBehaviour
             interactableCanvas = GameObject.FindObjectOfType<InteractableCanvas>();
 			puzzlesCompleted = new List<int>();
             lockBehind = GameObject.FindGameObjectWithTag("lock_behind").GetComponent<AutoDoor>();
+			buzzSound = gameObject.AddComponent<StudioEventEmitter>();
+			buzzSound.Event = "event:/SFX/Failed Circuit";
             DontDestroyOnLoad(levelControllerInstance);
         }
     }
@@ -112,7 +117,7 @@ public class LevelController : MonoBehaviour
 			//Load the scene
 			SceneManager.LoadScene (("Puzzle" + sceneName), LoadSceneMode.Additive);
 		} else {
-			//play buzzer sound
+			buzzSound.Play ();
 		}
     }
 

@@ -38,7 +38,7 @@ namespace Assets.Source.Puzzles
 
 		protected int puzzleNumber = 0;
 
-        private StudioEventEmitter buzzSound;
+		System.Random rand;
 
         private void Start()
         {
@@ -63,8 +63,7 @@ namespace Assets.Source.Puzzles
             puzzleSound.Event = "event:/SFX/Puzzle Start";
             puzzleSound.Play();
 
-            buzzSound = gameObject.AddComponent<StudioEventEmitter>();
-            puzzleSound.Event = "event:/SFX/Menu Tone 2";
+			rand = new System.Random ();
         }
 
     public Camera GetCamera()
@@ -147,6 +146,18 @@ namespace Assets.Source.Puzzles
 
         protected virtual void ClosePuzzle()
         {
+			int cue = rand.Next (0, 3);
+			if ((!DialogueManager.Instance.IsPlaying ())) {
+				if (cue == 0) {
+					DialogueManager.Instance.StartDialogue ("Good Job");
+				} 
+				if (cue == 1) {
+					DialogueManager.Instance.StartDialogue ("Well Done");
+				}
+				if (cue == 2) {
+					DialogueManager.Instance.StartDialogue ("System Reengaged");
+				}
+			}
             LevelController.getInstance().closePuzzle(puzzleName);
         }
 
