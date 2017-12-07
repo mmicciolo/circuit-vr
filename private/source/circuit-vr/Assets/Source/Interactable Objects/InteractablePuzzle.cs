@@ -9,10 +9,13 @@ namespace Assets.Source.Interactable_Objects
 {
     class InteractablePuzzle : MonoBehaviour
     {
-        public string sceneName;
+		public int puzzleNumber;
+        string sceneName;
 
         public virtual void open()
         {
+			sceneName = LevelController.getInstance ().puzzleOrder [puzzleNumber];
+			Debug.Log (sceneName);
             LevelController.getInstance().openPuzzle(sceneName);
         }
 

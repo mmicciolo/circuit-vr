@@ -21,7 +21,8 @@ public class LevelController : MonoBehaviour
 
     public PuzzleController puzzleController = new PuzzleController();
 
-	bool[] PuzzlesComplete;
+	public string[] puzzleOrder = new string[] {"One", "Circuit6", "K2", "Circuit30", "Circuit31", "Circuit15", "Circuit29", "Circuit33", "Circuit23", "Circuit17", "Circuit34", "Circuit26" };
+	List<int> puzzlesCompleted;
 
     private void Awake()
     {
@@ -31,17 +32,17 @@ public class LevelController : MonoBehaviour
             levelControllerInstance = this;
             firstPersonPlayer = GameObject.FindObjectOfType<Assets.Source.Player.FirstPersonPlayer>();
             interactableCanvas = GameObject.FindObjectOfType<InteractableCanvas>();
-			PuzzlesComplete = new bool[12];
-			for(int i = 0; i < PuzzlesComplete.Length; i++)
-			{
-				PuzzlesComplete[i] = false;
-			}
+			puzzlesCompleted = new List<int>();
+			puzzlesCompleted.Add (0);
             DontDestroyOnLoad(levelControllerInstance);
         }
     }
 
 	public void SetCompleted(int puzzleNumber) {
-		PuzzlesComplete [puzzleNumber] = true;
+		foreach (int i in puzzlesCompleted) Debug.Log (i);
+		if (!puzzlesCompleted.Contains (puzzleNumber)) {
+			puzzlesCompleted.Add (puzzleNumber);
+		}
 	}
 
     // Use this for initialization
@@ -51,7 +52,7 @@ public class LevelController : MonoBehaviour
     }
 
 	public bool CheckDoorCanOpen(int puzzleNum){
-		return PuzzlesComplete [puzzleNum];
+		return (puzzlesCompleted.Contains(puzzleNum));
 	}
 
     public void RememberPosition()
@@ -95,14 +96,19 @@ public class LevelController : MonoBehaviour
 
     public void openPuzzle(string sceneName)
     {
-        //Store the currently open scene
-        openScene = SceneManager.GetActiveScene().name;
+		//if previous puzzles are solved
+		if (sceneName == puzzleOrder [puzzlesCompleted.Count]) {
+			//Store the currently open scene
+			openScene = SceneManager.GetActiveScene ().name;
 
-        //Add a callback for when the loading completes
-        SceneManager.sceneLoaded += OnPuzzleLoaded;
+			//Add a callback for when the loading completes
+			SceneManager.sceneLoaded += OnPuzzleLoaded;
 
-        //Load the scene
-        SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
+			//Load the scene
+			SceneManager.LoadScene (("Puzzle" + sceneName), LoadSceneMode.Additive);
+		} else {
+			//play buzzer sound
+		}
     }
 
     private void OnPuzzleLoaded(Scene scene, LoadSceneMode mode)

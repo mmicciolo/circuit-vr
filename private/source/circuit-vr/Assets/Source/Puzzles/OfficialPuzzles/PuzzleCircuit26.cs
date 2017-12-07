@@ -21,7 +21,7 @@ namespace Assets.Source.Puzzles
             step = 0;
 			stopwatch = new Stopwatch();
 			stopwatch.Start();
-			InitPuzzle(6);
+			InitPuzzle(11);
 			puzzleName = "PuzzleCircuit26";
 			endDuration = 5;
 			circuitSwitch.lastAnimation = "switch_down";

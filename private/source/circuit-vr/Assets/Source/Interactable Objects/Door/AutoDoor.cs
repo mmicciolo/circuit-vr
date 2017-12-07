@@ -21,6 +21,7 @@ public class AutoDoor : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		canOpen = LevelController.getInstance ().CheckDoorCanOpen (puzzleNumber);
+
         if (needsOpen != isOpen)
         {
             StartCoroutine(needsOpen? OpenDoor() : CloseDoor());

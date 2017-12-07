@@ -16,7 +16,7 @@ namespace Assets.Source.Puzzles
 
         private void Start()
         {
-			InitPuzzle(7);
+			InitPuzzle(6);
 			puzzleName = "PuzzleCircuit29";
 			endDuration = 20;
         }
