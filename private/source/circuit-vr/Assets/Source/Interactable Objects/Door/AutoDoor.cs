@@ -8,6 +8,7 @@ public class AutoDoor : MonoBehaviour {
 
     bool needsOpen;
     bool isOpen;
+    public int puzzleNumber;
 
 	// Use this for initialization
 	void Start () {

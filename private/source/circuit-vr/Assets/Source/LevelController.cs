@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Assets.Source.Puzzles;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -17,6 +18,8 @@ public class LevelController : MonoBehaviour
 
     private static string openScene;
     private static List<GameObject> disabledObject = new List<GameObject>();
+
+    public PuzzleController puzzleController = new PuzzleController();
 
     private void Awake()
     {
