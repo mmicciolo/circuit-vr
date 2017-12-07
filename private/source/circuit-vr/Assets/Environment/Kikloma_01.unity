@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -5616,7 +5616,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 671201586}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 770.83, y: 369.114, z: -0.22}
+  m_LocalPosition: {x: 578.83, y: 260.114, z: -0.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 579701555}
@@ -8063,6 +8063,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a720b5863f4574f81e4d9bf4e988b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  subTiming: []
+  subText: []
+  displaySub: 
+  triggerTiming: []
+  triggerObjectNames: []
 --- !u!4 &941271297
 Transform:
   m_ObjectHideFlags: 0
@@ -13202,7 +13207,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 18c7b50a58ced084a9bcb9c80a82ea37, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
@@ -14708,7 +14713,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 006341d2110a9e344bfa0a63d5402b59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myClip: {fileID: 8300000, guid: 035809b56c869fc468cdff70fc26b44e, type: 3}
 --- !u!1 &1852940028
 GameObject:
   m_ObjectHideFlags: 0

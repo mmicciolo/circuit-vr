@@ -79,9 +79,10 @@ public class DialogueManager : MonoBehaviour {
         nextSub = 0;
         //nextTrigger = 0;
 
-        
+
 
         //load text file
+        Debug.Log(DialogueClip.name);
         TextAsset subfile = Resources.Load("Subtitles/"+DialogueClip.name) as TextAsset;
         fileLines = subfile.text.Split('\n');
 
