@@ -33,13 +33,11 @@ public class LevelController : MonoBehaviour
             firstPersonPlayer = GameObject.FindObjectOfType<Assets.Source.Player.FirstPersonPlayer>();
             interactableCanvas = GameObject.FindObjectOfType<InteractableCanvas>();
 			puzzlesCompleted = new List<int>();
-			puzzlesCompleted.Add (0);
             DontDestroyOnLoad(levelControllerInstance);
         }
     }
 
 	public void SetCompleted(int puzzleNumber) {
-		foreach (int i in puzzlesCompleted) Debug.Log (i);
 		if (!puzzlesCompleted.Contains (puzzleNumber)) {
 			puzzlesCompleted.Add (puzzleNumber);
 		}

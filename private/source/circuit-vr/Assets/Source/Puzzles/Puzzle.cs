@@ -38,6 +38,8 @@ namespace Assets.Source.Puzzles
 
 		protected int puzzleNumber = 0;
 
+        private StudioEventEmitter buzzSound;
+
         private void Start()
         {
 			InitPuzzle(puzzleNumber);
@@ -60,6 +62,9 @@ namespace Assets.Source.Puzzles
             puzzleSound = gameObject.AddComponent<StudioEventEmitter>();
             puzzleSound.Event = "event:/SFX/Puzzle Start";
             puzzleSound.Play();
+
+            buzzSound = gameObject.AddComponent<StudioEventEmitter>();
+            puzzleSound.Event = "event:/SFX/Menu Tone 2";
         }
 
     public Camera GetCamera()
@@ -104,20 +109,39 @@ namespace Assets.Source.Puzzles
         protected virtual void AnimateEnd()
         {
             //UnityEngine.Debug.Log("animate called");
-			switch (stopwatch.ElapsedMilliseconds)
+            if ((stopwatch.ElapsedMilliseconds >= 500) && (stopwatch.ElapsedMilliseconds < 600))
             {
-                case 1000:
-                    foreach (int c in activatedGroups)
-                    {
-                        DeactivateCells(c);
-                    }
-                    break;
-                case 1400:
-                    foreach (int c in activatedGroups)
-                    {
-                        ActivateCells(c);
-                    }
-                    break;
+                foreach (int c in activatedGroups)
+                {
+                    DeactivateCells(c);
+                }
+            }
+
+            if ((stopwatch.ElapsedMilliseconds >= 600) && (stopwatch.ElapsedMilliseconds < 700))
+            {
+                foreach (int c in activatedGroups)
+                {
+                    ActivateCells(c);
+                }
+
+                //if (!buzzSound.IsPlaying()) buzzSound.Play();
+            }
+
+            if ((stopwatch.ElapsedMilliseconds >= 700) && (stopwatch.ElapsedMilliseconds < 800))
+            {
+                foreach (int c in activatedGroups)
+                {
+                    DeactivateCells(c);
+                }
+            }
+
+            if (stopwatch.ElapsedMilliseconds >= 800)
+            {
+                foreach (int c in activatedGroups)
+                {
+                    ActivateCells(c);
+                }
+                //if (!buzzSound.IsPlaying()) buzzSound.Play();
             }
         }
 
@@ -141,6 +165,10 @@ namespace Assets.Source.Puzzles
                     choices[i].moved = false;
                     choices[i].attachedComponent.setComponentToCell(cell);
                     choices[i].transform.localPosition = choices[i].initialTransformPos;
+                    if (components[choices[i].attachedComponent.group] != null)
+                    {
+                        components[choices[i].attachedComponent.group].Remove(choices[i].gameObject);
+                    }
                 }
             }
         }

@@ -52,10 +52,13 @@ public class AutoDoor : MonoBehaviour {
             {
                 yield return null;
             }
+        if (needsOpen)
+        {
             Debug.Log("Coroutine open");
             animator.Play("DoorOpen");
-        //GetComponents<FMODUnity.StudioEventEmitter>()[0].Play();
+            //GetComponents<FMODUnity.StudioEventEmitter>()[0].Play();
             isOpen = true;
+        }
     }
 
     IEnumerator CloseDoor()
@@ -64,10 +67,13 @@ public class AutoDoor : MonoBehaviour {
             {
                 yield return null;
             }
+        if (!needsOpen)
+        {
             Debug.Log("Coroutine close");
             animator.Play("DoorClose");
-        //GetComponents<FMODUnity.StudioEventEmitter>()[1].Play();
+            //GetComponents<FMODUnity.StudioEventEmitter>()[1].Play();
 
-        isOpen = false;
+            isOpen = false;
+        }
     }
 }
