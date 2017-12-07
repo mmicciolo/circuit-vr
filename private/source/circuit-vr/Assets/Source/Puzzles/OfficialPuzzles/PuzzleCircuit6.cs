@@ -26,7 +26,6 @@ namespace Assets.Source.Puzzles
                 ActivateCells(0);
                 ActivateCells(2);
                 completed = true;
-                LevelController.getInstance().puzzleController.SetComplete(2);
                 LED.lighted = true;
                 DisableDragging();
             }

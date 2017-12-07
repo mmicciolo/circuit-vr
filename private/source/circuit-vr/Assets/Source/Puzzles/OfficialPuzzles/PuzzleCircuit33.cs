@@ -14,14 +14,19 @@ namespace Assets.Source.Puzzles
 
         private void Start()
         {
-            //ActivateCells(0);
+			InitPuzzle();
+			puzzleName = "PuzzleCircuit33";
+			endDuration = 5;
         }
 
         private void Update()
         {
             if (outputPosition.activated)
             {
-                LevelController.getInstance().closePuzzle("PuzzleCircuit33");
+				completed = true;
+                foreach (LEDCircuitComponent led in GetComponentsInChildren<LEDCircuitComponent>()) {
+					led.lighted = true;
+				}
             }
 
             switch (switches[0].lastAnimation)
@@ -58,6 +63,8 @@ namespace Assets.Source.Puzzles
             {
                 DeactivateCells(3);
             }
+
+			CheckCompletion ();
         }
 
     }

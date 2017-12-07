@@ -27,7 +27,7 @@ namespace Assets.Source.Puzzles
         public Text infoText;
 
         protected double endDuration = 0;
-        protected Stopwatch stopwatch;
+		protected Stopwatch stopwatch = null;
         protected int stepsSinceCompletion;
         protected bool completed = false;
         protected string puzzleName;
@@ -70,6 +70,7 @@ namespace Assets.Source.Puzzles
 
         protected void CheckCompletion()
         {
+			
             UnityEngine.Debug.Log("called");
             if (completed)
             {
@@ -96,15 +97,15 @@ namespace Assets.Source.Puzzles
         protected virtual void AnimateEnd()
         {
             UnityEngine.Debug.Log("animate called");
-            switch (stepsSinceCompletion)
+			switch (stopwatch.ElapsedMilliseconds)
             {
-                case 30:
+                case 1000:
                     foreach (int c in activatedGroups)
                     {
                         DeactivateCells(c);
                     }
                     break;
-                case 33:
+                case 1400:
                     foreach (int c in activatedGroups)
                     {
                         ActivateCells(c);

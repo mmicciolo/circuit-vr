@@ -5,6 +5,7 @@ using System.Text;
 using Assets.Source.Puzzles.Components;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Diagnostics;
 
 namespace Assets.Source.Puzzles
 {
@@ -18,38 +19,61 @@ namespace Assets.Source.Puzzles
         private void Start()
         {
             step = 0;
+			stopwatch = new Stopwatch();
+			stopwatch.Start();
+			InitPuzzle();
+			puzzleName = "PuzzleCircuit26";
+			endDuration = 5;
+			circuitSwitch.lastAnimation = "switch_down";
         }
 
         private void Update()
         {
-            double time = 10 - Math.Floor((double)step / 60);
-            if (step == 1)
-            {
-                circuitSwitch.animator.Play("switch_down");
-                circuitSwitch.lastAnimation = "switch_down";
-            }
+			switch (circuitSwitch.lastAnimation) {
+			case "switch_down":
+				ActivateCells (0);
+				ActivateCells (1);
+				ActivateCells (2);
+				ActivateCells (3);
+				break;
+			case "switch_up":
+				ActivateCells (0);
+				ActivateCells (1);
+				ActivateCells (4);
+				ActivateCells (3);
+				break;
+			default:
+				DeactivateCells (0);
+				DeactivateCells (1);
+				DeactivateCells (2);
+				DeactivateCells (3);
+				DeactivateCells (4);
+				break;
+			}
 
-            capacitor.gameObject.GetComponent<DisplayInfo>().notation = "Capacitor overload in " + time;
-            if (circuitSwitch.lastAnimation == "switch_up")
+			double time = 10 - stopwatch.Elapsed.TotalSeconds;
+			//if (stopwatch.ElapsedTicks <= 1)
+            //{
+                //circuitSwitch.animator.Play("switch_down");
+            //}
+
+            if (circuitSwitch.lastAnimation != "switch_down")
             {
-                Debug.Log("Puzzle solved");
-                LevelController.getInstance().closePuzzle("PuzzleCircuit26");
+                UnityEngine.Debug.Log("Puzzle solved");
+				completed = true;
             }
             else
             {
-                if (time == 0)
-                {
-                    Debug.Log("Capacitor broken");
-                    capacitor.gameObject.GetComponent<DisplayInfo>().notation = "Capacitor broken";
-                    LevelController.getInstance().closePuzzle("PuzzleCircuit26");
-                }
-                else
-                {
-                    step += 1;
-                }
+				capacitor.gameObject.GetComponent<DisplayInfo> ().notation = "Capacitor overload in " + (int)time;
+
+				if (time <= 0) {
+					UnityEngine.Debug.Log ("Capacitor broken");
+					capacitor.gameObject.GetComponent<DisplayInfo> ().notation = "Capacitor broken";
+					LevelController.getInstance ().closePuzzle ("PuzzleCircuit26");
+				}
             }
 
-
+			CheckCompletion ();
 
         }
 

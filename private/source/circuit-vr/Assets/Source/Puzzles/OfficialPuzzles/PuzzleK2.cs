@@ -27,7 +27,6 @@ namespace Assets.Source.Puzzles
                 ActivateCells(0);
                 ActivateCells(3);
                 LevelController.getInstance().closePuzzle("PuzzleK2");
-                LevelController.getInstance().puzzleController.SetComplete(1);
             }
         }
     }

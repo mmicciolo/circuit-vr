@@ -30,6 +30,17 @@ namespace Assets.Source.Puzzles
                 LED.lighted = true;
                 DisableDragging();
             }
+
+			switch (circuitSwitch.lastAnimation) {
+			case "spst_down":
+				ActivateCells (0);
+				ActivateCells (3);
+				break;
+			default:
+				DeactivateCells (0);
+				DeactivateCells (3);
+				break;
+			}
             CheckCompletion();
         }
     }

@@ -10,7 +10,8 @@ namespace Assets.Source.Puzzles.Components
     {
         RED,
         GREEN,
-        BLUE
+        BLUE,
+		YELLOW
     }
 
     class ResistorCircuitComponent : CircuitComponent
@@ -48,6 +49,9 @@ namespace Assets.Source.Puzzles.Components
                 case ResistorColor.BLUE:
                     GetResistorModel().GetComponent<Renderer>().material.color = new Color(0, 0, 255);
                     break;
+				case ResistorColor.YELLOW:
+				GetResistorModel ().GetComponent<Renderer> ().material.color = new Color (255f, (float)0.92*255, (float)0.016*255);
+					break;
                 default:
                     break;
             }
