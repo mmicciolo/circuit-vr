@@ -38,8 +38,6 @@ namespace Assets.Source.Puzzles
 
 		protected int puzzleNumber = 0;
 
-        private StudioEventEmitter buzzSound;
-
 		System.Random rand;
 
         private void Start()
@@ -65,9 +63,6 @@ namespace Assets.Source.Puzzles
             puzzleSound.Event = "event:/SFX/Puzzle Start";
             puzzleSound.Play();
 
-            buzzSound = gameObject.AddComponent<StudioEventEmitter>();
-            puzzleSound.Event = "event:/SFX/Menu Tone 2";
-
 			rand = new System.Random ();
         }
 
@@ -88,8 +83,6 @@ namespace Assets.Source.Puzzles
 
         protected void CheckCompletion()
         {
-			int cue = rand.Next (0, 1);
-			UnityEngine.Debug.Log (cue);
             if (completed)
             {
                 if (stepsSinceCompletion == 0)
