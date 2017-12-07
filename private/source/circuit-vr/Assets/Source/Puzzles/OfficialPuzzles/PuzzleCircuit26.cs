@@ -6,6 +6,7 @@ using Assets.Source.Puzzles.Components;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Diagnostics;
+using FMODUnity;
 
 namespace Assets.Source.Puzzles
 {
@@ -68,7 +69,8 @@ namespace Assets.Source.Puzzles
 
 				if (time <= 0) {
 					UnityEngine.Debug.Log ("Capacitor broken");
-					capacitor.gameObject.GetComponent<DisplayInfo> ().notation = "Capacitor broken";
+                    GetComponents<StudioEventEmitter>()[1].Play();
+                    capacitor.gameObject.GetComponent<DisplayInfo> ().notation = "Capacitor broken";
 					LevelController.getInstance ().closePuzzle ("PuzzleCircuit26");
 				}
             }
