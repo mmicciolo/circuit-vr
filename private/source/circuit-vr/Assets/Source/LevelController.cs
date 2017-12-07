@@ -113,6 +113,10 @@ public class LevelController : MonoBehaviour
 
     private void OnPuzzleLoaded(Scene scene, LoadSceneMode mode)
     {
+        //Enable the cursor
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
         //Remove the callback
         SceneManager.sceneLoaded -= OnPuzzleLoaded;
 
@@ -121,10 +125,6 @@ public class LevelController : MonoBehaviour
         {
             if (!obj.active) { disabledObject.Add(obj); } else { obj.SetActive(false); }
         }
-
-        //Enable the cursor
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
 
         //Set the scene as active
         SceneManager.SetActiveScene(scene);
@@ -141,6 +141,10 @@ public class LevelController : MonoBehaviour
 
     private void OnPuzzleUnloaded(Scene scene)
     {
+        //Disable the cursor
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
         //Remove the callback
         SceneManager.sceneUnloaded -= OnPuzzleUnloaded;
 
@@ -152,10 +156,6 @@ public class LevelController : MonoBehaviour
 
         //Clear the list
         disabledObject.Clear();
-
-        //Disable the cursor
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
 
         //Set the scene as active
         SceneManager.SetActiveScene(SceneManager.GetSceneByName(openScene));
