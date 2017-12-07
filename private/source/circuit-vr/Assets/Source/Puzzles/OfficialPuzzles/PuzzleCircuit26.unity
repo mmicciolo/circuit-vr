@@ -1378,7 +1378,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1393091448}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.089966, y: 1, z: 81.36}
+  m_LocalPosition: {x: 13.090027, y: 1, z: 81.36}
   m_LocalScale: {x: 0.057471264, y: 0.057471264, z: 0.057471264}
   m_Children:
   - {fileID: 240402672}
@@ -2001,6 +2001,21 @@ Prefab:
       value: Resistor (500 Ohms)
       objectReference: {fileID: 0}
     - target: {fileID: 114073151541288386, guid: 314728379f2faa743b790ac8b16d62e5,
+        type: 2}
+      propertyPath: group
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114393667255263580, guid: 314728379f2faa743b790ac8b16d62e5,
+        type: 2}
+      propertyPath: componentPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114393667255263580, guid: 314728379f2faa743b790ac8b16d62e5,
+        type: 2}
+      propertyPath: moveable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114393667255263580, guid: 314728379f2faa743b790ac8b16d62e5,
         type: 2}
       propertyPath: group
       value: 4

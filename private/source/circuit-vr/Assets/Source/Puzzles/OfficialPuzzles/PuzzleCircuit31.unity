@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -470,6 +470,11 @@ Prefab:
       propertyPath: notation
       value: DC Voltage Source (5V)
       objectReference: {fileID: 0}
+    - target: {fileID: 114370364407402030, guid: fdbfb076ac7f7a04d9d0e3b8eceb0b54,
+        type: 2}
+      propertyPath: group
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fdbfb076ac7f7a04d9d0e3b8eceb0b54, type: 2}
   m_IsPrefabParent: 0
@@ -865,7 +870,7 @@ Prefab:
     - target: {fileID: 114185124596911404, guid: c67f47f3b7e9067489a44c5ff2ce5e4a,
         type: 2}
       propertyPath: group
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c67f47f3b7e9067489a44c5ff2ce5e4a, type: 2}
@@ -895,8 +900,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 417270347}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.190002, y: 2.130005, z: 81.36}
-  m_LocalScale: {x: 0.07118644, y: 0.07118644, z: 0.07118644}
+  m_LocalPosition: {x: 19.190002, y: 2.1299744, z: 81.36}
+  m_LocalScale: {x: 0.060344826, y: 0.060344826, z: 0.060344826}
   m_Children:
   - {fileID: 269750990}
   m_Father: {fileID: 1378592112}
@@ -1296,6 +1301,7 @@ GameObject:
   - component: {fileID: 925844248}
   - component: {fileID: 925844250}
   - component: {fileID: 925844249}
+  - component: {fileID: 925844252}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1365,6 +1371,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &925844252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 925844247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f87e4989c5e703e428df4339d59e2c72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showMainBehavior: 1
+  showInnerGlowBehavior: 0
+  blurShader: {fileID: 4800000, guid: 1855d9636fad3914bacc4a543165c974, type: 3}
+  compositeShader: {fileID: 4800000, guid: e384de4389ba527479054baf0ddb1d3e, type: 3}
+  selectiveRenderShader: {fileID: 4800000, guid: c04b7cae8accdfb4e9c2648823ff39d7,
+    type: 3}
+  glowLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  glowType: 0
+  glowTint: {r: 1, g: 1, b: 1, a: 0}
+  blurSpreadInner: 0.6
+  blurIterations: 5
+  glowIntensityInner: 0.4
+  samples: 2
 --- !u!1001 &939281767
 Prefab:
   m_ObjectHideFlags: 0
@@ -1464,6 +1496,12 @@ Transform:
   m_PrefabParentObject: {fileID: 4618913127661878, guid: 83835b06bc2a60746abdff70f5f9a15b,
     type: 2}
   m_PrefabInternal: {fileID: 1280226450}
+--- !u!114 &1041422775 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114288277040994366, guid: 040ed20c3f023e34c8aa13939c2abeb4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1298357067}
+  m_Script: {fileID: 11500000, guid: b0bbff3483f538b418ff8dca2678d859, type: 3}
 --- !u!1001 &1058514328
 Prefab:
   m_ObjectHideFlags: 0
@@ -1502,6 +1540,21 @@ Prefab:
     - target: {fileID: 4852033543921672, guid: 314728379f2faa743b790ac8b16d62e5, type: 2}
       propertyPath: m_RootOrder
       value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 114393667255263580, guid: 314728379f2faa743b790ac8b16d62e5,
+        type: 2}
+      propertyPath: componentPosition.x
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 114393667255263580, guid: 314728379f2faa743b790ac8b16d62e5,
+        type: 2}
+      propertyPath: componentPosition.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114393667255263580, guid: 314728379f2faa743b790ac8b16d62e5,
+        type: 2}
+      propertyPath: group
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 314728379f2faa743b790ac8b16d62e5, type: 2}
@@ -1567,7 +1620,7 @@ Prefab:
     - target: {fileID: 114185124596911404, guid: c67f47f3b7e9067489a44c5ff2ce5e4a,
         type: 2}
       propertyPath: group
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c67f47f3b7e9067489a44c5ff2ce5e4a, type: 2}
@@ -1634,6 +1687,11 @@ Prefab:
         type: 2}
       propertyPath: notation
       value: DC Voltage Source (5V)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114370364407402030, guid: fdbfb076ac7f7a04d9d0e3b8eceb0b54,
+        type: 2}
+      propertyPath: group
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fdbfb076ac7f7a04d9d0e3b8eceb0b54, type: 2}
@@ -1947,6 +2005,26 @@ Prefab:
       propertyPath: group
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114288277040994366, guid: 040ed20c3f023e34c8aa13939c2abeb4,
+        type: 2}
+      propertyPath: componentPosition.x
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288277040994366, guid: 040ed20c3f023e34c8aa13939c2abeb4,
+        type: 2}
+      propertyPath: componentPosition.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288277040994366, guid: 040ed20c3f023e34c8aa13939c2abeb4,
+        type: 2}
+      propertyPath: group
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288277040994366, guid: 040ed20c3f023e34c8aa13939c2abeb4,
+        type: 2}
+      propertyPath: moveable
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 040ed20c3f023e34c8aa13939c2abeb4, type: 2}
   m_IsPrefabParent: 0
@@ -1994,8 +2072,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d476bf505a406634699aba15b23882e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outputPosition: {fileID: 1726732740}
+  outputPosition: {fileID: 1041422775}
   infoText: {fileID: 269750988}
+  choices: []
   switches:
   - {fileID: 150123060}
   - {fileID: 1094584795}
@@ -2745,7 +2824,7 @@ Prefab:
     - target: {fileID: 224089475583223286, guid: 9d8bc026302c8e34c87e057099c9d3dc,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.9000015
+      value: 17.89
       objectReference: {fileID: 0}
     - target: {fileID: 224089475583223286, guid: 9d8bc026302c8e34c87e057099c9d3dc,
         type: 2}
@@ -2785,7 +2864,7 @@ Prefab:
     - target: {fileID: 224089475583223286, guid: 9d8bc026302c8e34c87e057099c9d3dc,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 1.9
+      value: 17.89
       objectReference: {fileID: 0}
     - target: {fileID: 224089475583223286, guid: 9d8bc026302c8e34c87e057099c9d3dc,
         type: 2}
@@ -2849,12 +2928,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4386460884646834, guid: 040ed20c3f023e34c8aa13939c2abeb4,
     type: 2}
   m_PrefabInternal: {fileID: 1298357067}
---- !u!114 &1726732740 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114445027519174698, guid: 040ed20c3f023e34c8aa13939c2abeb4,
-    type: 2}
-  m_PrefabInternal: {fileID: 1298357067}
-  m_Script: {fileID: 11500000, guid: 0830fdf171c33d54a93ba7f618ffe868, type: 3}
 --- !u!1 &1737442417 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1418481132241574, guid: 83835b06bc2a60746abdff70f5f9a15b,

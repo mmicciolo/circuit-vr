@@ -2756,6 +2756,21 @@ Prefab:
       propertyPath: notation
       value: Resistor (50 Ohms)
       objectReference: {fileID: 0}
+    - target: {fileID: 114393667255263580, guid: 314728379f2faa743b790ac8b16d62e5,
+        type: 2}
+      propertyPath: componentPosition.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114393667255263580, guid: 314728379f2faa743b790ac8b16d62e5,
+        type: 2}
+      propertyPath: componentRotation
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 114393667255263580, guid: 314728379f2faa743b790ac8b16d62e5,
+        type: 2}
+      propertyPath: moveable
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 314728379f2faa743b790ac8b16d62e5, type: 2}
   m_IsPrefabParent: 0

@@ -57,7 +57,7 @@ namespace Assets.Source.Puzzles
                 //circuitSwitch.animator.Play("switch_down");
             //}
 
-            if (circuitSwitch.lastAnimation == "switch_up")
+            if (circuitSwitch.lastAnimation != "switch_down")
             {
                 UnityEngine.Debug.Log("Puzzle solved");
 				completed = true;

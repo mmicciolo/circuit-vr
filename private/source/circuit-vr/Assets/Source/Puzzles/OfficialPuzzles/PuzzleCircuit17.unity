@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -769,8 +769,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 596791054}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.09, y: 1, z: 81.36}
-  m_LocalScale: {x: 0.06825939, y: 0.06825939, z: 0.06825939}
+  m_LocalPosition: {x: 13.090027, y: 1, z: 81.36}
+  m_LocalScale: {x: 0.057471264, y: 0.057471264, z: 0.057471264}
   m_Children:
   - {fileID: 2135844356}
   m_Father: {fileID: 1253272265}
@@ -1279,24 +1279,6 @@ MonoBehaviour:
   initialTransformPos: {x: 0, y: 0, z: 0}
   attachedComponent: {fileID: 0}
   dragEnabled: 0
---- !u!114 &1170514394
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1170514390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0830fdf171c33d54a93ba7f618ffe868, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  componentPosition: {x: 0, y: 0}
-  componentRotation: 0
-  group: 1
-  moveable: 0
-  toolboxItem: 0
-  activated: 0
-  activeMaterialActive: 0
 --- !u!1 &1192832348 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1209041875800238, guid: 314728379f2faa743b790ac8b16d62e5,
@@ -1318,24 +1300,6 @@ MonoBehaviour:
   initialTransformPos: {x: 0, y: 0, z: 0}
   attachedComponent: {fileID: 0}
   dragEnabled: 0
---- !u!114 &1192832352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1192832348}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0830fdf171c33d54a93ba7f618ffe868, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  componentPosition: {x: 0, y: 0}
-  componentRotation: 0
-  group: 1
-  moveable: 0
-  toolboxItem: 0
-  activated: 0
-  activeMaterialActive: 0
 --- !u!1 &1253272262
 GameObject:
   m_ObjectHideFlags: 0
@@ -1569,6 +1533,21 @@ Prefab:
       propertyPath: notation
       value: Resistor (3 Ohms)
       objectReference: {fileID: 0}
+    - target: {fileID: 114393667255263580, guid: 314728379f2faa743b790ac8b16d62e5,
+        type: 2}
+      propertyPath: resistorColor
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114393667255263580, guid: 314728379f2faa743b790ac8b16d62e5,
+        type: 2}
+      propertyPath: moveable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114393667255263580, guid: 314728379f2faa743b790ac8b16d62e5,
+        type: 2}
+      propertyPath: group
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114073151541288386, guid: 314728379f2faa743b790ac8b16d62e5, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 314728379f2faa743b790ac8b16d62e5, type: 2}
@@ -1599,24 +1578,6 @@ MonoBehaviour:
   initialTransformPos: {x: 0, y: 0, z: 0}
   attachedComponent: {fileID: 0}
   dragEnabled: 0
---- !u!114 &1463126794
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1463126790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0830fdf171c33d54a93ba7f618ffe868, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  componentPosition: {x: 0, y: 0}
-  componentRotation: 0
-  group: 1
-  moveable: 0
-  toolboxItem: 0
-  activated: 0
-  activeMaterialActive: 0
 --- !u!1 &1465486046
 GameObject:
   m_ObjectHideFlags: 0
@@ -1833,6 +1794,21 @@ Prefab:
         type: 2}
       propertyPath: notation
       value: Resistor (2 Ohms)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114393667255263580, guid: 314728379f2faa743b790ac8b16d62e5,
+        type: 2}
+      propertyPath: group
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114393667255263580, guid: 314728379f2faa743b790ac8b16d62e5,
+        type: 2}
+      propertyPath: moveable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114393667255263580, guid: 314728379f2faa743b790ac8b16d62e5,
+        type: 2}
+      propertyPath: resistorColor
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114073151541288386, guid: 314728379f2faa743b790ac8b16d62e5, type: 2}
@@ -2084,6 +2060,11 @@ Prefab:
         type: 2}
       propertyPath: notation
       value: Resistor (1 Ohm)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114393667255263580, guid: 314728379f2faa743b790ac8b16d62e5,
+        type: 2}
+      propertyPath: group
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114073151541288386, guid: 314728379f2faa743b790ac8b16d62e5, type: 2}
