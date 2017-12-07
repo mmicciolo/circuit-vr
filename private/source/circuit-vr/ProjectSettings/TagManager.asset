@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - draggable_component
+  - lock_behind
   layers:
   - Default
   - TransparentFX

@@ -145,7 +145,7 @@ namespace Assets.Source.Puzzles
             }
         }
 
-        protected void ClosePuzzle()
+        protected virtual void ClosePuzzle()
         {
             LevelController.getInstance().closePuzzle(puzzleName);
         }

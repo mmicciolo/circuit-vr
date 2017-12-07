@@ -10,7 +10,6 @@ namespace Assets.Source.Puzzles
 {
     class PuzzleOne : Puzzle
     {
-
         public SwitchCircuitComponent[] switches;
 
         private void Start()
@@ -46,6 +45,12 @@ namespace Assets.Source.Puzzles
             }
 
             CheckCompletion();
+        }
+
+        protected override void ClosePuzzle()
+        {
+            LevelController.getInstance().lockBehind.puzzleNumber = 1;
+            base.ClosePuzzle();
         }
     }
 }

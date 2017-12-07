@@ -20,7 +20,11 @@ public class AutoDoor : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		canOpen = LevelController.getInstance ().CheckDoorCanOpen (puzzleNumber);
+        if (puzzleNumber == 20) canOpen = true;
+        else
+        {
+            canOpen = LevelController.getInstance().CheckDoorCanOpen(puzzleNumber);
+        }
 
         if (needsOpen != isOpen)
         {
