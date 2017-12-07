@@ -1,0 +1,2 @@
+0.000|Remember: According to Ohm’s law, the current between two points will always be directly proportional to the voltage across those points. 
+7.600|As the voltage rises, so does the current. The reverse is also true.
