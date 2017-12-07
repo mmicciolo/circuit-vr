@@ -55,6 +55,7 @@ GameObject:
   - component: {fileID: 4995087856101274}
   - component: {fileID: 33202970750258240}
   - component: {fileID: 23667289911970614}
+  - component: {fileID: 65868518336803826}
   m_Layer: 0
   m_Name: PowerCellFrameworkLoPoly
   m_TagString: Untagged
@@ -112,8 +113,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1361402324722848}
   m_LocalRotation: {x: -0, y: -0.7824081, z: -0, w: -0.62276614}
-  m_LocalPosition: {x: -0.00001517891, y: 0, z: -0.000012081795}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -23.605, y: 1.554, z: -9.938}
+  m_LocalScale: {x: 0.41742343, y: 0.41742364, z: 0.41742364}
   m_Children:
   - {fileID: 4369962855518036}
   - {fileID: 4444384234169266}
@@ -257,6 +258,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1116747166237268}
   m_Mesh: {fileID: 4300002, guid: 83699643a74e06843949ddbb3cd9dd9e, type: 3}
+--- !u!65 &65868518336803826
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1461572054835278}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.4825015, y: 3.198094, z: 5.6250024}
+  m_Center: {x: -0.42875, y: 0.000012457377, z: -7.6161243e-16}
 --- !u!95 &95101375401387412
 Animator:
   serializedVersion: 3
