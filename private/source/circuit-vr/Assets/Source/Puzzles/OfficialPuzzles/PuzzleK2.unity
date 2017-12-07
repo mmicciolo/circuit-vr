@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -160,6 +160,16 @@ Prefab:
       propertyPath: notation
       value: Resistor (1000 Ohms)
       objectReference: {fileID: 0}
+    - target: {fileID: 114393667255263580, guid: 314728379f2faa743b790ac8b16d62e5,
+        type: 2}
+      propertyPath: moveable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114393667255263580, guid: 314728379f2faa743b790ac8b16d62e5,
+        type: 2}
+      propertyPath: resistorColor
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114073151541288386, guid: 314728379f2faa743b790ac8b16d62e5, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 314728379f2faa743b790ac8b16d62e5, type: 2}
@@ -185,16 +195,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0f7a9aa2467ec4c9e6b58de3640564, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  componentPosition: {x: 0, y: 0}
-  componentRotation: 0
-  group: 3
-  moveable: 0
-  toolboxItem: 0
-  activated: 0
-  activeMaterialActive: 0
   moved: 0
   initialPos: {x: 0, y: 0}
   initialTransformPos: {x: 0, y: 0, z: 0}
+  attachedComponent: {fileID: 0}
+  dragEnabled: 0
 --- !u!4 &52052497 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4685668351856304, guid: fdbfb076ac7f7a04d9d0e3b8eceb0b54,
@@ -805,6 +810,16 @@ Prefab:
       propertyPath: notation
       value: Resistor (500 Ohms)
       objectReference: {fileID: 0}
+    - target: {fileID: 114393667255263580, guid: 314728379f2faa743b790ac8b16d62e5,
+        type: 2}
+      propertyPath: moveable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114393667255263580, guid: 314728379f2faa743b790ac8b16d62e5,
+        type: 2}
+      propertyPath: resistorColor
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114073151541288386, guid: 314728379f2faa743b790ac8b16d62e5, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 314728379f2faa743b790ac8b16d62e5, type: 2}
@@ -830,16 +845,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0f7a9aa2467ec4c9e6b58de3640564, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  componentPosition: {x: 0, y: 0}
-  componentRotation: 0
-  group: 2
-  moveable: 1
-  toolboxItem: 0
-  activated: 0
-  activeMaterialActive: 0
   moved: 0
   initialPos: {x: 0, y: 0}
   initialTransformPos: {x: 0, y: 0, z: 0}
+  attachedComponent: {fileID: 0}
+  dragEnabled: 0
 --- !u!4 &835370129 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4618913127661878, guid: 83835b06bc2a60746abdff70f5f9a15b,
@@ -1148,6 +1158,7 @@ GameObject:
   - component: {fileID: 1262848513}
   - component: {fileID: 1262848515}
   - component: {fileID: 1262848514}
+  - component: {fileID: 1262848517}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1217,6 +1228,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1262848517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1262848512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f87e4989c5e703e428df4339d59e2c72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showMainBehavior: 1
+  showInnerGlowBehavior: 0
+  blurShader: {fileID: 4800000, guid: 1855d9636fad3914bacc4a543165c974, type: 3}
+  compositeShader: {fileID: 4800000, guid: e384de4389ba527479054baf0ddb1d3e, type: 3}
+  selectiveRenderShader: {fileID: 4800000, guid: c04b7cae8accdfb4e9c2648823ff39d7,
+    type: 3}
+  glowLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  glowType: 0
+  glowTint: {r: 1, g: 1, b: 1, a: 0}
+  blurSpreadInner: 0.6
+  blurIterations: 5
+  glowIntensityInner: 0.4
+  samples: 2
 --- !u!1 &1269717440
 GameObject:
   m_ObjectHideFlags: 0
@@ -1242,8 +1279,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1269717440}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.09, y: 1, z: 81.36}
-  m_LocalScale: {x: 0.06825939, y: 0.06825939, z: 0.06825939}
+  m_LocalPosition: {x: 13.089966, y: 1, z: 81.36}
+  m_LocalScale: {x: 0.057471264, y: 0.057471264, z: 0.057471264}
   m_Children:
   - {fileID: 286174604}
   m_Father: {fileID: 409141526}
@@ -1364,6 +1401,16 @@ Prefab:
       propertyPath: notation
       value: Resistor (250 Ohms)
       objectReference: {fileID: 0}
+    - target: {fileID: 114393667255263580, guid: 314728379f2faa743b790ac8b16d62e5,
+        type: 2}
+      propertyPath: moveable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114393667255263580, guid: 314728379f2faa743b790ac8b16d62e5,
+        type: 2}
+      propertyPath: activeMaterialActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114073151541288386, guid: 314728379f2faa743b790ac8b16d62e5, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 314728379f2faa743b790ac8b16d62e5, type: 2}
@@ -1389,16 +1436,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee0f7a9aa2467ec4c9e6b58de3640564, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  componentPosition: {x: 0, y: 0}
-  componentRotation: 0
-  group: 1
-  moveable: 1
-  toolboxItem: 0
-  activated: 0
-  activeMaterialActive: 0
   moved: 0
   initialPos: {x: 0, y: 0}
   initialTransformPos: {x: 0, y: 0, z: 0}
+  attachedComponent: {fileID: 0}
+  dragEnabled: 0
 --- !u!1001 &1512643827
 Prefab:
   m_ObjectHideFlags: 0

@@ -24,8 +24,7 @@ namespace Assets.Source.Puzzles
             if ((choices[1].attachedComponent.componentPosition.x == outputPosition.componentPosition.x) && (choices[1].attachedComponent.componentPosition.y == outputPosition.componentPosition.y))
             {
                 ActivateCells(0);
-                ActivateCells(2);
-                completed = true;
+				completed = true;
                 LED.lighted = true;
                 DisableDragging();
             }

@@ -10,12 +10,15 @@ namespace Assets.Source.Puzzles
 {
     class PuzzleCircuit29 : Puzzle
     {
+		public LEDCircuitComponent[] LEDs;
+		bool alternate = true;
+		long lastAlternate;
 
         private void Start()
         {
 			InitPuzzle();
 			puzzleName = "PuzzleCircuit29";
-			endDuration = 5;
+			endDuration = 20;
         }
 
         private void Update()
@@ -24,12 +27,44 @@ namespace Assets.Source.Puzzles
             {
 				ActivateCells(0);
 				completed = true;
-				foreach (LEDCircuitComponent led in GetComponentsInChildren<LEDCircuitComponent>()) {
-					led.lighted = true;
-				}
 				DisableDragging();
             }
 			CheckCompletion ();
         }
+
+		protected override void AnimateEnd ()
+		{
+			long time = stopwatch.ElapsedMilliseconds - lastAlternate;
+			if (time > 3000) {
+				alternate = !alternate;
+				lastAlternate = stopwatch.ElapsedMilliseconds;
+			} else {
+				if (alternate) {
+					if (time > 200) {
+						LEDs [0].lighted = true;
+					}
+					if (time > 800) {
+						LEDs [1].lighted = true;
+						LEDs [2].lighted = true;
+					}
+					if (time > 1400) {
+						LEDs [3].lighted = true;
+						LEDs [4].lighted = true;
+						LEDs [5].lighted = true;
+					}
+					if (time > 2000) {
+						LEDs [6].lighted = true;
+						LEDs [7].lighted = true;
+						LEDs [8].lighted = true;
+						LEDs [9].lighted = true;
+					}
+				} else {
+					foreach (LEDCircuitComponent led in LEDs) {
+						led.lighted = false;
+					}
+				}
+			}
+				
+		}
     }
 }

@@ -70,8 +70,6 @@ namespace Assets.Source.Puzzles
 
         protected void CheckCompletion()
         {
-			
-            UnityEngine.Debug.Log("called");
             if (completed)
             {
                 if (stepsSinceCompletion == 0)
@@ -81,7 +79,7 @@ namespace Assets.Source.Puzzles
                 }
 
                 int elapsed = (int) stopwatch.Elapsed.TotalSeconds;
-                UnityEngine.Debug.Log(elapsed);
+                //UnityEngine.Debug.Log(elapsed);
                 if ((elapsed == endDuration) || (endDuration == 0))
                 {
                     ClosePuzzle();
@@ -96,7 +94,7 @@ namespace Assets.Source.Puzzles
         
         protected virtual void AnimateEnd()
         {
-            UnityEngine.Debug.Log("animate called");
+            //UnityEngine.Debug.Log("animate called");
 			switch (stopwatch.ElapsedMilliseconds)
             {
                 case 1000:

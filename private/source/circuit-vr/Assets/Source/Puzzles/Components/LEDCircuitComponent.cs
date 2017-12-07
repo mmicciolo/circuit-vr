@@ -42,13 +42,13 @@ namespace Assets.Source.Puzzles.Components
             {
                 currentGlowPower = 0;
             }
-            LEDGlow();
+			LEDGlow(currentGlowPower);
         }
 
-        public void LEDGlow()
+		public void LEDGlow(float glowPower)
         {
 
-                glowMaterial.SetFloat("_MKGlowPower", currentGlowPower);
+                glowMaterial.SetFloat("_MKGlowPower", glowPower);
         }
     }
 }
