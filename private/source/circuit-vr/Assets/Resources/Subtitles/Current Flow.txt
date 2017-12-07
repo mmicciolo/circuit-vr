@@ -1,0 +1,1 @@
+0.000|Please consider that current will flow from the input to the output.

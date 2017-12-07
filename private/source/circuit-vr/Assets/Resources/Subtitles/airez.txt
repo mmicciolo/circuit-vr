@@ -1,3 +1,0 @@
-0.000|Resistances are arranged in two ways: in series, or in parallel. 
-5.500|The former keeps current through all resistors the same, while the latter keeps the voltage change of all resistors the same. 
-13.000|Consider that resistance increases by adding resistors in series, and does the opposite in parallel."

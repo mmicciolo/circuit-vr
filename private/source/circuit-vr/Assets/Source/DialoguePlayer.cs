@@ -13,7 +13,7 @@ public class DialoguePlayer : MonoBehaviour
         //AudioClip aistart = Resources.Load("Dialogue/intro") as AudioClip;
         //DialogueManager.Instance.StartDialogue(aistart);
         DialogueManager.Instance.StartDialogue("Intro");
-        //StartCoroutine(Fade());
+        StartCoroutine(Fade());
 
     }
 

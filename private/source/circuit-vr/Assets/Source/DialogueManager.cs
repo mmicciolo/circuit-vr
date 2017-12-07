@@ -53,7 +53,6 @@ public class DialogueManager : MonoBehaviour {
         Instance = this;
 
         gameObject.AddComponent<AudioSource>();
-        soundEmitter = gameObject.AddComponent<StudioEventEmitter>();
 
     }
     // only for 
@@ -131,13 +130,15 @@ public class DialogueManager : MonoBehaviour {
 
         Debug.Log("AI started talking");
 
-        if(!dialogName.Contains("Cue"))
+        soundEmitter = gameObject.AddComponent<StudioEventEmitter>();
+
+        if (!dialogName.Contains("Cue"))
         {
             soundEmitter.Event = "event:/AI Dialogue/" + dialogName;
         }
         else
         {
-
+            soundEmitter.Event = "event:/Antagonist Dialogue/" + dialogName;
         }
 
         soundEmitter.Play();
@@ -181,13 +182,13 @@ public class DialogueManager : MonoBehaviour {
                     displaySub = subText[nextSub];
                     nextSub++;
                 }
-                //if(GetComponent<AudioSource>().timeSamples/SAMPLE_RATE > subTiming[nextSub])
-                //{
-                //    displaySub = subText[nextSub];
-                //    nextSub++;
-                //}
             }
-            
+            int trackLength; soundEmitter.EventDescription.getLength(out trackLength);
+            int trackPosition; soundEmitter.EventInstance.getTimelinePosition(out trackPosition);
+            if (trackPosition > trackLength - 100)
+            {
+                StartCoroutine(EndPause());
+            }
         }
     }
 
@@ -195,6 +196,13 @@ public class DialogueManager : MonoBehaviour {
     {
 
        
+    }
+
+    public IEnumerator EndPause()
+    {
+        yield return new WaitForSeconds(2.0f);
+        displaySub = "";
+        Destroy(soundEmitter);
     }
 
     public IEnumerator DramaticPause(int pauseTime) //pause for 2 secs between AI talking and music start
