@@ -508,7 +508,7 @@ RectTransform:
   m_GameObject: {fileID: 190839441}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 19.190002, y: 2.130005, z: 81.36}
-  m_LocalScale: {x: 0.06521739, y: 0.06521739, z: 0.06521739}
+  m_LocalScale: {x: 0.074204944, y: 0.074204944, z: 0.074204944}
   m_Children:
   - {fileID: 763411736}
   m_Father: {fileID: 1576431020}
@@ -2076,7 +2076,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event: event:/Music/Puzzle 3
   PlayEvent: 1
-  StopEvent: 0
+  StopEvent: 2
   CollisionTag: 
   AllowFadeout: 1
   TriggerOnce: 0

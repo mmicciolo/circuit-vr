@@ -6,10 +6,11 @@ public class MenuScript : MonoBehaviour {
 
     [SerializeField]
     GameObject[] panels;
+    
 
 	// Use this for initialization
 	void Start () {
-		
+        DontDestroyOnLoad(this);
 	}
 	
 	// Update is called once per frame
@@ -27,8 +28,23 @@ public class MenuScript : MonoBehaviour {
         panels[1].SetActive(active);
     }
 
+    public void SetSettingActive(bool active)
+    {
+        panels[2].SetActive(active);
+    }
+
     public void Quit()
     {
         Application.Quit();
+    }
+
+    public void ChangeVolume()
+    {
+        AudioListener.volume = GameObject.Find("Slider Horizontal").GetComponent<UnityEngine.UI.Slider>().value;
+    }
+
+    public void Mute()
+    {
+        AudioListener.volume = (AudioListener.volume <= 0) ? GameObject.Find("Slider Horizontal").GetComponent<UnityEngine.UI.Slider>().value : 0;
     }
 }

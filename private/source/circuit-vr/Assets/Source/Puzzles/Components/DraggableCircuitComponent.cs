@@ -123,7 +123,10 @@ namespace Assets.Source.Puzzles.Components
                         {
                             currentPuzzle.components[attachedComponent.group] = new List<GameObject>();
                         }
-                        currentPuzzle.components[attachedComponent.group].Add(gameObject);
+                        if (!currentPuzzle.components[attachedComponent.group].Contains(gameObject))
+                        {
+                            currentPuzzle.components[attachedComponent.group].Add(gameObject);
+                        }
 
                     }
                 }

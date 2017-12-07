@@ -48,6 +48,7 @@ namespace Assets.Source.Player
         private float m_NextStep;
         private bool m_Jumping;
         private AudioSource m_AudioSource;
+        public bool canJump = false;
 
         private GameObject currentInteractable;
         public Text subtitle;
@@ -80,7 +81,7 @@ namespace Assets.Source.Player
             {
                 RotateView();
                 // the jump state needs to read here to make sure it is not missed
-                if (!m_Jump)
+                if (!m_Jump && canJump)
                 {
                     m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
                 }

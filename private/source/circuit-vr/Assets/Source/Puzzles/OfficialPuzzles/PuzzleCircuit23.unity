@@ -488,8 +488,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 345161393}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.089996, y: 4.819977, z: 81.36}
-  m_LocalScale: {x: 0.062111802, y: 0.062111802, z: 0.062111802}
+  m_LocalPosition: {x: 13.089996, y: 4.8200073, z: 81.36}
+  m_LocalScale: {x: 0.07067138, y: 0.07067138, z: 0.07067138}
   m_Children:
   - {fileID: 1429068143}
   m_Father: {fileID: 988695146}
@@ -1568,7 +1568,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event: event:/Music/Puzzle 4
   PlayEvent: 1
-  StopEvent: 0
+  StopEvent: 2
   CollisionTag: 
   AllowFadeout: 1
   TriggerOnce: 0
