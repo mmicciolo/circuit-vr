@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Text.RegularExpressions;
+using FMODUnity;
 
 public class DialogueManager : MonoBehaviour {
 
@@ -39,7 +40,10 @@ public class DialogueManager : MonoBehaviour {
     AudioClip MusicClip;
     AudioClip DialogueClip;
     private const float SAMPLE_RATE = 44100f;
-	void Awake()
+
+    StudioEventEmitter soundEmitter;
+
+    void Awake()
     {
         if(Instance!= null && Instance!=this)
         {
@@ -49,6 +53,7 @@ public class DialogueManager : MonoBehaviour {
         Instance = this;
 
         gameObject.AddComponent<AudioSource>();
+        soundEmitter = gameObject.AddComponent<StudioEventEmitter>();
 
     }
     // only for 
@@ -58,10 +63,10 @@ public class DialogueManager : MonoBehaviour {
         return digitsOnly.Replace(textToClean, "");
     }
 
-    public void StartDialogue (AudioClip audioClip)
+    public void StartDialogue (string dialogName)//AudioClip audioClip)
     {
         //MusicClip = music;
-        DialogueClip = audioClip;
+        //DialogueClip = audioClip;
 
         subLines = new List<string>();
         subTimingStr = new List<string>();
@@ -82,8 +87,8 @@ public class DialogueManager : MonoBehaviour {
 
 
         //load text file
-        Debug.Log(DialogueClip.name);
-        TextAsset subfile = Resources.Load("Subtitles/"+DialogueClip.name) as TextAsset;
+        //Debug.Log(DialogueClip.name);
+        TextAsset subfile = Resources.Load("Subtitles/"+dialogName) as TextAsset;
         fileLines = subfile.text.Split('\n');
 
         
@@ -126,17 +131,27 @@ public class DialogueManager : MonoBehaviour {
 
         Debug.Log("AI started talking");
 
+        if(!dialogName.Contains("Cue"))
+        {
+            soundEmitter.Event = "event:/AI Dialogue/" + dialogName;
+        }
+        else
+        {
 
-        AudioSource audioSource = GetComponent<AudioSource>();
-        audioSource.clip = audioClip;
-        audioSource.loop = false;
-        audioSource.Play();
+        }
+
+        soundEmitter.Play();
+
+        //AudioSource audioSource = GetComponent<AudioSource>();
+        //audioSource.clip = audioClip;
+        //audioSource.loop = false;
+        //audioSource.Play();
     }
 
     public void OnGUI()
     {
         //ensure that dialogue is on
-        if(DialogueClip!=null)
+        if(soundEmitter!=null)
         {
             //check for negative nextSub
             if (nextSub > 0 && !(subText[nextSub - 1].Contains("<break/>")))
@@ -158,11 +173,19 @@ public class DialogueManager : MonoBehaviour {
             //next sub time
             if(nextSub<subText.Count)
             {
-                if(GetComponent<AudioSource>().timeSamples/SAMPLE_RATE > subTiming[nextSub])
+                int currentTime;
+                soundEmitter.EventInstance.getTimelinePosition(out currentTime);
+                float currentTimeSeconds = currentTime / 1000.0f;
+                if (currentTimeSeconds > subTiming[nextSub])
                 {
                     displaySub = subText[nextSub];
                     nextSub++;
                 }
+                //if(GetComponent<AudioSource>().timeSamples/SAMPLE_RATE > subTiming[nextSub])
+                //{
+                //    displaySub = subText[nextSub];
+                //    nextSub++;
+                //}
             }
             
         }
