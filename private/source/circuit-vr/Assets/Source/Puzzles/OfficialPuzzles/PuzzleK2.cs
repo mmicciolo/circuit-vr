@@ -11,23 +11,22 @@ namespace Assets.Source.Puzzles
     class PuzzleK2 : Puzzle
     {
         
-
-        public DraggableCircuitComponent[] choices;
-
         private void Start()
         {
-            //ActivateCells(0);
+			InitPuzzle(1);
+			puzzleName = "PuzzleK2";
+			endDuration = 5;
         }
 
         private void Update()
         {
             if ((choices[2].attachedComponent.componentPosition.x == outputPosition.componentPosition.x) && (choices[2].attachedComponent.componentPosition.y == outputPosition.componentPosition.y))
             {
-                Debug.Log("Puzzle solved");
                 ActivateCells(0);
-                ActivateCells(3);
-                LevelController.getInstance().closePuzzle("PuzzleK2");
-            }
+				MarkCompleted ();
+			}
+
+			CheckCompletion ();
         }
     }
 }

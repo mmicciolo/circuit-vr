@@ -15,7 +15,7 @@ namespace Assets.Source.Puzzles
 
         private void Start()
         {
-            InitPuzzle();
+            InitPuzzle(3);
             puzzleName = "PuzzleCircuit15";
             endDuration = 5;
         }
@@ -26,7 +26,7 @@ namespace Assets.Source.Puzzles
             {
                 ActivateCells(0);
                 ActivateCells(3);
-                completed = true;
+				MarkCompleted ();
                 LED.lighted = true;
                 DisableDragging();
             }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -159,6 +159,16 @@ Prefab:
         type: 2}
       propertyPath: notation
       value: Resistor (1000 Ohms)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114393667255263580, guid: 314728379f2faa743b790ac8b16d62e5,
+        type: 2}
+      propertyPath: moveable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114393667255263580, guid: 314728379f2faa743b790ac8b16d62e5,
+        type: 2}
+      propertyPath: resistorColor
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114073151541288386, guid: 314728379f2faa743b790ac8b16d62e5, type: 2}
@@ -673,10 +683,6 @@ MonoBehaviour:
   - {fileID: 1466403371}
   - {fileID: 512884465}
   - {fileID: 21803496}
-  choices:
-  - {fileID: 1466403371}
-  - {fileID: 512884465}
-  - {fileID: 21803496}
 --- !u!4 &409141526
 Transform:
   m_ObjectHideFlags: 0
@@ -803,6 +809,16 @@ Prefab:
         type: 2}
       propertyPath: notation
       value: Resistor (500 Ohms)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114393667255263580, guid: 314728379f2faa743b790ac8b16d62e5,
+        type: 2}
+      propertyPath: moveable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114393667255263580, guid: 314728379f2faa743b790ac8b16d62e5,
+        type: 2}
+      propertyPath: resistorColor
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114073151541288386, guid: 314728379f2faa743b790ac8b16d62e5, type: 2}
@@ -1263,8 +1279,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1269717440}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.090027, y: 1, z: 81.36}
-  m_LocalScale: {x: 0.062111802, y: 0.062111802, z: 0.062111802}
+  m_LocalPosition: {x: 13.089966, y: 1, z: 81.36}
+  m_LocalScale: {x: 0.057471264, y: 0.057471264, z: 0.057471264}
   m_Children:
   - {fileID: 286174604}
   m_Father: {fileID: 409141526}
@@ -1384,6 +1400,16 @@ Prefab:
         type: 2}
       propertyPath: notation
       value: Resistor (250 Ohms)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114393667255263580, guid: 314728379f2faa743b790ac8b16d62e5,
+        type: 2}
+      propertyPath: moveable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114393667255263580, guid: 314728379f2faa743b790ac8b16d62e5,
+        type: 2}
+      propertyPath: activeMaterialActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114073151541288386, guid: 314728379f2faa743b790ac8b16d62e5, type: 2}
