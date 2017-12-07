@@ -20,7 +20,11 @@ public class AutoDoor : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		canOpen = LevelController.getInstance ().CheckDoorCanOpen (puzzleNumber);
+        if (puzzleNumber == 20) canOpen = true;
+        else
+        {
+            canOpen = LevelController.getInstance().CheckDoorCanOpen(puzzleNumber);
+        }
 
         if (needsOpen != isOpen)
         {
@@ -52,10 +56,13 @@ public class AutoDoor : MonoBehaviour {
             {
                 yield return null;
             }
+        if (needsOpen)
+        {
             Debug.Log("Coroutine open");
             animator.Play("DoorOpen");
-        //GetComponents<FMODUnity.StudioEventEmitter>()[0].Play();
+            //GetComponents<FMODUnity.StudioEventEmitter>()[0].Play();
             isOpen = true;
+        }
     }
 
     IEnumerator CloseDoor()
@@ -64,10 +71,13 @@ public class AutoDoor : MonoBehaviour {
             {
                 yield return null;
             }
+        if (!needsOpen)
+        {
             Debug.Log("Coroutine close");
             animator.Play("DoorClose");
-        //GetComponents<FMODUnity.StudioEventEmitter>()[1].Play();
+            //GetComponents<FMODUnity.StudioEventEmitter>()[1].Play();
 
-        isOpen = false;
+            isOpen = false;
+        }
     }
 }
