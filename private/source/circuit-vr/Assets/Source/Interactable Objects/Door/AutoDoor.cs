@@ -10,12 +10,16 @@ public class AutoDoor : MonoBehaviour {
     bool isOpen;
 	bool canOpen;
     public int puzzleNumber;
+    FMODUnity.StudioEventEmitter openEmitter;
+    FMODUnity.StudioEventEmitter closeEmitter;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         animator = gameObject.GetComponent<Animator>();
         isOpen = false;
         needsOpen = false;
+        openEmitter = gameObject.GetComponents<FMODUnity.StudioEventEmitter>()[0];
+        closeEmitter = gameObject.GetComponents<FMODUnity.StudioEventEmitter>()[1];
     }
 
 	// Update is called once per frame
@@ -60,7 +64,19 @@ public class AutoDoor : MonoBehaviour {
         {
             Debug.Log("Coroutine open");
             animator.Play("DoorOpen");
-            //GetComponents<FMODUnity.StudioEventEmitter>()[0].Play();
+
+            //FMOD.Studio.PLAYBACK_STATE state;
+            //openEmitter.EventInstance.getPlaybackState(out state);
+            //if (state != FMOD.Studio.PLAYBACK_STATE.PLAYING)
+            //{
+            //    openEmitter.Play();
+            //}
+
+            if (!openEmitter.IsPlaying())
+            {
+                openEmitter.Play();
+            }
+
             isOpen = true;
         }
     }
@@ -75,7 +91,11 @@ public class AutoDoor : MonoBehaviour {
         {
             Debug.Log("Coroutine close");
             animator.Play("DoorClose");
-            //GetComponents<FMODUnity.StudioEventEmitter>()[1].Play();
+
+            if (!closeEmitter.IsPlaying())
+            {
+                closeEmitter.Play();
+            }
 
             isOpen = false;
         }
