@@ -6,6 +6,7 @@ TagManager:
   tags:
   - draggable_component
   - lock_behind
+  - PuzzleCamera
   layers:
   - Default
   - TransparentFX

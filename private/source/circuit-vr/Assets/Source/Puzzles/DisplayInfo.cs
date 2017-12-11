@@ -43,9 +43,11 @@ namespace Assets.Source.Puzzles
 			Vector2 atCell = gameObject.transform.position;
 			Vector2 scale = GameObject.Find("Puzzle Grid").GetComponent<PuzzleGrid>().cellSize;
 			Vector2 textPosition = new Vector2(atCell.x - scale.x, atCell.y + scale.y);
-			myText.transform.position = gameObject.GetComponent<CircuitComponent>().GetInfoPosition();
-			myText.text = notation;
-
+            myText.transform.position = gameObject.GetComponent<CircuitComponent>().GetInfoPosition();
+            //Vector3 curPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            //myText.transform.position = curPosition;
+            myText.text = notation;
+            myText.fontSize = 22;
 			displaying = true;
 
         }
