@@ -10,31 +10,56 @@ namespace Assets.Source.Puzzles
 {
     class PuzzleCircuit23 : Puzzle
     {
-        public DraggableCircuitComponent[] choices;
+        public LEDCircuitComponent[] LEDs;
+        private bool alternate = false;
 
         private void Start()
         {
-            //ActivateCells(0);
+            InitPuzzle(8);
+            puzzleName = "PuzzleCircuit23";
+            endDuration = 5;
         }
 
         private void Update()
         {
-            if ((choices[0].componentPosition.x == outputPosition.componentPosition.x) && (choices[0].componentPosition.y == outputPosition.componentPosition.y))
+            //Puzzle completion condition
+            if ((choices[0].attachedComponent.componentPosition.x == outputPosition.componentPosition.x) && (choices[0].attachedComponent.componentPosition.y == outputPosition.componentPosition.y) && (stepsSinceCompletion == 0))
             {
-                LevelController.getInstance().closePuzzle("PuzzleCircuit23");
+                ActivateCells(0);
+                ActivateCells(1);
+                ActivateCells(4);
+                ActivateCells(5);
+				MarkCompleted ();
+                DisableDragging();
             }
+
+			CheckCompletion();
         }
 
-        override
-        public void ResetChoices()
+        protected override void AnimateEnd()
         {
-            Vector2 cell = new Vector2(0f, 0f);
-            for (int i = 0; i < choices.Length; i++)
-            {
-                choices[i].moved = false;
-                choices[i].setComponentToCell(cell);
-                choices[i].transform.localPosition = choices[i].initialTransformPos;
-            }
+            if (alternate) ActiveFirstRow();
+            else ActiveSecondRow();
+
+            if ((stepsSinceCompletion % 40) == 0)
+            alternate = !alternate;
         }
+
+        private void ActiveFirstRow()
+        {
+            LEDs[0].lighted = true;
+            LEDs[1].lighted = true;
+            LEDs[2].lighted = false;
+            LEDs[3].lighted = false;
+        }
+
+        private void ActiveSecondRow()
+        {
+            LEDs[0].lighted = false;
+            LEDs[1].lighted = false;
+            LEDs[2].lighted = true;
+            LEDs[3].lighted = true;
+        }
+
     }
 }

@@ -1,0 +1,202 @@
+fileFormatVersion: 2
+guid: f273a44592950264a9e43799186f290f
+timeCreated: 1512483578
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: cryoPodLoPoly10
+    100004: cryoPodLoPoly11
+    100006: cryoPodLoPoly12
+    100008: cryoPodLoPoly13
+    100010: cryoPodLoPoly14
+    100012: cryoPodLoPoly15
+    100014: cryoPodLoPoly16
+    100016: cryoPodLoPoly17
+    100018: cryoPodLoPoly18
+    100020: cryoPodLoPoly19
+    100022: cryoPodLoPoly20
+    100024: cryoPodLoPoly21
+    100026: cryoPodLoPoly22
+    100028: cryoPodLoPoly23
+    100030: cryoPodLoPoly24
+    100032: cryoPodLoPoly25
+    100034: cryoPodLoPoly26
+    100036: cryoPodLoPoly27
+    100038: cryoPodLoPoly28
+    100040: cryoPodLoPoly3
+    100042: cryoPodLoPoly4
+    100044: cryoPodLoPoly5
+    100046: cryoPodLoPoly6
+    100048: cryoPodLoPoly7
+    100050: cryoPodLoPoly8
+    100052: cryoPodLoPoly9
+    100054: lowPolyPod:cryoPodLoPoly
+    100056: transform50
+    100058: transform51
+    100060: transform52
+    100062: transform53
+    100064: transform54
+    100066: transform55
+    100068: transform56
+    100070: transform57
+    100072: transform58
+    100074: transform59
+    100076: transform60
+    100078: transform61
+    100080: transform62
+    100082: transform63
+    100084: transform64
+    100086: transform65
+    100088: transform66
+    100090: transform67
+    100092: transform68
+    100094: transform69
+    100096: transform70
+    100098: transform71
+    100100: transform72
+    100102: transform73
+    100104: transform74
+    100106: transform75
+    400000: //RootNode
+    400002: cryoPodLoPoly10
+    400004: cryoPodLoPoly11
+    400006: cryoPodLoPoly12
+    400008: cryoPodLoPoly13
+    400010: cryoPodLoPoly14
+    400012: cryoPodLoPoly15
+    400014: cryoPodLoPoly16
+    400016: cryoPodLoPoly17
+    400018: cryoPodLoPoly18
+    400020: cryoPodLoPoly19
+    400022: cryoPodLoPoly20
+    400024: cryoPodLoPoly21
+    400026: cryoPodLoPoly22
+    400028: cryoPodLoPoly23
+    400030: cryoPodLoPoly24
+    400032: cryoPodLoPoly25
+    400034: cryoPodLoPoly26
+    400036: cryoPodLoPoly27
+    400038: cryoPodLoPoly28
+    400040: cryoPodLoPoly3
+    400042: cryoPodLoPoly4
+    400044: cryoPodLoPoly5
+    400046: cryoPodLoPoly6
+    400048: cryoPodLoPoly7
+    400050: cryoPodLoPoly8
+    400052: cryoPodLoPoly9
+    400054: lowPolyPod:cryoPodLoPoly
+    400056: transform50
+    400058: transform51
+    400060: transform52
+    400062: transform53
+    400064: transform54
+    400066: transform55
+    400068: transform56
+    400070: transform57
+    400072: transform58
+    400074: transform59
+    400076: transform60
+    400078: transform61
+    400080: transform62
+    400082: transform63
+    400084: transform64
+    400086: transform65
+    400088: transform66
+    400090: transform67
+    400092: transform68
+    400094: transform69
+    400096: transform70
+    400098: transform71
+    400100: transform72
+    400102: transform73
+    400104: transform74
+    400106: transform75
+    2300000: cryoPodLoPoly28
+    3300000: cryoPodLoPoly28
+    4300000: cryoPodLoPoly28
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert14
+    second: {fileID: 2100000, guid: e7859497e45575c459877e67f0e3b9a5, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

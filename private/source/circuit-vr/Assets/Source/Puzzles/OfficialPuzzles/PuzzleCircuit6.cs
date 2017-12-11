@@ -10,33 +10,26 @@ namespace Assets.Source.Puzzles
 {
     class PuzzleCircuit6 : Puzzle
     {
-
-
-        public DraggableCircuitComponent[] choices;
+        public LEDCircuitComponent LED;
 
         private void Start()
         {
-            //ActivateCells(0);
+            InitPuzzle(1);
+            puzzleName = "PuzzleCircuit6";
+            endDuration = 5;
         }
 
         private void Update()
         {
-            if ((choices[1].componentPosition.x == outputPosition.componentPosition.x) && (choices[1].componentPosition.y == outputPosition.componentPosition.y))
+            if ((choices[1].attachedComponent.componentPosition.x == outputPosition.componentPosition.x) && (choices[1].attachedComponent.componentPosition.y == outputPosition.componentPosition.y))
             {
-                LevelController.getInstance().closePuzzle("PuzzleCircuit6");
+                ActivateCells(0);
+				MarkCompleted ();
+				LED.lighted = true;
+                DisableDragging();
             }
-        }
 
-        override
-        public void ResetChoices()
-        {
-            Vector2 cell = new Vector2(0f, 0f);
-            for (int i = 0; i < choices.Length; i++)
-            {
-                choices[i].moved = false;
-                choices[i].setComponentToCell(cell);
-                choices[i].transform.localPosition = choices[i].initialTransformPos;
-            }
+            CheckCompletion();
         }
     }
 }

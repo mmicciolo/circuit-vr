@@ -9,6 +9,7 @@ using UnityStandardAssets.Characters.FirstPerson;
 using UnityStandardAssets.CrossPlatformInput;
 using UnityStandardAssets.Utility;
 using Random = UnityEngine.Random;
+using FMODUnity;
 
 namespace Assets.Source.Player
 {
@@ -47,6 +48,7 @@ namespace Assets.Source.Player
         private float m_NextStep;
         private bool m_Jumping;
         private AudioSource m_AudioSource;
+        public bool canJump = false;
 
         private GameObject currentInteractable;
         public Text subtitle;
@@ -54,7 +56,7 @@ namespace Assets.Source.Player
         // Use this for initialization
         private void Start()
         {
-            gameObject.transform.position = LevelController.getInstance().playerPosition;
+            //gameObject.transform.position = LevelController.getInstance().playerPosition;
 
             m_CharacterController = GetComponent<CharacterController>();
             m_Camera = Camera.main;
@@ -79,7 +81,7 @@ namespace Assets.Source.Player
             {
                 RotateView();
                 // the jump state needs to read here to make sure it is not missed
-                if (!m_Jump)
+                if (!m_Jump && canJump)
                 {
                     m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
                 }
@@ -106,13 +108,14 @@ namespace Assets.Source.Player
                     subtitle.gameObject.SetActive(true);
                     float distance = Vector3.Distance(transform.position, hit.point);
                     bool itb = hit.collider.gameObject.GetComponents<Interactable>().Length > 0;
-                    subtitle.GetComponent<Text>().text = hit.collider.gameObject.name + "\n distance: " + distance;
-                    if ((distance <= 3f) && (itb))
-                    {
-                        currentInteractable = hit.collider.gameObject;
-                        subtitle.GetComponent<Text>().text += "\n Press E";
-                    }
-                    else currentInteractable = null;
+                    //subtitle.GetComponent<Text>().text = hit.collider.gameObject.name + "\n distance: " + distance;
+					if ((distance <= 3f) && (itb)) {
+						currentInteractable = hit.collider.gameObject;
+						subtitle.GetComponent<Text> ().text = "Press E";
+					} else {
+						currentInteractable = null;
+						subtitle.gameObject.SetActive (false);
+					}
                 }
                 else
                 {
@@ -249,17 +252,18 @@ namespace Assets.Source.Player
             {
                 return;
             }
+            GetComponent<FMODUnity.StudioEventEmitter>().Play();
             // pick & play a random footstep sound from the array,
             // excluding sound at index 0
-            if(m_FootstepSounds.Length > 0)
-            {
-                int n = Random.Range(1, m_FootstepSounds.Length);
-                m_AudioSource.clip = m_FootstepSounds[n];
-                m_AudioSource.PlayOneShot(m_AudioSource.clip);
-                // move picked sound to index 0 so it's not picked next time
-                m_FootstepSounds[n] = m_FootstepSounds[0];
-                m_FootstepSounds[0] = m_AudioSource.clip;
-            }
+            //if(m_FootstepSounds.Length > 0)
+            //{
+            //    int n = Random.Range(1, m_FootstepSounds.Length);
+            //    m_AudioSource.clip = m_FootstepSounds[n];
+            //    m_AudioSource.PlayOneShot(m_AudioSource.clip);
+            //    // move picked sound to index 0 so it's not picked next time
+            //    m_FootstepSounds[n] = m_FootstepSounds[0];
+            //    m_FootstepSounds[0] = m_AudioSource.clip;
+            //}
         }
 
 

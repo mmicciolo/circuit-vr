@@ -10,31 +10,61 @@ namespace Assets.Source.Puzzles
 {
     class PuzzleCircuit29 : Puzzle
     {
-        public DraggableCircuitComponent[] choices;
+		public LEDCircuitComponent[] LEDs;
+		bool alternate = true;
+		long lastAlternate;
 
         private void Start()
         {
-            //ActivateCells(0);
+			InitPuzzle(6);
+			puzzleName = "PuzzleCircuit29";
+			endDuration = 20;
         }
 
         private void Update()
         {
-            if ((choices[0].componentPosition.x == outputPosition.componentPosition.x) && (choices[0].componentPosition.y == outputPosition.componentPosition.y))
+            if ((choices[0].attachedComponent.componentPosition.x == outputPosition.componentPosition.x) && (choices[0].attachedComponent.componentPosition.y == outputPosition.componentPosition.y))
             {
-                LevelController.getInstance().closePuzzle("PuzzleCircuit29");
+				ActivateCells(0);
+				MarkCompleted ();
+				DisableDragging();
             }
+			CheckCompletion ();
         }
 
-        override
-        public void ResetChoices()
-        {
-            Vector2 cell = new Vector2(0f, 0f);
-            for (int i = 0; i < choices.Length; i++)
-            {
-                choices[i].moved = false;
-                choices[i].setComponentToCell(cell);
-                choices[i].transform.localPosition = choices[i].initialTransformPos;
-            }
-        }
+		protected override void AnimateEnd ()
+		{
+			long time = stopwatch.ElapsedMilliseconds - lastAlternate;
+			if (time > 3000) {
+				alternate = !alternate;
+				lastAlternate = stopwatch.ElapsedMilliseconds;
+			} else {
+				if (alternate) {
+					if (time > 200) {
+						LEDs [0].lighted = true;
+					}
+					if (time > 800) {
+						LEDs [1].lighted = true;
+						LEDs [2].lighted = true;
+					}
+					if (time > 1400) {
+						LEDs [3].lighted = true;
+						LEDs [4].lighted = true;
+						LEDs [5].lighted = true;
+					}
+					if (time > 2000) {
+						LEDs [6].lighted = true;
+						LEDs [7].lighted = true;
+						LEDs [8].lighted = true;
+						LEDs [9].lighted = true;
+					}
+				} else {
+					foreach (LEDCircuitComponent led in LEDs) {
+						led.lighted = false;
+					}
+				}
+			}
+				
+		}
     }
 }
