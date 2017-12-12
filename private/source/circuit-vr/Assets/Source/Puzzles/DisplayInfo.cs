@@ -47,7 +47,7 @@ namespace Assets.Source.Puzzles
             //Vector3 curPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             //myText.transform.position = curPosition;
             myText.text = notation;
-            myText.fontSize = 22;
+            myText.fontSize = 19;
 			displaying = true;
 
         }
