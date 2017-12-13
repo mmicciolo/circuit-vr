@@ -32,7 +32,7 @@ namespace Assets.Source.Puzzles
         protected bool completed = false;
         protected string puzzleName;
 
-        private StudioEventEmitter puzzleSound;
+        //private StudioEventEmitter puzzleSound;
 
         public DraggableCircuitComponent[] choices;
 
@@ -40,12 +40,22 @@ namespace Assets.Source.Puzzles
 
 		System.Random rand;
 
+        FMODUnity.StudioEventEmitter openEmitter;
+        FMODUnity.StudioEventEmitter hintEmitter;
+
+        int hintInterval;
+
         private void Start()
         {
 			InitPuzzle(puzzleNumber);
         }
 
-		protected void InitPuzzle(int number)
+        protected void InitPuzzle(int number)
+        {
+            InitPuzzle(number, 20);
+        }
+
+        protected void InitPuzzle(int number, int hintTime)
         {
             puzzleGrid = PuzzleGrid.GetPuzzleGrid();
 
@@ -59,11 +69,21 @@ namespace Assets.Source.Puzzles
 
 			puzzleNumber = number;
 
-            puzzleSound = gameObject.AddComponent<StudioEventEmitter>();
-            puzzleSound.Event = "event:/SFX/Puzzle Start";
-            puzzleSound.Play();
+            //puzzleSound = gameObject.AddComponent<StudioEventEmitter>();
+            //puzzleSound.Event = "event:/SFX/Puzzle Start";
+            //puzzleSound.Play();
+            openEmitter = gameObject.AddComponent<StudioEventEmitter>();
+            openEmitter.Event = "event:/AI Dialogue/AI Puzzle Cues/Puzzle " + (puzzleNumber + 1) + " Open";
+            openEmitter.Play();
+            hintEmitter = gameObject.AddComponent<StudioEventEmitter>();
+            hintEmitter.Event = "event:/AI Dialogue/AI Puzzle Cues/Puzzle " + (puzzleNumber + 1) + " Hint";
 
-			rand = new System.Random ();
+            rand = new System.Random ();
+
+            stopwatch = new Stopwatch();
+            stopwatch.Start();
+
+            this.hintInterval = hintTime;
         }
 
     public Camera GetCamera()
@@ -101,6 +121,15 @@ namespace Assets.Source.Puzzles
                 {
                     AnimateEnd();
                     stepsSinceCompletion++;
+                }
+            } else
+            {
+                if (((int)stopwatch.Elapsed.TotalSeconds % hintInterval == 0) && ((int)stopwatch.Elapsed.TotalSeconds != 0))
+                {
+                    if (!hintEmitter.IsPlaying())
+                    {
+                        hintEmitter.Play();
+                    }
                 }
             }
         }
