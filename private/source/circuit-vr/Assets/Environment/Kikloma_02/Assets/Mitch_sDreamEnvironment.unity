@@ -4757,7 +4757,7 @@ GameObject:
   - component: {fileID: 204910844}
   m_Layer: 0
   m_Name: DoorLeftSide (8)
-  m_TagString: Untagged
+  m_TagString: lock_behind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9141,7 +9141,7 @@ GameObject:
   - component: {fileID: 438685982}
   m_Layer: 0
   m_Name: DoorLeftSide (9)
-  m_TagString: Untagged
+  m_TagString: lock_behind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9176,7 +9176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  puzzleNumber: 20
+  puzzleNumber: 7
 --- !u!65 &438685981
 BoxCollider:
   m_ObjectHideFlags: 0

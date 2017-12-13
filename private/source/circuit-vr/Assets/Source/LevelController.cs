@@ -22,7 +22,7 @@ public class LevelController : MonoBehaviour
 
     public PuzzleController puzzleController = new PuzzleController();
 
-    public AutoDoor lockBehind;
+    public AutoDoor[] lockBehind;
 
 	public string[] puzzleOrder = new string[] {"One", "Circuit6", "K2", "Circuit30", "Circuit31", "Circuit15", "Circuit29", "Circuit33", "Circuit23", "Circuit17", "Circuit34", "Circuit26" };
 	List<int> puzzlesCompleted;
@@ -38,7 +38,12 @@ public class LevelController : MonoBehaviour
             firstPersonPlayer = GameObject.FindObjectOfType<Assets.Source.Player.FirstPersonPlayer>();
             interactableCanvas = GameObject.FindObjectOfType<InteractableCanvas>();
 			puzzlesCompleted = new List<int>();
-            lockBehind = GameObject.FindGameObjectWithTag("lock_behind").GetComponent<AutoDoor>();
+            lockBehind = new AutoDoor[10];
+            int i = 0;
+            foreach (GameObject doorObject in GameObject.FindGameObjectsWithTag("lock_behind")) {
+                lockBehind[i] = doorObject.GetComponent<AutoDoor>();
+                i++;
+            }
 			buzzSound = gameObject.AddComponent<StudioEventEmitter>();
 			buzzSound.Event = "event:/SFX/Failed Circuit";
             DontDestroyOnLoad(levelControllerInstance);

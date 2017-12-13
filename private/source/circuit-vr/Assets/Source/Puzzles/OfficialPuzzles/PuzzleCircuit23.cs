@@ -61,5 +61,12 @@ namespace Assets.Source.Puzzles
             LEDs[3].lighted = true;
         }
 
+        protected override void ClosePuzzle()
+        {
+            LevelController.getInstance().lockBehind[1].puzzleNumber = 9;
+            LevelController.getInstance().lockBehind[0].puzzleNumber = 9;
+
+            base.ClosePuzzle();
+        }
     }
 }
