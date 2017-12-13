@@ -42,6 +42,11 @@ public class DialogueManager : MonoBehaviour {
     private const float SAMPLE_RATE = 44100f;
 
     StudioEventEmitter soundEmitter;
+    string dialogName;
+    bool linePlaying = false;
+    bool pressed = false;
+
+    int lineCount = 1;
 
     void Awake()
     {
@@ -64,7 +69,7 @@ public class DialogueManager : MonoBehaviour {
 
     public bool IsPlaying()
     {
-
+        if(soundEmitter == null) {  return false;}
         FMOD.Studio.PLAYBACK_STATE state;
         soundEmitter.EventInstance.getPlaybackState(out state);
         if(state == FMOD.Studio.PLAYBACK_STATE.PLAYING)
@@ -84,6 +89,55 @@ public class DialogueManager : MonoBehaviour {
             LevelController.getInstance().Pause();
         }
         StartDialogue(dialogName);
+    }
+
+    public void StartNewDialog(string dialogName)
+    {
+
+        this.dialogName = dialogName;
+        //Load all of the lines of dialog
+        //subLines = new List<string>();
+        TextAsset subfile = Resources.Load("Subtitles/" + dialogName) as TextAsset;
+        fileLines = subfile.text.Split('\n');
+
+        PlayNextLine();
+    }
+
+    public void PlayNextLine()
+    {
+        if(lineCount == fileLines.Length + 1)
+        {
+            lineCount = 1;
+            Destroy(soundEmitter);
+            soundEmitter = null;
+            linePlaying = false;
+            return;
+        }
+        if(soundEmitter != null)
+        {
+            soundEmitter.Stop();
+            Destroy(soundEmitter);
+            soundEmitter = null;
+        }
+        soundEmitter = gameObject.AddComponent<StudioEventEmitter>();
+
+        //Set the first line
+        displaySub = fileLines[lineCount - 1];
+
+        //Load the first audio cue
+        if (!dialogName.Contains("Cue"))
+        {
+            soundEmitter.Event = "event:/AI Dialogue/" + dialogName;
+        }
+        else
+        {
+            soundEmitter.Event = "event:/Antagonist Dialogue/" + dialogName + "/" + dialogName + "." + lineCount;
+        }
+
+
+        linePlaying = true;
+        soundEmitter.Play();
+        lineCount++;
     }
 
     public void StartDialogue (string dialogName)//AudioClip audioClip)
@@ -175,11 +229,15 @@ public class DialogueManager : MonoBehaviour {
 
     public void OnGUI()
     {
-        //ensure that dialogue is on
-        if(soundEmitter!=null)
+        if(soundEmitter != null)
         {
-            //check for negative nextSub
-            if (nextSub > 0 && !(subText[nextSub - 1].Contains("<break/>")))
+            if(Input.GetMouseButtonDown(0)) { pressed = true; }
+            if (pressed && Input.GetMouseButtonUp(0))
+            {
+                pressed = false;
+                PlayNextLine();
+            }
+            if (IsPlaying())
             {
                 GUI.depth = -1000;
                 subStyle.fixedWidth = Screen.width / 1.5f;
@@ -194,27 +252,62 @@ public class DialogueManager : MonoBehaviour {
                 GUI.contentColor = Color.white;
                 GUI.Label(new Rect(Screen.width / 2 - size.x / 2, Screen.height / 1.25f - size.y, size.x, size.y), displaySub, subStyle);
             }
-
-            //next sub time
-            if(nextSub<subText.Count)
-            {
-                int currentTime;
-                soundEmitter.EventInstance.getTimelinePosition(out currentTime);
-                float currentTimeSeconds = currentTime / 1000.0f;
-                if (currentTimeSeconds > subTiming[nextSub])
-                {
-                    displaySub = subText[nextSub];
-                    nextSub++;
-                }
-            }
             int trackLength; soundEmitter.EventDescription.getLength(out trackLength);
             int trackPosition; soundEmitter.EventInstance.getTimelinePosition(out trackPosition);
-            if (trackPosition > trackLength - 100)
+            if (trackPosition > trackLength - 10)
             {
-                StartCoroutine(EndPause());
+                PlayNextLine();
             }
         }
     }
+
+    public void SetLineText()
+    {
+
+    }
+
+    //public void OnGUI()
+    //{
+    //    //ensure that dialogue is on
+    //    if(soundEmitter!=null)
+    //    {
+    //        //check for negative nextSub
+    //        if (nextSub > 0 && !(subText[nextSub - 1].Contains("<break/>")))
+    //        {
+    //            GUI.depth = -1000;
+    //            subStyle.fixedWidth = Screen.width / 1.5f;
+    //            subStyle.wordWrap = true;
+    //            subStyle.alignment = TextAnchor.LowerCenter;
+    //            subStyle.normal.textColor = Color.yellow;
+    //            subStyle.fontSize = Mathf.FloorToInt(Screen.height * 0.025f);
+
+    //            Vector2 size = subStyle.CalcSize(new GUIContent());
+    //            GUI.contentColor = Color.black; //background for the subtitles
+    //            GUI.Label(new Rect(Screen.width / 2 - size.x / 2 + 1, Screen.height / 1.25f - size.y + 1, size.x, size.y), displaySub, subStyle);
+    //            GUI.contentColor = Color.white;
+    //            GUI.Label(new Rect(Screen.width / 2 - size.x / 2, Screen.height / 1.25f - size.y, size.x, size.y), displaySub, subStyle);
+    //        }
+
+    //        //next sub time
+    //        if(nextSub<subText.Count)
+    //        {
+    //            int currentTime;
+    //            soundEmitter.EventInstance.getTimelinePosition(out currentTime);
+    //            float currentTimeSeconds = currentTime / 1000.0f;
+    //            if (currentTimeSeconds > subTiming[nextSub])
+    //            {
+    //                displaySub = subText[nextSub];
+    //                nextSub++;
+    //            }
+    //        }
+    //        int trackLength; soundEmitter.EventDescription.getLength(out trackLength);
+    //        int trackPosition; soundEmitter.EventInstance.getTimelinePosition(out trackPosition);
+    //        if (trackPosition > trackLength - 100)
+    //        {
+    //            StartCoroutine(EndPause());
+    //        }
+    //    }
+    //}
 
     public void Update()
     {
