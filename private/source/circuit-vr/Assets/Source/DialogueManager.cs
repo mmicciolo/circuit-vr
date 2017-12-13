@@ -45,6 +45,7 @@ public class DialogueManager : MonoBehaviour {
     string dialogName;
     bool linePlaying = false;
     bool pressed = false;
+    bool dialogPlaying = false;
 
     int lineCount = 1;
 
@@ -82,6 +83,11 @@ public class DialogueManager : MonoBehaviour {
         }
     }
 
+    public bool IsDialogPlaying()
+    {
+        return dialogPlaying;
+    }
+
     public void StartDialogue(string dialogName, bool pausePlayer)
     {
         if(pausePlayer)
@@ -100,6 +106,8 @@ public class DialogueManager : MonoBehaviour {
         TextAsset subfile = Resources.Load("Subtitles/" + dialogName) as TextAsset;
         fileLines = subfile.text.Split('\n');
 
+        dialogPlaying = true;
+
         PlayNextLine();
     }
 
@@ -110,7 +118,7 @@ public class DialogueManager : MonoBehaviour {
             lineCount = 1;
             Destroy(soundEmitter);
             soundEmitter = null;
-            linePlaying = false;
+            dialogPlaying = false;
             return;
         }
         if(soundEmitter != null)
@@ -134,8 +142,6 @@ public class DialogueManager : MonoBehaviour {
             soundEmitter.Event = "event:/Antagonist Dialogue/" + dialogName + "/" + dialogName + "." + lineCount;
         }
 
-
-        linePlaying = true;
         soundEmitter.Play();
         lineCount++;
     }
