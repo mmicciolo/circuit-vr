@@ -13,7 +13,7 @@ namespace Assets.Source.Puzzles
         
         private void Start()
         {
-			InitPuzzle(2);
+			InitPuzzle(1);
 			puzzleName = "PuzzleK2";
 			endDuration = 5;
         }

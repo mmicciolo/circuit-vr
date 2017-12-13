@@ -53,6 +53,8 @@ namespace Assets.Source.Player
         private GameObject currentInteractable;
         public Text subtitle;
 
+        public HandWithOmniTool hand;
+
         // Use this for initialization
         private void Start()
         {
@@ -71,6 +73,8 @@ namespace Assets.Source.Player
 
             subtitle.gameObject.SetActive(false);
             currentInteractable = null;
+
+            hand = gameObject.GetComponentInChildren<HandWithOmniTool>();
         }
 
 
@@ -112,15 +116,19 @@ namespace Assets.Source.Player
 					if ((distance <= 3f) && (itb)) {
 						currentInteractable = hit.collider.gameObject;
 						subtitle.GetComponent<Text> ().text = "Press E";
+                        hand.isUp = true;
 					} else {
 						currentInteractable = null;
 						subtitle.gameObject.SetActive (false);
-					}
+                        hand.isUp = false;
+                    }
                 }
                 else
                 {
                     currentInteractable = null;
                     subtitle.gameObject.SetActive(false);
+                    hand.isUp = false;
+
                 }
 
                 if (Input.GetKeyDown(KeyCode.E) && (currentInteractable != null))

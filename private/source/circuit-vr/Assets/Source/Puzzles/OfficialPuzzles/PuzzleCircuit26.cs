@@ -20,9 +20,7 @@ namespace Assets.Source.Puzzles
         private void Start()
         {
             step = 0;
-			stopwatch = new Stopwatch();
-			stopwatch.Start();
-			InitPuzzle(11);
+			InitPuzzle(11,10);
 			puzzleName = "PuzzleCircuit26";
 			endDuration = 5;
 			circuitSwitch.lastAnimation = "switch_down";
@@ -52,7 +50,7 @@ namespace Assets.Source.Puzzles
 				break;
 			}
 
-			double time = 10 - stopwatch.Elapsed.TotalSeconds;
+			double time = 20 - stopwatch.Elapsed.TotalSeconds;
 			//if (stopwatch.ElapsedTicks <= 1)
             //{
                 //circuitSwitch.animator.Play("switch_down");

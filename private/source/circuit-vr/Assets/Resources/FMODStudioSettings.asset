@@ -13,8 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HasSourceProject: 0
   HasPlatforms: 0
-  sourceProjectPath: 
-  SourceProjectPathUnformatted: 
+  sourceProjectPath: C:\Users\Linh Linh\Downloads\Package3\CircuitVR.fspro
+  SourceProjectPathUnformatted: C:\Users\Linh Linh\Downloads\Package3\CircuitVR.fspro
   SourceBankPathUnformatted: Assets\FMOD\Build\Desktop
   AutomaticEventLoading: 1
   AutomaticSampleLoading: 0
@@ -41,7 +41,9 @@ MonoBehaviour:
     Value: 1
   - Platform: 2
     Value: 0
-  BankDirectorySettings: []
+  BankDirectorySettings:
+  - Platform: 2
+    Value: Desktop
   VirtualChannelSettings:
   - Platform: 1
     Value: 1024

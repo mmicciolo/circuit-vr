@@ -49,7 +49,7 @@ namespace Assets.Source.Puzzles
 
         protected override void ClosePuzzle()
         {
-            LevelController.getInstance().lockBehind.puzzleNumber = 1;
+            LevelController.getInstance().lockBehind[2].puzzleNumber = 1;
             base.ClosePuzzle();
         }
     }

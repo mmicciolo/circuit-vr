@@ -18,7 +18,7 @@ namespace Assets.Source.Puzzles
         {
 			InitPuzzle(6);
 			puzzleName = "PuzzleCircuit29";
-			endDuration = 20;
+			endDuration = 6;
         }
 
         private void Update()
@@ -35,7 +35,7 @@ namespace Assets.Source.Puzzles
 		protected override void AnimateEnd ()
 		{
 			long time = stopwatch.ElapsedMilliseconds - lastAlternate;
-			if (time > 3000) {
+			if (time > 1500) {
 				alternate = !alternate;
 				lastAlternate = stopwatch.ElapsedMilliseconds;
 			} else {
@@ -43,16 +43,16 @@ namespace Assets.Source.Puzzles
 					if (time > 200) {
 						LEDs [0].lighted = true;
 					}
-					if (time > 800) {
+					if (time > 500) {
 						LEDs [1].lighted = true;
 						LEDs [2].lighted = true;
 					}
-					if (time > 1400) {
+					if (time > 800) {
 						LEDs [3].lighted = true;
 						LEDs [4].lighted = true;
 						LEDs [5].lighted = true;
 					}
-					if (time > 2000) {
+					if (time > 1100) {
 						LEDs [6].lighted = true;
 						LEDs [7].lighted = true;
 						LEDs [8].lighted = true;
