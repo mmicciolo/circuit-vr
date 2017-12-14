@@ -28,6 +28,9 @@ public class LevelController : MonoBehaviour
 	public List<int> puzzlesCompleted;
 
 	private StudioEventEmitter buzzSound;
+    private Stack<string> openScenes = new Stack<string>();
+
+    public bool pauseMenuOpen = false;
 
     private void Awake()
     {
@@ -48,6 +51,11 @@ public class LevelController : MonoBehaviour
 			buzzSound.Event = "event:/SFX/Failed Circuit";
             DontDestroyOnLoad(levelControllerInstance);
         }
+    }
+
+    public void Restart()
+    {
+        Destroy(this);
     }
 
 	public void SetCompleted(int puzzleNumber) {
@@ -80,12 +88,14 @@ public class LevelController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Pause();
-            if (isPaused)
+            if (isPaused && !pauseMenuOpen)
             {
                 openPuzzle("PauseMenu");
-            } else
+                pauseMenuOpen = true;
+            } else if(!openScenes.Contains("PauseMenu"))
             {
                 closePuzzle("PauseMenu");
+                pauseMenuOpen = false;
             }
         }
     }
@@ -123,8 +133,9 @@ public class LevelController : MonoBehaviour
     {
 		//if previous puzzles are solved
 		if (sceneName == puzzleOrder [puzzlesCompleted.Count]) {
-			//Store the currently open scene
-			openScene = SceneManager.GetActiveScene ().name;
+            //Store the currently open scene
+            //openScene = SceneManager.GetActiveScene ().name;
+            openScenes.Push(SceneManager.GetActiveScene().name);
 
 			//Add a callback for when the loading completes
 			SceneManager.sceneLoaded += OnPuzzleLoaded;
@@ -135,14 +146,28 @@ public class LevelController : MonoBehaviour
             if (sceneName == "PauseMenu")
             {
                 //Store the currently open scene
-                openScene = SceneManager.GetActiveScene().name;
+                //openScene = SceneManager.GetActiveScene().name;
+                openScenes.Push(SceneManager.GetActiveScene().name);
 
                 //Add a callback for when the loading completes
                 SceneManager.sceneLoaded += OnPuzzleLoaded;
 
                 //Load the scene
                 SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
-            } else 
+            }
+            if (sceneName == "Settings")
+            {
+                //Store the currently open scene
+                //openScene = SceneManager.GetActiveScene().name;
+                openScenes.Push(SceneManager.GetActiveScene().name);
+
+                //Add a callback for when the loading completes
+                SceneManager.sceneLoaded += OnPuzzleLoaded;
+
+                //Load the scene
+                SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
+            }
+            else 
 			buzzSound.Play ();
 		}
     }
@@ -156,10 +181,13 @@ public class LevelController : MonoBehaviour
         //Remove the callback
         SceneManager.sceneLoaded -= OnPuzzleLoaded;
 
-        //Disable the main scene objects
-        foreach (GameObject obj in SceneManager.GetSceneByName(openScene).GetRootGameObjects())
+        if(openScenes.Peek().Equals("Mitch_sDreamEnvironment"))
         {
-            if (!obj.active) { disabledObject.Add(obj); } else { obj.SetActive(false); }
+            //Disable the main scene objects
+            foreach (GameObject obj in SceneManager.GetSceneByName(openScenes.Peek()).GetRootGameObjects())
+            {
+                if (!obj.active) { disabledObject.Add(obj); } else { obj.SetActive(false); }
+            }
         }
 
         //Set the scene as active
@@ -177,23 +205,27 @@ public class LevelController : MonoBehaviour
 
     private void OnPuzzleUnloaded(Scene scene)
     {
-        //Disable the cursor
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-
         //Remove the callback
         SceneManager.sceneUnloaded -= OnPuzzleUnloaded;
 
-        //Enable the main scene objects
-        foreach (GameObject obj in SceneManager.GetSceneByName(openScene).GetRootGameObjects())
+        if(openScenes.Peek().Equals("Mitch_sDreamEnvironment"))
         {
-            if (!disabledObject.Contains(obj)) { obj.SetActive(true); }
+
+            //Enable the main scene objects
+            foreach (GameObject obj in SceneManager.GetSceneByName(openScenes.Peek()).GetRootGameObjects())
+            {
+                if (!disabledObject.Contains(obj)) { obj.SetActive(true); }
+            }
+
+            //Clear the list
+            disabledObject.Clear();
+
+            //Disable the cursor
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
 
-        //Clear the list
-        disabledObject.Clear();
-
         //Set the scene as active
-        SceneManager.SetActiveScene(SceneManager.GetSceneByName(openScene));
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName(openScenes.Pop()));
     }
 }

@@ -66,12 +66,15 @@ public class Settings : MonoBehaviour
         GlobalSettings.Instance.volume = newVolume;
         GlobalSettings.Instance.muted = newMuted;
         if (newMuted) { FMODUnity.RuntimeManager.GetBus("bus:/").setVolume(0); } else { FMODUnity.RuntimeManager.GetBus("bus:/").setVolume(newVolume); }
-        SceneManager.LoadScene("Start Screen");
+        if (LevelController.getInstance() == null) { SceneManager.LoadScene("Start Screen"); }
+        else { LevelController.getInstance().closePuzzle("Settings"); }
     }
 
     public void RestoreSettings()
     {
-        SceneManager.LoadScene("Start Screen");
+        if (LevelController.getInstance() == null) { SceneManager.LoadScene("Start Screen"); }
+        else { LevelController.getInstance().closePuzzle("Settings"); }
+        //SceneManager.LoadScene("Start Screen");
     }
 
     public void SettingsButtonClicked()
