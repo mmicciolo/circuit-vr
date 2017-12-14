@@ -84,6 +84,8 @@ namespace Assets.Source.Puzzles
             stopwatch.Start();
 
             this.hintInterval = hintTime;
+
+            DialogueManager.Instance.StopDialog();
         }
 
     public Camera GetCamera()

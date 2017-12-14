@@ -4670,6 +4670,7 @@ MonoBehaviour:
   playOnce: 1
   checkBefore: 1
   puzzleBefore: 9
+  handUp: 0
 --- !u!65 &187144602
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14134,6 +14135,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfa297aaba2ae134da3dd7338bb3eb25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  needsUp: 0
+  forceUp: 0
 --- !u!95 &571585892
 Animator:
   serializedVersion: 3
@@ -14374,6 +14377,7 @@ MonoBehaviour:
   playOnce: 1
   checkBefore: 1
   puzzleBefore: 10
+  handUp: 0
 --- !u!65 &582805496
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14686,6 +14690,7 @@ MonoBehaviour:
   playOnce: 1
   checkBefore: 1
   puzzleBefore: 1
+  handUp: 0
 --- !u!65 &596518397
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24569,6 +24574,7 @@ MonoBehaviour:
   playOnce: 1
   checkBefore: 0
   puzzleBefore: 0
+  handUp: 0
 --- !u!65 &1087942681
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26294,6 +26300,7 @@ MonoBehaviour:
   playOnce: 1
   checkBefore: 1
   puzzleBefore: 8
+  handUp: 0
 --- !u!65 &1156996281
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28560,6 +28567,7 @@ MonoBehaviour:
   playOnce: 1
   checkBefore: 1
   puzzleBefore: 6
+  handUp: 0
 --- !u!65 &1235216081
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35256,6 +35264,11 @@ Prefab:
     - target: {fileID: 4898058333889262, guid: 0d5c8eee5b5674d46bc1633a8c9b7cce, type: 2}
       propertyPath: m_LocalScale.z
       value: 0.41742364
+      objectReference: {fileID: 0}
+    - target: {fileID: 114596756901376124, guid: 0d5c8eee5b5674d46bc1633a8c9b7cce,
+        type: 2}
+      propertyPath: puzzleNumber
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d5c8eee5b5674d46bc1633a8c9b7cce, type: 2}
@@ -44602,6 +44615,11 @@ Prefab:
     - target: {fileID: 1361402324722848, guid: 0d5c8eee5b5674d46bc1633a8c9b7cce, type: 2}
       propertyPath: m_Name
       value: PowerCellPrefab (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114596756901376124, guid: 0d5c8eee5b5674d46bc1633a8c9b7cce,
+        type: 2}
+      propertyPath: puzzleNumber
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d5c8eee5b5674d46bc1633a8c9b7cce, type: 2}
