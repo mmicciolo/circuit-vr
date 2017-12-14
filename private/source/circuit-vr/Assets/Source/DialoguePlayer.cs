@@ -14,7 +14,8 @@ public class DialoguePlayer : MonoBehaviour
         //DialogueManager.Instance.StartDialogue(aistart);
         //DialogueManager.Instance.StartDialogue("Intro");
         //StartCoroutine(Fade());
-        DialogueManager.Instance.StartNewDialog("Cue 1");
+        //DialogueManager.Instance.StartNewDialog("Antagonist Dialogue/Cue 1/Cue 1");
+        //DialogueManager.Instance.StartNewDialog("AI Dialogue/Omni Explanation Intro/Omni Explanation Intro 1");
 
     }
 

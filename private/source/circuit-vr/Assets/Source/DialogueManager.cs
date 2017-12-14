@@ -99,11 +99,11 @@ public class DialogueManager : MonoBehaviour {
 
     public void StartNewDialog(string dialogName)
     {
-
+        string[] split = dialogName.Split('/');
         this.dialogName = dialogName;
+
         //Load all of the lines of dialog
-        //subLines = new List<string>();
-        TextAsset subfile = Resources.Load("Subtitles/" + dialogName) as TextAsset;
+        TextAsset subfile = Resources.Load("Subtitles/" + split[split.Length - 1]) as TextAsset;
         fileLines = subfile.text.Split('\n');
 
         dialogPlaying = true;
@@ -133,15 +133,17 @@ public class DialogueManager : MonoBehaviour {
         //Set the first line
         displaySub = fileLines[lineCount - 1];
 
+        soundEmitter.Event = "event:/" + dialogName + "." + lineCount;
+
         //Load the first audio cue
-        if (!dialogName.Contains("Cue"))
-        {
-            soundEmitter.Event = "event:/AI Dialogue/" + dialogName;
-        }
-        else
-        {
-            soundEmitter.Event = "event:/Antagonist Dialogue/" + dialogName + "/" + dialogName + "." + lineCount;
-        }
+        //if (!dialogName.Contains("Cue"))
+        //{
+        //    soundEmitter.Event = "event:/AI Dialogue/" + dialogName;
+        //}
+        //else
+        //{
+        //    soundEmitter.Event = "event:/Antagonist Dialogue/" + dialogName + "/" + dialogName + "." + lineCount;
+        //}
 
         soundEmitter.Play();
         lineCount++;
