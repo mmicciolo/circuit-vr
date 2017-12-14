@@ -12,108 +12,108 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 114383957972276670}
-  - {fileID: 114104931523736784}
+  - {fileID: 114333182050169612}
+  - {fileID: 114617700364487948}
   EditorEvents:
-  - {fileID: 114500085980811860}
-  - {fileID: 114767927371584594}
-  - {fileID: 114541729594080748}
-  - {fileID: 114570575077888468}
-  - {fileID: 114706204577531152}
-  - {fileID: 114321324630860148}
-  - {fileID: 114416971553309302}
-  - {fileID: 114612150319922816}
-  - {fileID: 114641113199180542}
-  - {fileID: 114005022440250532}
-  - {fileID: 114602355001955622}
-  - {fileID: 114532922757615720}
-  - {fileID: 114103711145069386}
-  - {fileID: 114089251567033790}
-  - {fileID: 114531595643776134}
-  - {fileID: 114520184745715388}
-  - {fileID: 114525640728867366}
-  - {fileID: 114581500366737478}
-  - {fileID: 114413168756937842}
-  - {fileID: 114652123215436594}
-  - {fileID: 114489289494927550}
-  - {fileID: 114205233167386296}
-  - {fileID: 114059498560625932}
-  - {fileID: 114132632904102482}
-  - {fileID: 114247264683446314}
-  - {fileID: 114184307938435740}
-  - {fileID: 114933445384653026}
-  - {fileID: 114939988571972004}
-  - {fileID: 114726386731294510}
-  - {fileID: 114574274850965910}
-  - {fileID: 114913165296517766}
-  - {fileID: 114082748094565090}
-  - {fileID: 114741525862721884}
-  - {fileID: 114072152519062774}
-  - {fileID: 114369687578007760}
-  - {fileID: 114945996657843450}
-  - {fileID: 114309756684711844}
-  - {fileID: 114369731959535104}
-  - {fileID: 114221779223354124}
-  - {fileID: 114186035743278548}
-  - {fileID: 114191847356237102}
-  - {fileID: 114234074527741462}
-  - {fileID: 114330443147941214}
-  - {fileID: 114890443313701602}
-  - {fileID: 114347435225398062}
-  - {fileID: 114566254011866462}
-  - {fileID: 114850556705806094}
-  - {fileID: 114648739988555822}
-  - {fileID: 114074183889186916}
-  - {fileID: 114116322088166680}
-  - {fileID: 114711020337700756}
-  - {fileID: 114224563684558882}
-  - {fileID: 114421786222126154}
-  - {fileID: 114579266411803612}
-  - {fileID: 114672632637362134}
-  - {fileID: 114944934243936678}
-  - {fileID: 114925066124986956}
-  - {fileID: 114189821753765376}
-  - {fileID: 114054875519738850}
-  - {fileID: 114749824160755444}
-  - {fileID: 114063564474511260}
-  - {fileID: 114606881287887304}
-  - {fileID: 114136611632860506}
-  - {fileID: 114356568363531088}
-  - {fileID: 114631415974338988}
-  - {fileID: 114549948209143584}
-  - {fileID: 114352231667431788}
-  - {fileID: 114252610459404316}
-  - {fileID: 114692891447627506}
-  - {fileID: 114359472521008984}
-  - {fileID: 114577797177252810}
-  - {fileID: 114675431588193918}
-  - {fileID: 114935956734851992}
-  - {fileID: 114193723224740850}
-  - {fileID: 114635267567457502}
-  - {fileID: 114078633851793726}
-  - {fileID: 114219767289735446}
-  - {fileID: 114530885713192336}
-  - {fileID: 114708246890179232}
-  - {fileID: 114958767561914092}
-  - {fileID: 114014917937098548}
-  - {fileID: 114536203335178310}
-  - {fileID: 114211710784869228}
-  - {fileID: 114745828178644496}
-  - {fileID: 114248011451090300}
-  - {fileID: 114370654629313210}
-  - {fileID: 114724093541533994}
-  - {fileID: 114046018964341866}
-  - {fileID: 114141347277421160}
-  - {fileID: 114092169451385618}
-  - {fileID: 114131136554779698}
-  - {fileID: 114553045722455534}
-  - {fileID: 114986067713755620}
-  - {fileID: 114477132491677188}
-  MasterBankRef: {fileID: 114104931523736784}
-  StringsBankRef: {fileID: 114383957972276670}
-  stringsBankWriteTime: 636487863555083419
+  - {fileID: 114475769433811090}
+  - {fileID: 114265144463326410}
+  - {fileID: 114691225202611718}
+  - {fileID: 114252733567302140}
+  - {fileID: 114937640896539576}
+  - {fileID: 114229652450776204}
+  - {fileID: 114676968484597708}
+  - {fileID: 114244069172380304}
+  - {fileID: 114890075588510814}
+  - {fileID: 114881985883144042}
+  - {fileID: 114081779806169122}
+  - {fileID: 114529990762080980}
+  - {fileID: 114589163449071284}
+  - {fileID: 114575379724152146}
+  - {fileID: 114275142811808668}
+  - {fileID: 114336834267205756}
+  - {fileID: 114003818431547030}
+  - {fileID: 114529969260654440}
+  - {fileID: 114416611806788916}
+  - {fileID: 114629276609178574}
+  - {fileID: 114532942165738226}
+  - {fileID: 114480924198215554}
+  - {fileID: 114758823666170408}
+  - {fileID: 114543292678167770}
+  - {fileID: 114050940435700816}
+  - {fileID: 114532631130376436}
+  - {fileID: 114569584342891350}
+  - {fileID: 114464221599455350}
+  - {fileID: 114423435066908768}
+  - {fileID: 114576357659752360}
+  - {fileID: 114408251532473478}
+  - {fileID: 114359549137015958}
+  - {fileID: 114702480938206750}
+  - {fileID: 114956768443136572}
+  - {fileID: 114975164781807816}
+  - {fileID: 114263351679177990}
+  - {fileID: 114840558219856994}
+  - {fileID: 114245042872760712}
+  - {fileID: 114564077267081500}
+  - {fileID: 114797437919698666}
+  - {fileID: 114012895385692176}
+  - {fileID: 114864849597258864}
+  - {fileID: 114056845444318178}
+  - {fileID: 114737684425806694}
+  - {fileID: 114877797294252168}
+  - {fileID: 114850697175518852}
+  - {fileID: 114705655148763246}
+  - {fileID: 114961545193573324}
+  - {fileID: 114312726669555558}
+  - {fileID: 114731854243849292}
+  - {fileID: 114288414648339870}
+  - {fileID: 114422672612191336}
+  - {fileID: 114264486759356960}
+  - {fileID: 114660954538572766}
+  - {fileID: 114644438488048646}
+  - {fileID: 114103357293227900}
+  - {fileID: 114143375496922344}
+  - {fileID: 114398040855673038}
+  - {fileID: 114188742662985136}
+  - {fileID: 114000652594862092}
+  - {fileID: 114519585060224466}
+  - {fileID: 114264586929376724}
+  - {fileID: 114483320382952076}
+  - {fileID: 114767464300711650}
+  - {fileID: 114288977177288094}
+  - {fileID: 114863896329920644}
+  - {fileID: 114023494249846032}
+  - {fileID: 114184242415228282}
+  - {fileID: 114510735120272328}
+  - {fileID: 114265650024017248}
+  - {fileID: 114921409624340364}
+  - {fileID: 114112710553284198}
+  - {fileID: 114399099573400490}
+  - {fileID: 114853546264313716}
+  - {fileID: 114976973932751498}
+  - {fileID: 114675042478556264}
+  - {fileID: 114660463839410226}
+  - {fileID: 114055118448229104}
+  - {fileID: 114130904716947902}
+  - {fileID: 114295498860008260}
+  - {fileID: 114328102678690884}
+  - {fileID: 114408424009578470}
+  - {fileID: 114767668009431678}
+  - {fileID: 114571809574004616}
+  - {fileID: 114520383217971066}
+  - {fileID: 114842182301671932}
+  - {fileID: 114745503412666732}
+  - {fileID: 114292513444467520}
+  - {fileID: 114174310964362654}
+  - {fileID: 114456383372358352}
+  - {fileID: 114372226603098684}
+  - {fileID: 114073243523912700}
+  - {fileID: 114888561744652970}
+  - {fileID: 114152215518126714}
+  MasterBankRef: {fileID: 114617700364487948}
+  StringsBankRef: {fileID: 114333182050169612}
+  stringsBankWriteTime: 636487885692232398
   cacheVersion: 2
---- !u!114 &114003176184480966
+--- !u!114 &114000652594862092
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -124,17 +124,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/Music/Puzzle 4
-  guid: 8ca994785558144d816559945b2fdc67
+  Path: event:/AI Dialogue/Ohms Law/Ohms Law 1.2
+  guid: 795600497fff064fb3438577b837c756
   Banks:
-  - {fileID: 114383506975532032}
+  - {fileID: 114617700364487948}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 0
+  IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 97090
+  Length: 4810
 --- !u!114 &114003818431547030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,7 +149,7 @@ MonoBehaviour:
   Path: event:/SFX/Slide Door
   guid: 669f9e409c06254fa0f0c14b5ef680b2
   Banks:
-  - {fileID: 114258337808616320}
+  - {fileID: 114617700364487948}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -157,50 +157,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1482
---- !u!114 &114004693940747848
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Antagonist Dialogue/Cue 5
-  guid: 5c30552a1f27624c8e2d071f82112eaf
-  Banks:
-  - {fileID: 114939440286429022}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 26696
---- !u!114 &114005022440250532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Menu Tone 1
-  guid: 1fae2fc3df36af43baa56d073d303492
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1000
 --- !u!114 &114005031465020908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,7 +176,7 @@ MonoBehaviour:
   - Name: 
     Value: 14581952
   Exists: 1
---- !u!114 &114007408311705994
+--- !u!114 &114012895385692176
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -231,18 +187,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/Antagonist Dialogue/Cue 4
-  guid: f690ae55aa1adc4fbe1023d7bfccaa48
+  Path: event:/Antagonist Dialogue/Cue 5/Cue 5.2
+  guid: 2ea81451df7e3a4aa811c55531b7fd2b
   Banks:
-  - {fileID: 114939440286429022}
+  - {fileID: 114617700364487948}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 27722
---- !u!114 &114008022074792724
+  Length: 5513
+--- !u!114 &114023494249846032
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -253,123 +209,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/No Help Needed
-  guid: 311dd9e08e7ae44e937ececd8d48bce3
+  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 12 Open
+  guid: 8b7b7375e96858489164df60e5d066dd
   Banks:
-  - {fileID: 114939440286429022}
+  - {fileID: 114617700364487948}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 6875
---- !u!114 &114008210283389762
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Footsteps
-  guid: eeeb62867e986f43a0f6bb7f74e9fba9
-  Banks:
-  - {fileID: 114383506975532032}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1000
---- !u!114 &114014902511466438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\Linh Linh\Downloads\Package3\Build\Desktop\CircuitVR Master Bank.strings.bank
-  lastModified: 636487022060000000
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 2842
-  Exists: 1
---- !u!114 &114014917937098548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Puzzle 7
-  guid: d9416ba73b95d746a85a587c0a399e5c
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 106666
---- !u!114 &114020427695090110
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Footsteps
-  guid: eeeb62867e986f43a0f6bb7f74e9fba9
-  Banks:
-  - {fileID: 114939440286429022}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1000
---- !u!114 &114022319915690984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Menu Electricity Sounds
-  guid: ea8dc5d71fed74408c7a38722038a53f
-  Banks:
-  - {fileID: 114939440286429022}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1000
+  Length: 4263
 --- !u!114 &114032966437948222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -392,28 +242,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 24304
---- !u!114 &114039264217268314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Capacitor Fail
-  guid: 08ba32995f061240a50003d4259eaed0
-  Banks:
-  - {fileID: 114939440286429022}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 2000
 --- !u!114 &114043778258916454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -436,50 +264,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 20000
---- !u!114 &114044038452795228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Rotating Door
-  guid: 327ec5c29c8f5b4c89588b825a5c4fe0
-  Banks:
-  - {fileID: 114939440286429022}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1102
---- !u!114 &114045008812742390
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Ambience/General Room Ambience
-  guid: 4fad07f5f77487428908df17177b9cd1
-  Banks:
-  - {fileID: 114939440286429022}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 10
-  MaxDistance: 50
-  Length: 75000
 --- !u!114 &114045157850060458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -502,28 +286,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 19382
---- !u!114 &114046018964341866
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Button Press
-  guid: e829a5c1615b48448cc658ad0c8548f3
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 38
 --- !u!114 &114050940435700816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -538,15 +300,15 @@ MonoBehaviour:
   Path: event:/SFX/Place Component
   guid: df4f25eee03870458ebb917afafe763e
   Banks:
-  - {fileID: 114258337808616320}
+  - {fileID: 114617700364487948}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 585
---- !u!114 &114054875519738850
+  Length: 400
+--- !u!114 &114055118448229104
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -557,18 +319,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/Antagonist Dialogue/Cue 1/Cue 1.2
-  guid: 932c445f34a48c429f437bdd4ad0f439
+  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 12 Hint
+  guid: b8394916d595d64ba7b3046eedadc9ef
   Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 1
+  - {fileID: 114617700364487948}
+  IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 2814
---- !u!114 &114059498560625932
+  Length: 4080
+--- !u!114 &114056845444318178
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -582,7 +344,7 @@ MonoBehaviour:
   Path: event:/Antagonist Dialogue/Cue 5/Cue 5.4
   guid: 4189363088914444aba9127cd69c9399
   Banks:
-  - {fileID: 114104931523736784}
+  - {fileID: 114617700364487948}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -590,28 +352,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 7038
---- !u!114 &114063564474511260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Puzzle 1
-  guid: 99297dcdd5252f4098efd84097252e6b
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 254119
 --- !u!114 &114064790853492058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -634,7 +374,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1500
---- !u!114 &114067661231268388
+--- !u!114 &114073243523912700
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -645,83 +385,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/Music/Puzzle 1
-  guid: 99297dcdd5252f4098efd84097252e6b
+  Path: event:/Antagonist Dialogue/Cue 1/Cue 1.1
+  guid: ebf8517bbceba04b822bcb7f95a2aad3
   Banks:
-  - {fileID: 114383506975532032}
+  - {fileID: 114617700364487948}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 254119
---- !u!114 &114072152519062774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/Close One
-  guid: 56c2333a05e4d64f8dba2b660064ee3d
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 0
-  Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 2370
---- !u!114 &114074183889186916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/Fail
-  guid: 7e16f22c62f07b4f9cf4eae2b35a84cf
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 4750
---- !u!114 &114078633851793726
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 9 Open
-  guid: c98e42a229bb4e4c9ddf3a8764cea98e
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 4199
+  Length: 2678
 --- !u!114 &114081779806169122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -736,7 +410,7 @@ MonoBehaviour:
   Path: event:/SFX/Switch
   guid: 4d9ee5c31ffab94fa110a0fd585e01af
   Banks:
-  - {fileID: 114258337808616320}
+  - {fileID: 114617700364487948}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -744,28 +418,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 500
---- !u!114 &114082748094565090
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Antagonist Dialogue/Cue 3/Cue 3.4
-  guid: 50935bdc12ce784597bb23ee2238e70d
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 8732
 --- !u!114 &114087048577567174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -788,50 +440,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 26696
---- !u!114 &114089251567033790
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/Series Parallel/Series Parallel 1.2
-  guid: 2c82ff8cc42a1443868bc4ea1748aefb
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 7400
---- !u!114 &114092169451385618
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Antagonist Dialogue/Cue 1/Cue 1.1
-  guid: ebf8517bbceba04b822bcb7f95a2aad3
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 2678
 --- !u!114 &114096928687844086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -851,7 +459,7 @@ MonoBehaviour:
   - Name: 
     Value: 14497664
   Exists: 1
---- !u!114 &114097711492037834
+--- !u!114 &114103357293227900
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -862,58 +470,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Menu Tone 1
-  guid: 1fae2fc3df36af43baa56d073d303492
+  Path: event:/AI Dialogue/Omni Explanation Intro/Omni Explanation Intro 1.2
+  guid: 6ea670d77dffb549959805703b05c708
   Banks:
-  - {fileID: 114939440286429022}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1000
---- !u!114 &114103711145069386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/Series Parallel/Series Parallel 1.3
-  guid: 265facce7477974c99c716b00a788394
-  Banks:
-  - {fileID: 114104931523736784}
+  - {fileID: 114617700364487948}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 7326
---- !u!114 &114104931523736784
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\Matt\Desktop\circuit-vr\private\source\circuit-vr\Assets\FMOD\Build\Desktop\CircuitVR
-    Master Bank.bank
-  lastModified: 636487863555033246
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 19447136
-  Exists: 1
+  Length: 4591
 --- !u!114 &114110983662194392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -927,8 +494,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Antagonist Dialogue/Cue 3
   guid: 71f804c82b3b454f9f9c82aca287806f
-  Banks:
-  - {fileID: 114258337808616320}
+  Banks: []
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -936,161 +502,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 24304
---- !u!114 &114114812491794438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/System Reengaged
-  guid: a5ea6cf171dab04a99095a160eea46fe
-  Banks:
-  - {fileID: 114383506975532032}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 2375
---- !u!114 &114116322088166680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 9 Hint
-  guid: 7e6136b4f0a1784dbed06736b2bd0f01
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 9354
---- !u!114 &114117687550585046
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Button Press
-  guid: e829a5c1615b48448cc658ad0c8548f3
-  Banks:
-  - {fileID: 114939440286429022}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 38
---- !u!114 &114129702572065170
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/Good Job
-  guid: 81592094b565224da8b3c6cf85697b58
-  Banks:
-  - {fileID: 114383506975532032}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1250
---- !u!114 &114131136554779698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Footsteps
-  guid: eeeb62867e986f43a0f6bb7f74e9fba9
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1000
---- !u!114 &114132632904102482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 2 Hint
-  guid: 4441a59ef1d9c44693efe0ae786fb9d7
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 7502
---- !u!114 &114135627621848114
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/Intro
-  guid: 1ed7adcb793290449d0ef27e5681e2e9
-  Banks:
-  - {fileID: 114383506975532032}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 25000
---- !u!114 &114136611632860506
+--- !u!114 &114112710553284198
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1104,7 +516,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/Least Resistance/Least Resistance 1.3
   guid: 9b65256c37ad8741a72854a849a580f0
   Banks:
-  - {fileID: 114104931523736784}
+  - {fileID: 114617700364487948}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -1112,7 +524,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 4024
---- !u!114 &114141347277421160
+--- !u!114 &114130904716947902
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1123,18 +535,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Menu Electricity Sounds
-  guid: ea8dc5d71fed74408c7a38722038a53f
+  Path: event:/AI Dialogue/Current Flow/Current Flow
+  guid: b85bc5eaf9ab2c41ba2cae4d49164622
   Banks:
-  - {fileID: 114104931523736784}
+  - {fileID: 114617700364487948}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 1000
---- !u!114 &114145633665094104
+  Length: 4500
+--- !u!114 &114143375496922344
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1145,17 +557,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/Omni Explanation Intro
-  guid: e7c9275796ebca48aaa51b3e3f47a479
+  Path: event:/Antagonist Dialogue/Cue 3/Cue 3.1
+  guid: 71f804c82b3b454f9f9c82aca287806f
   Banks:
-  - {fileID: 114939440286429022}
+  - {fileID: 114617700364487948}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 26468
+  Length: 4962
+--- !u!114 &114152215518126714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Puzzle 8
+  guid: f95f09bac6eb8a49acf4fd8e0bfe834c
+  Banks:
+  - {fileID: 114617700364487948}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 81951
 --- !u!114 &114156018301062536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1178,6 +612,25 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2375
+--- !u!114 &114157558855205982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\Karen\Documents\GitHub\circuit-vr-master\private\source\circuit-vr\Assets\FMOD\Build\Desktop\CircuitVR
+    Master Bank.bank
+  lastModified: 636485986060000000
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 14582464
+  Exists: 0
 --- !u!114 &114158039034676824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1197,28 +650,6 @@ MonoBehaviour:
   - Name: 
     Value: 14497664
   Exists: 1
---- !u!114 &114159881634342334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/Ohms Law
-  guid: 3e0ffd9f96efa04b863514aa8517dee8
-  Banks:
-  - {fileID: 114939440286429022}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 13250
 --- !u!114 &114164635501076846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1232,8 +663,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/AI Dialogue/Series Parallel
   guid: ce49694eec1d9e44bbe063e71f5f089b
-  Banks:
-  - {fileID: 114258337808616320}
+  Banks: []
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -1241,7 +671,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 20000
---- !u!114 &114170339817685536
+--- !u!114 &114174310964362654
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1252,17 +682,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/Antagonist Dialogue/Cue 5
-  guid: 5c30552a1f27624c8e2d071f82112eaf
+  Path: event:/Antagonist Dialogue/Cue 4/Cue 4.3
+  guid: d974b0813064284b9e5ee9610bb82822
   Banks:
-  - {fileID: 114383506975532032}
+  - {fileID: 114617700364487948}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 26696
+  Length: 6159
 --- !u!114 &114176772501973828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1281,95 +711,7 @@ MonoBehaviour:
   - Name: 
     Value: 2596
   Exists: 1
---- !u!114 &114184307938435740
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Antagonist Dialogue/Cue 2/Cue 2.2
-  guid: 46552f2fd1601148b43fe31f60170017
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 7308
---- !u!114 &114186035743278548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 6 Hint
-  guid: 6731f420f8fcfe42979c66a4065feb60
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 7227
---- !u!114 &114186979288976916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Antagonist Dialogue/Cue 4
-  guid: f690ae55aa1adc4fbe1023d7bfccaa48
-  Banks:
-  - {fileID: 114258337808616320}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 27722
---- !u!114 &114189038241397250
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Capacitor Fail
-  guid: 08ba32995f061240a50003d4259eaed0
-  Banks:
-  - {fileID: 114383506975532032}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 2000
---- !u!114 &114189821753765376
+--- !u!114 &114184242415228282
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1383,7 +725,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 3 Open
   guid: 8f2df11d23d37a47ad832bcfa88837e1
   Banks:
-  - {fileID: 114104931523736784}
+  - {fileID: 114617700364487948}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1391,7 +733,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 9401
---- !u!114 &114191847356237102
+--- !u!114 &114186979288976916
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1402,18 +744,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/Antagonist Dialogue/Cue 3/Cue 3.2
-  guid: 684a226aa54ed54892714c20df8dacb8
-  Banks:
-  - {fileID: 114104931523736784}
+  Path: event:/Antagonist Dialogue/Cue 4
+  guid: f690ae55aa1adc4fbe1023d7bfccaa48
+  Banks: []
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 5038
---- !u!114 &114193723224740850
+  Length: 27722
+--- !u!114 &114188742662985136
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1424,39 +765,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 8 Open
-  guid: bfa4994e445f504c9f3acca1f67db2c0
+  Path: event:/Antagonist Dialogue/Cue 3/Cue 3.3
+  guid: 770baeada0a33848a53067c7b1eafe5a
   Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 0
+  - {fileID: 114617700364487948}
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 3073
---- !u!114 &114205233167386296
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 1 Open
-  guid: 3f81a10cb36ff24d9b61111dfcf3dba5
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 4405
+  Length: 5570
 --- !u!114 &114208633826108502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1479,50 +798,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1000
---- !u!114 &114209824213898594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Ambience/General Room Ambience 2D
-  guid: 4f730a9b19fb8d49925d4be9ab1cdc25
-  Banks:
-  - {fileID: 114383506975532032}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 75000
---- !u!114 &114211710784869228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Antagonist Dialogue/Cue 6/Cue 6.3
-  guid: dab6a360726b0e4580c3eaf45b16b45c
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 4152
 --- !u!114 &114214279948636690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1536,8 +811,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/AI Dialogue/Ohms Law
   guid: 3e0ffd9f96efa04b863514aa8517dee8
-  Banks:
-  - {fileID: 114258337808616320}
+  Banks: []
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -1545,72 +819,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 13250
---- !u!114 &114219767289735446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 10 Open
-  guid: ccf6517332c5cf429094430e3f1cc481
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 6754
---- !u!114 &114221779223354124
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Slide Door
-  guid: 669f9e409c06254fa0f0c14b5ef680b2
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1482
---- !u!114 &114224563684558882
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Antagonist Dialogue/Cue 6/Cue 6.1
-  guid: 81bde0bd265b80438d477eb711533ad8
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 3252
 --- !u!114 &114229652450776204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1625,7 +833,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/No Help Needed
   guid: 311dd9e08e7ae44e937ececd8d48bce3
   Banks:
-  - {fileID: 114258337808616320}
+  - {fileID: 114617700364487948}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1633,72 +841,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 6875
---- !u!114 &114234074527741462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 5 Hint
-  guid: 69d0ede14ac4de489bc76cf2a0519465
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 10478
---- !u!114 &114234258979390630
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Ambience/Engine Room
-  guid: 06e8c5438bdc2846ac1958e4b7d859ac
-  Banks:
-  - {fileID: 114939440286429022}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 10
-  MaxDistance: 50
-  Length: 43858
---- !u!114 &114237708310534554
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/Current Flow
-  guid: b85bc5eaf9ab2c41ba2cae4d49164622
-  Banks:
-  - {fileID: 114383506975532032}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 4500
 --- !u!114 &114244069172380304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1713,7 +855,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/System Restart Failed
   guid: 36de5b13f7f06541951e96c69e98def9
   Banks:
-  - {fileID: 114258337808616320}
+  - {fileID: 114617700364487948}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1721,7 +863,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 4500
---- !u!114 &114246249030533672
+--- !u!114 &114245042872760712
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1732,61 +874,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Crate Push
-  guid: ad1d8f38021ca741bc78c5171c0226f2
+  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 2 Open
+  guid: 250ffa8037a0db4f8cd448a06107228c
   Banks:
-  - {fileID: 114939440286429022}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 5220
---- !u!114 &114247264683446314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 7 Hint
-  guid: 44e67078941d264ea5bb9a9e73791b84
-  Banks:
-  - {fileID: 114104931523736784}
+  - {fileID: 114617700364487948}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 9935
---- !u!114 &114248011451090300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Place Component
-  guid: df4f25eee03870458ebb917afafe763e
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 400
+  Length: 6275
 --- !u!114 &114250275618740328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1809,28 +907,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 26468
---- !u!114 &114252610459404316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 7 Open
-  guid: a487183bd39a83419a3500e8bc457b1c
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 5918
 --- !u!114 &114252733567302140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1845,7 +921,7 @@ MonoBehaviour:
   Path: event:/SFX/Menu Tone 1
   guid: 1fae2fc3df36af43baa56d073d303492
   Banks:
-  - {fileID: 114258337808616320}
+  - {fileID: 114617700364487948}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1853,25 +929,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1000
---- !u!114 &114258337808616320
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\Linh Linh\Documents\circuit-vr\private\source\circuit-vr\Assets\FMOD\Build\Desktop\CircuitVR
-    Master Bank.bank
-  lastModified: 636486583037927649
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 14582464
-  Exists: 1
 --- !u!114 &114261259681073870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1894,6 +951,72 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 25000
+--- !u!114 &114263351679177990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Antagonist Dialogue/Cue 2/Cue 2.1
+  guid: 12de7ea783c63f46bb23d604202c0188
+  Banks:
+  - {fileID: 114617700364487948}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4700
+--- !u!114 &114264486759356960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 6 Hint
+  guid: 6731f420f8fcfe42979c66a4065feb60
+  Banks:
+  - {fileID: 114617700364487948}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 7227
+--- !u!114 &114264586929376724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 9 Hint
+  guid: 7e6136b4f0a1784dbed06736b2bd0f01
+  Banks:
+  - {fileID: 114617700364487948}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 9354
 --- !u!114 &114265144463326410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1908,7 +1031,7 @@ MonoBehaviour:
   Path: event:/SFX/Capacitor Fail
   guid: 08ba32995f061240a50003d4259eaed0
   Banks:
-  - {fileID: 114258337808616320}
+  - {fileID: 114617700364487948}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1916,7 +1039,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
---- !u!114 &114267070564251030
+--- !u!114 &114265650024017248
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1927,36 +1050,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/Antagonist Dialogue/Cue 3
-  guid: 71f804c82b3b454f9f9c82aca287806f
+  Path: event:/AI Dialogue/Least Resistance/Least Resistance 1.1
+  guid: 94f43fb87ab0b34392fba6f0efe69139
   Banks:
-  - {fileID: 114383506975532032}
+  - {fileID: 114617700364487948}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 24304
---- !u!114 &114267625532336250
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\Linh Linh\Documents\circuit-vr\private\source\circuit-vr\Assets\FMOD\Build\Desktop\CircuitVR
-    Master Bank.bank
-  lastModified: 636487084440000000
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 19447040
-  Exists: 1
+  Length: 6578
 --- !u!114 &114275142811808668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1971,7 +1075,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/Close One
   guid: 56c2333a05e4d64f8dba2b660064ee3d
   Banks:
-  - {fileID: 114258337808616320}
+  - {fileID: 114617700364487948}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1998,7 +1102,7 @@ MonoBehaviour:
   - Name: 
     Value: 14497664
   Exists: 1
---- !u!114 &114280687926725114
+--- !u!114 &114288414648339870
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -2009,17 +1113,83 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Puzzle Start
-  guid: 3f41ae28e539ab4ea1f05f3273f22ab5
+  Path: event:/Antagonist Dialogue/Cue 5/Cue 5.1
+  guid: 5c30552a1f27624c8e2d071f82112eaf
   Banks:
-  - {fileID: 114383506975532032}
-  IsStream: 0
+  - {fileID: 114617700364487948}
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 1000
+  Length: 3132
+--- !u!114 &114288977177288094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 4 Hint
+  guid: 86a9d8e944dddf4da4e72753dca3e8ea
+  Banks:
+  - {fileID: 114617700364487948}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 10370
+--- !u!114 &114292513444467520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Puzzle 7
+  guid: d9416ba73b95d746a85a587c0a399e5c
+  Banks:
+  - {fileID: 114617700364487948}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 106666
+--- !u!114 &114295498860008260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/AI Dialogue/Ohms Law/Ohms Law 1.1
+  guid: bb7ce700d678474ba78947c4532bf9a4
+  Banks:
+  - {fileID: 114617700364487948}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 7939
 --- !u!114 &114298964434192814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2061,7 +1231,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 13250
---- !u!114 &114306487099661704
+--- !u!114 &114312726669555558
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -2072,39 +1242,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/Series Parallel
-  guid: ce49694eec1d9e44bbe063e71f5f089b
+  Path: event:/Antagonist Dialogue/Cue 3/Cue 3.4
+  guid: 50935bdc12ce784597bb23ee2238e70d
   Banks:
-  - {fileID: 114939440286429022}
+  - {fileID: 114617700364487948}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 20000
---- !u!114 &114309756684711844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Antagonist Dialogue/Cue 5/Cue 5.1
-  guid: 5c30552a1f27624c8e2d071f82112eaf
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 3132
+  Length: 8732
 --- !u!114 &114314565543550042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2146,7 +1294,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1000
---- !u!114 &114321324630860148
+--- !u!114 &114328102678690884
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -2157,127 +1305,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 4 Open
-  guid: 0a97a8123bc417428e23ea21a07fa140
+  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 8 Open
+  guid: bfa4994e445f504c9f3acca1f67db2c0
   Banks:
-  - {fileID: 114104931523736784}
+  - {fileID: 114617700364487948}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 3262
---- !u!114 &114323816053957650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Antagonist Dialogue/Cue 2
-  guid: 12de7ea783c63f46bb23d604202c0188
-  Banks:
-  - {fileID: 114939440286429022}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 19382
---- !u!114 &114323823542372666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/Well Done
-  guid: dd4a5d28e292804e97bc84126d267bb8
-  Banks:
-  - {fileID: 114383506975532032}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1000
---- !u!114 &114327405992550918
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Ambience/General Room Ambience 2D
-  guid: 4f730a9b19fb8d49925d4be9ab1cdc25
-  Banks:
-  - {fileID: 114939440286429022}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 75000
---- !u!114 &114330443147941214
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/Omni Explanation Intro/Omni Explanation Intro 1.2
-  guid: 6ea670d77dffb549959805703b05c708
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 4591
---- !u!114 &114331556416052652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Menu Electricity Sounds
-  guid: ea8dc5d71fed74408c7a38722038a53f
-  Banks:
-  - {fileID: 114383506975532032}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1000
+  Length: 3073
 --- !u!114 &114333182050169612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2290,11 +1328,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\FMOD\Build\Desktop\CircuitVR Master Bank.strings.bank
-  lastModified: 636486583038638297
+  lastModified: 636487885692232398
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 2842
+    Value: 5040
   Exists: 1
 --- !u!114 &114333404013499636
 MonoBehaviour:
@@ -2309,8 +1347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Antagonist Dialogue/Cue 5
   guid: 5c30552a1f27624c8e2d071f82112eaf
-  Banks:
-  - {fileID: 114258337808616320}
+  Banks: []
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -2332,7 +1369,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/He Is Lying
   guid: 58c23eb330bc5b40b7a2a9f146c3452c
   Banks:
-  - {fileID: 114258337808616320}
+  - {fileID: 114617700364487948}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2340,7 +1377,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 5500
---- !u!114 &114344861673091768
+--- !u!114 &114359549137015958
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -2351,127 +1388,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/Intro
-  guid: 1ed7adcb793290449d0ef27e5681e2e9
+  Path: event:/Antagonist Dialogue/Cue 4/Cue 4.2
+  guid: 011ece6f54ec3e49b49a915580192d9d
   Banks:
-  - {fileID: 114939440286429022}
+  - {fileID: 114617700364487948}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 25000
---- !u!114 &114346768304335798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Antagonist Dialogue/Cue 2
-  guid: 12de7ea783c63f46bb23d604202c0188
-  Banks:
-  - {fileID: 114383506975532032}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 19382
---- !u!114 &114347435225398062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Arm Pass
-  guid: 742afd3efb242b4795e7162dfa192572
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1000
---- !u!114 &114352231667431788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Antagonist Dialogue/Cue 2/Cue 2.3
-  guid: a17499051ad54744867c26da19d5a65f
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 4367
---- !u!114 &114356568363531088
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 11 Hint
-  guid: 9c0f0abd7ec66b46a2653a8f4ae256a1
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 11459
---- !u!114 &114359472521008984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 5 Open
-  guid: b2ce5724f207ad48b1358eb36322eb0e
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 3123
+  Length: 5530
 --- !u!114 &114360894960610222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2494,7 +1421,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 254119
---- !u!114 &114369687578007760
+--- !u!114 &114372226603098684
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -2505,61 +1432,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/He Is Lying
-  guid: 58c23eb330bc5b40b7a2a9f146c3452c
+  Path: event:/AI Dialogue/Omni Explanation Intro/Omni Explanation Intro 1.1
+  guid: e7c9275796ebca48aaa51b3e3f47a479
   Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 5500
---- !u!114 &114369731959535104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 10 Hint
-  guid: 5dcc1ee65217704bbf3643301d308ed8
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 7105
---- !u!114 &114370654629313210
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Puzzle 2
-  guid: e079654bb7500442bdd19051b4bfa44e
-  Banks:
-  - {fileID: 114104931523736784}
+  - {fileID: 114617700364487948}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 0
+  IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 157808
+  Length: 10612
 --- !u!114 &114373874045979778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2582,28 +1465,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 14506
---- !u!114 &114375754511087904
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Menu Tone 1
-  guid: 1fae2fc3df36af43baa56d073d303492
-  Banks:
-  - {fileID: 114383506975532032}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1000
 --- !u!114 &114379443535679524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2626,44 +1487,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 75000
---- !u!114 &114383506975532032
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\Linh Linh\Documents\circuit-vr\private\source\circuit-vr\Assets\FMOD\Build\Desktop\CircuitVR
-    Master Bank.bank
-  lastModified: 636487022060000000
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 14582464
-  Exists: 1
---- !u!114 &114383957972276670
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: Assets\FMOD\Build\Desktop\CircuitVR Master Bank.strings.bank
-  lastModified: 636487863555083419
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 5040
-  Exists: 1
---- !u!114 &114388069599189908
+--- !u!114 &114398040855673038
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -2674,17 +1498,83 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/Ohms Law
-  guid: 3e0ffd9f96efa04b863514aa8517dee8
+  Path: event:/SFX/Arm Pass
+  guid: 742afd3efb242b4795e7162dfa192572
   Banks:
-  - {fileID: 114383506975532032}
+  - {fileID: 114617700364487948}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1000
+--- !u!114 &114399099573400490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 11 Hint
+  guid: 9c0f0abd7ec66b46a2653a8f4ae256a1
+  Banks:
+  - {fileID: 114617700364487948}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 13250
+  Length: 11459
+--- !u!114 &114408251532473478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Antagonist Dialogue/Cue 1/Cue 1.3
+  guid: 000e844c4c88ad47b04c97db30328152
+  Banks:
+  - {fileID: 114617700364487948}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4403
+--- !u!114 &114408424009578470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 1 Hint
+  guid: c2a699f033f51747bac04eb56e62f8fd
+  Banks:
+  - {fileID: 114617700364487948}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 10814
 --- !u!114 &114411405501279504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2707,28 +1597,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1000
---- !u!114 &114413168756937842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/System Restart Failed
-  guid: 36de5b13f7f06541951e96c69e98def9
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 4500
 --- !u!114 &114414568484950896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2784,7 +1652,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/Good Job
   guid: 81592094b565224da8b3c6cf85697b58
   Banks:
-  - {fileID: 114258337808616320}
+  - {fileID: 114617700364487948}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2792,7 +1660,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1250
---- !u!114 &114416971553309302
+--- !u!114 &114422672612191336
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -2803,39 +1671,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 6 Open
-  guid: 0ea39901713d4e42bf8c37d72ad0c8a9
+  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 10 Hint
+  guid: 5dcc1ee65217704bbf3643301d308ed8
   Banks:
-  - {fileID: 114104931523736784}
+  - {fileID: 114617700364487948}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 5503
---- !u!114 &114421786222126154
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Antagonist Dialogue/Cue 5/Cue 5.3
-  guid: 85abe6516bfb07408b3479a1706e7860
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 5513
+  Length: 7105
 --- !u!114 &114423435066908768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2850,7 +1696,7 @@ MonoBehaviour:
   Path: event:/SFX/Footsteps
   guid: eeeb62867e986f43a0f6bb7f74e9fba9
   Banks:
-  - {fileID: 114258337808616320}
+  - {fileID: 114617700364487948}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2880,7 +1726,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1000
---- !u!114 &114463378558302078
+--- !u!114 &114456383372358352
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -2891,17 +1737,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/Good Job
-  guid: 81592094b565224da8b3c6cf85697b58
+  Path: event:/Antagonist Dialogue/Cue 6/Cue 6.3
+  guid: dab6a360726b0e4580c3eaf45b16b45c
   Banks:
-  - {fileID: 114939440286429022}
+  - {fileID: 114617700364487948}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 1250
+  Length: 4152
 --- !u!114 &114464221599455350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2916,7 +1762,7 @@ MonoBehaviour:
   Path: event:/SFX/Menu Electricity Sounds
   guid: ea8dc5d71fed74408c7a38722038a53f
   Banks:
-  - {fileID: 114258337808616320}
+  - {fileID: 114617700364487948}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2924,28 +1770,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1000
---- !u!114 &114471384686059150
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Button Release
-  guid: 38ca93083370d14eb42dcaffeba30390
-  Banks:
-  - {fileID: 114939440286429022}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 75
 --- !u!114 &114475769433811090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2960,7 +1784,7 @@ MonoBehaviour:
   Path: event:/Ambience/Engine Room
   guid: 06e8c5438bdc2846ac1958e4b7d859ac
   Banks:
-  - {fileID: 114258337808616320}
+  - {fileID: 114617700364487948}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -2968,72 +1792,6 @@ MonoBehaviour:
   MinDistance: 10
   MaxDistance: 50
   Length: 43858
---- !u!114 &114477132491677188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Puzzle 8
-  guid: f95f09bac6eb8a49acf4fd8e0bfe834c
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 81951
---- !u!114 &114478771731086712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Puzzle 3
-  guid: 9e6c45e1b57a1f4b926e64e52cb16fd6
-  Banks:
-  - {fileID: 114939440286429022}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 140800
---- !u!114 &114479725057326804
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Switch
-  guid: 4d9ee5c31ffab94fa110a0fd585e01af
-  Banks:
-  - {fileID: 114383506975532032}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 500
 --- !u!114 &114480924198215554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3048,7 +1806,7 @@ MonoBehaviour:
   Path: event:/Music/Puzzle 3
   guid: 9e6c45e1b57a1f4b926e64e52cb16fd6
   Banks:
-  - {fileID: 114258337808616320}
+  - {fileID: 114617700364487948}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -3056,7 +1814,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 140800
---- !u!114 &114489289494927550
+--- !u!114 &114483320382952076
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -3067,105 +1825,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Puzzle Start
-  guid: 3f41ae28e539ab4ea1f05f3273f22ab5
+  Path: event:/Antagonist Dialogue/Cue 6/Cue 6.1
+  guid: 81bde0bd265b80438d477eb711533ad8
   Banks:
-  - {fileID: 114104931523736784}
+  - {fileID: 114617700364487948}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 400
---- !u!114 &114492665922999004
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Failed Circuit
-  guid: 54a8ba544a0cca409b888c082d6a6940
-  Banks:
-  - {fileID: 114383506975532032}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1500
---- !u!114 &114499997468928478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Slide Door
-  guid: 669f9e409c06254fa0f0c14b5ef680b2
-  Banks:
-  - {fileID: 114383506975532032}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1482
---- !u!114 &114500085980811860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Antagonist Dialogue/Cue 1/Cue 1.3
-  guid: 000e844c4c88ad47b04c97db30328152
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 4403
---- !u!114 &114503138864962794
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/Current Flow
-  guid: b85bc5eaf9ab2c41ba2cae4d49164622
-  Banks:
-  - {fileID: 114939440286429022}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 4500
+  Length: 3252
 --- !u!114 &114504245837842844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3185,7 +1855,7 @@ MonoBehaviour:
   - Name: 
     Value: 14582464
   Exists: 1
---- !u!114 &114506329955789884
+--- !u!114 &114510735120272328
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -3196,40 +1866,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/Music/Puzzle 5
-  guid: f21fffca1b336546abc6f43326968159
+  Path: event:/Antagonist Dialogue/Cue 1/Cue 1.2
+  guid: 932c445f34a48c429f437bdd4ad0f439
   Banks:
-  - {fileID: 114939440286429022}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 90208
---- !u!114 &114515378754707552
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Antagonist Dialogue/Cue 1
-  guid: ebf8517bbceba04b822bcb7f95a2aad3
-  Banks:
-  - {fileID: 114383506975532032}
+  - {fileID: 114617700364487948}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 14506
---- !u!114 &114520184745715388
+  Length: 2814
+--- !u!114 &114519585060224466
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -3240,18 +1888,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Menu Tone 2
-  guid: 306ce057f9003945b515b6cdd4994a70
+  Path: event:/Antagonist Dialogue/Cue 6/Cue 6.2
+  guid: 79cbce89588f70478fcd8b874ff24813
   Banks:
-  - {fileID: 114104931523736784}
+  - {fileID: 114617700364487948}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 500
---- !u!114 &114523436952889926
+  Length: 2493
+--- !u!114 &114520383217971066
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -3262,39 +1910,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/Music/Puzzle 3
-  guid: 9e6c45e1b57a1f4b926e64e52cb16fd6
+  Path: event:/AI Dialogue/Series Parallel/Series Parallel 1.1
+  guid: ce49694eec1d9e44bbe063e71f5f089b
   Banks:
-  - {fileID: 114383506975532032}
+  - {fileID: 114617700364487948}
   IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 140800
---- !u!114 &114525640728867366
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/No Help Needed
-  guid: 311dd9e08e7ae44e937ececd8d48bce3
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 6875
+  Length: 5272
 --- !u!114 &114525859633099970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3326,8 +1952,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Antagonist Dialogue/Cue 6
   guid: 81bde0bd265b80438d477eb711533ad8
-  Banks:
-  - {fileID: 114258337808616320}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3349,7 +1974,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/Fail
   guid: 7e16f22c62f07b4f9cf4eae2b35a84cf
   Banks:
-  - {fileID: 114258337808616320}
+  - {fileID: 114617700364487948}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3371,7 +1996,7 @@ MonoBehaviour:
   Path: event:/Ambience/General Room Ambience 2D
   guid: 4f730a9b19fb8d49925d4be9ab1cdc25
   Banks:
-  - {fileID: 114258337808616320}
+  - {fileID: 114617700364487948}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -3379,72 +2004,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 75000
---- !u!114 &114530885713192336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/Series Parallel/Series Parallel 1.1
-  guid: ce49694eec1d9e44bbe063e71f5f089b
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 5272
---- !u!114 &114531433010604766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Ambience/General Room Ambience
-  guid: 4fad07f5f77487428908df17177b9cd1
-  Banks:
-  - {fileID: 114383506975532032}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 10
-  MaxDistance: 50
-  Length: 75000
---- !u!114 &114531595643776134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Antagonist Dialogue/Cue 5/Cue 5.2
-  guid: 2ea81451df7e3a4aa811c55531b7fd2b
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 5513
 --- !u!114 &114532631130376436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3459,7 +2018,7 @@ MonoBehaviour:
   Path: event:/Music/Puzzle 2
   guid: e079654bb7500442bdd19051b4bfa44e
   Banks:
-  - {fileID: 114258337808616320}
+  - {fileID: 114617700364487948}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -3467,28 +2026,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 157808
---- !u!114 &114532922757615720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 2 Open
-  guid: 250ffa8037a0db4f8cd448a06107228c
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 6275
 --- !u!114 &114532942165738226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3503,7 +2040,7 @@ MonoBehaviour:
   Path: event:/Music/Puzzle 1
   guid: 99297dcdd5252f4098efd84097252e6b
   Banks:
-  - {fileID: 114258337808616320}
+  - {fileID: 114617700364487948}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -3530,28 +2067,6 @@ MonoBehaviour:
   - Name: 
     Value: 14582464
   Exists: 1
---- !u!114 &114536203335178310
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Antagonist Dialogue/Cue 4/Cue 4.3
-  guid: d974b0813064284b9e5ee9610bb82822
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 6159
 --- !u!114 &114541201057549660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3565,8 +2080,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Antagonist Dialogue/Cue 2
   guid: 12de7ea783c63f46bb23d604202c0188
-  Banks:
-  - {fileID: 114258337808616320}
+  Banks: []
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -3574,50 +2088,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 19382
---- !u!114 &114541729594080748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Ambience/Engine Room
-  guid: 06e8c5438bdc2846ac1958e4b7d859ac
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 10
-  MaxDistance: 50
-  Length: 43858
---- !u!114 &114541733216773024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Place Component
-  guid: df4f25eee03870458ebb917afafe763e
-  Banks:
-  - {fileID: 114383506975532032}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 585
 --- !u!114 &114543292678167770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3632,7 +2102,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/Well Done
   guid: dd4a5d28e292804e97bc84126d267bb8
   Banks:
-  - {fileID: 114258337808616320}
+  - {fileID: 114617700364487948}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3640,156 +2110,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1000
---- !u!114 &114544590929089742
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/No Help Needed
-  guid: 311dd9e08e7ae44e937ececd8d48bce3
-  Banks:
-  - {fileID: 114383506975532032}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 6875
---- !u!114 &114546320707701060
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Antagonist Dialogue/Cue 3
-  guid: 71f804c82b3b454f9f9c82aca287806f
-  Banks:
-  - {fileID: 114939440286429022}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 24304
---- !u!114 &114547672137391708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: Assets\FMOD\Build\Desktop\CircuitVR Master Bank.strings.bank
-  lastModified: 636487022060000000
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 2842
-  Exists: 1
---- !u!114 &114549157310733348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Puzzle 2
-  guid: e079654bb7500442bdd19051b4bfa44e
-  Banks:
-  - {fileID: 114939440286429022}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 157808
---- !u!114 &114549948209143584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Puzzle 3
-  guid: 9e6c45e1b57a1f4b926e64e52cb16fd6
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 140800
---- !u!114 &114553045722455534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Puzzle 5
-  guid: f21fffca1b336546abc6f43326968159
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 90208
---- !u!114 &114554643620548464
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Place Component
-  guid: df4f25eee03870458ebb917afafe763e
-  Banks:
-  - {fileID: 114939440286429022}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 585
 --- !u!114 &114563706951198120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3812,7 +2132,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 4500
---- !u!114 &114566254011866462
+--- !u!114 &114564077267081500
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -3823,17 +2143,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/Antagonist Dialogue/Cue 3/Cue 3.3
-  guid: 770baeada0a33848a53067c7b1eafe5a
+  Path: event:/AI Dialogue/Series Parallel/Series Parallel 1.3
+  guid: 265facce7477974c99c716b00a788394
   Banks:
-  - {fileID: 114104931523736784}
+  - {fileID: 114617700364487948}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 5570
+  Length: 7326
 --- !u!114 &114569584342891350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3848,7 +2168,7 @@ MonoBehaviour:
   Path: event:/SFX/Button Press
   guid: e829a5c1615b48448cc658ad0c8548f3
   Banks:
-  - {fileID: 114258337808616320}
+  - {fileID: 114617700364487948}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3875,7 +2195,7 @@ MonoBehaviour:
   - Name: 
     Value: 14582464
   Exists: 0
---- !u!114 &114570575077888468
+--- !u!114 &114571809574004616
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -3886,39 +2206,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Capacitor Fail
-  guid: 08ba32995f061240a50003d4259eaed0
+  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 10 Open
+  guid: ccf6517332c5cf429094430e3f1cc481
   Banks:
-  - {fileID: 114104931523736784}
+  - {fileID: 114617700364487948}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 2000
---- !u!114 &114574274850965910
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Ambience/General Room Ambience 2D
-  guid: 4f730a9b19fb8d49925d4be9ab1cdc25
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 75000
+  Length: 6754
 --- !u!114 &114575379724152146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3933,7 +2231,7 @@ MonoBehaviour:
   Path: event:/SFX/Failed Circuit
   guid: 54a8ba544a0cca409b888c082d6a6940
   Banks:
-  - {fileID: 114258337808616320}
+  - {fileID: 114617700364487948}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3955,7 +2253,7 @@ MonoBehaviour:
   Path: event:/Music/Puzzle 5
   guid: f21fffca1b336546abc6f43326968159
   Banks:
-  - {fileID: 114258337808616320}
+  - {fileID: 114617700364487948}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -3963,94 +2261,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 90208
---- !u!114 &114577797177252810
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 12 Hint
-  guid: b8394916d595d64ba7b3046eedadc9ef
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 4080
---- !u!114 &114579266411803612
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 4 Hint
-  guid: 86a9d8e944dddf4da4e72753dca3e8ea
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 10370
---- !u!114 &114581500366737478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Rotating Door
-  guid: 327ec5c29c8f5b4c89588b825a5c4fe0
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1102
---- !u!114 &114582683001049386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Puzzle Start
-  guid: 3f41ae28e539ab4ea1f05f3273f22ab5
-  Banks:
-  - {fileID: 114939440286429022}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1000
 --- !u!114 &114589163449071284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4065,7 +2275,7 @@ MonoBehaviour:
   Path: event:/Ambience/General Room Ambience
   guid: 4fad07f5f77487428908df17177b9cd1
   Banks:
-  - {fileID: 114258337808616320}
+  - {fileID: 114617700364487948}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -4073,50 +2283,6 @@ MonoBehaviour:
   MinDistance: 10
   MaxDistance: 50
   Length: 75000
---- !u!114 &114595663580107702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/Close One
-  guid: 56c2333a05e4d64f8dba2b660064ee3d
-  Banks:
-  - {fileID: 114383506975532032}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 2370
---- !u!114 &114602355001955622
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Antagonist Dialogue/Cue 4/Cue 4.4
-  guid: 22abd52484affd4faea2ecfda7ba31b9
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 7791
 --- !u!114 &114603860267701694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4130,8 +2296,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/AI Dialogue/Omni Explanation Intro
   guid: e7c9275796ebca48aaa51b3e3f47a479
-  Banks:
-  - {fileID: 114258337808616320}
+  Banks: []
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -4139,72 +2304,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 26468
---- !u!114 &114606881287887304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 3 Hint
-  guid: 99e22e61758c21448b4ad1ecf7120ef6
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 9871
---- !u!114 &114611249297717026
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Button Release
-  guid: 38ca93083370d14eb42dcaffeba30390
-  Banks:
-  - {fileID: 114383506975532032}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 75
---- !u!114 &114612150319922816
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Antagonist Dialogue/Cue 2/Cue 2.1
-  guid: 12de7ea783c63f46bb23d604202c0188
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 4700
 --- !u!114 &114616069769574340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4227,7 +2326,7 @@ MonoBehaviour:
   MinDistance: 10
   MaxDistance: 50
   Length: 75000
---- !u!114 &114625147866974570
+--- !u!114 &114617700364487948
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -4235,20 +2334,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/Antagonist Dialogue/Cue 4
-  guid: f690ae55aa1adc4fbe1023d7bfccaa48
-  Banks:
-  - {fileID: 114383506975532032}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 27722
+  Path: C:\Users\Matt\Desktop\circuit-vr\private\source\circuit-vr\Assets\FMOD\Build\Desktop\CircuitVR
+    Master Bank.bank
+  lastModified: 636487885692122019
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 19447136
+  Exists: 1
 --- !u!114 &114629276609178574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4263,7 +2359,7 @@ MonoBehaviour:
   Path: event:/Music/Puzzle 4
   guid: 8ca994785558144d816559945b2fdc67
   Banks:
-  - {fileID: 114258337808616320}
+  - {fileID: 114617700364487948}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -4271,7 +2367,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 97090
---- !u!114 &114631415974338988
+--- !u!114 &114644438488048646
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -4282,105 +2378,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/Antagonist Dialogue/Cue 5/Cue 5.5
-  guid: 9e1e548f6c0a534896de0d494c944cb4
+  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 5 Hint
+  guid: 69d0ede14ac4de489bc76cf2a0519465
   Banks:
-  - {fileID: 114104931523736784}
+  - {fileID: 114617700364487948}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 5498
---- !u!114 &114635267567457502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 1 Hint
-  guid: c2a699f033f51747bac04eb56e62f8fd
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 10814
---- !u!114 &114641113199180542
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/Intro
-  guid: 1ed7adcb793290449d0ef27e5681e2e9
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 25000
---- !u!114 &114646958818478476
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/Least Resistance
-  guid: 94f43fb87ab0b34392fba6f0efe69139
-  Banks:
-  - {fileID: 114383506975532032}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 13180
---- !u!114 &114648739988555822
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Antagonist Dialogue/Cue 6/Cue 6.2
-  guid: 79cbce89588f70478fcd8b874ff24813
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 2493
+  Length: 10478
 --- !u!114 &114650578567926022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4403,7 +2411,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 4750
---- !u!114 &114650760105424448
+--- !u!114 &114660463839410226
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -4414,83 +2422,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/Music/Puzzle 4
-  guid: 8ca994785558144d816559945b2fdc67
+  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 5 Open
+  guid: b2ce5724f207ad48b1358eb36322eb0e
   Banks:
-  - {fileID: 114939440286429022}
+  - {fileID: 114617700364487948}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3123
+--- !u!114 &114660954538572766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Antagonist Dialogue/Cue 3/Cue 3.2
+  guid: 684a226aa54ed54892714c20df8dacb8
+  Banks:
+  - {fileID: 114617700364487948}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 97090
---- !u!114 &114651485274231212
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Failed Circuit
-  guid: 54a8ba544a0cca409b888c082d6a6940
-  Banks:
-  - {fileID: 114939440286429022}
-  IsStream: 0
-  Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 1500
---- !u!114 &114652123215436594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Button Release
-  guid: 38ca93083370d14eb42dcaffeba30390
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 75
---- !u!114 &114658450025951040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Antagonist Dialogue/Cue 6
-  guid: 81bde0bd265b80438d477eb711533ad8
-  Banks:
-  - {fileID: 114939440286429022}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 9898
+  Length: 5038
 --- !u!114 &114665046383410644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4513,7 +2477,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 9898
---- !u!114 &114672632637362134
+--- !u!114 &114675042478556264
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -4524,61 +2488,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 11 Open
-  guid: 87207b810551794abe4cfcec2a9c8cfc
+  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 7 Open
+  guid: a487183bd39a83419a3500e8bc457b1c
   Banks:
-  - {fileID: 114104931523736784}
+  - {fileID: 114617700364487948}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 3169
---- !u!114 &114673533799548820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/Fail
-  guid: 7e16f22c62f07b4f9cf4eae2b35a84cf
-  Banks:
-  - {fileID: 114939440286429022}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 4750
---- !u!114 &114675431588193918
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/Current Flow/Current Flow
-  guid: b85bc5eaf9ab2c41ba2cae4d49164622
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 4500
+  Length: 5918
 --- !u!114 &114676968484597708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4593,7 +2513,7 @@ MonoBehaviour:
   Path: event:/SFX/Rotating Door
   guid: 327ec5c29c8f5b4c89588b825a5c4fe0
   Banks:
-  - {fileID: 114258337808616320}
+  - {fileID: 114617700364487948}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -4619,28 +2539,6 @@ MonoBehaviour:
   - Name: 
     Value: 14497664
   Exists: 1
---- !u!114 &114688952848627480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/He Is Lying
-  guid: 58c23eb330bc5b40b7a2a9f146c3452c
-  Banks:
-  - {fileID: 114939440286429022}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 5500
 --- !u!114 &114691225202611718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4655,7 +2553,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/Intro
   guid: 1ed7adcb793290449d0ef27e5681e2e9
   Banks:
-  - {fileID: 114258337808616320}
+  - {fileID: 114617700364487948}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -4663,7 +2561,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 25000
---- !u!114 &114692891447627506
+--- !u!114 &114702480938206750
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -4674,17 +2572,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/System Reengaged
-  guid: a5ea6cf171dab04a99095a160eea46fe
+  Path: event:/Music/Puzzle 6
+  guid: 08d62939ce8f0748b617b73ec0f8c473
   Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 0
+  - {fileID: 114617700364487948}
+  IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 2375
+  Length: 116363
 --- !u!114 &114703157503469598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4698,8 +2596,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Antagonist Dialogue/Cue 1
   guid: ebf8517bbceba04b822bcb7f95a2aad3
-  Banks:
-  - {fileID: 114258337808616320}
+  Banks: []
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -4726,7 +2623,7 @@ MonoBehaviour:
   - Name: 
     Value: 14582464
   Exists: 0
---- !u!114 &114706204577531152
+--- !u!114 &114705655148763246
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -4737,17 +2634,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/Music/Puzzle 6
-  guid: 08d62939ce8f0748b617b73ec0f8c473
+  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 8 Hint
+  guid: 4a89b517de80d644a967542ef34efbe0
   Banks:
-  - {fileID: 114104931523736784}
+  - {fileID: 114617700364487948}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 0
+  IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 116363
+  Length: 10562
 --- !u!114 &114707024747360106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4770,94 +2667,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1102
---- !u!114 &114708246890179232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/Omni Explanation Intro/Omni Explanation Intro 1.3
-  guid: d29d26250cb39e49b4b533ad8614d6fe
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 9295
---- !u!114 &114711020337700756
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/Good Job
-  guid: 81592094b565224da8b3c6cf85697b58
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1250
---- !u!114 &114718198842079194
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/System Restart Failed
-  guid: 36de5b13f7f06541951e96c69e98def9
-  Banks:
-  - {fileID: 114939440286429022}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 4500
---- !u!114 &114719592275745968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Rotating Door
-  guid: 327ec5c29c8f5b4c89588b825a5c4fe0
-  Banks:
-  - {fileID: 114383506975532032}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1102
 --- !u!114 &114723186420426248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4871,8 +2680,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/AI Dialogue/Current Flow
   guid: b85bc5eaf9ab2c41ba2cae4d49164622
-  Banks:
-  - {fileID: 114258337808616320}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -4880,72 +2688,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 4500
---- !u!114 &114724093541533994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/Omni Explanation Intro/Omni Explanation Intro 1.1
-  guid: e7c9275796ebca48aaa51b3e3f47a479
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 10612
---- !u!114 &114726386731294510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Antagonist Dialogue/Cue 2/Cue 2.4
-  guid: 4e91573a5129ce4d9960c10709102247
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 3006
---- !u!114 &114728610066107954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Crate Push
-  guid: ad1d8f38021ca741bc78c5171c0226f2
-  Banks:
-  - {fileID: 114383506975532032}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 5220
 --- !u!114 &114731119525463526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4965,6 +2707,28 @@ MonoBehaviour:
   - Name: 
     Value: 14497664
   Exists: 1
+--- !u!114 &114731854243849292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/AI Dialogue/Least Resistance/Least Resistance 1.2
+  guid: 58f158f25cb70947ade5874fb4388500
+  Banks:
+  - {fileID: 114617700364487948}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2577
 --- !u!114 &114734282134607704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5009,7 +2773,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5220
---- !u!114 &114740731213189254
+--- !u!114 &114737684425806694
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -5020,18 +2784,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/Antagonist Dialogue/Cue 6
-  guid: 81bde0bd265b80438d477eb711533ad8
+  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 2 Hint
+  guid: 4441a59ef1d9c44693efe0ae786fb9d7
   Banks:
-  - {fileID: 114383506975532032}
+  - {fileID: 114617700364487948}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 9898
---- !u!114 &114741525862721884
+  Length: 7502
+--- !u!114 &114745503412666732
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -5042,127 +2806,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Failed Circuit
-  guid: 54a8ba544a0cca409b888c082d6a6940
+  Path: event:/Antagonist Dialogue/Cue 1/Cue 1.4
+  guid: d4abcbba3a622f4a8917764259615296
   Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1500
---- !u!114 &114741781837238382
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/He Is Lying
-  guid: 58c23eb330bc5b40b7a2a9f146c3452c
-  Banks:
-  - {fileID: 114383506975532032}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 5500
---- !u!114 &114741956919287624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Switch
-  guid: 4d9ee5c31ffab94fa110a0fd585e01af
-  Banks:
-  - {fileID: 114939440286429022}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 500
---- !u!114 &114745828178644496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/Well Done
-  guid: dd4a5d28e292804e97bc84126d267bb8
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1000
---- !u!114 &114749824160755444
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/Least Resistance/Least Resistance 1.1
-  guid: 94f43fb87ab0b34392fba6f0efe69139
-  Banks:
-  - {fileID: 114104931523736784}
+  - {fileID: 114617700364487948}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 6578
---- !u!114 &114752664696175680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Puzzle 5
-  guid: f21fffca1b336546abc6f43326968159
-  Banks:
-  - {fileID: 114383506975532032}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 90208
+  Length: 4610
 --- !u!114 &114758823666170408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5177,7 +2831,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/System Reengaged
   guid: a5ea6cf171dab04a99095a160eea46fe
   Banks:
-  - {fileID: 114258337808616320}
+  - {fileID: 114617700364487948}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -5185,7 +2839,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2375
---- !u!114 &114761128382798554
+--- !u!114 &114767464300711650
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -5196,39 +2850,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Button Press
-  guid: e829a5c1615b48448cc658ad0c8548f3
+  Path: event:/Antagonist Dialogue/Cue 5/Cue 5.3
+  guid: 85abe6516bfb07408b3479a1706e7860
   Banks:
-  - {fileID: 114383506975532032}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 38
---- !u!114 &114767927371584594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Antagonist Dialogue/Cue 4/Cue 4.2
-  guid: 011ece6f54ec3e49b49a915580192d9d
-  Banks:
-  - {fileID: 114104931523736784}
+  - {fileID: 114617700364487948}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 5530
+  Length: 5513
+--- !u!114 &114767668009431678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 9 Open
+  guid: c98e42a229bb4e4c9ddf3a8764cea98e
+  Banks:
+  - {fileID: 114617700364487948}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4199
 --- !u!114 &114768080156850470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5251,50 +2905,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 90208
---- !u!114 &114780981308472808
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Puzzle 2
-  guid: e079654bb7500442bdd19051b4bfa44e
-  Banks:
-  - {fileID: 114383506975532032}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 157808
---- !u!114 &114781971597860642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/Least Resistance
-  guid: 94f43fb87ab0b34392fba6f0efe69139
-  Banks:
-  - {fileID: 114939440286429022}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 13180
 --- !u!114 &114785315522694954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5317,28 +2927,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 500
---- !u!114 &114788902903065796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Antagonist Dialogue/Cue 1
-  guid: ebf8517bbceba04b822bcb7f95a2aad3
-  Banks:
-  - {fileID: 114939440286429022}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 14506
 --- !u!114 &114790353667081994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5405,6 +2993,28 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2370
+--- !u!114 &114797437919698666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/AI Dialogue/Series Parallel/Series Parallel 1.2
+  guid: 2c82ff8cc42a1443868bc4ea1748aefb
+  Banks:
+  - {fileID: 114617700364487948}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 7400
 --- !u!114 &114799358312083906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5508,28 +3118,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 157808
---- !u!114 &114832201586287886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Ambience/Engine Room
-  guid: 06e8c5438bdc2846ac1958e4b7d859ac
-  Banks:
-  - {fileID: 114383506975532032}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 10
-  MaxDistance: 50
-  Length: 43858
 --- !u!114 &114832389777658164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5548,8 +3136,8 @@ MonoBehaviour:
   FileSizes:
   - Name: 
     Value: 14582464
-  Exists: 0
---- !u!114 &114838204018299406
+  Exists: 1
+--- !u!114 &114840558219856994
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -5560,40 +3148,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/System Restart Failed
-  guid: 36de5b13f7f06541951e96c69e98def9
+  Path: event:/Antagonist Dialogue/Cue 4/Cue 4.4
+  guid: 22abd52484affd4faea2ecfda7ba31b9
   Banks:
-  - {fileID: 114383506975532032}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 4500
---- !u!114 &114850556705806094
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/Ohms Law/Ohms Law 1.2
-  guid: 795600497fff064fb3438577b837c756
-  Banks:
-  - {fileID: 114104931523736784}
+  - {fileID: 114617700364487948}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 4810
---- !u!114 &114853469933114628
+  Length: 7791
+--- !u!114 &114842182301671932
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -5604,17 +3170,61 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Slide Door
-  guid: 669f9e409c06254fa0f0c14b5ef680b2
+  Path: event:/AI Dialogue/Omni Explanation Intro/Omni Explanation Intro 1.3
+  guid: d29d26250cb39e49b4b533ad8614d6fe
   Banks:
-  - {fileID: 114939440286429022}
-  IsStream: 0
+  - {fileID: 114617700364487948}
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 1482
+  Length: 9295
+--- !u!114 &114850697175518852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Antagonist Dialogue/Cue 2/Cue 2.2
+  guid: 46552f2fd1601148b43fe31f60170017
+  Banks:
+  - {fileID: 114617700364487948}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 7308
+--- !u!114 &114853546264313716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Antagonist Dialogue/Cue 5/Cue 5.5
+  guid: 9e1e548f6c0a534896de0d494c944cb4
+  Banks:
+  - {fileID: 114617700364487948}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5498
 --- !u!114 &114859598603792760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5656,6 +3266,72 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 500
+--- !u!114 &114863896329920644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 11 Open
+  guid: 87207b810551794abe4cfcec2a9c8cfc
+  Banks:
+  - {fileID: 114617700364487948}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3169
+--- !u!114 &114864849597258864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 1 Open
+  guid: 3f81a10cb36ff24d9b61111dfcf3dba5
+  Banks:
+  - {fileID: 114617700364487948}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4405
+--- !u!114 &114877797294252168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 7 Hint
+  guid: 44e67078941d264ea5bb9a9e73791b84
+  Banks:
+  - {fileID: 114617700364487948}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 9935
 --- !u!114 &114879183249766708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5692,14 +3368,14 @@ MonoBehaviour:
   Path: event:/SFX/Puzzle Start
   guid: 3f41ae28e539ab4ea1f05f3273f22ab5
   Banks:
-  - {fileID: 114258337808616320}
+  - {fileID: 114617700364487948}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 1000
+  Length: 400
 --- !u!114 &114883619976059734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5722,6 +3398,28 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 97090
+--- !u!114 &114888561744652970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Antagonist Dialogue/Cue 4/Cue 4.1
+  guid: f690ae55aa1adc4fbe1023d7bfccaa48
+  Banks:
+  - {fileID: 114617700364487948}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 8241
 --- !u!114 &114890075588510814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5736,7 +3434,7 @@ MonoBehaviour:
   Path: event:/SFX/Button Release
   guid: 38ca93083370d14eb42dcaffeba30390
   Banks:
-  - {fileID: 114258337808616320}
+  - {fileID: 114617700364487948}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -5744,28 +3442,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 75
---- !u!114 &114890443313701602
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Antagonist Dialogue/Cue 3/Cue 3.1
-  guid: 71f804c82b3b454f9f9c82aca287806f
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 4962
 --- !u!114 &114893450018921770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5779,8 +3455,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/AI Dialogue/Least Resistance
   guid: 94f43fb87ab0b34392fba6f0efe69139
-  Banks:
-  - {fileID: 114258337808616320}
+  Banks: []
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -5788,7 +3463,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 13180
---- !u!114 &114893800128144272
+--- !u!114 &114921409624340364
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -5799,61 +3474,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Menu Tone 2
-  guid: 306ce057f9003945b515b6cdd4994a70
+  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 3 Hint
+  guid: 99e22e61758c21448b4ad1ecf7120ef6
   Banks:
-  - {fileID: 114383506975532032}
+  - {fileID: 114617700364487948}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 500
---- !u!114 &114913165296517766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Ambience/General Room Ambience
-  guid: 4fad07f5f77487428908df17177b9cd1
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 10
-  MaxDistance: 50
-  Length: 75000
---- !u!114 &114925066124986956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Puzzle 4
-  guid: 8ca994785558144d816559945b2fdc67
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 97090
+  Length: 9871
 --- !u!114 &114926943005773144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5889,8 +3520,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/Crate Push
   guid: ad1d8f38021ca741bc78c5171c0226f2
-  Banks:
-  - {fileID: 114258337808616320}
+  Banks: []
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -5898,72 +3528,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5220
---- !u!114 &114933445384653026
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 8 Hint
-  guid: 4a89b517de80d644a967542ef34efbe0
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 10562
---- !u!114 &114935956734851992
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/Ohms Law/Ohms Law 1.1
-  guid: bb7ce700d678474ba78947c4532bf9a4
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 7939
---- !u!114 &114937218085399698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/Fail
-  guid: 7e16f22c62f07b4f9cf4eae2b35a84cf
-  Banks:
-  - {fileID: 114383506975532032}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 4750
 --- !u!114 &114937640896539576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5978,135 +3542,7 @@ MonoBehaviour:
   Path: event:/SFX/Menu Tone 2
   guid: 306ce057f9003945b515b6cdd4994a70
   Banks:
-  - {fileID: 114258337808616320}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 500
---- !u!114 &114939440286429022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\Linh Linh\Downloads\Package3\Build\Desktop\CircuitVR Master Bank.bank
-  lastModified: 636487022060000000
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 14582464
-  Exists: 1
---- !u!114 &114939988571972004
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Switch
-  guid: 4d9ee5c31ffab94fa110a0fd585e01af
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 500
---- !u!114 &114944934243936678
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 12 Open
-  guid: 8b7b7375e96858489164df60e5d066dd
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 4263
---- !u!114 &114945783728982026
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/Series Parallel
-  guid: ce49694eec1d9e44bbe063e71f5f089b
-  Banks:
-  - {fileID: 114383506975532032}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 20000
---- !u!114 &114945996657843450
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/Least Resistance/Least Resistance 1.2
-  guid: 58f158f25cb70947ade5874fb4388500
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 2577
---- !u!114 &114947853681592434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Menu Tone 2
-  guid: 306ce057f9003945b515b6cdd4994a70
-  Banks:
-  - {fileID: 114939440286429022}
+  - {fileID: 114617700364487948}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -6133,6 +3569,28 @@ MonoBehaviour:
   - Name: 
     Value: 14581952
   Exists: 1
+--- !u!114 &114956768443136572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 4 Open
+  guid: 0a97a8123bc417428e23ea21a07fa140
+  Banks:
+  - {fileID: 114617700364487948}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3262
 --- !u!114 &114956772880859038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6155,28 +3613,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 20000
---- !u!114 &114958767561914092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Antagonist Dialogue/Cue 1/Cue 1.4
-  guid: d4abcbba3a622f4a8917764259615296
-  Banks:
-  - {fileID: 114104931523736784}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 4610
 --- !u!114 &114961494574945640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6199,7 +3635,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1250
---- !u!114 &114963816161186822
+--- !u!114 &114961545193573324
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -6210,62 +3646,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/System Reengaged
-  guid: a5ea6cf171dab04a99095a160eea46fe
+  Path: event:/Antagonist Dialogue/Cue 2/Cue 2.4
+  guid: 4e91573a5129ce4d9960c10709102247
   Banks:
-  - {fileID: 114939440286429022}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 2375
---- !u!114 &114978117461306944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/Well Done
-  guid: dd4a5d28e292804e97bc84126d267bb8
-  Banks:
-  - {fileID: 114939440286429022}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1000
---- !u!114 &114986067713755620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Antagonist Dialogue/Cue 4/Cue 4.1
-  guid: f690ae55aa1adc4fbe1023d7bfccaa48
-  Banks:
-  - {fileID: 114104931523736784}
+  - {fileID: 114617700364487948}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 8241
---- !u!114 &114989018259504098
+  Length: 3006
+--- !u!114 &114975164781807816
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -6276,40 +3668,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/Omni Explanation Intro
-  guid: e7c9275796ebca48aaa51b3e3f47a479
+  Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 6 Open
+  guid: 0ea39901713d4e42bf8c37d72ad0c8a9
   Banks:
-  - {fileID: 114383506975532032}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 26468
---- !u!114 &114990358564869182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/AI Dialogue/Close One
-  guid: 56c2333a05e4d64f8dba2b660064ee3d
-  Banks:
-  - {fileID: 114939440286429022}
+  - {fileID: 114617700364487948}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 2370
---- !u!114 &114995655131935596
+  Length: 5503
+--- !u!114 &114976973932751498
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -6320,17 +3690,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/Music/Puzzle 1
-  guid: 99297dcdd5252f4098efd84097252e6b
+  Path: event:/Antagonist Dialogue/Cue 2/Cue 2.3
+  guid: a17499051ad54744867c26da19d5a65f
   Banks:
-  - {fileID: 114939440286429022}
+  - {fileID: 114617700364487948}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 0
+  IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 254119
+  Length: 4367
 --- !u!114 &114998720555773274
 MonoBehaviour:
   m_ObjectHideFlags: 0
