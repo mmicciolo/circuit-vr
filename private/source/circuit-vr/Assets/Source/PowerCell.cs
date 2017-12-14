@@ -31,8 +31,7 @@ public class PowerCell : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        //activated = LevelController.getInstance().CheckDoorCanOpen(puzzleNumber);
-        activated = true;
+        activated = LevelController.getInstance().CheckDoorCanOpen(puzzleNumber);
 
 		if(activated)
         {
