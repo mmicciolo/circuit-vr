@@ -12,36 +12,45 @@ namespace Assets.Source.Puzzles
     {
         public SPSTSwitchCircuitComponent circuitSwitch;
         public LEDCircuitComponent LED;
+        bool animateEnd;
 
         private void Start()
         {
             InitPuzzle(5);
             puzzleName = "PuzzleCircuit15";
             endDuration = 5;
+            animateEnd = true;
         }
 
         private void Update()
         {
-            if ((choices[2].attachedComponent.componentPosition.x == outputPosition.componentPosition.x) && (choices[2].attachedComponent.componentPosition.y == outputPosition.componentPosition.y) && (circuitSwitch.lastAnimation == "spst_down"))
+            if ((choices[2].attachedComponent.componentPosition.x == outputPosition.componentPosition.x) && (choices[2].attachedComponent.componentPosition.y == outputPosition.componentPosition.y))
             {
-                ActivateCells(0);
-                ActivateCells(3);
-				MarkCompleted ();
-                LED.lighted = true;
-                DisableDragging();
+                if (circuitSwitch.lastAnimation == "spst_down")
+                {
+                    ActivateCells(0);
+                    ActivateCells(3);
+                    MarkCompleted();
+                    LED.lighted = true;
+                    DisableDragging();
+                } else
+                {
+                    DeactivateCells(0);
+                    DeactivateCells(3);
+                    LED.lighted = false;
+                    if (completed) animateEnd = false;
+                }
             }
 
-			switch (circuitSwitch.lastAnimation) {
-			case "spst_down":
-				ActivateCells (0);
-				ActivateCells (3);
-				break;
-			default:
-				DeactivateCells (0);
-				DeactivateCells (3);
-				break;
-			}
             CheckCompletion();
+        }
+
+        protected override void AnimateEnd()
+        {
+            if (animateEnd)
+            {
+                base.AnimateEnd();
+            }
         }
     }
 }

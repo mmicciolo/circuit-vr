@@ -10007,7 +10007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  puzzleNumber: 20
+  puzzleNumber: 7
 --- !u!65 &438685981
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11522,7 +11522,7 @@ GameObject:
   - component: {fileID: 507552612}
   m_Layer: 0
   m_Name: DoorLeftSide (1)
-  m_TagString: Untagged
+  m_TagString: lock_behind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11557,7 +11557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  puzzleNumber: 10
+  puzzleNumber: 20
 --- !u!65 &507552611
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12913,7 +12913,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
-  puzzleNumber: 5
+  puzzleNumber: 4
 --- !u!65 &529377511
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42764,7 +42764,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4187744440069088, guid: 064c0df9733c6ff43af95353f786748c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 8.84
+      value: 4.41
       objectReference: {fileID: 0}
     - target: {fileID: 4187744440069088, guid: 064c0df9733c6ff43af95353f786748c, type: 2}
       propertyPath: m_LocalPosition.y
@@ -42772,7 +42772,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4187744440069088, guid: 064c0df9733c6ff43af95353f786748c, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 6.21
+      value: -18.25
       objectReference: {fileID: 0}
     - target: {fileID: 4187744440069088, guid: 064c0df9733c6ff43af95353f786748c, type: 2}
       propertyPath: m_LocalRotation.x
@@ -42801,17 +42801,17 @@ Prefab:
     - target: {fileID: 224027599203229256, guid: 064c0df9733c6ff43af95353f786748c,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 469.16
+      value: 582.09
       objectReference: {fileID: 0}
     - target: {fileID: 224027599203229256, guid: 064c0df9733c6ff43af95353f786748c,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 285.114
+      value: 338.114
       objectReference: {fileID: 0}
     - target: {fileID: 224027599203229256, guid: 064c0df9733c6ff43af95353f786748c,
         type: 2}
       propertyPath: m_LocalPosition.z
-      value: -6.21
+      value: 18.25
       objectReference: {fileID: 0}
     - target: {fileID: 20860348420051358, guid: 064c0df9733c6ff43af95353f786748c,
         type: 2}
