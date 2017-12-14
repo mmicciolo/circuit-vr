@@ -5193,7 +5193,7 @@ GameObject:
   - component: {fileID: 204910844}
   m_Layer: 0
   m_Name: DoorLeftSide (8)
-  m_TagString: Untagged
+  m_TagString: lock_behind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9930,7 +9930,7 @@ GameObject:
   - component: {fileID: 438685982}
   m_Layer: 0
   m_Name: DoorLeftSide (9)
-  m_TagString: Untagged
+  m_TagString: lock_behind
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16951,6 +16951,40 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 302d3f9bfbdadb74081a09b3625d7af7, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &735336619 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1686296003254220, guid: e9731773ff1bcac428cd971c8a862d29,
+    type: 2}
+  m_PrefabInternal: {fileID: 525293354}
+--- !u!114 &735336621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 735336619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2731d5d9a4ba9164f810e2e5037bfca3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isUp: 0
+--- !u!95 &735336622
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 735336619}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 67b8d9ec9416446469cc62c6457e951e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &740571655
 Prefab:
   m_ObjectHideFlags: 0
@@ -42896,12 +42930,12 @@ Prefab:
     - target: {fileID: 224027599203229256, guid: 064c0df9733c6ff43af95353f786748c,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 452.16
+      value: 577.66
       objectReference: {fileID: 0}
     - target: {fileID: 224027599203229256, guid: 064c0df9733c6ff43af95353f786748c,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 201.114
+      value: 338.114
       objectReference: {fileID: 0}
     - target: {fileID: 224027599203229256, guid: 064c0df9733c6ff43af95353f786748c,
         type: 2}

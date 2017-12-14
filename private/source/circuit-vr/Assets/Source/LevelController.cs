@@ -25,7 +25,7 @@ public class LevelController : MonoBehaviour
     public AutoDoor[] lockBehind;
 
 	public string[] puzzleOrder = new string[] {"One", "K2", "Circuit6", "Circuit30", "Circuit31", "Circuit15", "Circuit29", "Circuit33", "Circuit23", "Circuit17", "Circuit34", "Circuit26" };
-	List<int> puzzlesCompleted;
+	public List<int> puzzlesCompleted;
 
 	private StudioEventEmitter buzzSound;
 
