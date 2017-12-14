@@ -97,8 +97,23 @@ public class DialogueManager : MonoBehaviour {
         StartDialogue(dialogName);
     }
 
+    public void StopDialog()
+    {
+        if (IsDialogPlaying())
+        {
+            lineCount = 1;
+            soundEmitter.Stop();
+            Destroy(soundEmitter);
+            soundEmitter = null;
+            dialogPlaying = false;
+        }
+    }
+
     public void StartNewDialog(string dialogName)
     {
+
+        StopDialog();
+
         string[] split = dialogName.Split('/');
         this.dialogName = dialogName;
 

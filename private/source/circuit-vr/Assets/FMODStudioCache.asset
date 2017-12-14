@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 114333182050169612}
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   EditorEvents:
   - {fileID: 114475769433811090}
   - {fileID: 114265144463326410}
@@ -33,12 +33,9 @@ MonoBehaviour:
   - {fileID: 114336834267205756}
   - {fileID: 114003818431547030}
   - {fileID: 114529969260654440}
-  - {fileID: 114416611806788916}
   - {fileID: 114629276609178574}
   - {fileID: 114532942165738226}
   - {fileID: 114480924198215554}
-  - {fileID: 114758823666170408}
-  - {fileID: 114543292678167770}
   - {fileID: 114050940435700816}
   - {fileID: 114532631130376436}
   - {fileID: 114569584342891350}
@@ -70,7 +67,6 @@ MonoBehaviour:
   - {fileID: 114264486759356960}
   - {fileID: 114660954538572766}
   - {fileID: 114644438488048646}
-  - {fileID: 114103357293227900}
   - {fileID: 114143375496922344}
   - {fileID: 114398040855673038}
   - {fileID: 114188742662985136}
@@ -100,18 +96,25 @@ MonoBehaviour:
   - {fileID: 114767668009431678}
   - {fileID: 114571809574004616}
   - {fileID: 114520383217971066}
-  - {fileID: 114842182301671932}
   - {fileID: 114745503412666732}
   - {fileID: 114292513444467520}
   - {fileID: 114174310964362654}
   - {fileID: 114456383372358352}
-  - {fileID: 114372226603098684}
   - {fileID: 114073243523912700}
   - {fileID: 114888561744652970}
   - {fileID: 114152215518126714}
-  MasterBankRef: {fileID: 114609850966866106}
+  - {fileID: 114739546428262836}
+  - {fileID: 114241197648342446}
+  - {fileID: 114397313236440862}
+  - {fileID: 114964902628690492}
+  - {fileID: 114241311491738752}
+  - {fileID: 114589336691716368}
+  - {fileID: 114734693825889158}
+  - {fileID: 114897250836700238}
+  - {fileID: 114913220761152168}
+  MasterBankRef: {fileID: 114113458493542378}
   StringsBankRef: {fileID: 114333182050169612}
-  stringsBankWriteTime: 636488350673290049
+  stringsBankWriteTime: 636488117710321997
   cacheVersion: 2
 --- !u!114 &114000652594862092
 MonoBehaviour:
@@ -127,7 +130,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/Ohms Law/Ohms Law 1.2
   guid: 795600497fff064fb3438577b837c756
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -149,7 +152,7 @@ MonoBehaviour:
   Path: event:/SFX/Slide Door
   guid: 669f9e409c06254fa0f0c14b5ef680b2
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -190,7 +193,7 @@ MonoBehaviour:
   Path: event:/Antagonist Dialogue/Cue 5/Cue 5.2
   guid: 2ea81451df7e3a4aa811c55531b7fd2b
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -212,7 +215,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 12 Open
   guid: 8b7b7375e96858489164df60e5d066dd
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -300,7 +303,7 @@ MonoBehaviour:
   Path: event:/SFX/Place Component
   guid: df4f25eee03870458ebb917afafe763e
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -322,7 +325,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 12 Hint
   guid: b8394916d595d64ba7b3046eedadc9ef
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -344,7 +347,7 @@ MonoBehaviour:
   Path: event:/Antagonist Dialogue/Cue 5/Cue 5.4
   guid: 4189363088914444aba9127cd69c9399
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -388,7 +391,7 @@ MonoBehaviour:
   Path: event:/Antagonist Dialogue/Cue 1/Cue 1.1
   guid: ebf8517bbceba04b822bcb7f95a2aad3
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -410,7 +413,7 @@ MonoBehaviour:
   Path: event:/SFX/Switch
   guid: 4d9ee5c31ffab94fa110a0fd585e01af
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -516,7 +519,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/Least Resistance/Least Resistance 1.3
   guid: 9b65256c37ad8741a72854a849a580f0
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -524,6 +527,25 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 4024
+--- !u!114 &114113458493542378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\Matt\Desktop\circuit-vr\private\source\circuit-vr\Assets\FMOD\Build\Desktop\CircuitVR
+    Master Bank.bank
+  lastModified: 636488117710261788
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 19673536
+  Exists: 1
 --- !u!114 &114130904716947902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -538,7 +560,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/Current Flow/Current Flow
   guid: b85bc5eaf9ab2c41ba2cae4d49164622
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -560,7 +582,7 @@ MonoBehaviour:
   Path: event:/Antagonist Dialogue/Cue 3/Cue 3.1
   guid: 71f804c82b3b454f9f9c82aca287806f
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -582,7 +604,7 @@ MonoBehaviour:
   Path: event:/Music/Puzzle 8
   guid: f95f09bac6eb8a49acf4fd8e0bfe834c
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -685,7 +707,7 @@ MonoBehaviour:
   Path: event:/Antagonist Dialogue/Cue 4/Cue 4.3
   guid: d974b0813064284b9e5ee9610bb82822
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -725,7 +747,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 3 Open
   guid: 8f2df11d23d37a47ad832bcfa88837e1
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -768,7 +790,7 @@ MonoBehaviour:
   Path: event:/Antagonist Dialogue/Cue 3/Cue 3.3
   guid: 770baeada0a33848a53067c7b1eafe5a
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -833,7 +855,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/No Help Needed
   guid: 311dd9e08e7ae44e937ececd8d48bce3
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -860,6 +882,50 @@ MonoBehaviour:
   - Name: 
     Value: 19447136
   Exists: 0
+--- !u!114 &114241197648342446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/AI Dialogue/Omni Explanation/Omni Explanation 1.3
+  guid: 23f1329aa7e17e4cbe12d7bef56e1c18
+  Banks:
+  - {fileID: 114113458493542378}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5255
+--- !u!114 &114241311491738752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/AI Dialogue/Intro/Intro 1.3
+  guid: d29d26250cb39e49b4b533ad8614d6fe
+  Banks:
+  - {fileID: 114113458493542378}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 9295
 --- !u!114 &114244069172380304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -874,7 +940,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/System Restart Failed
   guid: 36de5b13f7f06541951e96c69e98def9
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -896,7 +962,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 2 Open
   guid: 250ffa8037a0db4f8cd448a06107228c
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -940,7 +1006,7 @@ MonoBehaviour:
   Path: event:/SFX/Menu Tone 1
   guid: 1fae2fc3df36af43baa56d073d303492
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -984,7 +1050,7 @@ MonoBehaviour:
   Path: event:/Antagonist Dialogue/Cue 2/Cue 2.1
   guid: 12de7ea783c63f46bb23d604202c0188
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -1006,7 +1072,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 6 Hint
   guid: 6731f420f8fcfe42979c66a4065feb60
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1028,7 +1094,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 9 Hint
   guid: 7e6136b4f0a1784dbed06736b2bd0f01
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1050,7 +1116,7 @@ MonoBehaviour:
   Path: event:/SFX/Capacitor Fail
   guid: 08ba32995f061240a50003d4259eaed0
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1072,7 +1138,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/Least Resistance/Least Resistance 1.1
   guid: 94f43fb87ab0b34392fba6f0efe69139
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -1094,7 +1160,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/Close One
   guid: 56c2333a05e4d64f8dba2b660064ee3d
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1135,7 +1201,7 @@ MonoBehaviour:
   Path: event:/Antagonist Dialogue/Cue 5/Cue 5.1
   guid: 5c30552a1f27624c8e2d071f82112eaf
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -1157,7 +1223,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 4 Hint
   guid: 86a9d8e944dddf4da4e72753dca3e8ea
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -1179,7 +1245,7 @@ MonoBehaviour:
   Path: event:/Music/Puzzle 7
   guid: d9416ba73b95d746a85a587c0a399e5c
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -1201,7 +1267,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/Ohms Law/Ohms Law 1.1
   guid: bb7ce700d678474ba78947c4532bf9a4
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -1264,7 +1330,7 @@ MonoBehaviour:
   Path: event:/Antagonist Dialogue/Cue 3/Cue 3.4
   guid: 50935bdc12ce784597bb23ee2238e70d
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -1327,7 +1393,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 8 Open
   guid: bfa4994e445f504c9f3acca1f67db2c0
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1347,11 +1413,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\FMOD\Build\Desktop\CircuitVR Master Bank.strings.bank
-  lastModified: 636488350673290049
+  lastModified: 636488117710321997
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 5040
+    Value: 5168
   Exists: 1
 --- !u!114 &114333404013499636
 MonoBehaviour:
@@ -1388,7 +1454,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/He Is Lying
   guid: 58c23eb330bc5b40b7a2a9f146c3452c
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1410,7 +1476,7 @@ MonoBehaviour:
   Path: event:/Antagonist Dialogue/Cue 4/Cue 4.2
   guid: 011ece6f54ec3e49b49a915580192d9d
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -1506,6 +1572,28 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 75000
+--- !u!114 &114397313236440862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/AI Dialogue/Intro/Intro 1.2
+  guid: 6ea670d77dffb549959805703b05c708
+  Banks:
+  - {fileID: 114113458493542378}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4591
 --- !u!114 &114398040855673038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1520,7 +1608,7 @@ MonoBehaviour:
   Path: event:/SFX/Arm Pass
   guid: 742afd3efb242b4795e7162dfa192572
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1542,7 +1630,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 11 Hint
   guid: 9c0f0abd7ec66b46a2653a8f4ae256a1
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -1564,7 +1652,7 @@ MonoBehaviour:
   Path: event:/Antagonist Dialogue/Cue 1/Cue 1.3
   guid: 000e844c4c88ad47b04c97db30328152
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -1586,7 +1674,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 1 Hint
   guid: c2a699f033f51747bac04eb56e62f8fd
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -1671,7 +1759,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/Good Job
   guid: 81592094b565224da8b3c6cf85697b58
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1693,7 +1781,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 10 Hint
   guid: 5dcc1ee65217704bbf3643301d308ed8
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1715,7 +1803,7 @@ MonoBehaviour:
   Path: event:/SFX/Footsteps
   guid: eeeb62867e986f43a0f6bb7f74e9fba9
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1759,7 +1847,7 @@ MonoBehaviour:
   Path: event:/Antagonist Dialogue/Cue 6/Cue 6.3
   guid: dab6a360726b0e4580c3eaf45b16b45c
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1781,7 +1869,7 @@ MonoBehaviour:
   Path: event:/SFX/Menu Electricity Sounds
   guid: ea8dc5d71fed74408c7a38722038a53f
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1803,7 +1891,7 @@ MonoBehaviour:
   Path: event:/Ambience/Engine Room
   guid: 06e8c5438bdc2846ac1958e4b7d859ac
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -1825,7 +1913,7 @@ MonoBehaviour:
   Path: event:/Music/Puzzle 3
   guid: 9e6c45e1b57a1f4b926e64e52cb16fd6
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -1847,7 +1935,7 @@ MonoBehaviour:
   Path: event:/Antagonist Dialogue/Cue 6/Cue 6.1
   guid: 81bde0bd265b80438d477eb711533ad8
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1888,7 +1976,7 @@ MonoBehaviour:
   Path: event:/Antagonist Dialogue/Cue 1/Cue 1.2
   guid: 932c445f34a48c429f437bdd4ad0f439
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -1910,7 +1998,7 @@ MonoBehaviour:
   Path: event:/Antagonist Dialogue/Cue 6/Cue 6.2
   guid: 79cbce89588f70478fcd8b874ff24813
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1932,7 +2020,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/Series Parallel/Series Parallel 1.1
   guid: ce49694eec1d9e44bbe063e71f5f089b
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -1993,7 +2081,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/Fail
   guid: 7e16f22c62f07b4f9cf4eae2b35a84cf
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2015,7 +2103,7 @@ MonoBehaviour:
   Path: event:/Ambience/General Room Ambience 2D
   guid: 4f730a9b19fb8d49925d4be9ab1cdc25
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -2037,7 +2125,7 @@ MonoBehaviour:
   Path: event:/Music/Puzzle 2
   guid: e079654bb7500442bdd19051b4bfa44e
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -2059,7 +2147,7 @@ MonoBehaviour:
   Path: event:/Music/Puzzle 1
   guid: 99297dcdd5252f4098efd84097252e6b
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -2121,7 +2209,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/Well Done
   guid: dd4a5d28e292804e97bc84126d267bb8
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2165,7 +2253,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/Series Parallel/Series Parallel 1.3
   guid: 265facce7477974c99c716b00a788394
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -2187,7 +2275,7 @@ MonoBehaviour:
   Path: event:/SFX/Button Press
   guid: e829a5c1615b48448cc658ad0c8548f3
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2228,7 +2316,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 10 Open
   guid: ccf6517332c5cf429094430e3f1cc481
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2250,7 +2338,7 @@ MonoBehaviour:
   Path: event:/SFX/Failed Circuit
   guid: 54a8ba544a0cca409b888c082d6a6940
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2272,7 +2360,7 @@ MonoBehaviour:
   Path: event:/Music/Puzzle 5
   guid: f21fffca1b336546abc6f43326968159
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -2294,7 +2382,7 @@ MonoBehaviour:
   Path: event:/Ambience/General Room Ambience
   guid: 4fad07f5f77487428908df17177b9cd1
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -2302,6 +2390,28 @@ MonoBehaviour:
   MinDistance: 10
   MaxDistance: 50
   Length: 75000
+--- !u!114 &114589336691716368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/AI Dialogue/Intro/Intro 1.1
+  guid: e7c9275796ebca48aaa51b3e3f47a479
+  Banks:
+  - {fileID: 114113458493542378}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 10612
 --- !u!114 &114603860267701694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2397,7 +2507,7 @@ MonoBehaviour:
   Path: event:/Music/Puzzle 4
   guid: 8ca994785558144d816559945b2fdc67
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -2419,7 +2529,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 5 Hint
   guid: 69d0ede14ac4de489bc76cf2a0519465
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -2463,7 +2573,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 5 Open
   guid: b2ce5724f207ad48b1358eb36322eb0e
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2485,7 +2595,7 @@ MonoBehaviour:
   Path: event:/Antagonist Dialogue/Cue 3/Cue 3.2
   guid: 684a226aa54ed54892714c20df8dacb8
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -2529,7 +2639,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 7 Open
   guid: a487183bd39a83419a3500e8bc457b1c
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2551,7 +2661,7 @@ MonoBehaviour:
   Path: event:/SFX/Rotating Door
   guid: 327ec5c29c8f5b4c89588b825a5c4fe0
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2591,7 +2701,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/Intro
   guid: 1ed7adcb793290449d0ef27e5681e2e9
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -2613,7 +2723,7 @@ MonoBehaviour:
   Path: event:/Music/Puzzle 6
   guid: 08d62939ce8f0748b617b73ec0f8c473
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -2675,7 +2785,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 8 Hint
   guid: 4a89b517de80d644a967542ef34efbe0
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -2759,7 +2869,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/Least Resistance/Least Resistance 1.2
   guid: 58f158f25cb70947ade5874fb4388500
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -2789,6 +2899,28 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 13180
+--- !u!114 &114734693825889158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/AI Dialogue/Good Job 1.1
+  guid: 81592094b565224da8b3c6cf85697b58
+  Banks:
+  - {fileID: 114113458493542378}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1250
 --- !u!114 &114735876861104680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2825,7 +2957,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 2 Hint
   guid: 4441a59ef1d9c44693efe0ae786fb9d7
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2833,6 +2965,28 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 7502
+--- !u!114 &114739546428262836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/AI Dialogue/Omni Explanation/Omni Explanation 1.1
+  guid: 1f7f472d1b9cbf4b883333283f2587c0
+  Banks:
+  - {fileID: 114113458493542378}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 8979
 --- !u!114 &114745503412666732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2847,7 +3001,7 @@ MonoBehaviour:
   Path: event:/Antagonist Dialogue/Cue 1/Cue 1.4
   guid: d4abcbba3a622f4a8917764259615296
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -2869,7 +3023,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/System Reengaged
   guid: a5ea6cf171dab04a99095a160eea46fe
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2891,7 +3045,7 @@ MonoBehaviour:
   Path: event:/Antagonist Dialogue/Cue 5/Cue 5.3
   guid: 85abe6516bfb07408b3479a1706e7860
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -2913,7 +3067,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 9 Open
   guid: c98e42a229bb4e4c9ddf3a8764cea98e
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3045,7 +3199,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/Series Parallel/Series Parallel 1.2
   guid: 2c82ff8cc42a1443868bc4ea1748aefb
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -3189,7 +3343,7 @@ MonoBehaviour:
   Path: event:/Antagonist Dialogue/Cue 4/Cue 4.4
   guid: 22abd52484affd4faea2ecfda7ba31b9
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -3233,7 +3387,7 @@ MonoBehaviour:
   Path: event:/Antagonist Dialogue/Cue 2/Cue 2.2
   guid: 46552f2fd1601148b43fe31f60170017
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -3255,7 +3409,7 @@ MonoBehaviour:
   Path: event:/Antagonist Dialogue/Cue 5/Cue 5.5
   guid: 9e1e548f6c0a534896de0d494c944cb4
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -3318,7 +3472,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 11 Open
   guid: 87207b810551794abe4cfcec2a9c8cfc
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3340,7 +3494,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 1 Open
   guid: 3f81a10cb36ff24d9b61111dfcf3dba5
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3381,7 +3535,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 7 Hint
   guid: 44e67078941d264ea5bb9a9e73791b84
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3425,7 +3579,7 @@ MonoBehaviour:
   Path: event:/SFX/Puzzle Start
   guid: 3f41ae28e539ab4ea1f05f3273f22ab5
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3469,7 +3623,7 @@ MonoBehaviour:
   Path: event:/Antagonist Dialogue/Cue 4/Cue 4.1
   guid: f690ae55aa1adc4fbe1023d7bfccaa48
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -3491,7 +3645,7 @@ MonoBehaviour:
   Path: event:/SFX/Button Release
   guid: 38ca93083370d14eb42dcaffeba30390
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3520,6 +3674,50 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 13180
+--- !u!114 &114897250836700238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/AI Dialogue/System Reengaged 1.1
+  guid: a5ea6cf171dab04a99095a160eea46fe
+  Banks:
+  - {fileID: 114113458493542378}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2375
+--- !u!114 &114913220761152168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/AI Dialogue/Well Done 1.1
+  guid: dd4a5d28e292804e97bc84126d267bb8
+  Banks:
+  - {fileID: 114113458493542378}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1000
 --- !u!114 &114921409624340364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3534,7 +3732,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 3 Hint
   guid: 99e22e61758c21448b4ad1ecf7120ef6
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3599,7 +3797,7 @@ MonoBehaviour:
   Path: event:/SFX/Menu Tone 2
   guid: 306ce057f9003945b515b6cdd4994a70
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3640,7 +3838,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 4 Open
   guid: 0a97a8123bc417428e23ea21a07fa140
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3706,7 +3904,7 @@ MonoBehaviour:
   Path: event:/Antagonist Dialogue/Cue 2/Cue 2.4
   guid: 4e91573a5129ce4d9960c10709102247
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -3714,6 +3912,28 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 3006
+--- !u!114 &114964902628690492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/AI Dialogue/Omni Explanation/Omni Explanation 1.2
+  guid: 8e5981a0b2021243877ecc7fa653fd82
+  Banks:
+  - {fileID: 114113458493542378}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 7265
 --- !u!114 &114975164781807816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3728,7 +3948,7 @@ MonoBehaviour:
   Path: event:/AI Dialogue/AI Puzzle Cues/Puzzle 6 Open
   guid: 0ea39901713d4e42bf8c37d72ad0c8a9
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3750,7 +3970,7 @@ MonoBehaviour:
   Path: event:/Antagonist Dialogue/Cue 2/Cue 2.3
   guid: a17499051ad54744867c26da19d5a65f
   Banks:
-  - {fileID: 114609850966866106}
+  - {fileID: 114113458493542378}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1

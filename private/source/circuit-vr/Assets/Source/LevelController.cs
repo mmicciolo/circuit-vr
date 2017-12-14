@@ -62,7 +62,7 @@ public class LevelController : MonoBehaviour
         interactablePopUpCamera.gameObject.SetActive(false);
 
         //Start playing the first dialog
-        DialogueManager.Instance.StartNewDialog("Intro");
+        DialogueManager.Instance.StartNewDialog("AI Dialogue/Intro/Intro 1");
 
     }
 

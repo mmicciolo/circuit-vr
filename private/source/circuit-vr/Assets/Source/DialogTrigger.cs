@@ -13,10 +13,16 @@ namespace Assets.Source
         public bool playOnce = true;
         public bool checkBefore = false;
         public int puzzleBefore;
+        public bool handUp = false;
 
         private void OnTriggerEnter(Collider other)
         {
-            if(checkBefore)
+            if (dialogName.Contains("Omni Explanation 1"))
+            {
+                GameObject.Find("HandWithOmniTool").GetComponent<HandWithOmniTool>().forceUp = true;
+                handUp = true;
+            }
+            if (checkBefore)
             {
                 if(LevelController.getInstance().CheckDoorCanOpen(puzzleBefore))
                 {
@@ -24,7 +30,7 @@ namespace Assets.Source
                     if (playOnce)
                     {
                         playOnce = false;
-                        DialogueManager.Instance.StartDialogue(dialogName, pausePlayer);
+                        DialogueManager.Instance.StartNewDialog(dialogName);
                     }
                 }
             }
@@ -33,7 +39,19 @@ namespace Assets.Source
                 if (playOnce)
                 {
                     playOnce = false;
-                    DialogueManager.Instance.StartDialogue(dialogName, pausePlayer);
+                    DialogueManager.Instance.StartNewDialog(dialogName);
+                }
+            }
+        }
+
+        private void Update()
+        {
+            if(handUp == true)
+            {
+                if(!DialogueManager.Instance.IsDialogPlaying())
+                {
+                    handUp = true;
+                    GameObject.Find("HandWithOmniTool").GetComponent<HandWithOmniTool>().forceUp = false;
                 }
             }
         }

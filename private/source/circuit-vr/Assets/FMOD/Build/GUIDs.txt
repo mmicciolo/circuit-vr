@@ -23,26 +23,29 @@
 {b436617e-a1f0-4d78-bed0-6736b2bd0f01} event:/AI Dialogue/AI Puzzle Cues/Puzzle 9 Hint
 {a2428ec9-bb29-4c4e-9ddf-3a8764cea98e} event:/AI Dialogue/AI Puzzle Cues/Puzzle 9 Open
 {eac55bb8-abf9-412c-ba2c-ae4d49164622} event:/AI Dialogue/Current Flow/Current Flow
+{5727c9e7-eb96-48ca-aaa5-1b3e3f47a479} event:/AI Dialogue/Intro/Intro 1.1
+{d770a66e-ff7d-49b5-9598-05703b05c708} event:/AI Dialogue/Intro/Intro 1.2
+{25269dd2-b30c-499e-b4b5-33ad8614d6fe} event:/AI Dialogue/Intro/Intro 1.3
 {b83ff494-b07a-43b3-92fb-a6f0efe69139} event:/AI Dialogue/Least Resistance/Least Resistance 1.1
 {f258f158-b75c-4709-ade5-874fb4388500} event:/AI Dialogue/Least Resistance/Least Resistance 1.2
 {6c25659b-ad37-4187-a728-54a849a580f0} event:/AI Dialogue/Least Resistance/Least Resistance 1.3
 {00e77cbb-78d6-4b47-a789-47c4532bf9a4} event:/AI Dialogue/Ohms Law/Ohms Law 1.1
 {49005679-ff7f-4f06-b343-8577b837c756} event:/AI Dialogue/Ohms Law/Ohms Law 1.2
-{5727c9e7-eb96-48ca-aaa5-1b3e3f47a479} event:/AI Dialogue/Omni Explanation Intro/Omni Explanation Intro 1.1
-{d770a66e-ff7d-49b5-9598-05703b05c708} event:/AI Dialogue/Omni Explanation Intro/Omni Explanation Intro 1.2
-{25269dd2-b30c-499e-b4b5-33ad8614d6fe} event:/AI Dialogue/Omni Explanation Intro/Omni Explanation Intro 1.3
+{2d477f1f-9c1b-4bbf-8833-33283f2587c0} event:/AI Dialogue/Omni Explanation/Omni Explanation 1.1
+{a081598e-02b2-4312-877e-cc7fa653fd82} event:/AI Dialogue/Omni Explanation/Omni Explanation 1.2
+{9a32f123-e1a7-4c7e-be12-d7bef56e1c18} event:/AI Dialogue/Omni Explanation/Omni Explanation 1.3
 {4e6949ce-1dec-449e-bbe0-63e71f5f089b} event:/AI Dialogue/Series Parallel/Series Parallel 1.1
 {8cff822c-2ac4-4314-868b-c4ea1748aefb} event:/AI Dialogue/Series Parallel/Series Parallel 1.2
 {ceac5f26-7774-4c97-99c7-16b00a788394} event:/AI Dialogue/Series Parallel/Series Parallel 1.3
 {3a33c256-e405-4fd6-8dba-2b660064ee3d} event:/AI Dialogue/Close One
 {2cf2167e-f062-4f7b-9cf4-eae2b35a84cf} event:/AI Dialogue/Fail
-{94205981-65b5-4d22-a8b3-c6cf85697b58} event:/AI Dialogue/Good Job
+{94205981-65b5-4d22-a8b3-c6cf85697b58} event:/AI Dialogue/Good Job 1.1
 {b33ec258-bc30-405b-b7a2-a9f146c3452c} event:/AI Dialogue/He Is Lying
 {cbadd71e-3279-4490-9d0e-f27e5681e2e9} event:/AI Dialogue/Intro
 {e0d91d31-7a8e-4ee4-937e-cecd8d48bce3} event:/AI Dialogue/No Help Needed
-{f16ceaa5-da71-4ab0-9909-5a160eea46fe} event:/AI Dialogue/System Reengaged
+{f16ceaa5-da71-4ab0-9909-5a160eea46fe} event:/AI Dialogue/System Reengaged 1.1
 {135bde36-f0f7-4165-951e-96c69e98def9} event:/AI Dialogue/System Restart Failed
-{285d4add-92e2-4e80-97bc-84126d267bb8} event:/AI Dialogue/Well Done
+{285d4add-92e2-4e80-97bc-84126d267bb8} event:/AI Dialogue/Well Done 1.1
 {43c5e806-dc8b-4628-ac19-58e4b7d859ac} event:/Ambience/Engine Room
 {f507ad4f-74f7-4287-8908-df17177b9cd1} event:/Ambience/General Room Ambience
 {9b0a734f-fb19-498d-925d-4be9ab1cdc25} event:/Ambience/General Room Ambience 2D

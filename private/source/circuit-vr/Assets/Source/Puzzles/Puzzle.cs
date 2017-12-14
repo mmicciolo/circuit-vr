@@ -178,13 +178,13 @@ namespace Assets.Source.Puzzles
 			int cue = rand.Next (0, 3);
 			if ((!DialogueManager.Instance.IsPlaying ())) {
 				if (cue == 0) {
-					DialogueManager.Instance.StartDialogue ("Good Job");
+					DialogueManager.Instance.StartNewDialog ("AI Dialogue/Good Job 1");
 				} 
 				if (cue == 1) {
-					DialogueManager.Instance.StartDialogue ("Well Done");
+					DialogueManager.Instance.StartNewDialog("AI Dialogue/Well Done 1");
 				}
 				if (cue == 2) {
-					DialogueManager.Instance.StartDialogue ("System Reengaged");
+					DialogueManager.Instance.StartNewDialog("AI Dialogue/System Reengaged 1");
 				}
 			}
             LevelController.getInstance().closePuzzle(puzzleName);

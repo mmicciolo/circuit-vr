@@ -3,24 +3,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HandWithOmniTool : MonoBehaviour {
+
+public class HandWithOmniTool : MonoBehaviour
+{
     Animator animator;
-    bool needsUp;
+    public bool needsUp;
+    public bool forceUp = false;
     bool isUp;
     bool isAnimationDone;
     FirstPersonPlayer fps;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         animator = gameObject.GetComponent<Animator>();
         needsUp = false;
         isUp = false;
         fps = GetComponentInParent<FirstPersonPlayer>();
     }
-	
-	// Update is called once per frame
-	void Update () {
-        if (fps.isNearInteractable() || DialogueManager.Instance.IsDialogPlaying()) needsUp = true;
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (fps.isNearInteractable() /*|| DialogueManager.Instance.IsDialogPlaying()*/ || forceUp) needsUp = true;
         else needsUp = false;
         if (needsUp != isUp)
         {
