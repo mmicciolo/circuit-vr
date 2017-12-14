@@ -155,6 +155,12 @@ namespace Assets.Source.Player
             }
         }
 
+        public bool isNearInteractable()
+        {
+            if (currentInteractable != null) return true;
+            else return false;
+        }
+
         public GameObject GetCurrentInteractable()
         {
             return currentInteractable;
@@ -173,11 +179,6 @@ namespace Assets.Source.Player
             m_NextStep = m_StepCycle + .5f;
         }
 
-        public bool isNearInteractable()
-        {
-            if (currentInteractable != null) return true;
-            else return false;
-        }
 
         private void FixedUpdate()
         {
