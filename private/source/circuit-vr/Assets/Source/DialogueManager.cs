@@ -116,6 +116,7 @@ public class DialogueManager : MonoBehaviour {
         if(lineCount == fileLines.Length + 1)
         {
             lineCount = 1;
+            soundEmitter.Stop();
             Destroy(soundEmitter);
             soundEmitter = null;
             dialogPlaying = false;
@@ -258,11 +259,14 @@ public class DialogueManager : MonoBehaviour {
                 GUI.contentColor = Color.white;
                 GUI.Label(new Rect(Screen.width / 2 - size.x / 2, Screen.height / 1.25f - size.y, size.x, size.y), displaySub, subStyle);
             }
-            int trackLength; soundEmitter.EventDescription.getLength(out trackLength);
-            int trackPosition; soundEmitter.EventInstance.getTimelinePosition(out trackPosition);
-            if (trackPosition > trackLength - 10)
+            if(soundEmitter != null)
             {
-                PlayNextLine();
+                int trackLength; soundEmitter.EventDescription.getLength(out trackLength);
+                int trackPosition; soundEmitter.EventInstance.getTimelinePosition(out trackPosition);
+                if (trackPosition > trackLength - 10)
+                {
+                    PlayNextLine();
+                }
             }
         }
     }
