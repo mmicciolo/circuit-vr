@@ -1,47 +1,53 @@
-﻿using System.Collections;
+﻿using Assets.Source.Player;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class HandWithOmniTool : MonoBehaviour {
     Animator animator;
-    public bool isUp;
+    bool needsUp;
+    bool isUp;
+    FirstPersonPlayer fps;
 
 	// Use this for initialization
 	void Start () {
-
-         animator = gameObject.GetComponent<Animator>();
+        animator = gameObject.GetComponent<Animator>();
+        needsUp = false;
+        isUp = false;
+        fps = GetComponentInParent<FirstPersonPlayer>();
     }
 	
 	// Update is called once per frame
 	void Update () {
-		if (isUp)
+        if (fps.isNearInteractable() || DialogueManager.Instance.IsDialogPlaying()) needsUp = true;
+        else needsUp = false;
+        if (needsUp != isUp)
         {
-            animator.Play("Up");
-        }
-        else
-        {
-            animator.Play("Down");
+            StartCoroutine(needsUp ? HandUp() : HandDown());
         }
     }
 
     IEnumerator HandUp()
     {
-            while (animator.GetBool("Up"))
-            {
-                yield return null;
-            }
+        while (animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f)
+        {
+            yield return null;
+        }
+        if (needsUp)
+        {
             animator.Play("Up");
             isUp = true;
+        }
     }
 
-    public IEnumerator HandDown()
+    IEnumerator HandDown()
     {
-        if (isUp)
+        while (animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f)
         {
-            while (animator.GetBool("Up"))
-            {
-                yield return null;
-            }
+            yield return null;
+        }
+        if (!needsUp)
+        {
             animator.Play("Down");
             isUp = false;
         }
