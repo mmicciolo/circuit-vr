@@ -7,6 +7,7 @@ public class HandWithOmniTool : MonoBehaviour {
     Animator animator;
     bool needsUp;
     bool isUp;
+    bool isAnimationDone;
     FirstPersonPlayer fps;
 
 	// Use this for initialization
@@ -29,7 +30,7 @@ public class HandWithOmniTool : MonoBehaviour {
 
     IEnumerator HandUp()
     {
-        while (animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f)
+        while ((animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f) && (!animator.GetCurrentAnimatorStateInfo(0).IsName("Idle_down")))
         {
             yield return null;
         }
@@ -42,7 +43,7 @@ public class HandWithOmniTool : MonoBehaviour {
 
     IEnumerator HandDown()
     {
-        while (animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f)
+        while ((animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f) && (!animator.GetCurrentAnimatorStateInfo(0).IsName("Idle")))
         {
             yield return null;
         }
