@@ -23,6 +23,31 @@ public class MainMenu : MonoBehaviour {
         SceneManager.LoadScene("Settings");
     }
 
+    public void ShowCredits()
+    {
+        gameObject.transform.Find("Credit Panel").gameObject.SetActive(true);
+    }
+
+    public void HideCredits()
+    {
+        gameObject.transform.Find("Credit Panel").gameObject.SetActive(false);
+    }
+
+    public void ShowStory()
+    {
+        gameObject.transform.Find("Game Story").gameObject.SetActive(true);
+    }
+
+    public void HideStory()
+    {
+        gameObject.transform.Find("Game Story").gameObject.SetActive(false);
+    }
+
+    public void ExitButtonClicked()
+    {
+        Application.Quit();
+    }
+
 	// Update is called once per frame
 	void Update () {
 		
