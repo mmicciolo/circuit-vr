@@ -77,7 +77,17 @@ public class LevelController : MonoBehaviour
 
     // Update is called once per frame
     void Update () {
-
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Pause();
+            if (isPaused)
+            {
+                openPuzzle("PauseMenu");
+            } else
+            {
+                closePuzzle("PauseMenu");
+            }
+        }
     }
 
     public void Pause()
@@ -122,6 +132,17 @@ public class LevelController : MonoBehaviour
 			//Load the scene
 			SceneManager.LoadScene (("Puzzle" + sceneName), LoadSceneMode.Additive);
 		} else {
+            if (sceneName == "PauseMenu")
+            {
+                //Store the currently open scene
+                openScene = SceneManager.GetActiveScene().name;
+
+                //Add a callback for when the loading completes
+                SceneManager.sceneLoaded += OnPuzzleLoaded;
+
+                //Load the scene
+                SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
+            } else 
 			buzzSound.Play ();
 		}
     }
