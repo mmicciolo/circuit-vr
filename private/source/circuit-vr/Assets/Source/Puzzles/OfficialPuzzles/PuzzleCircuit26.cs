@@ -77,5 +77,12 @@ namespace Assets.Source.Puzzles
 
         }
 
+		protected override void ClosePuzzle()
+		{
+			SceneManager.LoadScene ("EndGame", LoadSceneMode.Additive);
+			DialogueManager.Instance.StartNewDialog ("Antagonists Dialogue/Cue 6/Cue 6");
+			base.ClosePuzzle();
+		}
+
     }
 }
