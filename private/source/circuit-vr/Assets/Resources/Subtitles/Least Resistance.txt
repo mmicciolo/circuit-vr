@@ -1,2 +1,0 @@
-0.000|WARNING: It is a common misconception that current passes only through the path of least resistance. 
-6.000|The current will pass through every path, but more current will pass through a path with less resistance.
